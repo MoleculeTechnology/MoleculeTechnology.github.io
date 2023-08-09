@@ -1,0 +1,103 @@
+
+<script>
+  src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+  integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+  crossorigin="anonymous"
+</script>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js"></script>
+
+<div>
+    <img class="animate-in rounded" src="img/Walk Cycle.gif"/>
+</div>
+
+<div class="grid">
+    <img class="grid-item animate-in" src="img/Broly Title.png" />
+    <img class="grid-item animate-in" src="img/Audi Camera System.jpg" />
+    <img class="grid-item animate-in" src="img/Gradient Blurs.jpg" />
+    <img class="grid-item animate-in" src="img/Pandora - Browse.png" />
+    <img class="grid-item animate-in" src="img/Pandora - My Collection.png" />
+    <img class="grid-item animate-in" src="img/Pandora - Now Playing.png" />
+    <img class="grid-item animate-in" src="img/Psychadelic.png" />
+    <img class="grid-item animate-in" src="img/Summer Night.png" />
+    <img class="grid-item animate-in" src="img/Patch.ico" />
+    <img class="grid-item animate-in" src="img/Glowy.png" />
+    <img class="grid-item animate-in" src="img/Pyramid.jpg" />
+    <img class="grid-item animate-in" src="img/Sierpinski Tetrahedron.png" />
+    <img class="grid-item animate-in" src="img/L-System.gif" />
+    <img class="grid-item animate-in" src="https://i.pinimg.com/564x/3b/0a/fd/3b0afdde169a93e9e50bdf6178dcfdc4.jpg" />
+    <img class="grid-item animate-in" src="https://i.pinimg.com/564x/3f/1f/18/3f1f184338b21044a359dc3e8d5d1716.jpg" />
+
+    <iframe class="grid-item animate-in" width="560" height="315" src="https://www.youtube-nocookie.com/embed/EZEMK-C-nSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="grid-item animate-in" width="560" height="315" src="https://www.youtube-nocookie.com/embed/o9lT5MshbXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="grid-item animate-in" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UTa50ZT9Pmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="grid-item animate-in" width="560" height="315" src="https://www.youtube-nocookie.com/embed/k0oQr7ZVtBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="grid-item animate-in" width="560" height="315" src="https://www.youtube-nocookie.com/embed/uWch8UAxWfk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="grid-item animate-in" width="560" height="315" src="https://www.youtube-nocookie.com/embed/d_gXFvGAYQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="grid-item animate-in" width="560" height="315" src="https://www.youtube-nocookie.com/embed/1vwKj0o7WMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="grid-item animate-in"  width="560" height="315" src="https://www.youtube-nocookie.com/embed/QJx116vWvPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="grid-item animate-in" width="560" height="315" src="https://www.youtube-nocookie.com/embed/kJkJj57m7gU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+
+<script>
+$.fn.randomize = function(selector) {
+    (selector ? this.find(selector) : this).parent().each(function() {
+        $(this).children(selector).sort(function() {
+            return Math.random() - 0.5;
+        }).detach().appendTo(this);
+    });
+
+    return this;
+};
+
+/**
+ * Trigger a callback when 'this' image is loaded:
+ * @param {Function} callback
+ */
+ (function($){
+    $.fn.imgLoad = function(callback) {
+        return this.each(function() {
+            if (callback) {
+                if (this.complete || /*for IE 10-*/ $(this).height() > 0) {
+                    callback.apply(this);
+                }
+                else {
+                    $(this).on('load', function(){
+                        callback.apply(this);
+                    });
+                }
+            }
+        });
+    };
+})(jQuery);
+
+$(function() {
+    console.log("Document is ready.");
+
+    var $grid = $('.grid');
+    $grid.randomize(".grid-item");
+
+    var $masonry = $grid.masonry({
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-item',
+    });
+
+    $('.animate-in').imgLoad(function() {
+        $grid.masonry();
+        $(this).velocity({
+            properties: {
+                 opacity: 1,
+            },
+            options: { 
+                duration: 1000,
+                easing: "ease",
+                delay: Math.random() * 500
+            },
+        });
+    });
+});
+
+
+</script>

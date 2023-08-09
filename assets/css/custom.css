@@ -1,0 +1,156 @@
+@font-face {
+    font-family: RobotoMedium;
+    src: url('/fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: RobotoBlack;
+    src: url('/fonts/Roboto/Roboto-Black.ttf');
+}
+
+@font-face {
+    font-family: RobotoCondensedLight;
+    src: url('/fonts/RobotoCondensed/RobotoCondensed-Light.ttf');
+}
+
+@font-face {
+    font-family: RobotoCondensed;
+    src: url('/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf');
+}
+
+@counter-style arrow-bullet {
+    system: cyclic;
+    symbols: "▶";
+    suffix: "   ";
+  }
+
+html {
+    font-family: RobotoMedium;
+}
+
+* { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: RobotoBlack; */
+    font-family: RobotoCondensed;
+}
+
+h1, h2, h3 {
+    /* color: #00ff00ff !important; */
+    /* color: #ffff00ff !important; */
+    color: #ff00e0ff !important;
+    /* color: #00ffffff !important; */
+}
+
+h4, h5, h6 {
+    /* color: #f8f8ffff !important; */
+    color: #ff00e0ff !important;
+}
+
+ul {
+    list-style: arrow-bullet !important;
+}
+
+#nav-logo {
+    /* padding-top: 10px;; */
+}
+/* .main-menu .logo {
+    height: 200px !important;
+} */
+
+#right-nav-bar {
+  padding-top: 30px;
+}
+
+.main-menu p {
+    color: #00ffffff !important;
+}
+
+.main-menu p:hover {
+    color: #0088aaff !important;
+    /* text-decoration: underline !important; */
+    /* text-decoration-thickness: 0.1rem !important; */
+}
+
+a {
+    color: #00ffffff !important;
+}
+
+
+a:hover {
+    color: #0088aaff !important;
+    /* text-decoration: underline !important;
+    text-decoration-thickness: 0.1rem !important; */
+}
+
+p {
+    color: #d8d8ddff !important;
+}
+
+
+.lead {
+    color: #f8f8ffff !important;
+}
+
+/* ---- grid ---- */
+
+.grid {
+    margin:0px;
+    width:100vh;
+}
+
+.grid-sizer
+{
+  max-width: 33%;
+}
+
+.animate-in {
+    opacity: 0;
+}
+
+.grid.visible .grid-item { visibility: visible; }
+
+.grid-item {
+    max-width: 32%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border-radius: 20px;
+}
+
+.grid-item-width1 {
+    width: 160px;
+}
+
+.grid-item-width2 {
+    width: 320px;
+}
+
+.icon-unity-small {
+    width: 100px;
+}
+
+.thumbnail_card {
+    border-radius: 17.94px 17.94px 0 0;
+}
+
+.backdrop-blur-2xl
+{
+}
+
+.rounded {
+    border-radius: 17.94px;
+}
+
+.about-box {
+    display: flex;
+}
+
+.about-box .headshot-column {
+    flex: 33%;
+}
+
+.about-box .text-column {
+    padding: 7.5% 0 0 30px;
+    flex: 67%;
+    margin-right: -60px;
+}
