@@ -39,7 +39,8 @@ I'm Russell → senior video game engineer + interaction designer.<br/>I build c
 
 - Rapidly developed interactive media solutions for 15 major film & TV productions.
 - While supervising a team of 3 others, I delivered programming, art, & animation on strict deadlines for key film and TV scenes.
-- Collaborated directly with directors, producers, and VFX supervisors. Worked closely with [Zed Axiz productions](https://www.setdecorators.org/?art=film_decor_features&SHOW=SetDecor_Film_ARRIVAL), whom provided hardware and operation.
+- Collaborated directly with directors, producers, and VFX supervisors.
+- Worked closely with [Zed Axiz Productions](https://www.zedaxiz.com/). I provided visuals + software; they provided hardware + set operators.
 
 ### X-Men: Apocalypse. ###
 
@@ -69,7 +70,6 @@ I'm Russell → senior video game engineer + interaction designer.<br/>I build c
 <img src="PaperGhost/quantico_training4.jpg" class="grid-w33" />
 <img src="PaperGhost/quantico_bomb1.gif" class="grid-w33" />
 <img src="PaperGhost/quantico_cut2.gif" class="grid-w99" />
-
 {{< /gallery >}}
 
 ### The Glass Castle. ###
@@ -84,7 +84,6 @@ I'm Russell → senior video game engineer + interaction designer.<br/>I build c
 <img src="PaperGhost/glasscastle_final2.gif" class="grid-w33" />
 <img src="PaperGhost/glasscastle_final3.gif" class="grid-w33" />
 <img src="PaperGhost/glasscastle_final1.jpg" class="grid-w33" />
-
 {{< /gallery >}}
 
 ### Ça Décolle! ###
@@ -95,9 +94,9 @@ I'm Russell → senior video game engineer + interaction designer.<br/>I build c
 <img src="PaperGhost/cadecolle_plane1.jpg" class="grid-w99" />
 <img src="PaperGhost/cadecolle_plane3.gif" class="grid-w66" />
 <img src="PaperGhost/cadecolle_plane4.jpg" class="grid-w66" />
-<img src="PaperGhost/cadecolle_plane2.jpg" class="grid-w33" />
 <img src="PaperGhost/cadecolle_set2.jpg" class="grid-w33" />
-<img src="PaperGhost/cadecolle_plane3.jpg" class="grid-w33" />
+<img src="PaperGhost/cadecolle_plane2.jpg" class="grid-w33" />
+<img src="PaperGhost/cadecolle_plane5.jpg" class="grid-w33" />
 <!-- <img src="PaperGhost/field_test1.jpg" class="grid-w33" />
 <img src="PaperGhost/field_test2.jpg" class="grid-w33" /> -->
 {{< /gallery >}}
@@ -119,6 +118,8 @@ I'm Russell → senior video game engineer + interaction designer.<br/>I build c
 ### Arrival. ###
 
 - Programmed drag-and-drop software to customize dozens of military maps, surveillance controls, and simulation software.
+
+[Article about the Arrival set design.](https://www.setdecorators.org/?art=film_decor_features&SHOW=SetDecor_Film_ARRIVAL)
 
 {{< gallery >}}
 <img src="PaperGhost/arrival_spytent2.jpg" class="grid-w99" />
@@ -169,7 +170,6 @@ ___
 <img src="Enflux/enflux_blender1.jpg" class="grid-w99" />
 <!-- <img src="Enflux/enflux_blender2.png" class="grid-w33" />
 <img src="Enflux/enflux_convention1.jpeg" class="grid-w33" /> -->
-
 {{< /gallery >}}
 
 ### ShopperMX Platform (InContext Solutions). ###
@@ -187,30 +187,6 @@ ___
 {{< /gallery >}}
 
 ___
-
-<!--
-<br/>
-# What is Molecule? #
-
-Since my time in the film industry, one problem I've faced is building applications that require specialized hardware.
-
-In practice, many of these hardware products aren't cut out for my own needs, nor the needs of my stakeholders.
-
-I actually joined Enflux motion capture clothing, as I was one of their first customers due to my own needs in the film industry.
-
-I've also had a vision of creating creative installations like [Rhizomatiks](https://rhizomatiks.com/en/).
-
-I decide to learn hardware creation, and build my own tools that I need for creative purpose. My dream is that I can use my skills to enable others to follow their creative dreams.
-
-I'm building out Molecule - a framework for creative experiences using webcam-based motion capture.<br/>
-
-As a showcase, I'm creating a motion captured video game installation. Destroy your foes with a real light sword. Use secret sword techniques - motion captured, no wires.<br/>
-
-https://hearthstone.fandom.com/wiki/Russell_Jahn_(Credits_card)
-
-<br/>
-# Contact information. #
--->
 
 ## Core Systems Programming in AAA Video Games. ##
 

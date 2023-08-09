@@ -23,7 +23,7 @@ mainSections = ["docs"]
 disableImageOptimization = false
 
 defaultBackgroundImage = "/img/20220901_000405.jpg"
-defaultFeaturedImage = "/img/background_pi_cluster.jpg"
+defaultFeaturedImage = "/img/background_picluster.jpg"
 
 highlightCurrentMenuArea = true
 smartTOC = false
