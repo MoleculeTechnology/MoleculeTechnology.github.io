@@ -1,0 +1,27 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "i 🤍 molecule tech"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = "img/icons/icon_patch3_header_256_v3.png"
+  # secondaryLogo = "PATH"
+  description = "Framework for creative experiences using motion capture. Includes firmware, tools, and game engine."
+  # copyright = "Copy, _right?_ :thinking_face:"
+
+[author]
+  name = "Russell Jahn"
+  image = "img/headshots/headshot_russelljahn_2021-11-08_095745.png"
+  headline = "Senior video game engineer & interaction designer. My software was seen in Hearthstone, X-Men: Apocalypse, Arrival, mother!, Kimmel Live, & Enflux Motion Capture Suits."
+  bio = "Senior video game engineer & interaction designer. My software was seen in Hearthstone, X-Men: Apocalypse, Arrival, mother!, Kimmel Live, & Enflux Motion Capture Suits."
+  links = [
+    { github = "https://github.com/MoleculeTechnology" },
+    { linkedin = "https://www.linkedin.com/in/russelljahn" },
+    { youtube = "https://www.youtube.com/@MoleculeTech" },
+  ]
+
+  
