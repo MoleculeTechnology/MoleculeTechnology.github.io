@@ -1,1 +1,1 @@
-hugo server --disableFastRender --timeout=60s -D -F
+hugo server --disableFastRender -D -F
