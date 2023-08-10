@@ -12,7 +12,7 @@
     <img class="animate-in rounded" src="img/Walk Cycle.gif"/>
 </div>
 
-<div class="grid">
+<div id="moodboard-grid">
     <img class="grid-item animate-in" src="img/DudesterBG.png" />
     <img class="grid-item animate-in" src="img/Broly Title.png" />
     <img class="grid-item animate-in" src="img/Audi Camera System.jpg" />
@@ -77,13 +77,16 @@ $.fn.randomize = function(selector) {
 $(function() {
     console.log("Document is ready.");
 
-    var $grid = $('.grid');
+    var $grid = $('#moodboard-grid');
     $grid.randomize(".grid-item");
 
     var $masonry = $grid.masonry({
         itemSelector: '.grid-item',
         columnWidth: '.grid-item',
     });
+
+    var width = $("#main-content").width();
+    $("#moodboard-grid").css("width", width + "px");
 
     $('.animate-in').imgLoad(function() {
         $grid.masonry();
@@ -98,6 +101,13 @@ $(function() {
             },
         });
     });
+
+    $(window).on('resize', (function() {
+        return function() {
+            var width = $("#main-content").width();
+            $("#moodboard-grid").css("width", width + "px");
+        }
+    })());
 });
 
 

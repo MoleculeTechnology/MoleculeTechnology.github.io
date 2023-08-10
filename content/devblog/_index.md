@@ -14,4 +14,3 @@ showWordCount : false
 showSummary : false
 sharingLinks : false
 ---
-<br>
