@@ -3,7 +3,7 @@ title: "Molecule is a software framework to make creative experiences using<br>m
 description: "Homepage"
 ---
 
-## Includes firmware, tools, and game engine. ##
+## Includes firmware, tools, and game. ##
 
 <br/><br/>
 
@@ -26,7 +26,7 @@ I decided to learn hardware creation, and build the tools that I need for my own
 - Lighting.
 - Motion capture.
 
-For now I'm building out Molecule - a framework for creative experiences that use webcam-based motion capture + lighting.<br/>
+For now I'm building out Molecule - a framework for creative experiences using webcam-based motion capture + lighting.<br/>
 
 {{< figure src="img/patch_psycho1.png" title="Light sword running Molecule software." >}}
 
