@@ -2,3 +2,11 @@
 extended = false
 min = "0.87.0"
 
+[[mounts]]
+source = "assets"
+target = "assets"
+
+[[mounts]]
+source = "content/about"
+target = "assets/legacy-work"
+

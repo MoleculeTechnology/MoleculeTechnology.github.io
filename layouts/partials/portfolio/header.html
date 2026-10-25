@@ -1,0 +1,11 @@
+<header class="site-header site-width">
+  <a class="wordmark" href="{{ "/" | relURL }}" aria-label="Molecule — home">
+    <svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 29 17 3 31 25 3 29"/><path class="mint-stroke" d="M3 29 9 13 31 25M9 13 17 3"/></svg><span>MOLECULE</span>
+  </a>
+  <nav aria-label="Main navigation">
+    <a href="{{ "work/" | relURL }}"{{ if eq .Section "work" }} aria-current="page"{{ end }}>Work</a>
+    <a href="{{ "about/" | relURL }}"{{ if eq .Section "about" }} aria-current="page"{{ end }}>About</a>
+    <a href="{{ "devblog/" | relURL }}"{{ if eq .Section "devblog" }} aria-current="page"{{ end }}>Notes</a>
+    <a class="nav-contact" href="{{ "/#contact" | relURL }}">Let's talk <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>

@@ -1,6 +1,7 @@
 ---
-title: "{ about me }"
-description: "About Me."
+title: "About Russell"
+layout: "simple"
+description: "Software engineer and artist working across real-time graphics, creative tools, and physical interaction."
 
 showLikes: false
 showViews: false
@@ -14,7 +15,7 @@ cascade:
 ---
 
 {{< lead >}}
-I'm Russell → senior video game engineer + interaction designer.<br/>I build creative products that mix software + hardware + art.
+I'm Russell → software engineer + artist.<br/>I build creative experiences that mix software + hardware + art.
 {{< /lead >}}
 
 <div class="about-box">
@@ -23,7 +24,7 @@ I'm Russell → senior video game engineer + interaction designer.<br/>I build c
 </div>
 <div class="column text-column">
 
-**I've built innovative products for 9 years that encompass:**
+**My work connects:**
 
 - Full-stack software engineering across many languages + paradigms.
 - Creative product design with challenging constraints.

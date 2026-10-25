@@ -1,0 +1,7 @@
+{{ $image := resources.Get .source }}
+{{ if not $image }}{{ $image = resources.Get (printf "legacy-work/%s" .source) }}{{ end }}
+{{ if $image }}
+  {{ $small := $image.Resize "640x webp q82" }}
+  {{ $large := $image.Resize "1280x webp q85" }}
+  <img src="{{ $small.RelPermalink }}" srcset="{{ $small.RelPermalink }} 640w, {{ $large.RelPermalink }} 1280w" sizes="{{ .sizes | default "(max-width: 760px) 100vw, 60vw" }}" width="{{ $large.Width }}" height="{{ $large.Height }}" alt="{{ .alt }}" loading="{{ .loading | default "lazy" }}" decoding="async"{{ with .class }} class="{{ . }}"{{ end }}>
+{{ else }}{{ errorf "Portfolio image not found: %s" .source }}{{ end }}

@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en" class="dark">
+{{ partial "portfolio/head.html" . }}
+<body class="molecule-site">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  {{ partial "portfolio/header.html" . }}
+  <main id="main-content" class="{{ if or .IsHome (eq .Section "work") }}portfolio-main{{ else }}legacy-content{{ end }}">{{ block "main" . }}{{ end }}</main>
+  {{ partial "portfolio/footer.html" . }}
+</body>
+</html>
