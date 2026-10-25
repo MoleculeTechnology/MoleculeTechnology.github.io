@@ -1,0 +1,645 @@
+{
+  "date": "2026-10-24",
+  "scope": "Existing content/about media only. Selected network archive material is described separately in 12-archive-review.md.",
+  "fileCount": 91,
+  "totalBytes": 258231576,
+  "files": [
+    {
+      "path": "content/about/Blizzard/hearthstone_card_zephrys1.gif",
+      "bytes": 20805962,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Blizzard/hearthstone_card_zephrys1.webp",
+      "bytes": 102240,
+      "extension": ".webp",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Blizzard/hearthstone_credits_russelljahn1.webp",
+      "bytes": 24468,
+      "extension": ".webp",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Blizzard/hearthstone_credits_russelljahn2.webp",
+      "bytes": 48146,
+      "extension": ".webp",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Blizzard/hearthstone_gameplay1.jpg",
+      "bytes": 152654,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Blizzard/hearthstone_gameplay2.gif",
+      "bytes": 1823897,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Blizzard/hearthstone_gameplay3.gif",
+      "bytes": 8682342,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Blizzard/hearthstone_logo.png",
+      "bytes": 235352,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Blizzard/hearthstone_vfx1.webp",
+      "bytes": 72972,
+      "extension": ".webp",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/C3IQD7kUcAEIS3O.jpg",
+      "bytes": 176581,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_analysis1.png",
+      "bytes": 176713,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_analysis2.png",
+      "bytes": 75116,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_analysis3.gif",
+      "bytes": 30478682,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_blender1.jpg",
+      "bytes": 69471,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_blender2.png",
+      "bytes": 602636,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_convention1.jpeg",
+      "bytes": 36458,
+      "extension": ".jpeg",
+      "visualReview": "inspected",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_convention2.gif",
+      "bytes": 32664853,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_convention3.jpg",
+      "bytes": 1672543,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_convention4.jpg",
+      "bytes": 1401055,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_logo.png",
+      "bytes": 4319,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_logo2.png",
+      "bytes": 431075,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_suit1.png",
+      "bytes": 1913294,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_wrist1.jpg",
+      "bytes": 232980,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_wrist2.jpg",
+      "bytes": 65877,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_wrist3.gif",
+      "bytes": 28012948,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Enflux/enflux_wrist4.jpg",
+      "bytes": 208874,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/InContext/incontext_aisle1.png",
+      "bytes": 597144,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/InContext/incontext_aisle2.png",
+      "bytes": 3692936,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/InContext/incontext_aisle3.jpg",
+      "bytes": 150897,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/InContext/incontext_bottle1.gif",
+      "bytes": 3752697,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/InContext/incontext_store1.png",
+      "bytes": 10608206,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/InContext/incontext_store2.png",
+      "bytes": 1651915,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/arrival_cryptotent1.jpg",
+      "bytes": 41417,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/arrival_office1.jpg",
+      "bytes": 7699278,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/arrival_sciencetentt1.webp",
+      "bytes": 177696,
+      "extension": ".webp",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/arrival_spytent1.jpg",
+      "bytes": 106310,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/arrival_spytent2.jpg",
+      "bytes": 1600887,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/arrival_spytent3.jpg",
+      "bytes": 48669,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/bcbc2_audio1.png",
+      "bytes": 533199,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/bcbc2_base1.png",
+      "bytes": 781126,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/bcbc2_base2.png",
+      "bytes": 842831,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/bcbc2_bloodtest1.png",
+      "bytes": 636667,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/bcbc2_bloodtest2.png",
+      "bytes": 685145,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/cadecolle_monitor1.jpg",
+      "bytes": 825037,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/cadecolle_plane1.jpg",
+      "bytes": 944574,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/cadecolle_plane2.jpg",
+      "bytes": 2010147,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/cadecolle_plane3.gif",
+      "bytes": 4790399,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/cadecolle_plane4.jpg",
+      "bytes": 102911,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/cadecolle_plane5.jpg",
+      "bytes": 1235105,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/cadecolle_set1.jpg",
+      "bytes": 1811686,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/cadecolle_set2.jpg",
+      "bytes": 1447936,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/eyeonjuliet_crewphoto1.jpeg",
+      "bytes": 95962,
+      "extension": ".jpeg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/eyeonjuliet_station1.png",
+      "bytes": 1358189,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/field_test1.jpg",
+      "bytes": 1802004,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/field_test2.jpg",
+      "bytes": 864873,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/glasscastle_final1.jpg",
+      "bytes": 10398,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/glasscastle_final2.gif",
+      "bytes": 2583994,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/glasscastle_final3.gif",
+      "bytes": 2208797,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/glasscastle_software1.jpg",
+      "bytes": 43407,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/glasscastle_test1.jpg",
+      "bytes": 1744570,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/glasscastle_test3.jpg",
+      "bytes": 1584417,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/glasscastle_test4.jpg",
+      "bytes": 2070382,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/mother_preproduction1.jpeg",
+      "bytes": 1407207,
+      "extension": ".jpeg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/mother_preproduction2.png",
+      "bytes": 984163,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/mother_preproduction3.png",
+      "bytes": 1122647,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/mother_preproduction4.png",
+      "bytes": 1027232,
+      "extension": ".png",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/mother_preproduction5.jpeg",
+      "bytes": 1313582,
+      "extension": ".jpeg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/mother_preproduction6.gif",
+      "bytes": 10294423,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/mother_preproduction7.gif",
+      "bytes": 4924687,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/mother_software_1.jpeg",
+      "bytes": 59416,
+      "extension": ".jpeg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_bomb1.gif",
+      "bytes": 2495782,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_bullpen1.jpg",
+      "bytes": 40916,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_bullpen2.jpeg",
+      "bytes": 58118,
+      "extension": ".jpeg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_cut1.gif",
+      "bytes": 21782833,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_cut2.gif",
+      "bytes": 15118642,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_cut3.gif",
+      "bytes": 3704288,
+      "extension": ".gif",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_tablet1.jpeg",
+      "bytes": 30041,
+      "extension": ".jpeg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_training1.jpg",
+      "bytes": 85747,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_training2.jpg",
+      "bytes": 134143,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_training3.jpg",
+      "bytes": 130051,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_training4.jpg",
+      "bytes": 245924,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_van1.jpg",
+      "bytes": 61685,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_van2.jpg",
+      "bytes": 45318,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_van3.jpg",
+      "bytes": 616308,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_van4.jpg",
+      "bytes": 133829,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/quantico_van5.jpg",
+      "bytes": 156449,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/xmen_apocalypse_pentagon1.jpg",
+      "bytes": 40749,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/xmen_apocalypse_pentagon2.jpg",
+      "bytes": 119613,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/xmen_apocalypse_pentagon3.jpg",
+      "bytes": 52686,
+      "extension": ".jpg",
+      "visualReview": "inspected",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/PaperGhost/xmen_apocalypse_submarine1.jpg",
+      "bytes": 491763,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    },
+    {
+      "path": "content/about/Scopely/wheeloffortune_logo.jpg",
+      "bytes": 240018,
+      "extension": ".jpg",
+      "visualReview": "pending",
+      "publicationStatus": "unconfirmed"
+    }
+  ]
+}
