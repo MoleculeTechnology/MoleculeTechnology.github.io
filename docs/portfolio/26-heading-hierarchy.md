@@ -14,6 +14,7 @@ Russell prefers project titles such as THE GLASS CASTLE in ghost white, reservin
 | --- | --- | --- |
 | Homepage SOFTWARE / ENGINEER / & ARTIST. | Mint `#84F9EB` | `heading-accent` |
 | Primary page titles and brace section headings | Mint | `heading-accent` |
+| Hearthstone and Unannounced game sections within the Blizzard case study | Mint | Page-level `accentSectionHeadings` opt-in |
 | Project titles, including case-study page titles | Ghost white `#F8F8FF` | Default heading color |
 | Content subheadings and contact form headings | Ghost white | Default heading color |
 | Project context, contribution labels, links and controls | Existing accent treatment | Existing component styles |
@@ -41,3 +42,11 @@ The repository's `AGENTS.md` now records this rule for later iterations.
 Russell reported that Contact stayed mint on every page. Removed its unconditional mint rule. Header links now use mint only when marked `aria-current="page"`; hover adds an underline without changing the link color. Verified Home (no active section), Work, About, Contact, and a Work case study. The preview rebuilt successfully and was restarted.
 
 ![Work active, with About and Contact in ghost white](assets/2026-10-25-header-active-navigation.jpg)
+
+## Blizzard game section headings
+
+Russell requested mint for Hearthstone and Unannounced game on the Blizzard case study. That page now opts into `accentSectionHeadings`, which uses shared CSS to color its direct `h2` game section headings. The case-study project title, smaller `h3` headings, and headings on other project pages stay ghost white. Heading sizes and anchor links are unchanged.
+
+The production build passed. Rendered colors and layout were checked at 1280px, 390px, and 320px; both game headings are mint, smaller headings are ghost white, and there is no horizontal overflow. The Glass Castle's headings were checked to confirm the change is scoped to the Blizzard page. Preview restarted and left running.
+
+![Mint game section heading with ghost-white subheadings](assets/2026-10-25-blizzard-section-colors.jpg)

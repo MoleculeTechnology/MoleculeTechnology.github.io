@@ -3,6 +3,7 @@ title: "Game Engine, Graphics + Content Pipeline"
 description: "Game engine systems, graphics, content pipelines, artist tools, and performance for desktop + mobile at Blizzard."
 weight: 50
 tags: [professional]
+accentSectionHeadings: true
 hero: "Blizzard/hearthstone_gameplay1.jpg"
 heroAlt: "Hearthstone gameplay on the Festival of Legends board, with Infinitize the Maxitude selected."
 heroCaption: "Hearthstone gameplay. Game artwork by the Hearthstone team; engineering contributions described above."
