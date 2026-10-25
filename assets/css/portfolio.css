@@ -36,8 +36,8 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .mint-stroke { stroke: var(--mint); }
 .site-header nav { display: flex; align-items: center; gap: 34px; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; }
 .site-header nav a { padding: 12px 0; }
-.site-header nav a:hover, .site-header nav a[aria-current], .footer-links a:hover { color: var(--mint); }
-.site-header .nav-contact { color: var(--mint); }
+.site-header nav a:hover { text-decoration: underline; text-underline-offset: 6px; }
+.site-header nav a[aria-current="page"], .footer-links a:hover { color: var(--mint); }
 .nav-contact span { padding-left: 7px; }
 .home-hero { display: grid; grid-template-columns: 1fr 1.05fr; align-items: center; gap: 24px; padding-block: 70px 75px; }
 .hero-name { color: var(--mint); display: flex; align-items: center; gap: 11px; margin-bottom: 25px !important; }

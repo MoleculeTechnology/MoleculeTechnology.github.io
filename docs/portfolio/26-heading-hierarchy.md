@@ -35,3 +35,9 @@ The repository's `AGENTS.md` now records this rule for later iterations.
 ![Mint section heading above a ghost-white project title](assets/2026-10-25-heading-hierarchy.jpg)
 
 ![Ghost-white case-study title on mobile](assets/2026-10-25-heading-hierarchy-mobile.jpg)
+
+## Header navigation correction
+
+Russell reported that Contact stayed mint on every page. Removed its unconditional mint rule. Header links now use mint only when marked `aria-current="page"`; hover adds an underline without changing the link color. Verified Home (no active section), Work, About, Contact, and a Work case study. The preview rebuilt successfully and was restarted.
+
+![Work active, with About and Contact in ghost white](assets/2026-10-25-header-active-navigation.jpg)
