@@ -120,3 +120,12 @@ Russell merged cleanup PR #2 into the planning branch.
 Continue the website on `feature/portfolio-rework-v1`, starting from the first implementation already merged into `main`.
 Preserve and commit the deployment follow-up notes as a separate documentation change.
 Keep generated preview files and downloaded tools ignored, and leave deployment repair for the first-version release pass.
+
+### 2026-10-24 — Writing and picture selection need a different direction
+
+Russell rejected the rework's generic promotional language, specifically the Moongoat paragraph about "a little invitation to play."
+He says it does not capture him and prefers the original About page's language and pictures.
+Use that original material as the source for the next edit.
+Study how established artist/studio portfolios name and document work, including Rhizomatiks, without adopting their slogans or inventing an artistic motivation for Russell.
+The [reference study](16-artist-and-studio-references.md) and [copy/media plan](17-copy-and-media-revision-plan.md) replace the earlier copy draft's tone recommendation.
+An optional question asks Russell to describe what he showed at Moongoat and what a visitor could actually do.

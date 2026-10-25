@@ -16,6 +16,8 @@ It does not change or publish the website.
 
 ## Start here
 
+For the next writing and media pass, start with [Copy and media revision plan](17-copy-and-media-revision-plan.md). Russell prefers the original About page's specifics and pictures over the first rework's generic language.
+
 1. [Brief and positioning](01-brief-and-positioning.md) — audience, offer, and the connection between the work.
 2. [Evidence and CV review](02-evidence-and-cv-review.md) — reviewed sources, supported claims, and missing facts.
 3. [Site audit and Hugo decision](03-site-audit-and-hugo-decision.md) — keep Hugo, change the presentation.
@@ -31,6 +33,8 @@ It does not change or publish the website.
 13. [WebGL specialization pyramid](13-webgl-specialization-pyramid.md) — rotation, projected screen-space labels, typography, and implementation checks.
 14. [Local implementation](14-local-implementation.md) — testing branch, preview command, completed checks, and deferred GitHub workflow.
 15. [Deferred deployment repair](15-deferred-deployment.md) — failed workflow, later release checks, and completed preview cleanup.
+16. [Artist and studio references](16-artist-and-studio-references.md) — Rhizomatiks and ten other practices, official project sources, and useful writing structures.
+17. [Copy and media revision plan](17-copy-and-media-revision-plan.md) — four wording directions, concrete examples, Moongoat treatments, and original galleries to recover.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.
