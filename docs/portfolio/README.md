@@ -48,6 +48,7 @@ The subsequent [tagged-project revision](24-tagged-projects-and-new-headliners.m
 25. [About Me and project image concepts](25-about-and-project-carousel-concepts.md) — three About treatments, three interactive carousel concepts, proposed media sequences, and a recommended restrained direction.
 26. [Heading hierarchy and accent color](26-heading-hierarchy.md) — ghost-white project/content headings, explicit mint accents, shared size variables, and responsive checks.
 27. [Glass Castle selected media](27-glass-castle-media-selection.md) — Russell's chosen headliner, accent photograph, and finished-scene GIF, with original dimensions and delivery checks.
+28. [Hearthstone headliner and media research](28-hearthstone-headliner-and-media-research.md) — requested Blizzard cover, official 4K gameplay sources, sharper supporting excerpts, alternate artwork candidates, and provenance.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

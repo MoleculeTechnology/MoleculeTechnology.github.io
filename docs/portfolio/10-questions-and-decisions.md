@@ -165,3 +165,7 @@ Russell refined the heading rule: project titles such as THE GLASS CASTLE should
 ### 2026-10-25 — Glass Castle image selection
 
 Russell selected `glasscastle_test1.jpg` as the headliner, `glasscastle_test3.jpg` as the accent, and `glasscastle_final3.gif` as tertiary media. The headliner now appears across project listings and the case study; the case study presents the selected supporting media in order. Use the JPG originals behind the supplied thumbnail URLs and retain the GIF animation without enlarging it. See [the media selection record](27-glass-castle-media-selection.md).
+
+### 2026-10-25 — Blizzard gameplay cover and sharper Hearthstone media
+
+Russell selected `hearthstone_gameplay1.jpg` as the temporary Blizzard headliner and requested better-looking Hearthstone stills/motion. Applied that cover and reviewed official press assets from the recorded role period. Two verified 4K/60 fps TITANS clips now supply short, manually played 1080p excerpts and sharp still previews in the case study, replacing the smaller GIF/VFX examples while preserving Russell's credits and the Hearthstone team's artwork/FX attribution. [Research and source records](28-hearthstone-headliner-and-media-research.md) include alternate key art and further motion candidates.

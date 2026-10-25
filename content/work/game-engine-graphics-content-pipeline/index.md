@@ -3,7 +3,10 @@ title: "Game Engine, Graphics + Content Pipeline"
 description: "Game engine systems, graphics, content pipelines, and artist tools for desktop + mobile at Blizzard."
 weight: 50
 tags: [professional]
-coverLines: ["Core systems", "Graphics + rendering", "Art + audio tools", "Desktop + mobile"]
+hero: "Blizzard/hearthstone_gameplay1.jpg"
+heroAlt: "Hearthstone gameplay on the Festival of Legends board, with Infinitize the Maxitude selected."
+heroCaption: "Hearthstone gameplay. Game artwork by the Hearthstone team; engineering contributions described above."
+imageClass: "uncropped"
 aliases: ["/work/hearthstone/"]
 context: "Blizzard / Engine + content technology"
 contribution: "Core systems + asset pipeline + artist tools + performance + native mobile development"
@@ -31,9 +34,13 @@ Low-level engine debugging and cross-team engineering support addressed blocking
 
 The asset pipeline packs + ships the game's content worldwide across desktop and mobile. Engineering work included pipeline maintenance and improvements, client build tooling, and tools for FX artists.
 
-{{< about-gallery marker="### Hearthstone (Blizzard Entertainment). ###" title="Hearthstone" description="gameplay, credits + visual effects" >}}
+{{< work-video source="portfolio/hearthstone/eonar-flourish.mp4" poster="portfolio/hearthstone/eonar-flourish.jpg" label="Play Eonar's Flourish: a silent seven-second Hearthstone gameplay excerpt" caption="TITANS / Eonar's Flourish. Official Hearthstone gameplay, 2023." >}}
 
-Hearthstone images show the game and its credits. Game artwork is by the Hearthstone team; Russell's contributions are the engineering work described above.
+{{< work-video source="portfolio/hearthstone/norgannon-progenitors-power.mp4" poster="portfolio/hearthstone/norgannon-progenitors-power.jpg" label="Play Norgannon's Progenitor's Power: a silent six-second Hearthstone gameplay excerpt" caption="TITANS / Norgannon's Progenitor's Power. Official Hearthstone gameplay, 2023." >}}
+
+{{< work-image source="Blizzard/hearthstone_credits_russelljahn2.webp" alt="Russell Jahn's Hearthstone credits card." caption="Russell Jahn / Hearthstone credits." >}}
+
+Gameplay excerpts are from the [official Blizzard TITANS press kit](https://blizzard.gamespress.com/en/Hearthstone-TITANS---Press-Kit). Game artwork and visual effects are by the Hearthstone team; Russell's contributions are the engineering work described above.
 
 ## Unannounced game
 

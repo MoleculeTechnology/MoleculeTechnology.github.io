@@ -185,6 +185,7 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .case-body strong { color: var(--ghost); font-weight: 700; }
 .work-figure { margin: 36px -5vw; }
 .work-figure img { width: 100%; height: auto; }
+.work-figure video { display: block; width: 100%; height: auto; background: var(--surface); }
 .work-figure figcaption { font-size: 13px; color: var(--muted); padding-top: 12px; }
 .work-gallery { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 12px; align-items: start; margin: 36px max(-80px, -5vw); }
 .work-gallery .gallery-frame { margin: 0; min-width: 0; width: 100%; grid-column: span 12; }

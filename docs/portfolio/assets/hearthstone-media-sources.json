@@ -1,0 +1,54 @@
+[
+  {
+    "source_file": "0609_27.0TitansBroll_Eonar_Flourish_ProRes_MB_enUS_001.mp4",
+    "source_bytes": 122331672,
+    "source_sha256": "f6b2e5a3d32d03e11cfb1c59e2333a18b04723191abcf9191e751547dec8d30d",
+    "source_dimensions": [
+      3840,
+      2160
+    ],
+    "source_fps": 60,
+    "excerpt_start_seconds": 13.5,
+    "excerpt_duration_seconds": 7,
+    "poster_time_seconds": 18,
+    "output_video": "assets\\portfolio\\hearthstone\\eonar-flourish.mp4",
+    "output_bytes": 3586787,
+    "output_dimensions": [
+      1920,
+      1080
+    ],
+    "output_fps": 30,
+    "audio": false,
+    "poster": "assets\\portfolio\\hearthstone\\eonar-flourish.jpg",
+    "poster_bytes": 544718,
+    "source_page": "https://blizzard.gamespress.com/en/Hearthstone-TITANS---Press-Kit",
+    "credit": "Gameplay, artwork and visual effects: Blizzard Entertainment / Hearthstone team.",
+    "reviewed_on": "2026-10-25"
+  },
+  {
+    "source_file": "0609_27.0TitansBroll_Norgannon_ProgenitorsPower_ProRes_MB_enUS_001.mp4",
+    "source_bytes": 120098775,
+    "source_sha256": "aa73bbd98894bb32836772868c1d47aa94156d38f5d2460d37c46655d2403159",
+    "source_dimensions": [
+      3840,
+      2160
+    ],
+    "source_fps": 60,
+    "excerpt_start_seconds": 19,
+    "excerpt_duration_seconds": 6,
+    "poster_time_seconds": 21.5,
+    "output_video": "assets\\portfolio\\hearthstone\\norgannon-progenitors-power.mp4",
+    "output_bytes": 5055435,
+    "output_dimensions": [
+      1920,
+      1080
+    ],
+    "output_fps": 30,
+    "audio": false,
+    "poster": "assets\\portfolio\\hearthstone\\norgannon-progenitors-power.jpg",
+    "poster_bytes": 427765,
+    "source_page": "https://blizzard.gamespress.com/en/Hearthstone-TITANS---Press-Kit",
+    "credit": "Gameplay, artwork and visual effects: Blizzard Entertainment / Hearthstone team.",
+    "reviewed_on": "2026-10-25"
+  }
+]
