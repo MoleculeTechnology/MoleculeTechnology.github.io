@@ -18,7 +18,7 @@
     point: root.querySelector(`[data-point="${vertex.key}"]`),
     leader: root.querySelector(`[data-leader="${vertex.key}"]`),
   }));
-  let gl, program, buffer, matrixUniform, resolutionUniform, widthUniform;
+  let gl, program, buffer, matrixUniform, resolutionUniform, halfWidthUniform, featherUniform;
   let frame = 0, previousTime = 0, width = 0, height = 0;
   let yaw = -0.48, pitch = 0.13;
   let isPlaying = !motion.matches, isVisible = true, isReady = false, drag = null;
@@ -114,7 +114,8 @@
     gl.useProgram(program);
     gl.uniformMatrix4fv(matrixUniform, false, matrix);
     gl.uniform2f(resolutionUniform, canvas.width, canvas.height);
-    gl.uniform1f(widthUniform, 1.45 * ratio);
+    gl.uniform1f(halfWidthUniform, 1.45 * ratio / 2);
+    gl.uniform1f(featherUniform, 0.75);
     gl.drawArrays(gl.TRIANGLES, 0, 36);
     placeLabels(vertices.map(vertex => project(vertex.position, matrix)));
   }
@@ -148,32 +149,55 @@
   }
   function initialize() {
     try {
-      gl = canvas.getContext("webgl", { alpha: true, antialias: true, powerPreference: "low-power" });
+      gl = canvas.getContext("webgl", { alpha: true, antialias: true, premultipliedAlpha: true, powerPreference: "low-power" });
       if (!gl) throw new Error("WebGL is unavailable.");
+      const precision = gl.getShaderPrecisionFormat(gl.FRAGMENT_SHADER, gl.HIGH_FLOAT).precision > 0 ? "highp" : "mediump";
       const vertexShader = compile(gl.VERTEX_SHADER, `
+        precision ${precision} float;
         attribute vec3 a_start;
         attribute vec3 a_end;
         attribute vec2 a_corner;
         attribute vec3 a_color;
         uniform mat4 u_matrix;
         uniform vec2 u_resolution;
-        uniform float u_width;
+        uniform float u_halfWidth;
+        uniform float u_feather;
         varying vec3 v_color;
+        varying vec2 v_start;
+        varying vec2 v_end;
         void main() {
           vec4 start = u_matrix * vec4(a_start, 1.0);
           vec4 end = u_matrix * vec4(a_end, 1.0);
-          vec2 direction = (end.xy / end.w - start.xy / start.w) * u_resolution;
-          vec2 normal = vec2(-direction.y, direction.x) / max(length(direction), 0.001);
+          v_start = (start.xy / start.w * 0.5 + 0.5) * u_resolution;
+          v_end = (end.xy / end.w * 0.5 + 0.5) * u_resolution;
+          vec2 segment = v_end - v_start;
+          vec2 direction = segment / max(length(segment), 0.001);
+          vec2 normal = vec2(-direction.y, direction.x);
+          // Include the antialiasing fringe and rounded caps inside the quad.
+          float extent = u_halfWidth + u_feather;
+          vec2 padding = (normal * a_corner.y + direction * (a_corner.x * 2.0 - 1.0)) * extent;
           vec4 point = mix(start, end, a_corner.x);
-          point.xy += normal * a_corner.y * u_width / u_resolution * point.w;
+          point.xy += padding * 2.0 / u_resolution * point.w;
           gl_Position = point;
           v_color = a_color;
         }
       `);
       const fragmentShader = compile(gl.FRAGMENT_SHADER, `
-        precision mediump float;
+        precision ${precision} float;
+        uniform float u_halfWidth;
+        uniform float u_feather;
         varying vec3 v_color;
-        void main() { gl_FragColor = vec4(v_color, 1.0); }
+        varying vec2 v_start;
+        varying vec2 v_end;
+        void main() {
+          vec2 segment = v_end - v_start;
+          vec2 offset = gl_FragCoord.xy - v_start;
+          float along = clamp(dot(offset, segment) / max(dot(segment, segment), 0.0001), 0.0, 1.0);
+          float distanceToLine = length(offset - along * segment);
+          float coverage = 1.0 - smoothstep(max(0.0, u_halfWidth - u_feather), u_halfWidth + u_feather, distanceToLine);
+          // Match the canvas compositor's premultiplied-alpha convention.
+          gl_FragColor = vec4(v_color * coverage, coverage);
+        }
       `);
       program = gl.createProgram();
       gl.attachShader(program, vertexShader);
@@ -199,7 +223,10 @@
       });
       matrixUniform = gl.getUniformLocation(program, "u_matrix");
       resolutionUniform = gl.getUniformLocation(program, "u_resolution");
-      widthUniform = gl.getUniformLocation(program, "u_width");
+      halfWidthUniform = gl.getUniformLocation(program, "u_halfWidth");
+      featherUniform = gl.getUniformLocation(program, "u_feather");
+      gl.enable(gl.BLEND);
+      gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
       gl.clearColor(0, 0, 0, 0);
       isReady = true;
       root.dataset.renderer = "webgl";
