@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Russell Jahn — Software Engineer &amp; Artist on Molecule — Russell Jahn</title>
+    <link>http://127.0.0.1:1313/</link>
+    <description>Recent content in Russell Jahn — Software Engineer &amp; Artist on Molecule — Russell Jahn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Russell Jahn</copyright>
+    <lastBuildDate>Wed, 02 Aug 2023 19:22:48 -0700</lastBuildDate><atom:link href="http://127.0.0.1:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Light you can move</title>
+      <link>http://127.0.0.1:1313/work/moongoat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://127.0.0.1:1313/work/moongoat/</guid>
+      <description>Out of the workshop # Molecule is where I bring my interests in software, light, and physical interaction together. The pop-up at Moongoat Coffee was a chance to take that work into a shared space.</description>
+      
+    </item>
+    
+    <item>
+      <title>Part of the scene</title>
+      <link>http://127.0.0.1:1313/work/paper-ghost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://127.0.0.1:1313/work/paper-ghost/</guid>
+      <description>Software in a physical scene # At Paper Ghost, I developed interactive media for film and television: software, screen visuals, and animation that had to work within a real production.</description>
+      
+    </item>
+    
+    <item>
+      <title>Movement as an interface</title>
+      <link>http://127.0.0.1:1313/work/enflux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://127.0.0.1:1313/work/enflux/</guid>
+      <description>A moving person as the input # At Enflux, I built software that connected motion capture clothing to interactive applications and creative workflows. The work ranged from a Unity SDK for developers to first-party applications and live demonstrations.</description>
+      
+    </item>
+    
+    <item>
+      <title>Behind the creative world</title>
+      <link>http://127.0.0.1:1313/work/hearthstone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://127.0.0.1:1313/work/hearthstone/</guid>
+      <description>Engineering that supports creative work # My work on Hearthstone at Blizzard covered the core technology that helps a creative game run, grow, and reach players across platforms. It brought together engine behavior, content delivery, performance constraints, and the tools used by other disciplines.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

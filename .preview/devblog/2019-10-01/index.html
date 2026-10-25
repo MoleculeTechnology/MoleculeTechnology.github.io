@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden Radio. Procedural Animation. Shader Graph. · Russell Jahn — Software Engineer &amp; Artist | Molecule</title>
+  <meta name="description" content="Interactive light, motion, and real-time graphics by Russell Jahn, software engineer and artist.">
+  <meta name="theme-color" content="#050707">
+  <link rel="canonical" href="http://127.0.0.1:1313/devblog/2019-10-01/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/RobotoCondensed/RobotoCondensed-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  
+  <link rel="stylesheet" href="/css/molecule.min.f1b0b66b94d554cbea1d3f92f46a9702ef2f359c060dc92334730e4618e77043.css" integrity="sha256-8bC2a5TVVMvqHT&#43;S9GqXAu8vNZwGDckjNHMORhjncEM=">
+  
+  <meta property="og:title" content="Golden Radio. Procedural Animation. Shader Graph." />
+<meta property="og:description" content="Interactive light, motion, and real-time graphics by Russell Jahn, software engineer and artist." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://127.0.0.1:1313/devblog/2019-10-01/" /><meta property="og:image" content="http://127.0.0.1:1313/devblog/2019-10-01/featured.gif"/>
+
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/lib/katex/katex.min.592c8b7a7688e9109d57085ab360cfe8a07ae3571d5bffc0ade9f1bd1cebf69d834df38f0d677aae628057d7a18895457260343c214ae3dd8fe90b0ba0921a56.css" integrity="sha512-WSyLenaI6RCdVwhas2DP6KB641cdW//ArenxvRzr9p2DTfOPDWd6rmKAV9ehiJVFcmA0PCFK492P6QsLoJIaVg==" />
+
+
+<script defer src="/lib/katex/katex.min.6a864286ffbc8a663f5353bb2881d7bcef3b10ecc2b8a3b41a116da43e86d82ca3a3fc4f79381d7f7fdb721075d2207e0288cc4c390c1c33cb28dc4f255a8373.js" integrity="sha512-aoZChv&#43;8imY/U1O7KIHXvO87EOzCuKO0GhFtpD6G2Cyjo/xPeTgdf3/bchB10iB&#43;AojMTDkMHDPLKNxPJVqDcw=="></script>
+
+
+<script defer src="/lib/katex/auto-render.min.8968ae052e67b7aafad1f0b3dba35dd19a9ed276e4d594c841b9772afee462c5fec8a314147ce3687dbe02733abe9d97b3e80d99a0405562634a6b8fc3be847e.js" integrity="sha512-iWiuBS5nt6r60fCz26Nd0Zqe0nbk1ZTIQbl3Kv7kYsX&#43;yKMUFHzjaH2&#43;AnM6vp2Xs&#43;gNmaBAVWJjSmuPw76Efg=="
+  onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body class="molecule-site">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header site-width">
+  <a class="wordmark" href="/" aria-label="Molecule — home">
+    <svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 29 17 3 31 25 3 29"/><path class="mint-stroke" d="M3 29 9 13 31 25M9 13 17 3"/></svg><span>MOLECULE</span>
+  </a>
+  <nav aria-label="Main navigation">
+    <a href="/work/">Work</a>
+    <a href="/about/">About</a>
+    <a href="/devblog/" aria-current="page">Notes</a>
+    <a class="nav-contact" href="/#contact">Let's talk <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+
+  <main id="main-content" class="legacy-content">
+
+
+ <header>
+  
+  <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Golden Radio. Procedural Animation. Shader Graph.</h1>
+  <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+</div>
+
+
+  </div>
+  <script>
+    var oid = "views_devblog\\2019-10-01\\_index.md"
+    var oid_likes = "likes_devblog\\2019-10-01\\_index.md"
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
+  </header>
+  <section class="mt-12 prose flex max-w-full flex-col dark:prose-invert lg:flex-row">
+    
+    <div class="order-first px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 lg:sticky lg:top-[140px]">
+        <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#creation">CREATION</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#golden-ratio-φ">Golden Ratio (φ)</a></li>
+            <li><a href="#inverse-golden-ratio-1φ">Inverse Golden Ratio (1/φ)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#shading">SHADING</a></li>
+    <li><a href="#music">MUSIC</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#creation">CREATION</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#golden-ratio-φ">Golden Ratio (φ)</a></li>
+            <li><a href="#inverse-golden-ratio-1φ">Inverse Golden Ratio (1/φ)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#shading">SHADING</a></li>
+    <li><a href="#music">MUSIC</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+      </div>
+    </div>
+    
+    <div class="min-w-0 min-h-0 max-w-prose">
+      <div class="lead text-neutral-500 dark:text-neutral-400 !mb-9 text-xl">
+  Testing procedural animation based on <a href="https://en.wikipedia.org/wiki/Sacred_geometry"   target="_blank">
+    sacred geometry rules</a>.
+</div>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/HC0ZU8eGjLY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<div id="creation" class="anchor"></div>
+<h2 class="relative group">CREATION 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#creation" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<ul>
+<li>
+<p>Designed and programmed in Unity Engine 2019.4.2 using C# and Shader Graph.
+
+  
+    
+    
+    
+    
+    
+    
+      
+      
+        
+      
+      
+        <figure class="icon-unity-small">
+          
+            
+            <img
+              class="my-0 rounded-md"
+              srcset="
+              /img/icons/logo_unity2019_white_small_hue1f002856b0cacf367de975e98544b81_8435_330x0_resize_box_3.png 330w,
+              /img/icons/logo_unity2019_white_small_hue1f002856b0cacf367de975e98544b81_8435_660x0_resize_box_3.png 660w,
+              /img/icons/logo_unity2019_white_small_hue1f002856b0cacf367de975e98544b81_8435_1024x0_resize_box_3.png 1024w,
+              /img/icons/logo_unity2019_white_small_hue1f002856b0cacf367de975e98544b81_8435_1320x0_resize_box_3.png 2x"
+              src="/img/icons/logo_unity2019_white_small_hue1f002856b0cacf367de975e98544b81_8435_660x0_resize_box_3.png"
+              alt=""
+            />
+            
+          
+          
+        </figure>
+      
+    
+  
+</p>
+</li>
+<li>
+<p>The animation is created by making a graph data structure. The root node branches into 6 equidistant subtrees, forming a starfish.</p>
+</li>
+<li>
+<p>Each child node is the <a href="https://www.adobe.com/creativecloud/design/discover/golden-ratio.html"   target="_blank">
+    inverse golden ratio</a> of the parent&rsquo;s scale.</p>
+<ul>
+<li>
+<div id="golden-ratio-φ" class="anchor"></div>
+<h4 class="relative group">Golden Ratio (φ) 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#golden-ratio-%cf%86" aria-label="Anchor">#</a></span>        
+    
+</h4>
+<p>
+
+\(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)</p>
+</li>
+<li>
+<div id="inverse-golden-ratio-1φ" class="anchor"></div>
+<h4 class="relative group">Inverse Golden Ratio (1/φ) 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#inverse-golden-ratio-1%cf%86" aria-label="Anchor">#</a></span>        
+    
+</h4>
+<p>
+
+\(\dfrac{1}{\varphi} = 0.61803398875…\)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Constant rotation is applied to spin the shape. Rotation speed is a multiple of the golden ratio.</p>
+</li>
+</ul>
+<div id="shading" class="anchor"></div>
+<h2 class="relative group">SHADING 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#shading" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<ul>
+<li>
+<p>A fresnel effect is used to create a rim glow effect.</p>
+<ul>
+<li>See <a href="https://godotshaders.com/snippet/fresnel/"   target="_blank">
+    Godot Engine example</a>:<br>
+
+    
+      
+      
+      
+      
+      
+      
+        <figure>
+          <img class="my-0 rounded-md" src="https://godotshaders.com/wp-content/uploads/2021/02/fresnel_top.png" alt="" />
+          
+        </figure>
+      
+    
+</li>
+</ul>
+</li>
+<li>
+<p>Transparency is oscillated by using a sine function.</p>
+</li>
+<li>
+<p>Constant rotation is applied to an angled directional light, creating the eclipse effect. Rotation speed is a multiple of the golden ratio.</p>
+</li>
+<li>
+<p>Video is captured on a phone to create a retro light-bleeding effect.</p>
+</li>
+</ul>
+<div id="music" class="anchor"></div>
+<h2 class="relative group">MUSIC 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#music" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<ul>
+<li>
+<p>Song is a lo-fi remix of &ldquo;In Search of the Man in Black&rdquo; from Final Fantasy VII:<br>
+<a href="https://www.youtube.com/watch?v=LEBkVUAAo9Q&amp;t=2384s"   target="_blank">
+    Ｃｈａｓｉｎｇ ｔｈｅ Ｃａｐｅｄ Ｍａｎ(Kannibal)</a><br></p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LEBkVUAAo9Q?start=2384" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+</ul>
+
+    </div>
+   
+
+
+
+  </section>
+  
+  <section class="mt-10 prose dark:prose-invert">
+    <p class="py-8 border-t">
+      <em>There are no articles to list here yet.</em>
+    </p>
+  </section>
+  
+
+    
+
+  </main>
+  <footer class="site-footer site-width">
+  <a class="footer-name" href="/">I <span aria-label="love">♡</span> MOLECULE</a>
+  <p>A creative practice by Russell Jahn.</p>
+  <div class="footer-links"><a href="https://www.linkedin.com/in/russelljahn/">LinkedIn ↗</a><a href="https://github.com/MoleculeTechnology">GitHub ↗</a><a href="https://www.youtube.com/@MoleculeTech">YouTube ↗</a></div>
+</footer>
+
+</body>
+</html>
