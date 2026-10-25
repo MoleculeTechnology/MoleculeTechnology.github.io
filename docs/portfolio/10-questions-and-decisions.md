@@ -138,7 +138,7 @@ The [demonstration note](18-moongoat-demonstrations.md) records the source, prop
 
 ### 2026-10-25 — Less personal, more emphasis on the work
 
-Russell is inclined to reduce first-person language and make the work more prominent. The [editorial voice study](20-work-focused-editorial-voice.md) compares official artist and studio portfolios and recommends making the work the subject of homepage and project descriptions, with explicit contribution fields. First person can remain in a short About introduction or process essay when useful. The note contains examples; this research pass does not change website copy.
+Russell is inclined to reduce first-person language and make the work more prominent. The [editorial voice study](20-work-focused-editorial-voice.md) compares official artist and studio portfolios and recommends making the work the subject of homepage and project descriptions, with explicit contribution fields. First person can remain in a short About introduction or process essay when useful. The note contains examples. This research pass does not change website copy.
 
 Russell subsequently authorized applying the direction. The homepage and four project pages now describe the work directly, each project names Russell Jahn in its contribution block, and Paper Ghost separately credits Zed Axiz Productions. The About page keeps its personal voice and original galleries. Implementation and verification are recorded in the editorial voice note.
 
@@ -148,15 +148,15 @@ Russell specified the image selection already curated on the About Me page. The 
 
 ### 2026-10-25 — Remove the development blog entirely
 
-Russell requested complete removal of the development blog. Removed the blog sources and bundled media, Notes navigation, and blog destinations in configuration. Work, About, and Contact remain the public navigation. The preview uses a clean, isolated output directory so stale blog pages are not served. Historical evidence can be read from Git history; see [Development blog removal](22-development-blog-removal.md).
+Russell requested complete removal of the development blog. Removed the blog sources and bundled media, Notes navigation, and blog destinations in configuration. Work, About, and Contact remain the public navigation. The preview uses a clean, isolated output directory so stale blog pages are not served. Historical evidence can be read from Git history. See [Development blog removal](22-development-blog-removal.md).
 
 ### 2026-10-25 — Professional Work and Experiments
 
-Russell requested separate groups, with Moongoat in Experiments and Blizzard prominent near the top while potentially closing Professional Work. The applied review order is Paper Ghost, Enflux, then Blizzard; the precise order remains open. Section labels are single-line, ghost white, and left-aligned. The Blizzard case study leads with explicit engineering contributions. Two existing photographs were restored from matching higher-resolution originals, and responsive delivery/display caps address small images being enlarged. See [the structure and image-quality record](23-professional-work-experiments-and-image-quality.md) for provenance, limits, and checks.
+Russell requested separate groups, with Moongoat in Experiments and Blizzard prominent near the top while potentially closing Professional Work. The applied review order is Paper Ghost, Enflux, then Blizzard. The precise order remains open. Section labels are single-line, ghost white, and left-aligned. The Blizzard case study leads with explicit engineering contributions. Two existing photographs were restored from matching higher-resolution originals, and responsive delivery/display caps address small images being enlarged. See [the structure and image-quality record](23-professional-work-experiments-and-image-quality.md) for provenance, limits, and checks.
 
 ### 2026-10-25 — One project collection, tags, and new lead work
 
-Russell requested a single collection with `professional` and `experimental` tags, displayed as Professional Work and Experimental. The homepage still groups by tag; Work filters the same collection. The Glass Castle projection setup leads, mother! is a separate featured project, Enflux uses its Blender image, and X-Men stays inside Paper Ghost. Blizzard becomes Game Engine, Graphics + Content Pipeline with Hearthstone and Unannounced game sections; Russell confirmed the latter wording. Moongoat becomes Motion Capture + Lightsabers and gains its existing event photo. Titles now use mint, superseding the preceding ghost-white rule. See [the applied revision](24-tagged-projects-and-new-headliners.md). Russell requested a commit and PR, followed by About Me and quiet-carousel ideation.
+Russell requested a single collection with `professional` and `experimental` tags, displayed as Professional Work and Experimental. The homepage still groups by tag. Work filters the same collection. The Glass Castle projection setup leads, mother! is a separate featured project, Enflux uses its Blender image, and X-Men stays inside Paper Ghost. Blizzard becomes Game Engine, Graphics + Content Pipeline with Hearthstone and Unannounced game sections. Russell confirmed the latter wording. Moongoat becomes Motion Capture + Lightsabers and gains its existing event photo. Titles now use mint, superseding the preceding ghost-white rule. See [the applied revision](24-tagged-projects-and-new-headliners.md). Russell requested a commit and PR, followed by About Me and quiet-carousel ideation.
 
 ### 2026-10-25 — Ghost-white project titles and selective mint headings
 
@@ -164,7 +164,7 @@ Russell refined the heading rule: project titles such as THE GLASS CASTLE should
 
 ### 2026-10-25 — Glass Castle image selection
 
-Russell selected `glasscastle_test1.jpg` as the headliner, `glasscastle_test3.jpg` as the accent, and `glasscastle_final3.gif` as tertiary media. The headliner now appears across project listings and the case study; the case study presents the selected supporting media in order. Use the JPG originals behind the supplied thumbnail URLs and retain the GIF animation without enlarging it. See [the media selection record](27-glass-castle-media-selection.md).
+Russell selected `glasscastle_test1.jpg` as the headliner, `glasscastle_test3.jpg` as the accent, and `glasscastle_final3.gif` as tertiary media. The headliner now appears across project listings and the case study. The case study presents the selected supporting media in order. Use the JPG originals behind the supplied thumbnail URLs and retain the GIF animation without enlarging it. See [the media selection record](27-glass-castle-media-selection.md).
 
 ### 2026-10-25 — Blizzard gameplay cover and sharper Hearthstone media
 
@@ -177,3 +177,7 @@ Russell clarified that he has final responsibility for game performance on the c
 Pinned Hugo production build and whitespace checks passed. Home, Work, and the Blizzard case study were checked at 1280px, 390px, and 320px without horizontal overflow. Preview restarted and left running.
 
 ![Current-project performance responsibilities](assets/2026-10-25-current-game-performance.jpg)
+
+### 2026-10-25 — No semicolons in prose
+
+Russell requested no semicolons in the writing and asked for the rule to be saved in skills. The [writing preference](29-writing-punctuation.md) records the reusable skill and the applied cleanup of website copy and planning notes. Code, HTML entities, URLs, and exact quotations preserve their required syntax.

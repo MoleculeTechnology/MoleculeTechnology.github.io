@@ -49,7 +49,7 @@ At [Moongoat Coffee](/work/moongoat/), I showed a custom C++ application that tr
 - Rapidly developed interactive media solutions for 15 major film & TV productions.
 - While supervising a team of 3 others, I delivered programming, art, & animation on strict deadlines for key film and TV scenes.
 - Collaborated directly with directors, producers, and VFX supervisors.
-- Worked closely with [Zed Axiz Productions](https://www.zedaxiz.com/). I provided visuals + software; they provided hardware + set operators.
+- Worked closely with [Zed Axiz Productions](https://www.zedaxiz.com/). I provided visuals + software. They provided hardware + set operators.
 
 ### X-Men: Apocalypse. ###
 

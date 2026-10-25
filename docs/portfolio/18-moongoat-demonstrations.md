@@ -24,7 +24,7 @@ The Moongoat setup contained two distinct demonstrations.
 
 - The wooden swords were fitted with IMU sensors, speakers, and LED light strips.
 - The LED colors changed deterministically with the direction the sword pointed in real-world space.
-- A given direction corresponded to the same color wherever the sword was used; Russell gives north and up as examples.
+- A given direction corresponded to the same color wherever the sword was used. Russell gives north and up as examples.
 - Russell describes this as inside-out motion capture.
 
 Keep this separate from the camera demonstration. Do not claim that the webcam controlled the sword colors.
@@ -66,6 +66,6 @@ This gave the two demonstrations different points of view: the camera observed a
 Use a shot showing the person and the wireframe/video on the vertical TV together.
 Pair it with a separate clip showing the sword pointed in different directions and returned to the same direction.
 Keep the setup photograph for context, and use the two clips to explain the two behaviors.
-The nearby archive video candidates are recorded in [Archive review](12-archive-review.md); they still need to be watched and selected.
+The nearby archive video candidates are recorded in [Archive review](12-archive-review.md). They still need to be watched and selected.
 
 These drafts and source facts informed the website copy applied on 2026-10-25. See [Applied copy and media revision](19-applied-copy-and-media-revision.md) for the chosen wording and media decisions. The camera and sword systems remain separate in the published-page drafts.

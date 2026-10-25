@@ -107,16 +107,16 @@ It is not an implementation of the rotating component.
 
 Russell requested smoother WebGL lines and confirmed that fonts must be rendered text.
 The existing renderer requested `antialias: true`, but its fragment shader drew opaque, hard-edged triangles.
-WebGL's antialias flag is a request whose support and quality depend on the implementation; see the [WebGL context specification](https://registry.khronos.org/webgl/specs/latest/1.0/).
+WebGL's antialias flag is a request whose support and quality depend on the implementation. See the [WebGL context specification](https://registry.khronos.org/webgl/specs/latest/1.0/).
 
 The revised renderer computes distance to each projected line segment in framebuffer pixels and smooths coverage across its edge and rounded ends.
 The line quads include the coverage fringe so the geometry does not cut the smoothing off.
-It uses premultiplied fragment colors and matching blending, consistent with the canvas compositor; see [Khronos blending guidance](https://wikis.khronos.org/opengl/Draw_Buffer_Blend).
+It uses premultiplied fragment colors and matching blending, consistent with the canvas compositor. See [Khronos blending guidance](https://wikis.khronos.org/opengl/Draw_Buffer_Blend).
 Fragment high precision is used where supported. The line width still follows the display's pixel density, capped at the existing 2x drawing resolution.
 The HTML labels and their projection calculations are unchanged.
 
 Verification used the actual renderer in an isolated local fixture with browser MSAA disabled and the framebuffer preserved only for test readback.
-At DPR 1, the baseline produced no partial-alpha pixels; the revised shader produced 3,233 partial-coverage pixels at the reset orientation.
+At DPR 1, the baseline produced no partial-alpha pixels. The revised shader produced 3,233 partial-coverage pixels at the reset orientation.
 At DPR 2, the revised shader produced 6,575 partial-coverage pixels, with coverage also verified after rotation.
 Both densities reported no WebGL errors and no RGB values exceeding alpha in the readback.
 Projected HTML point anchors matched across DPR 1 and 2, and the four labels remained HTML list elements using Roboto Condensed.

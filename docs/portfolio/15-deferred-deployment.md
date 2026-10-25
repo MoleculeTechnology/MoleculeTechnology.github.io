@@ -9,7 +9,7 @@ tags: [portfolio, deployment, follow-up]
 
 Russell's decision: fix deployment after the reworked website has a good enough first version.
 Continue design, content, and interaction work with a local preview in the meantime.
-This note records the follow-up; it does not change the workflow or deploy the site.
+This note records the follow-up. It does not change the workflow or deploy the site.
 
 ## Verified state
 
@@ -25,7 +25,7 @@ The successful merge therefore did not result in a successful deployment from th
 ## Resume when the first version is ready
 
 - [ ] Review the current GitHub Pages action documentation and choose compatible supported upload/deploy action versions.
-- [ ] Update the workflow in a focused change; review its other action versions and runner compatibility at the same time.
+- [ ] Update the workflow in a focused change. Review its other action versions and runner compatibility at the same time.
 - [ ] Keep Hugo Extended `0.115.4` as the tested baseline unless a separate compatibility check justifies an upgrade.
 - [ ] Build the intended first version in production mode and inspect generated routes, asset URLs, and the custom domain configuration.
 - [ ] Confirm the diff excludes generated preview output and locally cached tools.
@@ -43,5 +43,5 @@ The implementation already ignores those directories.
 
 Russell merged [cleanup PR #2](https://github.com/MoleculeTechnology/MoleculeTechnology.github.io/pull/2) into the planning branch at `4a0d79f`.
 It removes the generated files from that branch's tracked tree and adds both ignore rules, preserving local preview files.
-The old commit remains in history; no history rewrite was performed.
+The old commit remains in history. No history rewrite was performed.
 No cleanup merge into `main` is needed because its tracked tree was already clean.

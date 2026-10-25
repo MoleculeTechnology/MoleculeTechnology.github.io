@@ -7,6 +7,8 @@ tags: [portfolio, writing, voice, research]
 
 # Work-focused editorial voice
 
+Russell's punctuation rule is to use no semicolons in original prose. Rewrite with periods, commas, conjunctions, or separate sentences as needed. The reusable [writing skill](skills/russell-writing-style/SKILL.md) records this preference. See the [applied cleanup](29-writing-punctuation.md) for its scope and checks.
+
 Russell's preference after the first copy revision: slightly less personal, with more emphasis on the work. He asked whether removing “I” would feel more professional, what common portfolio conventions are, and what other artists and studios do.
 
 ## Recommendation
@@ -15,9 +17,9 @@ Make the work the subject of most homepage and project-page sentences. Keep Russ
 
 First person can be professional. Removing a pronoun is an editorial choice rather than a measure of credibility. The useful change here is to give the object, system, interaction, and result more space, while reducing repeated autobiographical openings.
 
-Avoid substituting “we” for “I” unless describing an actual team contribution. Molecule is the brand; the site should accurately identify Russell and the collaborators for each work. A third-person biography is useful for press or a short profile, but repeating “Russell designed…” throughout every project would still make each sentence about its author.
+Avoid substituting “we” for “I” unless describing an actual team contribution. Molecule is the brand. The site should accurately identify Russell and the collaborators for each work. A third-person biography is useful for press or a short profile, but repeating “Russell designed…” throughout every project would still make each sentence about its author.
 
-This direction refines the first-person emphasis in [the earlier copy plan](17-copy-and-media-revision-plan.md). The facts, original About material, and restored media remain the basis. Russell authorized applying the direction on 2026-10-25. The reference comparison and candidate examples below record the research; the implementation is described at the end of this note.
+This direction refines the first-person emphasis in [the earlier copy plan](17-copy-and-media-revision-plan.md). The facts, original About material, and restored media remain the basis. Russell authorized applying the direction on 2026-10-25. The reference comparison and candidate examples below record the research. The implementation is described at the end of this note.
 
 ## What the reference portfolios do
 
@@ -37,8 +39,8 @@ Official pages checked on 2026-10-25. These observations describe this small ref
 These are editorial categories inferred from the examples above and the earlier reference study.
 
 - **Personal introduction:** “I'm…” and “I make…” are approachable and make authorship obvious. Repeating the same construction on every card gives a résumé cadence.
-- **Artwork catalogue:** Title, year, medium, images, and credits. Concise and easy to scan; technical contribution may need an explicit role field.
-- **Exhibition description:** The work, its form, its behavior, and an artistic idea. Useful when the idea is specific to the work; vague interpretation can overpower the documentation.
+- **Artwork catalogue:** Title, year, medium, images, and credits. Concise and easy to scan. Technical contribution may need an explicit role field.
+- **Exhibition description:** The work, its form, its behavior, and an artistic idea. Useful when the idea is specific to the work. Vague interpretation can overpower the documentation.
 - **Studio voice:** “We…” or a studio name, followed by collective work. Appropriate for an actual team, with individual attribution where relevant.
 - **Commission or technical case study:** Brief/context, delivered system, technical specifics, responsibilities, and collaborators. Particularly useful for Paper Ghost, Enflux, and Blizzard.
 - **Process essay:** First-person choices, failures, observations, and motivation. Useful as an optional deeper layer for readers who want the artist's perspective.
@@ -56,12 +58,12 @@ Language patterns to avoid for this site:
 
 | Area | Default |
 | --- | --- |
-| Homepage identity | Russell Jahn / Molecule; software engineer + artist. |
+| Homepage identity | Russell Jahn / Molecule, software engineer + artist. |
 | Homepage introduction | A short statement of disciplines and work, with few or no personal pronouns. |
 | Project cards | Project name, deliverable or interaction, and context. |
-| Project descriptions | Make the work or system the grammatical subject; describe what it does and how it is used. |
+| Project descriptions | Make the work or system the grammatical subject. Describe what it does and how it is used. |
 | Contribution field | State Russell's specific work and collaborators explicitly. |
-| About | A short personal introduction is appropriate; a third-person bio is also an option. |
+| About | A short personal introduction is appropriate. A third-person bio is also an option. |
 | Employment history | Concise responsibilities and results with clear dates and scope. |
 | Process and technical notes | First person when explaining an actual decision or experience. |
 
@@ -81,7 +83,7 @@ This is a candidate for the shorter introduction, not an additional headline to 
 
 **Molecule at Moongoat Coffee**
 
-Two motion capture demos: body tracking from webcam video, with a live wireframe overlay at 60 fps; and wooden swords whose LED colors follow their real-world orientation.
+Two motion capture demos: body tracking from webcam video, with a live wireframe overlay at 60 fps, and wooden swords whose LED colors follow their real-world orientation.
 
 ### Moongoat / project description
 
@@ -132,7 +134,7 @@ The original project images, typography, and WebGL pyramid are retained. The onl
 Verification:
 
 - Production build passed with Hugo Extended `0.115.4`.
-- Nine core routes have one H1 each and valid local link/asset targets; planning notes remain outside public output.
+- Nine core routes have one H1 each and valid local link/asset targets. Planning notes remain outside public output.
 - Generated homepage and work pages were checked for first-person or invented collective voice. Each of the four project pages has a named Russell Jahn contribution block.
 - Homepage, work index, and four project pages fit at both 390px and 320px without horizontal overflow. Attribution rendered at both widths.
 - Desktop introduction and the Paper Ghost contribution/collaborator layout were visually inspected. The existing local preview server was reused.

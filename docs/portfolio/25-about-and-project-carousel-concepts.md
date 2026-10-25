@@ -19,7 +19,7 @@ Preserve that original voice and photo selection. Add enough context to connect 
 
 ### A / Short introduction + portrait
 
-Use the existing curated headshot beside 80–120 words. Keep one personal introductory sentence, then distinguish current Blizzard work from independent Molecule hardware work. Add one link to the full About page; keep the adjacent Contact section as the inquiry destination.
+Use the existing curated headshot beside 80–120 words. Keep one personal introductory sentence, then distinguish current Blizzard work from independent Molecule hardware work. Add one link to the full About page. Keep the adjacent Contact section as the inquiry destination.
 
 Possible copy for review, based on the current About source:
 
@@ -39,7 +39,7 @@ Keep the portrait and a shorter introduction, followed by three compact rows con
 
 | Area | Concrete evidence | Project link |
 | --- | --- | --- |
-| Real-time graphics | Rendering and graphics techniques; desktop + mobile engine experience | Game Engine, Graphics + Content Pipeline |
+| Real-time graphics | Rendering and graphics techniques, with desktop + mobile engine experience | Game Engine, Graphics + Content Pipeline |
 | Tools for artists | Projection playback controls, virtual cameras, animation recording/export | Glass Castle, mother!, Enflux |
 | Physical systems | Camera-based tracking, IMU orientation, lights, and embedded firmware | Motion Capture + Lightsabers |
 
@@ -51,7 +51,7 @@ These should read as evidence, with one example per row, rather than a large ski
 
 Give the full About page a compact career sequence, supported by the original curated photographs: film sets and projection → motion capture and developer tools → Blizzard engine/graphics/content work. Present Molecule as independent work continuing alongside the current role.
 
-Use verified dates only. The known Hearthstone interval is March 2021–August 2023; confirm the other role dates and current-role chronology before publishing a dated timeline. The conceptual sequence alone should not be presented as a verified employment timeline.
+Use verified dates only. The known Hearthstone interval is March 2021–August 2023. Confirm the other role dates and current-role chronology before publishing a dated timeline. The conceptual sequence alone should not be presented as a verified employment timeline.
 
 Keep the homepage version to a short summary with a link to the longer career record. Existing earlier work, including InContext, can support that deeper record instead of being crowded into the homepage.
 
@@ -67,7 +67,7 @@ First person can stay in this short introduction, consistent with [the editorial
 
 The [interactive comparison](concepts/project-carousels.html) uses the same three Glass Castle images in each treatment. This makes it possible to compare the controls without changing the photography. It is a self-contained planning prototype, not a public website route.
 
-When the local prototype server is running, open [the comparison](http://127.0.0.1:1314/project-carousels.html). The HTML can also be opened directly from the repository; its images and Roboto Condensed files are included beside it. The local server can be recreated with:
+When the local prototype server is running, open [the comparison](http://127.0.0.1:1314/project-carousels.html). The HTML can also be opened directly from the repository. Its images and Roboto Condensed files are included beside it. The local server can be recreated with:
 
 ```powershell
 python -m http.server 1314 --bind 127.0.0.1 --directory docs/portfolio/concepts
@@ -83,7 +83,7 @@ Best fit: the general homepage project cards. Keep each set to two or three sele
 
 ### B / Small contact strip
 
-One image with three small thumbnails below it. The current thumbnail has a mint border; the others remain neutral. Clicking one changes the large image and caption.
+One image with three small thumbnails below it. The current thumbnail has a mint border. The others remain neutral. Clicking one changes the large image and caption.
 
 This makes the selection more obvious but introduces more visual texture. Reserve it for the large Glass Castle lead if the arrow treatment is too easy to miss. Avoid repeating thumbnail strips under every card.
 
@@ -97,18 +97,18 @@ Use buttons with a selected state and ordinary keyboard activation. Do not make 
 
 ### Recommended image treatment
 
-Use **A as the common pattern**. C is an alternative where its labels add real meaning. B is a possible exception for the large lead project. Do not use all three patterns at once without a clear reason; consistency is part of keeping the page calm.
+Use **A as the common pattern**. C is an alternative where its labels add real meaning. B is a possible exception for the large lead project. Do not use all three patterns at once without a clear reason. Consistency is part of keeping the page calm.
 
 ## Proposed image sequences by project
 
 | Project | Two or three views | Notes |
 | --- | --- | --- |
-| Glass Castle | Car + projection setup (`glasscastle_test1.jpg`) → production monitors (`glasscastle_test3.jpg`) → finished scene (`glasscastle_final3.gif`) | Russell selected this order after reviewing the initial concepts. It supersedes the prototype's original setup/controls/on-set sequence; the case study now uses these three sources. Keep the GIF at native size and load it only when selected in a future homepage carousel. |
+| Glass Castle | Car + projection setup (`glasscastle_test1.jpg`) → production monitors (`glasscastle_test3.jpg`) → finished scene (`glasscastle_final3.gif`) | Russell selected this order after reviewing the initial concepts. It supersedes the prototype's original setup/controls/on-set sequence. The case study now uses these three sources. Keep the GIF at native size and load it only when selected in a future homepage carousel. |
 | mother! | Virtual-camera interface → tool in use during preproduction → Gear VR version | Use the current cover, `mother_preproduction5.jpeg`, and `mother_preproduction4.png`. Keep the larger animated walkthrough for an explicit play action or the case study. |
 | Enflux | Blender recording interface → sensor clothing → live demo | The SIGGRAPH GIF is a candidate for deliberate playback. Confirm the exact clip and venue caption before changing the current general demo caption. |
-| Paper Ghost | Arrival screen work → X-Men video wall → a Quantico prop/demo | Keep the soft X-Men photograph as supporting context. Favor the wider X-Men view or the higher-resolution submarine still at a suitable size; do not enlarge a soft still to fill the lead slot. |
+| Paper Ghost | Arrival screen work → X-Men video wall → a Quantico prop/demo | Keep the soft X-Men photograph as supporting context. Favor the wider X-Men view or the higher-resolution submarine still at a suitable size. Do not enlarge a soft still to fill the lead slot. |
 | Game Engine, Graphics + Content Pipeline | Engineering contribution overview → public Hearthstone context/credits, if useful | A photo carousel is optional here. Keep unannounced-game work as supported text unless approved media is supplied. Gameplay is context, with team art credits, rather than proof that Russell authored the game art. |
-| Motion Capture + Lightsabers | Existing event photograph; then a clearer tracking-screen view and an IMU/light-prop detail when reviewed | Do not manufacture a three-image set from duplicate crops. Hide carousel controls until at least two useful, distinct images exist. |
+| Motion Capture + Lightsabers | Existing event photograph → clearer tracking-screen view → IMU/light-prop detail, when reviewed | Do not manufacture a three-image set from duplicate crops. Hide carousel controls until at least two useful, distinct images exist. |
 
 ## Interaction and implementation constraints
 
@@ -118,13 +118,13 @@ Use **A as the common pattern**. C is an alternative where its labels add real m
 - Keep controls visible on touch devices and operable by keyboard. Preserve focus on the control used, and announce the new image/caption after a manual change. These choices follow the [W3C WAI carousel guidance](https://www.w3.org/WAI/tutorials/carousels/), which also notes that carousel content can be difficult to discover.
 - Load only the initial still and lightweight selected thumbnails initially. Defer other images and video until needed. Do not load a 10–32 MB GIF just because its project card enters view.
 - Prefer short video plus a still poster for future motion examples after reviewing the actual source clip. Honor reduced-motion preferences.
-- A project with one useful image remains a normal image; do not display redundant carousel controls.
+- A project with one useful image remains a normal image. Do not display redundant carousel controls.
 - Keep one independent controller per project. Slide changes should not add browser-history entries or interfere with the Work filter URL.
 - Proposed metadata can add an optional `homeMedia` list of source, alt text, caption, and media kind. It should reference selected existing assets and share the current responsive image helper. This is a future extension, not an additional collection or a second copy of each image.
 
 ## Prototype limits and checks
 
-The prototype demonstrates manual selection, counters, captions, selected states, and keyboard arrow behavior. It does not implement swipe gestures, production lazy loading, video playback, or an About redesign. It uses existing 960px derivatives for a small design comparison; it is not the production image-quality implementation.
+The prototype demonstrates manual selection, counters, captions, selected states, and keyboard arrow behavior. It does not implement swipe gestures, production lazy loading, video playback, or an About redesign. It uses existing 960px derivatives for a small design comparison. It is not the production image-quality implementation.
 
 Its three options use the same fixed 16:10 frame for comparison. Actual project media may need a different ratio or containment. No production carousel dependency has been added.
 

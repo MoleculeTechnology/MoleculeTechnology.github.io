@@ -6,7 +6,7 @@ tags: [professional]
 accentSectionHeadings: true
 hero: "Blizzard/hearthstone_gameplay1.jpg"
 heroAlt: "Hearthstone gameplay on the Festival of Legends board, with Infinitize the Maxitude selected."
-heroCaption: "Hearthstone gameplay. Game artwork by the Hearthstone team; engineering contributions described above."
+heroCaption: "Hearthstone gameplay. Game artwork by the Hearthstone team. Engineering contributions described above."
 imageClass: "uncropped"
 aliases: ["/work/hearthstone/"]
 context: "Blizzard / Engine + content technology"
@@ -41,7 +41,7 @@ The asset pipeline packs + ships the game's content worldwide across desktop and
 
 {{< work-image source="Blizzard/hearthstone_credits_russelljahn2.webp" alt="Russell Jahn's Hearthstone credits card." caption="Russell Jahn / Hearthstone credits." >}}
 
-Gameplay excerpts are from the [official Blizzard TITANS press kit](https://blizzard.gamespress.com/en/Hearthstone-TITANS---Press-Kit). Game artwork and visual effects are by the Hearthstone team; Russell's contributions are the engineering work described above.
+Gameplay excerpts are from the [official Blizzard TITANS press kit](https://blizzard.gamespress.com/en/Hearthstone-TITANS---Press-Kit). Game artwork and visual effects are by the Hearthstone team. Russell's contributions are the engineering work described above.
 
 ## Unannounced game
 

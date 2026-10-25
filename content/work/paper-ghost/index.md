@@ -4,7 +4,7 @@ description: "Interactive props, screen visuals, projection software, and set pr
 weight: 40
 tags: [professional]
 context: "Paper Ghost"
-contribution: "Software + digital art + animation; supervision of a team of three others"
+contribution: "Software + digital art + animation. Supervision of a team of three others."
 collaborators: "Zed Axiz Productions — hardware + set operators"
 projectContext: "Film and television production with Zed Axiz Productions"
 hero: "PaperGhost/arrival_spytent2.jpg"

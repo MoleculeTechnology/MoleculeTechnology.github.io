@@ -16,7 +16,7 @@ tags: [portfolio, implementation, git]
 
 The earlier push was refused by GitHub ruleset `Rule`, and Russell initially chose local work.
 Russell subsequently pushed and merged PR #1, then merged the requested cleanup PR #2.
-The original ruleset refusal is historical; no repository protection was changed by the assistant.
+The original ruleset refusal is historical. No repository protection was changed by the assistant.
 Deployment of PR #1 failed. Russell chose to [defer its repair](15-deferred-deployment.md) until the first website version is good enough.
 
 ## Implemented in the first pass
@@ -66,7 +66,7 @@ Verification for this pass:
 - Production build passed with Hugo Extended `0.115.4`.
 - Nine core routes and their local asset/link targets resolved in the generated build.
 - The changed pages retained one primary heading each.
-- Contact layout was inspected at desktop, 390px, and 320px widths; no horizontal page overflow was observed at phone widths.
+- Contact layout was inspected at desktop, 390px, and 320px widths. No horizontal page overflow was observed at phone widths.
 - The inquiry jump moved focus to the form heading, and the embedded email, name, message, and submit controls rendered.
 - The tested contact tab had no warning/error console entries. No form inquiry was submitted.
 - Generated preview output and tools remain untracked and ignored.
@@ -98,7 +98,7 @@ The [copy and media revision](19-applied-copy-and-media-revision.md) now uses th
 The subsequent [editorial voice revision](20-work-focused-editorial-voice.md) makes homepage and project descriptions less personal and adds named contribution fields while preserving the About page's personal voice.
 Choose final specialization wording and refine the pyramid's interaction and label placement across more orientations and devices.
 Exercise physical touch input, actual browser zoom, reduced-motion settings, and WebGL context-loss recovery.
-Select and prepare stronger interaction clips, and continue refining the legacy About presentation. Original Paper Ghost and Enflux galleries are now restored on the project pages. The development blog has been removed at Russell's request; see [Development blog removal](22-development-blog-removal.md).
+Select and prepare stronger interaction clips, and continue refining the legacy About presentation. Original Paper Ghost and Enflux galleries are now restored on the project pages. The development blog has been removed at Russell's request. See [Development blog removal](22-development-blog-removal.md).
 Settle the current role chronology, event date, public current-game wording, and updated CV.
 Review sample routes and inherited theme features before reducing dependencies.
 Finish contact-form visual styling and verify delivery with an explicitly authorized test.

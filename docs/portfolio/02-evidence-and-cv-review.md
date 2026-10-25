@@ -80,7 +80,7 @@ Use this as final responsibility for overall game performance on the project lab
 | ---------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------- |
 | Software engineer and artist                                                                         | Russell's requested positioning, S1 | Lead description. Support artistic authorship with project decisions and work             |
 | Current work focuses on 3D graphics, rendering, and art/audio pipelines on an unannounced game       | S1                                  | Draft broadly. Confirm wording appropriate for public use before publication              |
-| Final responsibility for current-project game performance, automated art performance benchmarking, and client performance monitoring | S11 | Highlight in the current-project section and contribution summary; keep the scope specific to that project |
+| Final responsibility for current-project game performance, automated art performance benchmarking, and client performance monitoring | S11 | Highlight in the current-project section and contribution summary. Keep the scope specific to that project |
 | Hearthstone core systems, memory/download work, native mobile, build tools, FX tools, asset pipeline | S2                                  | Strong engineering summary. Confirm individual examples and dates                         |
 | Nine major Hearthstone expansions during March 2021–August 2023                                      | S2                                  | Historical claim only. Verify the count and intended date range before highlighting       |
 | Interactive film props and set previsualization for Paper Ghost                                      | S1, S2                              | Feature prominently with a precise contribution and collaborator line                     |
@@ -114,7 +114,7 @@ Saga firmware code does not by itself establish custom PCB design, enclosure fab
 - Selected up-to-date light sword and sensor footage.
 - Rights/credits for source media and permission for any republished testimonial.
 
-The 2023 Pixel Perf Market note records plans for a MoonGoat event on one of two possible dates. Russell later requested removal of the development blog; the historical source can be read with `git show 8995b3e:content/devblog/2023-08-02/_index.md`.
+The 2023 Pixel Perf Market note records plans for a MoonGoat event on one of two possible dates. Russell later requested removal of the development blog. The historical source can be read with `git show 8995b3e:content/devblog/2023-08-02/_index.md`.
 It does not document completion or settle the date of the pop-up Russell now describes.
 The subsequently reviewed event imagery adds evidence of a completed physical demo setup. Folder/poster names point to September 2, 2023, without settling every event detail.
 

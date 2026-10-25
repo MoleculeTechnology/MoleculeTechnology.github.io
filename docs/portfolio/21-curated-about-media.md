@@ -30,11 +30,11 @@ The About page, including its headshot, InContext material, original galleries, 
 
 ## Shared gallery source
 
-The `about-gallery` shortcode reads the relevant gallery from the About source, so the project page does not maintain a separate hand-picked subset. It preserves the image paths, sequence, and relative width classes. Each project's first image appears once as its hero; the shared gallery omits that duplicate.
+The `about-gallery` shortcode reads the relevant gallery from the About source, so the project page does not maintain a separate hand-picked subset. It preserves the image paths, sequence, and relative width classes. Each project's first image appears once as its hero. The shared gallery omits that duplicate.
 
-The helper ignores HTML comments and reports a build error if a section marker or gallery is missing. If an About heading is renamed, update the marker in the corresponding project shortcode. Cover fields explicitly reference the current first images; if a lead image changes in About, update the matching project hero and homepage cover as well.
+The helper ignores HTML comments and reports a build error if a section marker or gallery is missing. If an About heading is renamed, update the marker in the corresponding project shortcode. Cover fields explicitly reference the current first images. If a lead image changes in About, update the matching project hero and homepage cover as well.
 
-Static images use responsive WebP derivatives. Animated examples use the original GIF URLs under `/about/`, with lazy loading; they are not flattened into still images. The homepage uses the existing static lead images. Source aspect ratios are preserved in the covers and galleries. The gallery layout uses CSS rather than the legacy gallery's JavaScript dependency.
+Static images use responsive WebP derivatives. Animated examples use the original GIF URLs under `/about/`, with lazy loading. They are not flattened into still images. The homepage uses the existing static lead images. Source aspect ratios are preserved in the covers and galleries. The gallery layout uses CSS rather than the legacy gallery's JavaScript dependency.
 
 ## Verification
 
@@ -45,6 +45,6 @@ Static images use responsive WebP derivatives. Animated examples use the origina
 - Nine core routes have one H1 each and valid local link/asset targets. Planning notes are excluded from public output.
 - The About source has no changes in this pass.
 - Homepage, work index, and the four project pages fit at 390px and 320px. Desktop cover aspect ratios and gallery column widths were checked, with a layout correction so inherited width classes do not shrink images inside the new grid.
-- A temporary local preview was used for visual inspection; generated output and downloaded tools remain ignored.
+- A temporary local preview was used for visual inspection. Generated output and downloaded tools remain ignored.
 
 To review locally, run `./scripts/preview.ps1` from the repository root and open [the preview](http://127.0.0.1:1313/). Deployment repair remains deferred.

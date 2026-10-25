@@ -10,7 +10,7 @@ tags: [portfolio, architecture, hugo]
 
 **Continue with Hugo and GitHub Pages. Build a custom portfolio presentation.**
 
-The proposed site is mostly authored project stories, carefully presented media, a biography, and contact links. Russell requested removal of the development blog on 2026-10-25; the current implementation follows [that decision](22-development-blog-removal.md).
+The proposed site is mostly authored project stories, carefully presented media, a biography, and contact links. Russell requested removal of the development blog on 2026-10-25. The current implementation follows [that decision](22-development-blog-removal.md).
 Those requirements suit a static site.
 Changing the generator would not resolve the main problems: the current story, project hierarchy, media selection, and typography.
 This is a recommendation based on this site's needs, not a claim that Hugo is the best choice for every portfolio.

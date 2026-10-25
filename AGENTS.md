@@ -9,8 +9,10 @@ Russell requires the preview script to be restarted after website updates.
 
 # Portfolio conventions
 
-- Project titles and content headings use ghost white. Reserve mint for the homepage identity headline, primary page/brace section headings, and accents; use the shared `heading-accent` class independently of semantic heading level. Heading sizes live in the shared CSS heading variables. Keep section labels on one line and left-aligned.
+- Do not use semicolons in original prose, including website copy, planning notes, PR text, and user-facing messages. Rewrite naturally with periods, commas, or separate sentences. Preserve required code punctuation, HTML entities, URLs, and exact quotations. The reusable skill source is `docs/portfolio/skills/russell-writing-style/SKILL.md`.
+
+- Project titles and content headings use ghost white. Reserve mint for the homepage identity headline, primary page/brace section headings, and accents. Use the shared `heading-accent` class independently of semantic heading level. Heading sizes live in the shared CSS heading variables. Keep section labels on one line and left-aligned.
 - The Blizzard case study opts into mint `h2` game section headings (Hearthstone and Unannounced game) via `accentSectionHeadings`. These headings and the contribution labels use the locally hosted Roboto Condensed Black 900 face. Its project title and smaller headings stay ghost white.
-- Header navigation uses mint only for the active section (`aria-current="page"`). Other links stay ghost white; hover uses an underline.
-- All projects share `content/work/`. Classify them with `tags: [professional]` or `tags: [experimental]`; do not split their source pages into separate collections by category.
+- Header navigation uses mint only for the active section (`aria-current="page"`). Other links stay ghost white. Hover uses an underline.
+- All projects share `content/work/`. Classify them with `tags: [professional]` or `tags: [experimental]`. Do not split their source pages into separate collections by category.
 - `data/project_tags.yaml` defines stable tag values and human-readable labels. Use these labels in project tags and Work filters.

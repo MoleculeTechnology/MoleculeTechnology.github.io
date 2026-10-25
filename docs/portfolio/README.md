@@ -12,12 +12,12 @@ Use Molecule as the name of the creative practice, with Russell's name and perso
 Keep `ilovemolecule.com`.
 
 These notes contain the brief, research, copy decisions, visual direction, and implementation record.
-The website rework is being tested locally on `feature/portfolio-rework-v1`; deployment repair remains deferred.
+The website rework is being tested locally on `feature/portfolio-rework-v1`. Deployment repair remains deferred.
 
 ## Start here
 
 The original About page's facts and pictures form the basis of the revised portfolio. This iteration uses [the existing curated About galleries](21-curated-about-media.md), with their original image selections and order. [Work-focused editorial voice](20-work-focused-editorial-voice.md) records the less personal descriptions and contribution credits. [Applied copy and media revision](19-applied-copy-and-media-revision.md) records the preceding copy and media pass.
-The [development blog is removed](22-development-blog-removal.md); the portfolio navigation is Work, About, and Contact.
+The [development blog is removed](22-development-blog-removal.md). The portfolio navigation is Work, About, and Contact.
 The latest pass separates [Professional Work and Experiments](23-professional-work-experiments-and-image-quality.md), keeps Blizzard prominent, and restores higher-resolution originals for two existing photographs.
 The subsequent [tagged-project revision](24-tagged-projects-and-new-headliners.md) puts every project in one collection, adds Work filters, leads with The Glass Castle, and features mother! and Enflux. The latest [heading hierarchy](26-heading-hierarchy.md) gives project titles ghost white and reserves mint for the identity, primary page/section headings, and accents.
 
@@ -49,6 +49,7 @@ The subsequent [tagged-project revision](24-tagged-projects-and-new-headliners.m
 26. [Heading hierarchy and accent color](26-heading-hierarchy.md) — ghost-white project/content headings, explicit mint accents, shared size variables, and responsive checks.
 27. [Glass Castle selected media](27-glass-castle-media-selection.md) — Russell's chosen headliner, accent photograph, and finished-scene GIF, with original dimensions and delivery checks.
 28. [Hearthstone headliner and media research](28-hearthstone-headliner-and-media-research.md) — requested Blizzard cover, official 4K gameplay sources, sharper supporting excerpts, alternate artwork candidates, and provenance.
+29. [Writing punctuation preference](29-writing-punctuation.md) — the no-semicolons rule, reusable writing skill, and applied prose cleanup.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

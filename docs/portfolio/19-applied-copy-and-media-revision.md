@@ -18,8 +18,8 @@ Use the direct first-person approach from [the revision plan](17-copy-and-media-
 | Page or element | Applied change | Source |
 | --- | --- | --- |
 | Homepage + About lead | Restore “I build creative products that mix software + hardware + art.” Keep the requested software engineer + artist identity. | Original About page in `09772f6`, plus Russell's brief. |
-| Homepage headings | Use selected work, Molecule at Moongoat Coffee, film + television, motion capture, Hearthstone, about me, and contact. | The proposed catalogue approach; actual employer, event, and production names. |
-| Paper Ghost | Name the productions and describe the work: nine-projector Pentagon wall, actor-operated props, 4K/360° playback, virtual cameras, maps, and cloud software. Keep the collaboration credit next to the contribution. | Original About page; the historical CV adds playback/calibration/warping and virtual-camera details. |
+| Homepage headings | Use selected work, Molecule at Moongoat Coffee, film + television, motion capture, Hearthstone, about me, and contact. | The proposed catalogue approach. Actual employer, event, and production names. |
+| Paper Ghost | Name the productions and describe the work: nine-projector Pentagon wall, actor-operated props, 4K/360° playback, virtual cameras, maps, and cloud software. Keep the collaboration credit next to the contribution. | Original About page. The historical CV adds playback/calibration/warping and virtual-camera details. |
 | Enflux | Restore the shipped Unity SDK, five applications, four investor demos, Blender recording/FBX tools, and workshop/trade show work. | Original About page. |
 | Blizzard | Use specific engine, asset pipeline, FX tool, and native mobile contributions. Keep the nine expansions tied to March 2021–August 2023. Give current unannounced-game work its own paragraph. | Original About page + Russell's current-role description. |
 | Moongoat | Describe suit-free C++ body tracking from high-speed webcam video, composited wireframe on a vertical TV, and 60 fps. Describe the IMU-equipped wooden swords separately, including speakers, LED strips, and deterministic world-orientation colors. | [Russell's own account](18-moongoat-demonstrations.md). |
@@ -35,7 +35,7 @@ The subsequent [curated About media decision](21-curated-about-media.md) replace
 All selected source files already exist in the original About collection. The project pages use Hugo-generated WebP sizes rather than new copies of the originals.
 
 - **Homepage:** The Glass Castle's curved projection setup replaces the small X-Men set image. The Enflux booth demonstration replaces the Blender screenshot as the card image.
-- **Paper Ghost:** The Glass Castle setup and calibration view; the very wide X-Men Pentagon scene and a submarine console; Quantico's surveillance van; the mother! virtual-camera application; Arrival's surveillance screens; Ça Décolle!'s aircraft scene.
+- **Paper Ghost:** The Glass Castle setup and calibration view, the very wide X-Men Pentagon scene, a submarine console, Quantico's surveillance van, the mother! virtual-camera application, Arrival's surveillance screens, and Ça Décolle!'s aircraft scene.
 - **Enflux:** A live booth demonstration, the clothing/sensor diagram, the Blender plugin, and a personal event photograph.
 - **About:** Preserve all original galleries, motion examples, logos, and the headshot.
 
@@ -46,7 +46,7 @@ The original GIFs remain in the About galleries. This pass selects stills for th
 ## Verification
 
 - Production build passed with Hugo Extended `0.115.4`.
-- Nine core routes have one H1 each; all referenced local links and asset targets resolve in the generated build.
+- Nine core routes have one H1 each. All referenced local links and asset targets resolve in the generated build.
 - Rejected slogans and text-encoding artifacts were checked in the generated pages. Planning notes are absent from public output.
 - The local preview was inspected at desktop and phone widths. Eight updated routes fit at both 390px and 320px without horizontal overflow, measured against the available document width. A narrow Hearthstone title was adjusted to fit.
 - New Paper Ghost image proportions were checked against the rendered dimensions, including the 4:1 X-Men scene.

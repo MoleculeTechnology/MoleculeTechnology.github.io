@@ -36,12 +36,12 @@ The data records contain both `value` and `label`. Project tags link to the corr
 | mother! | professional | `PaperGhost/mother_preproduction3.png`: the virtual-camera interface on a monitor |
 | Motion capture / Enflux | professional | `Enflux/enflux_blender1.jpg`: the Blender recording interface |
 | Film + television / Paper Ghost | professional | `PaperGhost/arrival_spytent2.jpg`: a high-resolution still already in the curated About selection |
-| Game Engine, Graphics + Content Pipeline / Blizzard | professional | A restrained text panel naming the actual areas of engineering work; Hearthstone artwork is supporting material within its case study |
+| Game Engine, Graphics + Content Pipeline / Blizzard | professional | A restrained text panel naming the actual areas of engineering work. Hearthstone artwork is supporting material within its case study |
 | Motion Capture + Lightsabers / Molecule | experimental | Existing `assets/portfolio/moongoat-light-and-motion.jpg`: the vertical tracking display and illuminated props at Moongoat |
 
-The Glass Castle cover has a 16:10 presentation crop for the homepage/catalogue. Its case study preserves the full image. Other stills keep their source aspect ratios. The Moongoat portrait is uncropped; the homepage places it beside the project description.
+The Glass Castle cover has a 16:10 presentation crop for the homepage/catalogue. Its case study preserves the full image. Other stills keep their source aspect ratios. The Moongoat portrait is uncropped. The homepage places it beside the project description.
 
-These are all existing curated About images except the requested Moongoat event image, which was already in the repository and is documented in [the archive review](12-archive-review.md). No new archive selections or generated illustrations were added. Enflux's SIGGRAPH/convention GIF remains in its case-study gallery; the static Blender image provides a quiet cover without loading that large animation on the homepage.
+These are all existing curated About images except the requested Moongoat event image, which was already in the repository and is documented in [the archive review](12-archive-review.md). No new archive selections or generated illustrations were added. Enflux's SIGGRAPH/convention GIF remains in its case-study gallery. The static Blender image provides a quiet cover without loading that large animation on the homepage.
 
 ## Case-study changes and credits
 
@@ -49,14 +49,14 @@ These are all existing curated About images except the requested Moongoat event 
 - Paper Ghost retains the X-Men gallery, including the original first photograph. Recovering its larger file did not fix softness in the original photography, so it no longer leads the homepage.
 - The gallery helper can omit a named cover image, keeping it from appearing twice when it is not the first image in the original selection. Remaining image order and original animated GIFs are preserved.
 - The Blizzard project names the engineering contribution before showing game imagery. Hearthstone and Unannounced game are separate sections, and the project context identifies both. Its homepage text panel represents areas of work, not a claimed internal production architecture.
-- The game images are credited to the Hearthstone team; Russell's authorship is attributed to engineering. Paper Ghost and the individual film pages keep the production context and relevant Zed Axiz collaboration credits.
+- The game images are credited to the Hearthstone team. Russell's authorship is attributed to engineering. Paper Ghost and the individual film pages keep the production context and relevant Zed Axiz collaboration credits.
 - Motion Capture + Lightsabers retains the two actual demos described by Russell: 60 fps suit-free C++ body capture/compositing and orientation-controlled IMU/LED wooden swords. Moongoat remains the venue/context rather than the project title.
 
 ## Work filters
 
-The default view shows all six projects. **Professional Work** shows five; **Experimental** shows one. Buttons expose their selected state and support normal keyboard activation. A live count reports the result.
+The default view shows all six projects. **Professional Work** shows five. **Experimental** shows one. Buttons expose their selected state and support normal keyboard activation. A live count reports the result.
 
-Selected filters are shareable as `/work/?tag=professional` and `/work/?tag=experimental`. Reload retains the selection; browser Back/Forward restores it. An unknown value falls back to all projects. Without JavaScript, all projects remain in the page and inactive filter controls stay hidden.
+Selected filters are shareable as `/work/?tag=professional` and `/work/?tag=experimental`. Reload retains the selection. Browser Back/Forward restores it. An unknown value falls back to all projects. Without JavaScript, all projects remain in the page and inactive filter controls stay hidden.
 
 Earlier URLs remain usable:
 
@@ -67,7 +67,7 @@ Earlier URLs remain usable:
 
 ## Validation
 
-- Hugo Extended 0.115.4 production build passed; JavaScript syntax and Git whitespace checks passed.
+- Hugo Extended 0.115.4 production build passed. JavaScript syntax and Git whitespace checks passed.
 - Ten core routes passed checks for one primary heading, local links/assets, correct lead images/order, Blizzard section structure, and old-URL targets. The clean output does not contain the removed development blog.
 - All 222 responsive image width descriptors referenced by those routes matched decoded file dimensions, with no generated width exceeding its source.
 - Eight affected routes were checked in the browser at 320px, 390px, and 1280px. No horizontal overflow or portfolio image enlargement beyond native width was found. All tested main headings were mint, and homepage section labels stayed on one line.

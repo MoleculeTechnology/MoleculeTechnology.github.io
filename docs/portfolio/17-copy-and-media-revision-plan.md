@@ -38,7 +38,7 @@ The weaker new homepage and project summaries should be rebuilt from that richer
 
 Retain the direct verbs, first-person contributions, useful technical detail, plus signs, braces, and named productions where they help.
 Update the lead identity to the requested **software engineer + artist**.
-Keep historical claims attached to their period; reconcile counts and dates when publishing them.
+Keep historical claims attached to their period. Reconcile counts and dates when publishing them.
 
 ## Four writing directions
 
@@ -127,7 +127,7 @@ Update on 2026-10-25: Russell now prefers slightly less personal copy and greate
 
 Start with **A for the introduction and contribution text**, **B for project names and cards**, **C where there is a clear interaction or workflow**, and **D for a short personal About passage**.
 Use the original About text as the base edit.
-Engineering experience can stand on its own merits; each job does not need a newly invented connection to lighting installations.
+Engineering experience can stand on its own merits. Each job does not need a newly invented connection to lighting installations.
 
 For example:
 
@@ -159,7 +159,7 @@ Three possible treatments:
 
 Russell has now answered the question about the demonstration.
 See [Moongoat demonstrations and copy source](18-moongoat-demonstrations.md) for the two separate systems and new factual drafts: camera-based C++ body tracking with a composited wireframe at 60 fps, and IMU-equipped wooden swords with deterministic colors based on world orientation.
-The holding descriptions above are earlier options; the supplied facts now support a specific account of what happened.
+The holding descriptions above are earlier options. The supplied facts now support a specific account of what happened.
 Do not infer audience reactions or unreported relationships between devices from the event photo.
 
 ## Replace vague display headings with useful names
@@ -194,7 +194,7 @@ A four-card homepage should lead into substantial project documentation rather t
 | [Enflux event photograph](../../content/about/Enflux/enflux_convention4.jpg) | Still image visually inspected: a posed event photograph with booth context. | Keep as personal/event context alongside the demonstration. It does not explain interaction by itself. |
 
 Retain the existing source files and useful galleries.
-Prepare web-sized stills and review video derivatives during implementation; no media conversion was performed in this planning pass.
+Prepare web-sized stills and review video derivatives during implementation. No media conversion was performed in this planning pass.
 The selected GIFs are relatively large, so displaying them should not require downloading the full gallery at initial page load.
 
 Possible work ordering:
@@ -211,9 +211,9 @@ Keep both options available. The first implementation promoted Moongoat before i
 - [x] Restore richer Paper Ghost and Enflux image sequences, with captions derived from the original work descriptions.
 - [x] Record Russell's account and draft the specific Moongoat description in the demonstration note.
 - [x] Apply the revised Moongoat copy from Russell's account of the two demos.
-- [ ] Watch and select additional demonstration clips; prepare web video derivatives separately.
+- [ ] Watch and select additional demonstration clips. Prepare web video derivatives separately.
 - [x] Keep factual project description, personal artistic intent, and implementation detail distinct enough for each to be clear.
 - [x] Review the copy for voice and remove interchangeable promotional sentences.
 - [x] Record the chosen wording and media decisions in the implementation note.
 
-The website rewriting is now applied locally. Clip selection remains a separate media task; the original About galleries and motion clips are retained.
+The website rewriting is now applied locally. Clip selection remains a separate media task. The original About galleries and motion clips are retained.

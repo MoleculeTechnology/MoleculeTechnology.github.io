@@ -15,7 +15,7 @@ Russell requested removal of the development blog entirely. The portfolio no lon
 - Removed Notes from the shared portfolio header and the development-blog entry from the legacy theme menu configuration.
 - Changed the unused homepage “show more” destination to Work so configuration does not retain a blog route.
 - Updated the information architecture, roadmap, and current planning recommendations to remove the journal from the public site.
-- Replaced the evidence note's link to a deleted post with a Git-history reference. The removed source is recoverable from commit `8995b3e`; no separate public archive or redirect was added.
+- Replaced the evidence note's link to a deleted post with a Git-history reference. The removed source is recoverable from commit `8995b3e`. No separate public archive or redirect was added.
 
 The existing Work, About, and Contact pages remain. The curated About images, shared project galleries, project descriptions, and WebGL pyramid are unchanged by this removal.
 
