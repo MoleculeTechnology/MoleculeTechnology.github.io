@@ -123,6 +123,8 @@ More personal artistic intent should come from his descriptions of particular pi
 
 ## Recommended combination
 
+Update on 2026-10-25: Russell now prefers slightly less personal copy and greater emphasis on the work. The [editorial voice recommendation](20-work-focused-editorial-voice.md) refines the first-person emphasis below while preserving the factual project material and original images.
+
 Start with **A for the introduction and contribution text**, **B for project names and cards**, **C where there is a clear interaction or workflow**, and **D for a short personal About passage**.
 Use the original About text as the base edit.
 Engineering experience can stand on its own merits; each job does not need a newly invented connection to lighting installations.

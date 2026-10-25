@@ -135,3 +135,7 @@ An optional question asks Russell to describe what he showed at Moongoat and wha
 Russell supplied the actual behavior of two distinct demonstrations: suit-free outside-in capture from webcam video with a C++ wireframe composite at 60 fps, and inside-out capture using IMU-equipped wooden swords whose LED colors followed real-world orientation deterministically.
 Use these facts and Russell's direct language for the next Moongoat copy pass.
 The [demonstration note](18-moongoat-demonstrations.md) records the source, proposed descriptions, and separate media needs.
+
+### 2026-10-25 — Less personal, more emphasis on the work
+
+Russell is inclined to reduce first-person language and make the work more prominent. The [editorial voice study](20-work-focused-editorial-voice.md) compares official artist and studio portfolios and recommends making the work the subject of homepage and project descriptions, with explicit contribution fields. First person can remain in a short About introduction or process essay when useful. The note contains examples; this research pass does not change website copy.
