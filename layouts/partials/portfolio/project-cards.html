@@ -1,0 +1,12 @@
+<div class="work-index-grid">
+  {{ range $index, $project := .pages.ByWeight }}
+    {{ $lead := and $.lead (eq $index 0) }}
+    <article class="{{ if not .Params.hero }}work-index-text{{ else if $lead }}work-index-lead{{ end }}">
+      {{ with .Params.hero }}<a class="project-image curated-image" href="{{ $project.RelPermalink }}" aria-label="{{ $project.Title }}">{{ partial "portfolio/image.html" (dict "source" . "alt" $project.Params.heroAlt "sizes" (cond $lead "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc(100vw - 80px), (max-width: 1408px) calc(100vw - 128px), 1280px" "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc((100vw - 122px) / 2), (max-width: 1408px) calc((100vw - 170px) / 2), 619px")) }}</a>{{ end }}
+      <p class="eyebrow mint-text">{{ .Params.context }}</p>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Description }}</p>
+      <a class="text-link" href="{{ .RelPermalink }}">Explore the project <span aria-hidden="true">↗</span></a>
+    </article>
+  {{ end }}
+</div>

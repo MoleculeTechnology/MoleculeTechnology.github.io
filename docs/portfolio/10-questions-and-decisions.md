@@ -149,3 +149,7 @@ Russell specified the image selection already curated on the About Me page. The 
 ### 2026-10-25 — Remove the development blog entirely
 
 Russell requested complete removal of the development blog. Removed the blog sources and bundled media, Notes navigation, and blog destinations in configuration. Work, About, and Contact remain the public navigation. The preview uses a clean, isolated output directory so stale blog pages are not served. Historical evidence can be read from Git history; see [Development blog removal](22-development-blog-removal.md).
+
+### 2026-10-25 — Professional Work and Experiments
+
+Russell requested separate groups, with Moongoat in Experiments and Blizzard prominent near the top while potentially closing Professional Work. The applied review order is Paper Ghost, Enflux, then Blizzard; the precise order remains open. Section labels are single-line, ghost white, and left-aligned. The Blizzard case study leads with explicit engineering contributions. Two existing photographs were restored from matching higher-resolution originals, and responsive delivery/display caps address small images being enlarged. See [the structure and image-quality record](23-professional-work-experiments-and-image-quality.md) for provenance, limits, and checks.

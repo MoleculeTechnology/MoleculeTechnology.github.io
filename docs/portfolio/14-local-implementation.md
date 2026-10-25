@@ -92,6 +92,8 @@ Deployment repair remains deferred under Russell's decision.
 
 ## Remaining work before publishing
 
+The latest [Professional Work / Experiments pass](23-professional-work-experiments-and-image-quality.md) moves Moongoat to `/experiments/moongoat/`, adds an old-URL redirect, and records image-quality fixes and verification. Its Professional Work order is provisional.
+
 The [copy and media revision](19-applied-copy-and-media-revision.md) now uses the original About page's language and stronger still images, with the actual Moongoat demos described. Review this applied wording and the image credits with Russell.
 The subsequent [editorial voice revision](20-work-focused-editorial-voice.md) makes homepage and project descriptions less personal and adds named contribution fields while preserving the About page's personal voice.
 Choose final specialization wording and refine the pyramid's interaction and label placement across more orientations and devices.

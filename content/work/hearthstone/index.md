@@ -9,6 +9,13 @@ hero: "Blizzard/hearthstone_gameplay1.jpg"
 heroAlt: "Hearthstone gameplay."
 heroCaption: "Hearthstone. Game artwork by the Hearthstone team."
 imageClass: "uncropped"
+contributions:
+  - title: "Engine + platforms"
+    detail: "Core systems, memory and download performance, native mobile development, low-level debugging, and SDK integrations."
+  - title: "Content + artist tools"
+    detail: "Asset pipeline maintenance and improvements, client build tooling, and tools for FX artists."
+  - title: "Production + team support"
+    detail: "Nine major expansions from March 2021 through August 2023; engineering guidance and resolution of blocking issues across teams."
 ---
 
 ## Core systems + platforms

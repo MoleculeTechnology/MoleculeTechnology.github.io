@@ -4,20 +4,21 @@
     <p class="eyebrow hero-name"><span class="status-dot" aria-hidden="true"></span> Russell Jahn / Molecule</p>
     <h1 id="intro-heading">SOFTWARE<br>ENGINEER<br><span>&amp; ARTIST.</span></h1>
     <p class="hero-intro">Software + hardware + art.<br>Film-set visuals, motion capture,<br>and real-time graphics.</p>
+    <p class="hero-current">At Blizzard: 3D graphics, rendering, and art + audio pipeline tools for an unannounced game.</p>
     <a class="text-link hero-link" href="#selected-work">Selected work <span aria-hidden="true">↘</span></a>
   </div>
   {{ partial "portfolio/pyramid.html" . }}
 </section>
 <section class="experience-strip site-width" aria-label="Selected professional experience">
-  <p class="eyebrow">Selected<br>experience</p>
+  <p class="eyebrow">Selected experience</p>
   <p><strong>BLIZZARD</strong><span>Graphics, engines + content pipelines</span></p>
   <p><strong>PAPER GHOST</strong><span>Interactive props + film-set visuals</span></p>
   <p><strong>ENFLUX</strong><span>Motion capture + developer tools</span></p>
 </section>
 <section class="selected-work site-width" id="selected-work" aria-labelledby="work-heading">
-  <div class="section-heading"><p class="eyebrow">01 / Projects</p><h2 id="work-heading">{ SELECTED<br><span>WORK }</span></h2></div>
+  <div class="section-heading"><p class="eyebrow">01 / Projects</p><h2 id="work-heading">{ PROFESSIONAL WORK }</h2></div>
   <article class="wide-project lead-project">
-    <a class="project-image film-image" href="{{ "work/paper-ghost/" | relURL }}" aria-label="Paper Ghost film and television work">{{ partial "portfolio/image.html" (dict "source" "PaperGhost/xmen_apocalypse_pentagon3.jpg" "alt" "The X-Men: Apocalypse Pentagon set with the video wall and console displays." "sizes" "(max-width: 760px) 100vw, 88vw") }}<span class="image-index" aria-hidden="true">01</span><span class="image-credit">X-Men: Apocalypse / Pentagon video wall + screen visuals</span></a>
+    <a class="project-image film-image" href="{{ "work/paper-ghost/" | relURL }}" aria-label="Paper Ghost film and television work">{{ partial "portfolio/image.html" (dict "source" "PaperGhost/xmen_apocalypse_pentagon3.jpg" "alt" "The X-Men: Apocalypse Pentagon set with the video wall and console displays." "sizes" "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc(100vw - 80px), (max-width: 1408px) calc(100vw - 128px), 1280px") }}<span class="image-index" aria-hidden="true">01</span><span class="image-credit">X-Men: Apocalypse / Pentagon video wall + screen visuals</span></a>
     <div class="project-caption">
       <div><p class="eyebrow mint-text">Paper Ghost</p><h3><a href="{{ "work/paper-ghost/" | relURL }}">FILM + TELEVISION.</a></h3></div>
       <div><p>Interactive props, screen visuals, and projection software for 15 film + TV productions, including X-Men: Apocalypse, Quantico, The Glass Castle, and mother!</p><a class="text-link" href="{{ "work/paper-ghost/" | relURL }}">Film work + software <span aria-hidden="true">↗</span></a></div>
@@ -25,40 +26,44 @@
   </article>
   <div class="project-pair">
     <article>
-      <a class="project-image curated-image" href="{{ "work/enflux/" | relURL }}" aria-label="Enflux motion capture and tools">{{ partial "portfolio/image.html" (dict "source" "Enflux/enflux_suit1.png" "alt" "Enflux motion capture clothing with chest, pelvis, arm, and leg sensor locations labelled." "sizes" "(max-width: 760px) 100vw, 44vw") }}<span class="image-index" aria-hidden="true">02</span></a>
+      <a class="project-image curated-image" href="{{ "work/enflux/" | relURL }}" aria-label="Enflux motion capture and tools">{{ partial "portfolio/image.html" (dict "source" "Enflux/enflux_suit1.png" "alt" "Enflux motion capture clothing with chest, pelvis, arm, and leg sensor locations labelled." "sizes" "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc((100vw - 122px) / 2), (max-width: 1408px) calc((100vw - 170px) / 2), 619px") }}<span class="image-index" aria-hidden="true">02</span></a>
       <p class="eyebrow mint-text">Enflux</p><h3><a href="{{ "work/enflux/" | relURL }}">MOTION CAPTURE.</a></h3>
       <p>Unity SDK and live demos for motion capture clothing, plus a Blender plugin to record animation + export FBX.</p>
       <a class="text-link" href="{{ "work/enflux/" | relURL }}">SDK + applications <span aria-hidden="true">↗</span></a>
     </article>
     <article>
-      <a class="project-image curated-image" href="{{ "work/hearthstone/" | relURL }}" aria-label="Blizzard engine and content technology experience">{{ partial "portfolio/image.html" (dict "source" "Blizzard/hearthstone_gameplay1.jpg" "alt" "Hearthstone gameplay." "sizes" "(max-width: 760px) 100vw, 44vw") }}<span class="image-index" aria-hidden="true">03</span></a>
+      <a class="project-image curated-image" href="{{ "work/hearthstone/" | relURL }}" aria-label="Blizzard engine and content technology experience">{{ partial "portfolio/image.html" (dict "source" "Blizzard/hearthstone_gameplay1.jpg" "alt" "Hearthstone gameplay." "sizes" "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc((100vw - 122px) / 2), (max-width: 1408px) calc((100vw - 170px) / 2), 619px") }}<span class="image-index" aria-hidden="true">03</span></a>
       <p class="eyebrow mint-text">Blizzard</p><h3><a href="{{ "work/hearthstone/" | relURL }}">HEARTHSTONE.</a></h3>
       <p>Core engine systems, asset pipelines, FX artist tools, and native mobile development across nine major expansions on desktop + mobile.</p>
       <p class="current-focus">Now: 3D graphics, rendering, and content pipeline tools for art + audio on an unannounced game.</p>
       <a class="text-link" href="{{ "work/hearthstone/" | relURL }}">Engine + content technology <span aria-hidden="true">↗</span></a>
     </article>
   </div>
+</section>
+<section class="experiments-section site-width" id="experiments" aria-labelledby="experiments-heading">
+  <div class="section-heading"><p class="eyebrow">02 / Independent projects</p><h2 id="experiments-heading">{ EXPERIMENTS }</h2></div>
   <article class="text-project">
     <div class="project-caption">
-      <div><p class="eyebrow mint-text">Molecule / Pop-up demos</p><h3><a href="{{ "work/moongoat/" | relURL }}">MOLECULE AT<br>MOONGOAT COFFEE.</a></h3></div>
+      <div><p class="eyebrow mint-text">Molecule / Test installation</p><h3><a href="{{ "experiments/moongoat/" | relURL }}">MOLECULE AT MOONGOAT COFFEE.</a></h3></div>
       <div>
+        <p>A small pop-up installation at Moongoat Coffee tested two approaches to motion capture.</p>
         <p>Camera-based body tracking on a vertical TV, with a live wireframe overlay at 60 fps.</p>
         <p>Wooden swords fitted with motion sensors and LEDs map real-world orientation to color. Pointing a sword in the same direction produces the same corresponding color.</p>
         <ul class="project-tags" aria-label="Project disciplines"><li>C++</li><li>Motion capture</li><li>Embedded hardware</li></ul>
-        <a class="text-link" href="{{ "work/moongoat/" | relURL }}">The two demos <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="{{ "experiments/moongoat/" | relURL }}">The two demos <span aria-hidden="true">↗</span></a>
       </div>
     </div>
   </article>
 </section>
 <section class="practice-section site-width" aria-labelledby="practice-heading">
-  <p class="eyebrow">02 / Russell Jahn</p>
+  <p class="eyebrow">03 / Russell Jahn</p>
   <div class="practice-grid">
-    <h2 id="practice-heading">{ ABOUT<br><span>ME }</span></h2>
+    <h2 id="practice-heading">{ ABOUT ME }</h2>
     <div><p class="large-copy">Molecule is the independent work of Russell Jahn, software engineer + artist.</p><p>Current projects include lightsaber and motion capture hardware, with embedded firmware for lights and sensors.</p><a class="text-link" href="{{ "about/" | relURL }}">About me + earlier work <span aria-hidden="true">↗</span></a></div>
   </div>
 </section>
 <section class="contact-section site-width" id="contact" aria-labelledby="contact-heading">
-  <p class="eyebrow">03 / Get in touch</p><h2 id="contact-heading">{ CONTACT }</h2>
+  <p class="eyebrow">04 / Get in touch</p><h2 id="contact-heading">{ CONTACT }</h2>
   <div class="contact-bottom"><p>For installation projects, software work,<br>and collaborations.</p><a class="contact-action" href="{{ "contact/" | relURL }}">Contact me <span aria-hidden="true">↗</span></a></div>
   <a class="contact-fallback" href="https://www.linkedin.com/in/russelljahn/">Or connect on LinkedIn ↗</a>
 </section>

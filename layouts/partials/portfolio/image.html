@@ -1,7 +1,18 @@
 {{ $image := resources.Get .source }}
 {{ if not $image }}{{ $image = resources.Get (printf "legacy-work/%s" .source) }}{{ end }}
 {{ if $image }}
-  {{ $small := $image.Resize (printf "%dx webp q82" (int (math.Min 640 $image.Width))) }}
-  {{ $large := $image.Resize (printf "%dx webp q85" (int (math.Min 1280 $image.Width))) }}
-  <img src="{{ $small.RelPermalink }}" srcset="{{ $small.RelPermalink }} {{ $small.Width }}w{{ if ne $small.Width $large.Width }}, {{ $large.RelPermalink }} {{ $large.Width }}w{{ end }}" sizes="{{ .sizes | default "(max-width: 760px) 100vw, 60vw" }}" width="{{ $large.Width }}" height="{{ $large.Height }}" alt="{{ .alt }}" loading="{{ .loading | default "lazy" }}" decoding="async"{{ with .class }} class="{{ . }}"{{ end }}>
+  {{ $variants := slice }}
+  {{ $widths := slice 320 480 640 960 1280 1600 1920 2560 }}
+  {{ range $widths }}
+    {{ if lt . $image.Width }}
+      {{ $variant := $image.Resize (printf "%dx webp q90 lanczos" .) }}
+      {{ $variants = $variants | append (printf "%s %dw" $variant.RelPermalink $variant.Width) }}
+    {{ end }}
+  {{ end }}
+  {{ if le $image.Width 2560 }}
+    {{ $native := $image.Resize (printf "%dx webp q90 lanczos" $image.Width) }}
+    {{ $variants = $variants | append (printf "%s %dw" $native.RelPermalink $native.Width) }}
+  {{ end }}
+  {{ $fallback := $image.Resize (printf "%dx webp q90 lanczos" (int (math.Min 960 $image.Width))) }}
+  <img src="{{ $fallback.RelPermalink }}" srcset="{{ delimit $variants ", " }}" sizes="{{ .sizes | default "(max-width: 760px) calc(100vw - 44px), 720px" }}" width="{{ $image.Width }}" height="{{ $image.Height }}" data-source-width="{{ $image.Width }}" style="--image-width: {{ printf "%dpx" $image.Width | safeCSS }}" alt="{{ .alt }}" loading="{{ .loading | default "lazy" }}" decoding="async"{{ with .class }} class="{{ . }}"{{ end }}>
 {{ else }}{{ errorf "Portfolio image not found: %s" .source }}{{ end }}

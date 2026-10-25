@@ -1,14 +1,15 @@
 {{ define "main" }}
-<section class="work-index site-width"><p class="eyebrow mint-text">Russell Jahn / Molecule</p><h1>{ SELECTED WORK }</h1><p class="case-deck">Film-set visuals + motion capture + game engineering.</p><div class="work-index-grid">
-  {{ range .Pages.ByWeight }}
-    {{ $project := . }}
-    <article{{ if not .Params.hero }} class="work-index-text"{{ end }}>
-      {{ with .Params.hero }}<a class="project-image curated-image" href="{{ $project.RelPermalink }}" aria-label="{{ $project.Title }}">{{ partial "portfolio/image.html" (dict "source" . "alt" $project.Params.heroAlt "sizes" "(max-width: 760px) 100vw, 44vw") }}</a>{{ end }}
-      <p class="eyebrow mint-text">{{ .Params.context }}</p>
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      <p>{{ .Description }}</p>
-      <a class="text-link" href="{{ .RelPermalink }}">Explore the project <span aria-hidden="true">↗</span></a>
-    </article>
+<div class="work-index site-width">
+  <header><p class="eyebrow mint-text">Russell Jahn / Molecule</p><h1>{ WORK }</h1><p class="case-deck">Film-set visuals, motion capture, and game engineering, alongside independent experiments.</p></header>
+  <section class="work-group" aria-labelledby="professional-heading">
+    <div class="section-heading"><h2 id="professional-heading">{ PROFESSIONAL WORK }</h2></div>
+    {{ partial "portfolio/project-cards.html" (dict "pages" .Pages "lead" true) }}
+  </section>
+  {{ with site.GetPage "/experiments" }}
+  <section class="work-group" id="experiments" aria-labelledby="experiments-heading">
+    <div class="section-heading"><h2 id="experiments-heading">{ EXPERIMENTS }</h2></div>
+    {{ partial "portfolio/project-cards.html" (dict "pages" .Pages "lead" false) }}
+  </section>
   {{ end }}
-</div></section>
+</div>
 {{ end }}

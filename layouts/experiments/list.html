@@ -1,0 +1,6 @@
+{{ define "main" }}
+<section class="work-index site-width">
+  <p class="eyebrow mint-text">Russell Jahn / Molecule</p><h1>{ EXPERIMENTS }</h1><p class="case-deck">Independent installations, hardware, and software tests.</p>
+  {{ partial "portfolio/project-cards.html" (dict "pages" .Pages "lead" false) }}
+</section>
+{{ end }}

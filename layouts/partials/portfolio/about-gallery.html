@@ -23,9 +23,17 @@
           <figure class="gallery-frame {{ $width }}" data-about-image="{{ $path }}">
             {{ if eq (path.Ext $path) ".gif" }}
               {{ $image := resources.Get (printf "legacy-work/%s" $path) }}
-              <img src="{{ printf "about/%s" $path | relURL }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+              <img src="{{ printf "about/%s" $path | relURL }}" width="{{ $image.Width }}" height="{{ $image.Height }}" data-source-width="{{ $image.Width }}" style="--image-width: {{ printf "%dpx" $image.Width | safeCSS }}" alt="{{ $alt }}" loading="lazy" decoding="async">
             {{ else }}
-              {{ partial "portfolio/image.html" (dict "source" $path "alt" $alt "sizes" "(max-width: 760px) 100vw, 900px") }}
+              {{ $sizes := "(max-width: 760px) calc(100vw - 44px), (max-width: 800px) calc(110vw - 80px), (max-width: 1600px) calc(720px + 10vw), 880px" }}
+              {{ if eq $width "grid-w66" }}
+                {{ $sizes = "(max-width: 760px) calc(100vw - 44px), (max-width: 800px) calc((220vw - 172px) / 3), (max-width: 1600px) calc((1428px + 20vw) / 3), 583px" }}
+              {{ else if eq $width "grid-w33" }}
+                {{ $sizes = "(max-width: 760px) calc((100vw - 52px) / 2), (max-width: 800px) calc((110vw - 104px) / 3), (max-width: 1600px) calc((696px + 10vw) / 3), 286px" }}
+              {{ else if eq $width "grid-w55" }}
+                {{ $sizes = "(max-width: 760px) calc((100vw - 52px) / 2), (max-width: 800px) calc((110vw - 92px) / 2), (max-width: 1600px) calc((708px + 10vw) / 2), 434px" }}
+              {{ end }}
+              {{ partial "portfolio/image.html" (dict "source" $path "alt" $alt "sizes" $sizes) }}
             {{ end }}
           </figure>
         {{ end }}
