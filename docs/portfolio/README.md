@@ -45,6 +45,7 @@ The subsequent [tagged-project revision](24-tagged-projects-and-new-headliners.m
 22. [Remove the development blog](22-development-blog-removal.md) — deleted blog content, navigation/configuration cleanup, isolated preview output, and verification.
 23. [Professional Work, Experiments, and image quality](23-professional-work-experiments-and-image-quality.md) — current grouping and provisional order, contribution-led Blizzard page, recovered originals, responsive delivery, and verification.
 24. [Tagged projects and new headliners](24-tagged-projects-and-new-headliners.md) — shared project collection, readable tag values, filters, film project pages, updated covers, mint titles, and validation.
+25. [About Me and project image concepts](25-about-and-project-carousel-concepts.md) — three About treatments, three interactive carousel concepts, proposed media sequences, and a recommended restrained direction.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

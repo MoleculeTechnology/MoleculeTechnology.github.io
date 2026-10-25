@@ -76,6 +76,8 @@ Earlier URLs remain usable:
 
 The PR includes the earlier local portfolio iteration, curated galleries, editorial changes, pyramid anti-aliasing, blog removal, contact refinement, and saved planning notes, as well as this pass. Deployment repair remains deferred.
 
+[PR #4](https://github.com/MoleculeTechnology/MoleculeTechnology.github.io/pull/4) was opened from `feature/portfolio-rework-v1` into `main` after the website commit `9348b11`. The subsequent [About and carousel concepts](25-about-and-project-carousel-concepts.md) are planning material, not additional website behavior.
+
 ## Saved review images
 
 ![Glass Castle as the large lead, with mint section title](assets/2026-10-25-glass-castle-lead.jpg)
