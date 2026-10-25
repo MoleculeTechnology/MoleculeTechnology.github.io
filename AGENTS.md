@@ -9,6 +9,6 @@ Russell requires the preview script to be restarted after website updates.
 
 # Portfolio conventions
 
-- Titles, including the homepage headline and brace section headings, use mint green. Keep section labels on one line and left-aligned.
+- Project titles and content headings use ghost white. Reserve mint for the homepage identity headline, primary page/brace section headings, and accents; use the shared `heading-accent` class independently of semantic heading level. Heading sizes live in the shared CSS heading variables. Keep section labels on one line and left-aligned.
 - All projects share `content/work/`. Classify them with `tags: [professional]` or `tags: [experimental]`; do not split their source pages into separate collections by category.
 - `data/project_tags.yaml` defines stable tag values and human-readable labels. Use these labels in project tags and Work filters.

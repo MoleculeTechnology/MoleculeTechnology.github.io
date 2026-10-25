@@ -157,3 +157,7 @@ Russell requested separate groups, with Moongoat in Experiments and Blizzard pro
 ### 2026-10-25 — One project collection, tags, and new lead work
 
 Russell requested a single collection with `professional` and `experimental` tags, displayed as Professional Work and Experimental. The homepage still groups by tag; Work filters the same collection. The Glass Castle projection setup leads, mother! is a separate featured project, Enflux uses its Blender image, and X-Men stays inside Paper Ghost. Blizzard becomes Game Engine, Graphics + Content Pipeline with Hearthstone and Unannounced game sections; Russell confirmed the latter wording. Moongoat becomes Motion Capture + Lightsabers and gains its existing event photo. Titles now use mint, superseding the preceding ghost-white rule. See [the applied revision](24-tagged-projects-and-new-headliners.md). Russell requested a commit and PR, followed by About Me and quiet-carousel ideation.
+
+### 2026-10-25 — Ghost-white project titles and selective mint headings
+
+Russell refined the heading rule: project titles such as THE GLASS CASTLE should be ghost white, with mint reserved for the most important details and accents. The applied [heading hierarchy](26-heading-hierarchy.md) supersedes the all-mint rule above. Shared CSS defaults headings to ghost white and uses an explicit `heading-accent` class for the identity and primary page/brace section headings. Size variables are defined independently of color and semantic heading level. Existing layout, credits, and project copy are preserved.
