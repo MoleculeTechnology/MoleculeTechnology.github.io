@@ -9,16 +9,15 @@ tags: [portfolio, implementation, git]
 
 ## Branches
 
-- `feature/portfolio-rework-plan` holds the original planning commit `f36356e`.
-- `feature/portfolio-rework-test` contains the initial website implementation, based on that planning commit.
-- Local `main` matches the fetched GitHub commit `09772f6`.
+- `main` contains the planning and initial website implementation through [PR #1](https://github.com/MoleculeTechnology/MoleculeTechnology.github.io/pull/1), merged at `055e35c`.
+- `feature/portfolio-rework-test` preserves the first implementation commit `cac8945`.
+- `feature/portfolio-rework-plan` has received the generated-preview cleanup through [PR #2](https://github.com/MoleculeTechnology/MoleculeTechnology.github.io/pull/2), merged at `4a0d79f`.
+- `feature/portfolio-rework-v1` continues website work from the merged `main` commit `055e35c`.
 
-The requested push was refused by GitHub ruleset `Rule` (`3178930`).
-It restricts creation and updates on all branches, has no bypass actors, and reports that the current account cannot bypass it.
-Russell chose to keep the work local rather than change those settings.
-No PR was created or merged, and no repository protection was changed.
-The testing branch therefore starts from the preserved planning commit, not a merged-main commit.
-Resume the push/PR/merge workflow only when Russell chooses to resume it and the repository permits the operations.
+The earlier push was refused by GitHub ruleset `Rule`, and Russell initially chose local work.
+Russell subsequently pushed and merged PR #1, then merged the requested cleanup PR #2.
+The original ruleset refusal is historical; no repository protection was changed by the assistant.
+Deployment of PR #1 failed. Russell chose to [defer its repair](15-deferred-deployment.md) until the first website version is good enough.
 
 ## Implemented in the first pass
 
@@ -73,4 +72,4 @@ Select stronger interaction clips and original-resolution project images, and re
 Settle the current role chronology, event date, public current-game wording, and updated CV.
 Review sample routes and inherited theme features before reducing dependencies.
 Finish contact-form visual styling and verify delivery with an explicitly authorized test.
-The current work is a local testing pass, not a published redesign.
+The current work is a local testing pass. The merged first implementation has not been published by the failed deployment run.

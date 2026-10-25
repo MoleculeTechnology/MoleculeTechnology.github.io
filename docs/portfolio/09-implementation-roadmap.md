@@ -100,6 +100,7 @@ Do not hold the entire portfolio for a comprehensive archive or a cinematic show
 **Output:** Tested build ready for the existing hosting arrangement.
 **Indicative effort:** One focused day, excluding fixes.
 
+- [ ] Once Russell considers the first version good enough, address the [deferred deployment repair](15-deferred-deployment.md) before publishing. Continue local iteration until then.
 - [ ] Build production output with drafts excluded.
 - [ ] Verify canonical URL, titles, descriptions, social image, favicon, sitemap, and custom domain behavior.
 - [ ] Check generated pages for `example.org`, example edit URLs, missing assets, and unrelated sample content.

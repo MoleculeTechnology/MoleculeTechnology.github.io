@@ -106,3 +106,17 @@ Keep Blowfish as the starting foundation and build custom Molecule homepage, wor
 A move to another premade theme is not needed for the proposed visual direction or WebGL pyramid.
 Review the remaining Blowfish dependency after the first custom pages work, and consider a small custom theme only if little useful theme behavior remains.
 The stored theme identifies version `2.38.3`, so current online examples need checking against the local implementation.
+
+### 2026-10-24 — Deployment repair deferred
+
+Russell chose to defer fixing the failed GitHub Pages workflow until the reworked website has a good enough first version.
+Continue local design and implementation work first.
+The planning and first implementation are merged into `main` through PR #1, but that merge's deployment failed because of the old artifact action.
+Track the failure and later repair checks in [Deferred deployment repair](15-deferred-deployment.md).
+
+### 2026-10-24 — Cleanup merged and local iteration resumed
+
+Russell merged cleanup PR #2 into the planning branch.
+Continue the website on `feature/portfolio-rework-v1`, starting from the first implementation already merged into `main`.
+Preserve and commit the deployment follow-up notes as a separate documentation change.
+Keep generated preview files and downloaded tools ignored, and leave deployment repair for the first-version release pass.

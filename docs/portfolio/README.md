@@ -30,6 +30,7 @@ It does not change or publish the website.
 12. [Archive review](12-archive-review.md) — Moongoat event evidence, exact source paths, and a shortlist from the VADER archives.
 13. [WebGL specialization pyramid](13-webgl-specialization-pyramid.md) — rotation, projected screen-space labels, typography, and implementation checks.
 14. [Local implementation](14-local-implementation.md) — testing branch, preview command, completed checks, and deferred GitHub workflow.
+15. [Deferred deployment repair](15-deferred-deployment.md) — failed workflow, later release checks, and completed preview cleanup.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.
@@ -69,6 +70,8 @@ Keep planning here, outside `content/` and `static/`, so it is not included in n
 Repository access still determines who can read notes that are committed and pushed.
 
 ## Maintenance
+
+Deployment repair is deferred until the reworked website has a good enough first version. See [Deferred deployment repair](15-deferred-deployment.md) for the verified failure, release checks, and explanation of the separate generated-preview commit.
 
 Update the evidence note when a CV or new project material becomes available.
 Record new decisions in [Questions and decisions](10-questions-and-decisions.md), then update affected drafts.
