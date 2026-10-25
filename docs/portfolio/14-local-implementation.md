@@ -91,6 +91,7 @@ Deployment repair remains deferred under Russell's decision.
 ## Remaining work before publishing
 
 The [copy and media revision](19-applied-copy-and-media-revision.md) now uses the original About page's language and stronger still images, with the actual Moongoat demos described. Review this applied wording and the image credits with Russell.
+The subsequent [editorial voice revision](20-work-focused-editorial-voice.md) makes homepage and project descriptions less personal and adds named contribution fields while preserving the About page's personal voice.
 Choose final specialization wording and refine the pyramid's interaction and label placement across more orientations and devices.
 Exercise physical touch input, actual browser zoom, reduced-motion settings, and WebGL context-loss recovery.
 Select and prepare stronger interaction clips, and continue refining the legacy About/journal presentation. Original Paper Ghost and Enflux stills are now restored on the project pages.

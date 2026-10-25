@@ -139,3 +139,5 @@ The [demonstration note](18-moongoat-demonstrations.md) records the source, prop
 ### 2026-10-25 — Less personal, more emphasis on the work
 
 Russell is inclined to reduce first-person language and make the work more prominent. The [editorial voice study](20-work-focused-editorial-voice.md) compares official artist and studio portfolios and recommends making the work the subject of homepage and project descriptions, with explicit contribution fields. First person can remain in a short About introduction or process essay when useful. The note contains examples; this research pass does not change website copy.
+
+Russell subsequently authorized applying the direction. The homepage and four project pages now describe the work directly, each project names Russell Jahn in its contribution block, and Paper Ghost separately credits Zed Axiz Productions. The About page keeps its personal voice and original galleries. Implementation and verification are recorded in the editorial voice note.

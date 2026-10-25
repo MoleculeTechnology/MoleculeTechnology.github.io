@@ -139,6 +139,8 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .case-facts { display: grid; grid-template-columns: 1.3fr 1fr; gap: 36px; border-top: 1px solid var(--rule); padding-top: 25px; margin-block: 36px; }
 .case-facts dt { color: var(--mint); text-transform: uppercase; letter-spacing: .1em; font-size: 11px; margin-bottom: 8px; }
 .case-facts dd { margin: 0; color: var(--muted); font-size: 16px; }
+.case-facts dd strong { color: var(--ghost); font-weight: 700; }
+.case-collaborators { grid-column: 1 / -1; }
 .case-hero { margin: 42px 0 60px; }
 .case-hero img { width: 100%; max-height: 650px; object-fit: cover; }
 .case-hero.portrait { background: var(--surface); }

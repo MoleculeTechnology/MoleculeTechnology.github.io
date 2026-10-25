@@ -1,7 +1,7 @@
 ---
 title: Work-focused editorial voice
 date: 2026-10-25
-status: recommendation
+status: implemented-locally
 tags: [portfolio, writing, voice, research]
 ---
 
@@ -17,7 +17,7 @@ First person can be professional. Removing a pronoun is an editorial choice rath
 
 Avoid substituting “we” for “I” unless describing an actual team contribution. Molecule is the brand; the site should accurately identify Russell and the collaborators for each work. A third-person biography is useful for press or a short profile, but repeating “Russell designed…” throughout every project would still make each sentence about its author.
 
-This recommendation refines the first-person emphasis in [the earlier copy plan](17-copy-and-media-revision-plan.md). The facts, original About material, and restored media remain the basis. Sample copy below is proposed for a subsequent edit; the live-page source is unchanged in this research pass.
+This direction refines the first-person emphasis in [the earlier copy plan](17-copy-and-media-revision-plan.md). The facts, original About material, and restored media remain the basis. Russell authorized applying the direction on 2026-10-25. The reference comparison and candidate examples below record the research; the implementation is described at the end of this note.
 
 ## What the reference portfolios do
 
@@ -52,7 +52,7 @@ Language patterns to avoid for this site:
 - Passive descriptions that obscure the contribution, such as “an SDK was developed,” without naming who did what.
 - A collective studio voice that implies collaborators or an organization beyond what the particular project supports.
 
-## Proposed voice by page
+## Voice by page
 
 | Area | Default |
 | --- | --- |
@@ -115,6 +115,27 @@ Core engine systems, content pipelines, FX artist tools, and native mobile devel
 
 Role: **Core systems engineering — Russell Jahn.** Keep this within the Blizzard employment context so it does not imply sole authorship of the game or all its engine technology. The current unannounced-game work remains separate.
 
-## Next edit
+## Applied on 2026-10-25
 
-Apply the work-first structure to homepage summaries and project descriptions, while retaining the original About page's facts and images. Keep one consistent contribution block on each project page. Do a sentence-level edit rather than a global pronoun replacement.
+Russell asked to apply this recommendation. The changes are saved locally on `feature/portfolio-rework-v1`.
+
+- Homepage: use “Russell Jahn / Molecule” and a short software + hardware + art introduction. Describe each project's deliverable or interaction directly. The About teaser identifies Molecule and the current hardware work without repeating a personal résumé.
+- Moongoat: make the C++ application and sensor-equipped swords the subjects. Retain suit-free body tracking, the vertical TV, 60 fps, the IMUs/speakers/LEDs, and the fixed color mapping for real-world directions. Keep current hardware projects separate from the event account.
+- Paper Ghost: describe the projection playback, screens, interactive props, virtual camera, map tools, and real-time cloud software. Preserve the production counts, named projects, media, and team-supervision credit.
+- Enflux: describe the SDK, first-party applications, investor demos, Blender recording/FBX plugin, Windows application, and live events.
+- Blizzard: describe engine and pipeline contributions across the historical Hearthstone expansions. Keep current unannounced-game graphics and art/audio pipeline work in its own section.
+- Attribution: every project header names Russell Jahn above the specific contribution. Paper Ghost has a separate collaborator field crediting Zed Axiz Productions for hardware + set operators. The Hearthstone image caption credits the game artwork to the Hearthstone team.
+- About: retain the personal introduction, motivation, original work descriptions, and galleries. No changes to the About page in this pass.
+
+The original project images, typography, and WebGL pyramid are retained. The only layout change adds named contribution and collaborator fields, using the existing responsive project-facts grid.
+
+Verification:
+
+- Production build passed with Hugo Extended `0.115.4`.
+- Nine core routes have one H1 each and valid local link/asset targets; planning notes remain outside public output.
+- Generated homepage and work pages were checked for first-person or invented collective voice. Each of the four project pages has a named Russell Jahn contribution block.
+- Homepage, work index, and four project pages fit at both 390px and 320px without horizontal overflow. Attribution rendered at both widths.
+- Desktop introduction and the Paper Ghost contribution/collaborator layout were visually inspected. The existing local preview server was reused.
+- The About source is unchanged, and no generated preview files or tools are included in the commit.
+
+Review at [the local preview](http://127.0.0.1:1313/). Deployment repair remains deferred.
