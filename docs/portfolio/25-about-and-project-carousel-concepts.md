@@ -103,7 +103,7 @@ Use **A as the common pattern**. C is an alternative where its labels add real m
 
 | Project | Two or three views | Notes |
 | --- | --- | --- |
-| Glass Castle | Curved setup → playback/warping controls → monitors beside the car set | All three are existing curated images; demonstrated in the prototype. |
+| Glass Castle | Car + projection setup (`glasscastle_test1.jpg`) → production monitors (`glasscastle_test3.jpg`) → finished scene (`glasscastle_final3.gif`) | Russell selected this order after reviewing the initial concepts. It supersedes the prototype's original setup/controls/on-set sequence; the case study now uses these three sources. Keep the GIF at native size and load it only when selected in a future homepage carousel. |
 | mother! | Virtual-camera interface → tool in use during preproduction → Gear VR version | Use the current cover, `mother_preproduction5.jpeg`, and `mother_preproduction4.png`. Keep the larger animated walkthrough for an explicit play action or the case study. |
 | Enflux | Blender recording interface → sensor clothing → live demo | The SIGGRAPH GIF is a candidate for deliberate playback. Confirm the exact clip and venue caption before changing the current general demo caption. |
 | Paper Ghost | Arrival screen work → X-Men video wall → a Quantico prop/demo | Keep the soft X-Men photograph as supporting context. Favor the wider X-Men view or the higher-resolution submarine still at a suitable size; do not enlarge a soft still to fill the lead slot. |

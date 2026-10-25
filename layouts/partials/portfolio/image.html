@@ -1,6 +1,10 @@
 {{ $image := resources.Get .source }}
 {{ if not $image }}{{ $image = resources.Get (printf "legacy-work/%s" .source) }}{{ end }}
 {{ if $image }}
+  {{ if eq (lower (path.Ext .source)) ".gif" }}
+  {{/* Publish the original animation; responsive still-image resizing would flatten it. */}}
+  <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" data-source-width="{{ $image.Width }}" style="--image-width: {{ printf "%dpx" $image.Width | safeCSS }}" alt="{{ .alt }}" loading="{{ .loading | default "lazy" }}" decoding="async"{{ with .class }} class="{{ . }}"{{ end }}>
+  {{ else }}
   {{ $variants := slice }}
   {{ $widths := slice 320 480 640 960 1280 1600 1920 2560 }}
   {{ range $widths }}
@@ -15,4 +19,5 @@
   {{ end }}
   {{ $fallback := $image.Resize (printf "%dx webp q90 lanczos" (int (math.Min 960 $image.Width))) }}
   <img src="{{ $fallback.RelPermalink }}" srcset="{{ delimit $variants ", " }}" sizes="{{ .sizes | default "(max-width: 760px) calc(100vw - 44px), 720px" }}" width="{{ $image.Width }}" height="{{ $image.Height }}" data-source-width="{{ $image.Width }}" style="--image-width: {{ printf "%dpx" $image.Width | safeCSS }}" alt="{{ .alt }}" loading="{{ .loading | default "lazy" }}" decoding="async"{{ with .class }} class="{{ . }}"{{ end }}>
+  {{ end }}
 {{ else }}{{ errorf "Portfolio image not found: %s" .source }}{{ end }}

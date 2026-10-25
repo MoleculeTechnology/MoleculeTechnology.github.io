@@ -161,3 +161,7 @@ Russell requested a single collection with `professional` and `experimental` tag
 ### 2026-10-25 — Ghost-white project titles and selective mint headings
 
 Russell refined the heading rule: project titles such as THE GLASS CASTLE should be ghost white, with mint reserved for the most important details and accents. The applied [heading hierarchy](26-heading-hierarchy.md) supersedes the all-mint rule above. Shared CSS defaults headings to ghost white and uses an explicit `heading-accent` class for the identity and primary page/brace section headings. Size variables are defined independently of color and semantic heading level. Existing layout, credits, and project copy are preserved.
+
+### 2026-10-25 — Glass Castle image selection
+
+Russell selected `glasscastle_test1.jpg` as the headliner, `glasscastle_test3.jpg` as the accent, and `glasscastle_final3.gif` as tertiary media. The headliner now appears across project listings and the case study; the case study presents the selected supporting media in order. Use the JPG originals behind the supplied thumbnail URLs and retain the GIF animation without enlarging it. See [the media selection record](27-glass-castle-media-selection.md).

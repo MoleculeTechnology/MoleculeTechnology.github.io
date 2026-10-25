@@ -47,6 +47,7 @@ The subsequent [tagged-project revision](24-tagged-projects-and-new-headliners.m
 24. [Tagged projects and new headliners](24-tagged-projects-and-new-headliners.md) — shared project collection, readable tag values, filters, film project pages, updated covers, mint titles, and validation.
 25. [About Me and project image concepts](25-about-and-project-carousel-concepts.md) — three About treatments, three interactive carousel concepts, proposed media sequences, and a recommended restrained direction.
 26. [Heading hierarchy and accent color](26-heading-hierarchy.md) — ghost-white project/content headings, explicit mint accents, shared size variables, and responsive checks.
+27. [Glass Castle selected media](27-glass-castle-media-selection.md) — Russell's chosen headliner, accent photograph, and finished-scene GIF, with original dimensions and delivery checks.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.
