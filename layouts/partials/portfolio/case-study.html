@@ -1,9 +1,10 @@
 <article class="case-study site-width">
-  <a class="back-link" href="{{ "work/" | relURL }}{{ if eq .Section "experiments" }}#experiments{{ end }}">← {{ if eq .Section "experiments" }}Experiments{{ else }}Professional work{{ end }}</a>
+  <a class="back-link" href="{{ "work/" | relURL }}">← All projects</a>
   <header class="case-header">
     <p class="eyebrow mint-text">{{ .Params.context }}</p>
-    <h1>{{ .Title }}</h1>
+    <h1{{ if .Params.preserveTitleCase }} class="title-case"{{ end }}>{{ .Title }}</h1>
     <p class="case-deck">{{ .Description }}</p>
+    {{ partial "portfolio/project-tags.html" . }}
     <dl class="case-facts">
       <div><dt>Contribution</dt><dd><strong>{{ .Site.Author.name | default "Russell Jahn" }}</strong><br>{{ .Params.contribution }}</dd></div>
       <div><dt>Context</dt><dd>{{ .Params.projectContext }}</dd></div>

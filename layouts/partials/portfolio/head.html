@@ -4,7 +4,7 @@
   <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}Russell Jahn — Software Engineer &amp; Artist | Molecule</title>
   <meta name="description" content="{{ .Description | default .Site.Language.Params.description }}">
   <meta name="theme-color" content="#050707">
-  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="canonical" href="{{ with .Params.redirect }}{{ . | absURL }}{{ else }}{{ .Permalink }}{{ end }}">
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
   <link rel="preload" href="{{ "fonts/RobotoCondensed/RobotoCondensed-Bold.ttf" | relURL }}" as="font" type="font/ttf" crossorigin>
   {{ $css := slice (resources.Get "css/schemes/molecule.css") (resources.Get "css/compiled/main.css") (resources.Get "css/portfolio.css") | resources.Concat "css/molecule.css" | minify | fingerprint }}
@@ -13,6 +13,11 @@
     {{ $pyramid := resources.Get "js/specialization-pyramid.js" | minify | fingerprint }}
     <script src="{{ $pyramid.RelPermalink }}" integrity="{{ $pyramid.Data.Integrity }}" defer></script>
   {{ end }}
+  {{ if and (eq .Section "work") .IsSection }}
+    {{ $filters := resources.Get "js/project-filters.js" | minify | fingerprint }}
+    <script src="{{ $filters.RelPermalink }}" integrity="{{ $filters.Data.Integrity }}" defer></script>
+  {{ end }}
+  {{ with .Params.redirect }}<meta http-equiv="refresh" content="0; url={{ . | relURL }}">{{ end }}
   {{ template "_internal/opengraph.html" . }}
   {{ if not (or .IsHome (eq .Section "work")) }}{{ partial "vendor.html" . }}{{ end }}
 </head>

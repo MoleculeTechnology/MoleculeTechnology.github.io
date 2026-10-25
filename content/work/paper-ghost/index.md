@@ -1,14 +1,15 @@
 ---
 title: "Film + television"
 description: "Interactive props, screen visuals, projection software, and set previsualization tools for 15 film + TV productions."
-weight: 10
+weight: 40
+tags: [professional]
 context: "Paper Ghost"
 contribution: "Software + digital art + animation; supervision of a team of three others"
 collaborators: "Zed Axiz Productions — hardware + set operators"
 projectContext: "Film and television production with Zed Axiz Productions"
-hero: "PaperGhost/xmen_apocalypse_pentagon3.jpg"
-heroAlt: "The X-Men: Apocalypse Pentagon set with the video wall and console displays."
-heroCaption: "X-Men: Apocalypse: the Pentagon video wall + console displays."
+hero: "PaperGhost/arrival_spytent2.jpg"
+heroAlt: "The Arrival surveillance tent set with maps and monitoring applications on its screens."
+heroCaption: "Arrival: on-set maps, surveillance controls, and screen applications."
 imageClass: "uncropped"
 ---
 
@@ -20,7 +21,7 @@ Production involved direct collaboration with directors, producers, and VFX supe
 
 A nine-projector Pentagon video wall displays missile timers, world maps, world clocks, and aircraft/submarine controls. Dozens of 1980s CRT TVs and computers retrofitted with projectors display custom digital art.
 
-{{< about-gallery marker="### X-Men: Apocalypse. ###" title="X-Men: Apocalypse" description="film-set screen visuals" skip="1" >}}
+{{< about-gallery marker="### X-Men: Apocalypse. ###" title="X-Men: Apocalypse" description="film-set screen visuals" >}}
 
 ## Quantico / Season 1
 
@@ -32,7 +33,7 @@ A set of **259 Android apps** simulates cellphone calls and texting within 21 ep
 
 4K/360° video playback supports a large rear-projection setup for shooting car scenes in a film studio. The software includes color calibration, video warping, and wireless playback controls from an Android tablet.
 
-{{< about-gallery marker="### The Glass Castle. ###" title="The Glass Castle" description="rear-projection setup, software + driving scenes" >}}
+[The Glass Castle / projection software and setup →](/work/glass-castle/)
 
 ## Ça Décolle!
 
@@ -44,12 +45,12 @@ Real-time software generates adjustable clouds for aircraft scenes.
 
 Set visualization software lets the director and cinematographer frame shots and block actors. The virtual camera uses real-world measurements and physically based lens settings, with Mac, Windows, and Gear VR versions.
 
-{{< about-gallery marker="### mother! by Darren Aronofsky. ###" title="mother!" description="set previsualization + virtual camera software" >}}
+[mother! / set previsualization and virtual camera →](/work/mother/)
 
 ## Arrival
 
 Drag-and-drop tools customize military maps, surveillance controls, and simulations for on-set screens.
 
-{{< about-gallery marker="### Arrival. ###" title="Arrival" description="on-set maps + surveillance screens" >}}
+{{< about-gallery marker="### Arrival. ###" title="Arrival" description="on-set maps + surveillance screens" skip="1" >}}
 
 [More production images + motion clips →](/about/)

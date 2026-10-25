@@ -14,10 +14,11 @@
     {{ $title := .title }}
     {{ $description := .description }}
     {{ $skip := int .skip }}
+    {{ $exclude := .exclude | default "" }}
     <div class="work-gallery" role="group" aria-label="{{ $title }} gallery" data-about-gallery="{{ .marker }}">
       {{ range $index, $tag := $images }}
-        {{ if ge $index $skip }}
-          {{ $path := replaceRE `.*src="([^"]+)".*` "$1" $tag }}
+        {{ $path := replaceRE `.*src="([^"]+)".*` "$1" $tag }}
+        {{ if and (ge $index $skip) (ne $path $exclude) }}
           {{ $width := replaceRE `.*class="([^"]+)".*` "$1" $tag }}
           {{ $alt := printf "%s: %s (%d of %d)." $title $description (add $index 1) (len $images) }}
           <figure class="gallery-frame {{ $width }}" data-about-image="{{ $path }}">

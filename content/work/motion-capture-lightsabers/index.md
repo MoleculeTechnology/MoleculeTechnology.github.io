@@ -1,11 +1,17 @@
 ---
-title: "Molecule at Moongoat Coffee"
+title: "Motion Capture + Lightsabers"
 description: "Two motion capture demos: camera-based body tracking at 60 fps, and wooden swords with LEDs that change color with their orientation."
-weight: 40
+weight: 60
+tags: [experimental]
 context: "Molecule / Test installation"
 contribution: "C++ body tracking application + sensor-equipped wooden swords"
 projectContext: "An independent pop-up test installation at Moongoat Coffee"
-aliases: ["/work/moongoat/"]
+aliases: ["/work/moongoat/", "/experiments/moongoat/"]
+hero: "portfolio/moongoat-light-and-motion.jpg"
+heroAlt: "Russell demonstrating two illuminated swords beside a vertical screen with a live body-tracking wireframe at Moongoat Coffee."
+heroCaption: "Motion capture + lightsaber demos at Moongoat Coffee."
+imageClass: "portrait"
+coverClass: "portrait-cover"
 ---
 
 A small pop-up installation at Moongoat Coffee tested camera-based body tracking and orientation-controlled light props.

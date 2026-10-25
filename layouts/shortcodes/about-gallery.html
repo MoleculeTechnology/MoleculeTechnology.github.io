@@ -1,1 +1,1 @@
-{{ partial "portfolio/about-gallery.html" (dict "marker" (.Get "marker") "title" (.Get "title") "description" (.Get "description") "skip" (.Get "skip" | default 0)) }}
+{{ partial "portfolio/about-gallery.html" (dict "marker" (.Get "marker") "title" (.Get "title") "description" (.Get "description") "skip" (.Get "skip" | default 0) "exclude" (.Get "exclude" | default "")) }}

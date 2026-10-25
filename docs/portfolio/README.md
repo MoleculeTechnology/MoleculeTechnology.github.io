@@ -19,6 +19,7 @@ The website rework is being tested locally on `feature/portfolio-rework-v1`; dep
 The original About page's facts and pictures form the basis of the revised portfolio. This iteration uses [the existing curated About galleries](21-curated-about-media.md), with their original image selections and order. [Work-focused editorial voice](20-work-focused-editorial-voice.md) records the less personal descriptions and contribution credits. [Applied copy and media revision](19-applied-copy-and-media-revision.md) records the preceding copy and media pass.
 The [development blog is removed](22-development-blog-removal.md); the portfolio navigation is Work, About, and Contact.
 The latest pass separates [Professional Work and Experiments](23-professional-work-experiments-and-image-quality.md), keeps Blizzard prominent, and restores higher-resolution originals for two existing photographs.
+The subsequent [tagged-project revision](24-tagged-projects-and-new-headliners.md) puts every project in one collection, adds Work filters, leads with The Glass Castle, features mother! and Enflux, and changes all titles to mint.
 
 1. [Brief and positioning](01-brief-and-positioning.md) — audience, offer, and the connection between the work.
 2. [Evidence and CV review](02-evidence-and-cv-review.md) — reviewed sources, supported claims, and missing facts.
@@ -43,6 +44,7 @@ The latest pass separates [Professional Work and Experiments](23-professional-wo
 21. [Use the curated About Me media](21-curated-about-media.md) — the current iteration's image selection, shared galleries, Moongoat treatment, and verification.
 22. [Remove the development blog](22-development-blog-removal.md) — deleted blog content, navigation/configuration cleanup, isolated preview output, and verification.
 23. [Professional Work, Experiments, and image quality](23-professional-work-experiments-and-image-quality.md) — current grouping and provisional order, contribution-led Blizzard page, recovered originals, responsive delivery, and verification.
+24. [Tagged projects and new headliners](24-tagged-projects-and-new-headliners.md) — shared project collection, readable tag values, filters, film project pages, updated covers, mint titles, and validation.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

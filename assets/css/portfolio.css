@@ -189,9 +189,33 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .work-index-grid .project-image { aspect-ratio: 4 / 3; }
 .work-index-grid .portrait img { object-position: center 41%; }
 .work-index-grid .eyebrow { margin-top: 25px; }
-.work-index-grid h3 { font-size: 34px; line-height: 1.1; font-weight: 700; text-transform: uppercase; margin-block: 12px 18px !important; }
+.work-index-grid .project-title { font-size: 34px; line-height: 1.1; font-weight: 700; text-transform: uppercase; margin-block: 12px 18px !important; }
 .work-index-grid article > p:not(.eyebrow) { color: var(--muted); max-width: 38ch; }
 .work-index-grid .text-link { margin-top: 15px; }
+.project-card { min-width: 0; }
+.project-card-copy > p:not(.eyebrow) { color: var(--muted); max-width: 42ch; }
+.project-labels { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 18px 0 0; }
+.project-labels a { display: inline-block; border: 1px solid var(--rule); padding: 4px 9px; color: var(--muted); font-size: 11px; line-height: 1.5; letter-spacing: .04em; }
+.project-labels a:hover { border-color: var(--mint); color: var(--mint); }
+.home-projects { margin-top: 0; }
+.home-projects .work-index-lead .project-card-copy > p:not(.eyebrow) { max-width: 60ch; }
+.work-index-grid .project-image.projection-cover { aspect-ratio: 16 / 10; }
+.work-index-grid .projection-cover img { height: 100%; object-fit: cover; object-position: center 38%; }
+.project-image.portrait-cover { max-width: 420px; }
+.split-projects { grid-template-columns: 1fr; }
+.split-projects .project-card { display: grid; grid-template-columns: .85fr 1fr; gap: 64px; align-items: center; }
+.split-projects .project-image { max-width: none; }
+.split-projects .project-card-copy > .eyebrow { margin-top: 0; }
+.engineering-cover { display: flex; flex-direction: column; justify-content: center; aspect-ratio: 16 / 9; padding: clamp(20px, 3vw, 38px); border: 1px solid var(--rule); background: var(--surface); font-size: clamp(22px, 2.7vw, 38px); font-weight: 700; line-height: 1.4; letter-spacing: -.02em; }
+.engineering-cover span + span { border-top: 1px solid var(--rule); }
+.project-filter { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 42px; }
+.project-filter button { padding: 10px 16px; min-height: 44px; border: 1px solid var(--rule); background: none; font-size: 14px; font-weight: 700; cursor: pointer; }
+.project-filter button[aria-pressed="true"] { color: var(--canvas); border-color: var(--mint); background: var(--mint); }
+.filter-status { color: var(--muted); font-size: 13px; margin-top: 20px !important; }
+[data-project-catalogue] .work-index-grid { margin-top: 32px; }
+.case-header .project-labels { margin-top: 24px; }
+.case-body h3 { font-size: 25px; line-height: 1.2; font-weight: 700; margin-block: 32px 18px !important; }
+.title-case { text-transform: none !important; }
 .work-index-text { grid-column: 1 / -1; padding-top: 25px; border-top: 1px solid var(--rule); }
 /* Existing Blowfish articles and galleries share the new navigation and palette. */
 .legacy-content { width: min(1050px, calc(100% - 128px)); margin-inline: auto; padding-block: 50px 85px; min-height: 60vh; }
@@ -294,8 +318,13 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
   .case-next { flex-direction: column; align-items: flex-start; gap: 10px; }
   .work-index-grid { grid-template-columns: 1fr; gap: 52px; margin-top: 45px; }
   .work-group { margin-top: 48px; }
+  .split-projects .project-card { grid-template-columns: 1fr; gap: 0; }
+  .split-projects .project-card-copy > .eyebrow { margin-top: 25px; }
+  .project-filter { gap: 8px; }
+  .project-filter button { font-size: 12px; padding-inline: 12px; }
   .legacy-content h1 { font-size: 35px; }
   .about-box { display: block; }
   .about-box .headshot-column { max-width: 230px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .project-image img, .text-link span { transition: none; } }
+.molecule-site :is(h1, h2, h3, h4, h5, h6) { color: var(--mint); }
