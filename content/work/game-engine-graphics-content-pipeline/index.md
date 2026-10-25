@@ -13,7 +13,7 @@ context: "Blizzard / Engine + content technology"
 contribution: "Core systems + asset pipeline + artist tools + performance + native mobile development"
 projectContext: "Hearthstone + an unannounced game at Blizzard"
 contributions:
-  - title: "Engine + platforms"
+  - title: "Engine + multi-platform expert"
     detail: "Core systems, memory and download performance, native mobile development, low-level debugging, and SDK integrations."
   - title: "Content + artist tools"
     detail: "Asset pipeline maintenance and improvements, client build tooling, and tools for FX artists."

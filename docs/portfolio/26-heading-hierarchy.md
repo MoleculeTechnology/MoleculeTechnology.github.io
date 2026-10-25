@@ -50,3 +50,13 @@ Russell requested mint for Hearthstone and Unannounced game on the Blizzard case
 The production build passed. Rendered colors and layout were checked at 1280px, 390px, and 320px; both game headings are mint, smaller headings are ghost white, and there is no horizontal overflow. The Glass Castle's headings were checked to confirm the change is scoped to the Blizzard page. Preview restarted and left running.
 
 ![Mint game section heading with ghost-white subheadings](assets/2026-10-25-blizzard-section-colors.jpg)
+
+## Stronger Blizzard headings
+
+Russell renamed the contribution label to **Engine + multi-platform expert** and requested bolder section headings. The game section headings and contribution labels now use real Roboto Condensed Black 900. They previously used Bold 700, so this adds an actual heavier face while retaining the selected font family and the existing heading sizes/colors. Smaller body subheadings remain Bold 700.
+
+The new Latin WOFF2 is self-hosted at `static/fonts/RobotoCondensed/RobotoCondensed-Black-latin.woff2` (20,996 bytes), sourced from the [official Google Fonts stylesheet for weight 900](https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@900&display=swap). Its SIL Open Font License is included as `OFL-Black.txt`, from the [Google Fonts source](https://github.com/google/fonts/tree/main/ofl/robotocondensed). The older local faces retain their existing license. Font synthesis stays disabled.
+
+[Font provenance](assets/roboto-condensed-black-source.json) records the exact Google-hosted file URL and SHA-256. Production build and whitespace checks passed. Browser font checks confirm the 900 face is available and the affected headings compute to weight 900. Checked at 1280px, 390px, and 320px with no horizontal overflow; colors remain mint for game sections and ghost white for contribution labels. Preview restarted and left running.
+
+![Updated contribution label and stronger heading weight](assets/2026-10-25-blizzard-bold-contributions.jpg)
