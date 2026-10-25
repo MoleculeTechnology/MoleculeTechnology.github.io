@@ -70,12 +70,17 @@ Separately, wooden swords contained IMU sensors, speakers, and LED strips, with 
 These are Russell's reported results, not measurements performed during the website work.
 The [source and copy note](18-moongoat-demonstrations.md) preserves the distinction between the outside-in camera system and inside-out sensor-equipped swords.
 
+**S11 — Russell's current-project performance clarification, 2026-10-25.**
+Russell says automated art performance benchmarking and client performance monitoring should be highlighted for the current project: "The buck stops at me for game performance on that project."
+Use this as final responsibility for overall game performance on the project labeled Unannounced game, following his earlier explicit naming clarification. Do not transfer that scope of accountability to Hearthstone. No benchmark results or implementation details were supplied.
+
 ## Claim review
 
 | Claim                                                                                                | Basis                               | How to use it                                                                             |
 | ---------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------- |
 | Software engineer and artist                                                                         | Russell's requested positioning, S1 | Lead description. Support artistic authorship with project decisions and work             |
 | Current work focuses on 3D graphics, rendering, and art/audio pipelines on an unannounced game       | S1                                  | Draft broadly. Confirm wording appropriate for public use before publication              |
+| Final responsibility for current-project game performance, automated art performance benchmarking, and client performance monitoring | S11 | Highlight in the current-project section and contribution summary; keep the scope specific to that project |
 | Hearthstone core systems, memory/download work, native mobile, build tools, FX tools, asset pipeline | S2                                  | Strong engineering summary. Confirm individual examples and dates                         |
 | Nine major Hearthstone expansions during March 2021–August 2023                                      | S2                                  | Historical claim only. Verify the count and intended date range before highlighting       |
 | Interactive film props and set previsualization for Paper Ghost                                      | S1, S2                              | Feature prominently with a precise contribution and collaborator line                     |

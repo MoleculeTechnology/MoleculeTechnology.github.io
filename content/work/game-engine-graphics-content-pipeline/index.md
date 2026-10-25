@@ -1,6 +1,6 @@
 ---
 title: "Game Engine, Graphics + Content Pipeline"
-description: "Game engine systems, graphics, content pipelines, and artist tools for desktop + mobile at Blizzard."
+description: "Game engine systems, graphics, content pipelines, artist tools, and performance for desktop + mobile at Blizzard."
 weight: 50
 tags: [professional]
 hero: "Blizzard/hearthstone_gameplay1.jpg"
@@ -16,8 +16,8 @@ contributions:
     detail: "Core systems, memory and download performance, native mobile development, low-level debugging, and SDK integrations."
   - title: "Content + artist tools"
     detail: "Asset pipeline maintenance and improvements, client build tooling, and tools for FX artists."
-  - title: "Production + team support"
-    detail: "Nine major expansions from March 2021 through August 2023; engineering guidance and resolution of blocking issues across teams."
+  - title: "Game performance"
+    detail: "Final responsibility for game performance on the unannounced game, including automated art performance benchmarking and client performance monitoring."
 ---
 
 ## Hearthstone
@@ -43,6 +43,12 @@ The asset pipeline packs + ships the game's content worldwide across desktop and
 Gameplay excerpts are from the [official Blizzard TITANS press kit](https://blizzard.gamespress.com/en/Hearthstone-TITANS---Press-Kit). Game artwork and visual effects are by the Hearthstone team; Russell's contributions are the engineering work described above.
 
 ## Unannounced game
+
+### Game performance
+
+Russell Jahn has **final responsibility for game performance** on the project. Work includes **automated art performance benchmarking** and **client performance monitoring**.
+
+### Graphics + content pipelines
 
 Current work on an unannounced game focuses on **3D graphics techniques, rendering, and content pipeline tools for art + audio**.
 

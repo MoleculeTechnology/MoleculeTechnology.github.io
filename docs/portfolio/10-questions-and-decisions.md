@@ -169,3 +169,11 @@ Russell selected `glasscastle_test1.jpg` as the headliner, `glasscastle_test3.jp
 ### 2026-10-25 — Blizzard gameplay cover and sharper Hearthstone media
 
 Russell selected `hearthstone_gameplay1.jpg` as the temporary Blizzard headliner and requested better-looking Hearthstone stills/motion. Applied that cover and reviewed official press assets from the recorded role period. Two verified 4K/60 fps TITANS clips now supply short, manually played 1080p excerpts and sharp still previews in the case study, replacing the smaller GIF/VFX examples while preserving Russell's credits and the Hearthstone team's artwork/FX attribution. [Research and source records](28-hearthstone-headliner-and-media-research.md) include alternate key art and further motion candidates.
+
+### 2026-10-25 — Current-project performance accountability
+
+Russell clarified that he has final responsibility for game performance on the current project, including automated art performance benchmarking and client performance monitoring. The homepage's current-role line now mentions that responsibility, and the Blizzard contribution summary and Unannounced game section name the work explicitly. This accountability is scoped to that project. Preserve the earlier confirmed Unannounced game label. The evidence is recorded as S11 in [Evidence and CV review](02-evidence-and-cv-review.md).
+
+Pinned Hugo production build and whitespace checks passed. Home, Work, and the Blizzard case study were checked at 1280px, 390px, and 320px without horizontal overflow. Preview restarted and left running.
+
+![Current-project performance responsibilities](assets/2026-10-25-current-game-performance.jpg)
