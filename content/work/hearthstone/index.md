@@ -30,9 +30,11 @@ I also supported engineers on other teams with guidance and solutions to blockin
 
 Multi-platform development makes the constraints concrete: the same creative work needs to reach people using different devices and operating environments.
 
-## How it connects
+## Current focus
 
-My current engineering focus includes 3D graphics techniques, rendering, and content pipeline tools for art and audio.
+In my current role on an unannounced game, I work heavily on 3D graphics techniques, rendering, and content pipeline tools for art and audio.
+
+## How it connects
 
 This experience supports the engineering side of my creative practice: understanding rendering and runtime constraints, building tools for other people, and carrying work through to delivery.
 Together with [film-set experience](/work/paper-ghost/) and [motion capture tools](/work/enflux/), it informs the way I approach interactive work as Molecule.

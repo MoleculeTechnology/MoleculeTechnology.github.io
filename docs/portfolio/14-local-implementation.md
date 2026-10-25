@@ -49,6 +49,31 @@ Generated preview files go to ignored `.preview/`.
 Neither folder belongs in the commit.
 The original shell scripts remain available.
 
+## Follow-up pass on `feature/portfolio-rework-v1`
+
+The deferred deployment notes and updated preview instructions were committed separately as `ac3a690`.
+The website pass adds a dedicated contact layout using the portfolio's typography, colors, and spacing, with project prompts and a LinkedIn fallback beside the existing form.
+A "Write a message" link jumps to the inquiry and moves keyboard focus to its heading.
+The existing HubSpot form service and fields are retained.
+
+The homepage now calls out large-audience desktop/mobile engineering and the current focus on graphics, rendering, and art/audio tools.
+The Blizzard project page distinguishes the current unannounced-game focus from the Hearthstone work.
+
+Verification for this pass:
+
+- Production build passed with Hugo Extended `0.115.4`.
+- Nine core routes and their local asset/link targets resolved in the generated build.
+- The changed pages retained one primary heading each.
+- Contact layout was inspected at desktop, 390px, and 320px widths; no horizontal page overflow was observed at phone widths.
+- The inquiry jump moved focus to the form heading, and the embedded email, name, message, and submit controls rendered.
+- The tested contact tab had no warning/error console entries. No form inquiry was submitted.
+- Generated preview output and tools remain untracked and ignored.
+
+To review locally, start with the homepage, rotate/pause/reset the pyramid, open the project pages, and follow the contact link.
+On Contact, try "Write a message" and inspect the page at a narrow browser width.
+The preview refreshes as source files change.
+Deployment repair remains deferred under Russell's decision.
+
 ## Checks performed
 
 - The original site built successfully with the pinned Hugo release before implementation.

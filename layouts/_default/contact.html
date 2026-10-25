@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article class="contact-page site-width">
+  <header class="contact-page-header">
+    <p class="eyebrow mint-text">Make something together / Molecule</p>
+    <h1>AN IDEA.<br>A SPACE.<br><span>LET'S TALK.</span></h1>
+    <p class="case-deck">{{ .Params.introduction }}</p>
+    <a class="text-link inquiry-jump" href="#inquiry-form-heading">Write a message <span aria-hidden="true">↓</span></a>
+  </header>
+  <div class="contact-page-grid">
+    <aside class="inquiry-context" aria-labelledby="inquiry-context-heading">
+      <h2 id="inquiry-context-heading">START WITH<br>THE POSSIBILITY.</h2>
+      <p>Interactive light and motion, creative tools, or a new collaboration. A rough idea is a good place to begin.</p>
+      <p class="eyebrow">A few useful starting points</p>
+      <ul>
+        <li>The idea, space, or occasion.</li>
+        <li>What people would see, feel, or do.</li>
+        <li>Your location, timing, and any practical constraints.</li>
+      </ul>
+      <a class="text-link" href="https://www.linkedin.com/in/russelljahn/">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+      <p class="inquiry-fallback">You can also reach me there if the form doesn't load.</p>
+    </aside>
+    <div class="inquiry-form-panel">{{ .Content }}</div>
+  </div>
+</article>
+{{ end }}

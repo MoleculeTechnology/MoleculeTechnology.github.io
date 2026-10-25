@@ -1,12 +1,9 @@
 ---
 title: "Let's talk"
-layout: "simple"
+layout: "contact"
 description: "Discuss an interactive installation, creative collaboration, or software project with Russell Jahn."
+introduction: "Tell me about the idea, the space, and what you'd like people to experience."
 showHero: false
 ---
-
-Tell me about the idea, the space, and what you'd like people to experience.
-
-[You can also connect with me on LinkedIn.](https://www.linkedin.com/in/russelljahn/)
 
 {{< contactform >}}

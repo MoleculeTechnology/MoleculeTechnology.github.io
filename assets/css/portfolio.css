@@ -91,6 +91,7 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .project-pair article > .eyebrow { margin-top: 26px; }
 .project-pair h3 { font-size: clamp(30px, 3.4vw, 46px); line-height: 1.08; font-weight: 700; margin-block: 13px 18px !important; }
 .project-pair .text-link { margin-top: 16px; }
+.project-pair article > .current-focus { font-size: 16px; margin-top: 16px; color: var(--ghost); }
 .practice-section { margin-top: 112px; padding-block: 42px 85px; border-top: 1px solid var(--rule); }
 .practice-section > .eyebrow { color: var(--muted); margin-bottom: 50px; }
 .practice-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 65px; }
@@ -106,6 +107,25 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .contact-action span { padding-left: 36px; }
 .contact-action:hover { background: var(--ghost); }
 .contact-fallback { display: block; text-align: right; font-size: 12px; color: var(--muted) !important; margin-top: 18px; }
+.contact-page { padding-block: 70px 100px; }
+.contact-page-header { max-width: 840px; }
+.contact-page-header h1 { font-size: clamp(56px, 7vw, 96px); font-weight: 700; line-height: 1; letter-spacing: -.025em; margin-block: 27px !important; }
+.contact-page-header h1 span { color: var(--mint); }
+.contact-page-header .case-deck { max-width: 37ch; }
+.inquiry-jump { margin-top: 20px; }
+.contact-form h2:focus { outline: 2px solid var(--mint); outline-offset: 8px; }
+.contact-page-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(36px, 6vw, 90px); margin-top: 64px; padding-top: 42px; border-top: 1px solid var(--rule); align-items: start; }
+.inquiry-context, .inquiry-form-panel { min-width: 0; }
+.inquiry-context h2 { font-size: 32px; font-weight: 700; line-height: 1.08; margin-bottom: 23px !important; }
+.inquiry-context > p:not(.eyebrow), .inquiry-context ul { color: var(--muted); max-width: 33ch; }
+.inquiry-context .eyebrow { font-size: 11px; margin-top: 30px !important; }
+.inquiry-context ul { list-style: none; padding: 0; margin: 14px 0 28px; }
+.inquiry-context li { border-top: 1px solid var(--rule); padding-block: 12px; font-size: 16px; }
+.inquiry-context .text-link { font-size: 12px; }
+.inquiry-context .inquiry-fallback { font-size: 13px; margin-top: 10px !important; }
+.inquiry-form-panel { padding: clamp(22px, 3vw, 38px); border: 1px solid var(--rule); background: var(--surface); }
+.contact-form h2 { font-size: 25px; font-weight: 700; line-height: 1.2; text-transform: uppercase; margin-bottom: 27px !important; }
+.contact-form iframe { display: block; width: 100%; max-width: 100%; }
 .site-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 22px; padding-block: 29px 35px; border-top: 1px solid var(--rule); font-size: 13px; }
 .footer-name { font-weight: 700; letter-spacing: .04em; }
 .footer-name span { color: var(--mint); }
@@ -223,6 +243,10 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
   .contact-bottom { align-items: flex-start; flex-direction: column; gap: 25px; }
   .contact-bottom p { font-size: 17px; }
   .contact-fallback { text-align: left; }
+  .contact-page { padding-block: 42px 60px; }
+  .contact-page-header h1 { font-size: clamp(52px, 13vw, 76px); }
+  .contact-page-grid { grid-template-columns: 1fr; gap: 34px; margin-top: 40px; padding-top: 30px; }
+  .inquiry-context > p:not(.eyebrow), .inquiry-context ul { max-width: 42ch; }
   .site-footer { gap: 16px; padding-block: 25px; }
   .site-footer p { width: 100%; order: 3; }
   .footer-links { gap: 16px; font-size: 12px; }
