@@ -11,11 +11,6 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "development blog"
-  pageRef = "devblog"
-  weight = 10
-
-[[main]]
   name = "mood board"
   pageRef = "moodboard"
   weight = 10

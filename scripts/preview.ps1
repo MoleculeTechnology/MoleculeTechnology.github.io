@@ -5,6 +5,7 @@ $repositoryPath = Split-Path -Parent $PSScriptRoot
 $hugoVersion = '0.115.4'
 $toolDirectory = Join-Path $repositoryPath ".tools\hugo\$hugoVersion"
 $hugoExecutable = Join-Path $toolDirectory 'hugo.exe'
+$previewDestination = Join-Path $repositoryPath '.preview\site'
 
 if (-not (Test-Path -LiteralPath $hugoExecutable)) {
     New-Item -ItemType Directory -Path $toolDirectory -Force | Out-Null
@@ -24,7 +25,7 @@ if (-not (Test-Path -LiteralPath $hugoExecutable)) {
 
 Push-Location $repositoryPath
 try {
-    & $hugoExecutable server --bind 127.0.0.1 --port $Port --disableFastRender --baseURL "http://127.0.0.1:$Port/" --destination (Join-Path $repositoryPath '.preview') --renderToDisk
+    & $hugoExecutable server --bind 127.0.0.1 --port $Port --disableFastRender --baseURL "http://127.0.0.1:$Port/" --destination $previewDestination --cleanDestinationDir --renderToDisk
     if ($LASTEXITCODE -ne 0) { throw "Hugo stopped with exit code $LASTEXITCODE." }
 }
 finally {

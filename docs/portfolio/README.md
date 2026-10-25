@@ -17,6 +17,7 @@ The website rework is being tested locally on `feature/portfolio-rework-v1`; dep
 ## Start here
 
 The original About page's facts and pictures form the basis of the revised portfolio. This iteration uses [the existing curated About galleries](21-curated-about-media.md), with their original image selections and order. [Work-focused editorial voice](20-work-focused-editorial-voice.md) records the less personal descriptions and contribution credits. [Applied copy and media revision](19-applied-copy-and-media-revision.md) records the preceding copy and media pass.
+The [development blog is removed](22-development-blog-removal.md); the portfolio navigation is Work, About, and Contact.
 
 1. [Brief and positioning](01-brief-and-positioning.md) — audience, offer, and the connection between the work.
 2. [Evidence and CV review](02-evidence-and-cv-review.md) — reviewed sources, supported claims, and missing facts.
@@ -39,6 +40,7 @@ The original About page's facts and pictures form the basis of the revised portf
 19. [Applied copy and media revision](19-applied-copy-and-media-revision.md) — the chosen wording, original image selection, source mapping, and verification for the applied pass.
 20. [Work-focused editorial voice](20-work-focused-editorial-voice.md) — reference comparisons, the applied voice revision, explicit contribution credits, and verification.
 21. [Use the curated About Me media](21-curated-about-media.md) — the current iteration's image selection, shared galleries, Moongoat treatment, and verification.
+22. [Remove the development blog](22-development-blog-removal.md) — deleted blog content, navigation/configuration cleanup, isolated preview output, and verification.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.
@@ -53,7 +55,7 @@ The [media inventory](assets/media-inventory.json) lists the local About-page me
 - Use a nearly black canvas, ghost white type, and a proposed mint accent of `#84F9EB`, already present in the repository's palette.
 - Use Roboto Condensed as the primary family, with deliberate weight, width, line breaks, and spacing.
 - Render the specialization pyramid in WebGL, with upright screen-space labels following its rotating vertices.
-- Make contact and project sharing easy. Keep the journal as supporting material.
+- Make contact and project sharing easy. Keep the public site focused on Work, About, and Contact.
 
 ## Review limits
 

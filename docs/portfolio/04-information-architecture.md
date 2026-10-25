@@ -8,18 +8,19 @@ tags: [portfolio, ux, content]
 
 ## Navigation
 
-**WORK · ABOUT · NOTES · CONTACT**
+**WORK · ABOUT · CONTACT**
+
+Russell requested removal of the development blog on 2026-10-25. Notes is no longer a public section. See [Development blog removal](22-development-blog-removal.md).
 
 Make Work the homepage's primary destination.
 Place CV and external profiles in the About page and footer, with an optional small CV link in the desktop navigation.
 Keep labels legible and familiar even when section headings use the brand's braces or caps.
-Move the mood board to a secondary Studio/Notes destination or keep it as a private reference until its role is decided.
+Keep the mood board out of primary navigation until its role is decided.
 
 ```mermaid
 flowchart TD
     H[Home: Russell + Molecule] --> W[Selected work]
     H --> A[About + experience + CV]
-    H --> N[Notes / existing devblog]
     H --> C[Contact]
     W --> M[Light + motion / Moongoat]
     W --> P[Paper Ghost / projection + screen work]
@@ -109,7 +110,6 @@ Technical details may be deeper down the page, but should be reachable with ordi
 /work/rendering-studies/        when there is public work to show
 /about/
 /contact/
-/devblog/                      keep this existing URL for Notes
 ```
 
 Separate OLOSCAPE or OLOSET pages can follow when they have enough material.

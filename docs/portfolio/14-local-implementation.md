@@ -45,7 +45,7 @@ Use `-Port 1314` if the default port is already in use.
 Press Ctrl+C in the terminal to stop the server.
 
 The script downloads the official Hugo Extended `0.115.4` release if needed, checks its published SHA-256 checksum, and caches it under ignored `.tools/`.
-Generated preview files go to ignored `.preview/`.
+Generated preview files go to ignored `.preview/site/`. The script cleans that dedicated output directory so removed pages do not persist from an earlier build. Earlier QA snapshots under `.preview/` are outside the served site.
 Neither folder belongs in the commit.
 The original shell scripts remain available.
 
@@ -94,7 +94,7 @@ The [copy and media revision](19-applied-copy-and-media-revision.md) now uses th
 The subsequent [editorial voice revision](20-work-focused-editorial-voice.md) makes homepage and project descriptions less personal and adds named contribution fields while preserving the About page's personal voice.
 Choose final specialization wording and refine the pyramid's interaction and label placement across more orientations and devices.
 Exercise physical touch input, actual browser zoom, reduced-motion settings, and WebGL context-loss recovery.
-Select and prepare stronger interaction clips, and continue refining the legacy About/journal presentation. Original Paper Ghost and Enflux stills are now restored on the project pages.
+Select and prepare stronger interaction clips, and continue refining the legacy About presentation. Original Paper Ghost and Enflux galleries are now restored on the project pages. The development blog has been removed at Russell's request; see [Development blog removal](22-development-blog-removal.md).
 Settle the current role chronology, event date, public current-game wording, and updated CV.
 Review sample routes and inherited theme features before reducing dependencies.
 Finish contact-form visual styling and verify delivery with an explicitly authorized test.

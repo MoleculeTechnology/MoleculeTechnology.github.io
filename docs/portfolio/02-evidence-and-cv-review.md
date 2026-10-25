@@ -109,7 +109,7 @@ Saga firmware code does not by itself establish custom PCB design, enclosure fab
 - Selected up-to-date light sword and sensor footage.
 - Rights/credits for source media and permission for any republished testimonial.
 
-The 2023 [Pixel Perf Market note](../../content/devblog/2023-08-02/_index.md) records plans for a MoonGoat event on one of two possible dates.
+The 2023 Pixel Perf Market note records plans for a MoonGoat event on one of two possible dates. Russell later requested removal of the development blog; the historical source can be read with `git show 8995b3e:content/devblog/2023-08-02/_index.md`.
 It does not document completion or settle the date of the pop-up Russell now describes.
 The subsequently reviewed event imagery adds evidence of a completed physical demo setup. Folder/poster names point to September 2, 2023, without settling every event detail.
 

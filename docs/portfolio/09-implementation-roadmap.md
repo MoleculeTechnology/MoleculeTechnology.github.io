@@ -37,7 +37,7 @@ Unknowns do not prevent building templates, but do prevent publishing unsupporte
 - [ ] Run the existing production build into a separate preview destination.
 - [ ] Inspect resolved site URL, title, language, theme, and asset paths.
 - [ ] Inventory real pages, sample pages, existing redirects, and custom domain settings.
-- [ ] Record shortcodes and journal behavior that need to continue working.
+- [ ] Record the About galleries and portfolio shortcodes that need to continue working. The development blog has been removed at Russell's request.
 - [ ] Review the existing untracked contact work without overwriting it.
 
 Candidate baseline commands once the matching CLI is available:
@@ -89,7 +89,7 @@ Do not hold the entire portfolio for a comprehensive archive or a cinematic show
 **Indicative effort:** Half a day to one day, depending on existing dependencies.
 
 - [ ] Remove/exclude confirmed unused theme samples and routes.
-- [ ] Port or keep required shortcode/journal behavior deliberately.
+- [ ] Port or keep required portfolio shortcode behavior deliberately.
 - [ ] Review unnecessary theme scripts, widgets, sample integrations, and footer links.
 - [ ] Simplify duplicate/example configuration after checking effective settings.
 - [ ] Decide whether the remaining Blowfish dependency is useful. Remove it only after all required routes work with the replacement presentation.

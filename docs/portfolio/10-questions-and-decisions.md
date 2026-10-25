@@ -24,7 +24,7 @@ tags: [portfolio, decisions]
 
 1. Keep Hugo and hosting, and replace the current framework/blog emphasis with a portfolio presentation.
 2. Use “Molecule — Russell Jahn, software engineer & artist.”
-3. Put selected work ahead of the journal and mood board.
+3. Focus the public site on selected work, About, and Contact. The development blog is removed under the 2026-10-25 decision below.
 4. Make Paper Ghost a flagship, Enflux a substantial interaction story, and Blizzard a clear engineering credibility pillar.
 5. Document Moongoat and current Molecule physical work to bridge earlier employment with future commissions.
 6. Use proposed mint `#84F9EB`, already present in the theme palette, alongside black and ghost white.
@@ -145,3 +145,7 @@ Russell subsequently authorized applying the direction. The homepage and four pr
 ### 2026-10-25 — Use the existing curated About images for this iteration
 
 Russell specified the image selection already curated on the About Me page. The project pages now share that source directly, preserving the active selections and order. Homepage covers use the original lead images. Moongoat remains a text entry because it has no image in that selection. See [Curated About media](21-curated-about-media.md) for the implementation and checks.
+
+### 2026-10-25 — Remove the development blog entirely
+
+Russell requested complete removal of the development blog. Removed the blog sources and bundled media, Notes navigation, and blog destinations in configuration. Work, About, and Contact remain the public navigation. The preview uses a clean, isolated output directory so stale blog pages are not served. Historical evidence can be read from Git history; see [Development blog removal](22-development-blog-removal.md).
