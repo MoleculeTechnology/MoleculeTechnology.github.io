@@ -1,5 +1,5 @@
 ---
-title: "About Russell"
+title: "{ about me }"
 layout: "simple"
 description: "Software engineer and artist working across real-time graphics, creative tools, and physical interaction."
 
@@ -15,7 +15,7 @@ cascade:
 ---
 
 {{< lead >}}
-I'm Russell → software engineer + artist.<br/>I build creative experiences that mix software + hardware + art.
+I'm Russell → software engineer + artist.<br/>I build creative products that mix software + hardware + art.
 {{< /lead >}}
 
 <div class="about-box">
@@ -24,7 +24,7 @@ I'm Russell → software engineer + artist.<br/>I build creative experiences tha
 </div>
 <div class="column text-column">
 
-**My work connects:**
+**My work includes:**
 
 - Full-stack software engineering across many languages + paradigms.
 - Creative product design with challenging constraints.
@@ -34,7 +34,15 @@ I'm Russell → software engineer + artist.<br/>I build creative experiences tha
 </div>
 <br/>
 
-# { my professional experience } #
+## { now }
+
+In my current role at Blizzard on an unannounced game, I work heavily on 3D graphics techniques, rendering, and content pipeline tools for art + audio.
+
+Alongside that work, I'm building lightsaber and motion capture hardware as Molecule. I'm doing more embedded development so I can make the hardware + software + art myself.
+
+At [Moongoat Coffee](/work/moongoat/), I showed a custom C++ application that tracked people's bodies from a webcam and composited a wireframe over the live video at 60 fps. I also brought wooden swords with motion sensors and LEDs that changed color based on their orientation in real-world space.
+
+## { my professional experience }
 
 ## Interactive VFX Props + Film Set Previsualization Tools. ##
 
@@ -102,7 +110,7 @@ I'm Russell → software engineer + artist.<br/>I build creative experiences tha
 <img src="PaperGhost/field_test2.jpg" class="grid-w33" /> -->
 {{< /gallery >}}
 
-### mother! by Darren Arronofky. ###
+### mother! by Darren Aronofsky. ###
 
 - Programmed set visualization software for director & cinematographer to analyze their shots & block their actors.
 - Mac + Windows + Gear VR versions.

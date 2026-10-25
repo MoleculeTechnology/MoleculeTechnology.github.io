@@ -11,12 +11,12 @@ Position Russell Jahn as a **software engineer and artist who builds interactive
 Use Molecule as the name of the creative practice, with Russell's name and personal contribution clearly visible.
 Keep `ilovemolecule.com`.
 
-This is a planning package, with draft copy and a visual direction study.
-It does not change or publish the website.
+These notes contain the brief, research, copy decisions, visual direction, and implementation record.
+The website rework is being tested locally on `feature/portfolio-rework-v1`; deployment repair remains deferred.
 
 ## Start here
 
-For the next writing and media pass, start with [Copy and media revision plan](17-copy-and-media-revision-plan.md). Russell prefers the original About page's specifics and pictures over the first rework's generic language.
+The original About page's language and pictures now form the basis of the revised copy. Start with [Applied copy and media revision](19-applied-copy-and-media-revision.md) for the current changes and media choices; [Copy and media revision plan](17-copy-and-media-revision-plan.md) retains the earlier writing directions.
 
 1. [Brief and positioning](01-brief-and-positioning.md) — audience, offer, and the connection between the work.
 2. [Evidence and CV review](02-evidence-and-cv-review.md) — reviewed sources, supported claims, and missing facts.
@@ -36,6 +36,7 @@ For the next writing and media pass, start with [Copy and media revision plan](1
 16. [Artist and studio references](16-artist-and-studio-references.md) — Rhizomatiks and ten other practices, official project sources, and useful writing structures.
 17. [Copy and media revision plan](17-copy-and-media-revision-plan.md) — four wording directions, concrete examples, Moongoat treatments, and original galleries to recover.
 18. [Moongoat demonstrations](18-moongoat-demonstrations.md) — Russell's account of the C++ camera system and IMU-equipped swords, with factual copy drafts.
+19. [Applied copy and media revision](19-applied-copy-and-media-revision.md) — the chosen wording, original image selection, source mapping, and verification for the applied pass.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

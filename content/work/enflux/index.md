@@ -1,42 +1,36 @@
 ---
-title: "Movement as an interface"
-description: "Applications and tools connecting motion capture clothing to real-time experiences and animation workflows."
+title: "Motion capture"
+description: "Unity SDK, live demonstrations, and Blender animation tools for Enflux motion capture clothing."
 weight: 30
-context: "Enflux / Motion capture"
-contribution: "Unity SDK, applications, live demonstrations, and Blender capture/export tooling"
+context: "Enflux"
+contribution: "Unity SDK + applications + Blender plugin + live demos"
 projectContext: "Motion capture clothing, developer tools, and public demonstrations"
-hero: "Enflux/enflux_blender1.jpg"
-heroAlt: "A Blender interface showing a human figure in a motion capture and animation workflow."
-heroCaption: "Blender motion capture tooling. My work connected live motion data with animation recording and export."
+hero: "Enflux/enflux_convention3.jpg"
+heroAlt: "Russell demonstrating Enflux software on a laptop to a group of visitors at the Enflux booth."
+heroCaption: "Demonstrating Enflux at a trade show."
+imageClass: "uncropped"
 ---
 
-## A moving person as the input
+## Motion capture clothing
 
-At Enflux, I built software that connected motion capture clothing to interactive applications and creative workflows.
-The work ranged from a Unity SDK for developers to first-party applications and live demonstrations.
+I shipped the Unity SDK for Enflux's Bluetooth motion capture clothing, used by business partners + consumer developers.
 
-The interesting part was the connection: turning the movement of a person into something that an application, artist, or participant could use.
+I also shipped **five first-party applications + four investor demos**, including a demo featured on TechCrunch.
 
-{{< work-image source="Enflux/enflux_suit1.png" alt="Enflux motion capture clothing with diagrams marking the chest, pelvis, arm, and leg sensor locations." caption="Enflux motion capture clothing. I developed the SDK, applications, and creative tools that used its motion data." >}}
+{{< work-image source="Enflux/enflux_suit1.png" alt="Enflux clothing with chest, pelvis, arm, and leg sensor locations labelled." caption="Enflux motion capture clothing. My contributions were the SDK, applications, and tools using its motion data." >}}
 
-## Tools for developers and artists
+## Blender motion capture plugin
 
-I shipped the Unity SDK used by business partners and consumer developers to work with the motion capture clothing.
-I also developed a Blender plugin to record motion captured animation and export FBX files.
+I programmed and shipped a Blender plugin to record motion captured animation + export FBX files.
 
-A companion Unity-based Windows application sent smooth motion data over Wi-Fi to Blender on other computers.
-This connected the real-time capture experience with an animation workflow beyond the demo itself.
+I also programmed a Unity-based Windows application to send smooth motion capture data over Wi-Fi to Blender on other computers.
 
-## Bringing it in front of people
+{{< work-image source="Enflux/enflux_blender1.jpg" alt="The Blender motion capture plugin showing a captured figure in the 3D viewport." caption="The Blender plugin: recording motion capture animation + exporting FBX." >}}
 
-My work included first-party applications, investor demonstrations, workshops, tech talks, and hackathons.
-I also managed trade show booths for CES, SVVR, and SIGGRAPH.
+## Workshops + live demos
 
-Demonstrating an interactive application in person makes the relationship between input and response especially important.
-The software has to communicate what it does through the experience itself.
+I ran workshops, tech talks, and hackathons at UploadVR + Microsoft Reactor, and managed trade show booths for **CES + SVVR + SIGGRAPH**.
 
-## My contribution
+{{< work-image source="Enflux/enflux_convention4.jpg" alt="Russell with an attendee at the Enflux trade show booth." caption="At the Enflux booth." >}}
 
-My responsibilities covered software, SDKs, applications, and creative tooling, working alongside the team developing the motion capture clothing.
-
-That experience informs my ongoing [light and motion work as Molecule](/work/moongoat/).
+[More Enflux photos + demonstration footage →](/about/)

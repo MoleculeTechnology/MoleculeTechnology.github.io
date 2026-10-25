@@ -90,10 +90,10 @@ Deployment repair remains deferred under Russell's decision.
 
 ## Remaining work before publishing
 
-Review the drafted prose and image credits with Russell.
+The [copy and media revision](19-applied-copy-and-media-revision.md) now uses the original About page's language and stronger still images, with the actual Moongoat demos described. Review this applied wording and the image credits with Russell.
 Choose final specialization wording and refine the pyramid's interaction and label placement across more orientations and devices.
 Exercise physical touch input, actual browser zoom, reduced-motion settings, and WebGL context-loss recovery.
-Select stronger interaction clips and original-resolution project images, and refine the legacy About/journal presentation.
+Select and prepare stronger interaction clips, and continue refining the legacy About/journal presentation. Original Paper Ghost and Enflux stills are now restored on the project pages.
 Settle the current role chronology, event date, public current-game wording, and updated CV.
 Review sample routes and inherited theme features before reducing dependencies.
 Finish contact-form visual styling and verify delivery with an explicitly authorized test.

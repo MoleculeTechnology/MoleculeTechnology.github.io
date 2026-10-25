@@ -1,4 +1,4 @@
 ---
 title: "Russell Jahn — Software Engineer & Artist"
-description: "Interactive light, motion, and real-time graphics by Russell Jahn. Explore installations, film-set visuals, motion capture tools, and game engineering."
+description: "I'm Russell, software engineer + artist. I build creative products that mix software + hardware + art: film-set visuals, motion capture, game engines, and embedded hardware."
 ---

@@ -1,7 +1,7 @@
 ---
 title: Copy and media revision plan
 date: 2026-10-24
-status: proposed
+status: applied-first-pass
 tags: [portfolio, writing, voice, media]
 ---
 
@@ -15,7 +15,7 @@ He prefers the original About page's language and pictures.
 
 This correction supersedes the tone recommendations in [Copy drafts](07-copy-drafts.md).
 The current rework text is a draft to revise, rather than a voice to propagate into more pages.
-This note plans that revision; no website copy or layouts were changed during this research pass.
+This note originally planned that revision without changing the website. Russell authorized applying it on 2026-10-25. The first implementation is recorded in [Applied copy and media revision](19-applied-copy-and-media-revision.md).
 
 ## Recover the source voice
 
@@ -202,15 +202,16 @@ Possible work ordering:
 
 Keep both options available. The first implementation promoted Moongoat before its story had enough detail.
 
-## Next editing pass
+## Editing checklist
 
-- [ ] Use the original About copy as the source for an annotated edit, preserving useful specifics and adding the current role.
-- [ ] Replace generic homepage headings with actual project/production names and direct contribution lines.
-- [ ] Restore richer Paper Ghost and Enflux image sequences, with captions derived from the original work descriptions.
+- [x] Use the original About copy as the source, preserving useful specifics and adding the current role. Source and edit choices are recorded in the implementation note.
+- [x] Replace generic homepage headings with actual project/production names and direct contribution lines.
+- [x] Restore richer Paper Ghost and Enflux image sequences, with captions derived from the original work descriptions.
 - [x] Record Russell's account and draft the specific Moongoat description in the demonstration note.
-- [ ] Select matching demonstration clips and apply the revised Moongoat copy during the writing pass.
-- [ ] Keep factual project description, personal artistic intent, and implementation detail distinct enough for each to be clear.
-- [ ] Read the copy aloud and remove sentences that could be transferred unchanged to an unrelated portfolio.
-- [ ] Record the chosen wording and media decisions here as they are made.
+- [x] Apply the revised Moongoat copy from Russell's account of the two demos.
+- [ ] Watch and select additional demonstration clips; prepare web video derivatives separately.
+- [x] Keep factual project description, personal artistic intent, and implementation detail distinct enough for each to be clear.
+- [x] Review the copy for voice and remove interchangeable promotional sentences.
+- [x] Record the chosen wording and media decisions in the implementation note.
 
-Research and this plan are committed as documentation. Website rewriting follows as a separate implementation pass.
+The website rewriting is now applied locally. Clip selection remains a separate media task; the original About galleries and motion clips are retained.

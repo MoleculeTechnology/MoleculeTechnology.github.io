@@ -1,4 +1,4 @@
 ---
 title: "Selected work"
-description: "Physical experiences, visual software, and the creative tools behind them. Selected work by Russell Jahn."
+description: "Film-set visuals, motion capture applications, game engines, and embedded hardware. Selected work by Russell Jahn."
 ---

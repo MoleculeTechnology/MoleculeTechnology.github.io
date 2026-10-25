@@ -77,11 +77,11 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .image-index { position: absolute; top: 18px; left: 18px; display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid #f8f8ff66; color: var(--ghost); background: #050707a6; font-size: 12px; letter-spacing: .1em; }
 .featured-project-copy h3 { font-size: clamp(38px, 4.5vw, 64px); line-height: 1.03; letter-spacing: -.02em; font-weight: 700; margin-block: 22px !important; }
 .featured-project-copy > p:not(.eyebrow), .project-caption p:not(.eyebrow), .project-pair article > p:not(.eyebrow) { color: var(--muted); font-size: 19px; max-width: 34ch; }
+.featured-project-copy > p + p { margin-top: 16px; }
 .project-tags { display: flex; flex-wrap: wrap; gap: 10px; margin: 27px 0; padding: 0; list-style: none; }
 .project-tags li { border: 1px solid var(--rule); padding: 5px 10px; text-transform: uppercase; font-size: 10px; letter-spacing: .08em; }
 .wide-project { margin-top: 88px; }
-.film-image { aspect-ratio: 2 / 1; }
-.film-image img { object-position: center 53%; }
+.film-image img { height: auto; }
 .image-credit { position: absolute; bottom: 0; left: 0; right: 0; padding: 34px 22px 18px; background: linear-gradient(transparent, #050707e6); font-size: 11px; letter-spacing: .07em; text-transform: uppercase; }
 .project-caption { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding-top: 30px; }
 .project-caption h3 { font-size: clamp(30px, 3.5vw, 46px); font-weight: 700; line-height: 1.12; margin-top: 12px !important; }
@@ -143,6 +143,7 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .case-hero img { width: 100%; max-height: 650px; object-fit: cover; }
 .case-hero.portrait { background: var(--surface); }
 .case-hero.portrait img { object-fit: contain; max-height: 760px; }
+.case-hero.uncropped img { height: auto; max-height: none; object-fit: contain; }
 .case-hero figcaption { color: var(--muted); font-size: 13px; padding-top: 13px; }
 .case-body { max-width: 720px; margin-inline: auto; }
 .case-body h2 { font-size: 33px; line-height: 1.15; text-transform: uppercase; font-weight: 700; margin-block: 52px 22px !important; }
@@ -171,6 +172,7 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .legacy-content p { color: var(--muted); margin-block: 14px; }
 .legacy-content a { color: var(--mint); }
 .legacy-content .prose { --tw-prose-body: var(--muted); --tw-prose-headings: var(--ghost); --tw-prose-links: var(--mint); --tw-prose-bold: var(--ghost); }
+.legacy-content .lead { color: var(--ghost); font-size: clamp(21px, 2.4vw, 28px); line-height: 1.4; }
 .legacy-content img { height: auto; }
 .legacy-content iframe { max-width: 100%; }
 .legacy-content [id^="gallery"] { margin-block: 22px; }
@@ -227,7 +229,6 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
   .featured-project-copy h3 { font-size: 48px; margin-block: 15px 20px !important; }
   .featured-project-copy > p:not(.eyebrow) { max-width: 40ch; }
   .wide-project { margin-top: 62px; }
-  .film-image { aspect-ratio: 4 / 3; }
   .project-caption { grid-template-columns: 1fr; gap: 20px; padding-top: 25px; }
   .project-caption h3 { font-size: 37px; }
   .project-pair { grid-template-columns: 1fr; gap: 56px; margin-top: 58px; }
@@ -252,7 +253,7 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
   .footer-links { gap: 16px; font-size: 12px; }
   .case-study, .work-index { padding-block: 35px 60px; }
   .back-link { margin-bottom: 35px; }
-  .case-header h1, .work-index h1 { font-size: 50px; }
+  .case-header h1, .work-index h1 { font-size: clamp(42px, 12vw, 50px); }
   .case-facts { grid-template-columns: 1fr; gap: 22px; }
   .case-hero { margin-block: 30px 40px; }
   .case-hero.portrait img { max-height: 620px; }

@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="work-index site-width"><p class="eyebrow mint-text">A selection of projects</p><h1>LIGHT. MOTION.<br>REAL-TIME WORLDS.</h1><p class="case-deck">Physical experiences, visual software, and the tools behind them.</p><div class="work-index-grid">
+<section class="work-index site-width"><p class="eyebrow mint-text">Russell Jahn / Molecule</p><h1>{ SELECTED WORK }</h1><p class="case-deck">Film-set visuals + motion capture + game engineering.</p><div class="work-index-grid">
   {{ range .Pages.ByWeight }}<article><a class="project-image {{ .Params.imageClass }}" href="{{ .RelPermalink }}" aria-label="{{ .Title }}">{{ partial "portfolio/image.html" (dict "source" .Params.hero "alt" .Params.heroAlt "sizes" "(max-width: 760px) 100vw, 44vw") }}</a><p class="eyebrow mint-text">{{ .Params.context }}</p><h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2><p>{{ .Description }}</p><a class="text-link" href="{{ .RelPermalink }}">Explore the project <span aria-hidden="true">↗</span></a></article>{{ end }}
 </div></section>
 {{ end }}

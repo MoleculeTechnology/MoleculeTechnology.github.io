@@ -1,8 +1,8 @@
 ---
-title: "Let's talk"
+title: "Contact"
 layout: "contact"
 description: "Discuss an interactive installation, creative collaboration, or software project with Russell Jahn."
-introduction: "Tell me about the idea, the space, and what you'd like people to experience."
+introduction: "Get in touch about a project or working together."
 showHero: false
 ---
 

@@ -6,6 +6,6 @@
     <ul class="pyramid-labels" aria-label="Specializations"><li data-label="programming"><span>{ programming }</span></li><li data-label="design"><span>{ design }</span></li><li data-label="art"><span>{ art }</span></li><li data-label="animation"><span>{ animation }</span></li></ul>
     {{ range slice "programming" "design" "art" "animation" }}<span class="pyramid-point" data-point="{{ . }}" aria-hidden="true"></span>{{ end }}
   </div>
-  <div class="pyramid-caption"><span class="eyebrow">Different disciplines. One practice.</span><div class="pyramid-controls" data-controls hidden><button type="button" data-rotate="-1" aria-label="Rotate pyramid left">←</button><button type="button" data-play aria-label="Pause rotation">Pause</button><button type="button" data-rotate="1" aria-label="Rotate pyramid right">→</button><button type="button" data-reset aria-label="Reset pyramid orientation">Reset</button></div></div>
+  <div class="pyramid-caption"><span class="eyebrow">{ specializations }</span><div class="pyramid-controls" data-controls hidden><button type="button" data-rotate="-1" aria-label="Rotate pyramid left">←</button><button type="button" data-play aria-label="Pause rotation">Pause</button><button type="button" data-rotate="1" aria-label="Rotate pyramid right">→</button><button type="button" data-reset aria-label="Reset pyramid orientation">Reset</button></div></div>
   <p id="pyramid-instructions" class="pyramid-instructions" data-instructions hidden>Drag to rotate · Arrow keys to turn · Space to pause</p>
 </section>

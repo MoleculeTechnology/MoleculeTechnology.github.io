@@ -68,4 +68,4 @@ Pair it with a separate clip showing the sword pointed in different directions a
 Keep the setup photograph for context, and use the two clips to explain the two behaviors.
 The nearby archive video candidates are recorded in [Archive review](12-archive-review.md); they still need to be watched and selected.
 
-These are proposed words for the [copy revision](17-copy-and-media-revision-plan.md), kept alongside the source facts so further edits can preserve Russell's meaning.
+These drafts and source facts informed the website copy applied on 2026-10-25. See [Applied copy and media revision](19-applied-copy-and-media-revision.md) for the chosen wording and media decisions. The camera and sword systems remain separate in the published-page drafts.

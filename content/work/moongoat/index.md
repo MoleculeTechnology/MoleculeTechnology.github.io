@@ -1,39 +1,32 @@
 ---
-title: "Light you can move"
-description: "Light props, motion capture, and an invitation to play. Molecule at a pop-up at Moongoat Coffee."
+title: "Molecule at Moongoat Coffee"
+description: "Two motion capture demos: camera-based body tracking at 60 fps, and wooden swords with LEDs that change color with their orientation."
 weight: 10
-context: "Independent work / Molecule"
-contribution: "Independent light and motion work, software, and demonstration"
+context: "Molecule / Pop-up demos"
+contribution: "C++ body tracking application + sensor-equipped wooden swords"
 projectContext: "A pop-up at Moongoat Coffee"
 hero: "portfolio/moongoat-light-and-motion.jpg"
-heroAlt: "Two illuminated props beside a vertical display, camera stand, LED face display, and Molecule banners."
-heroCaption: "The Molecule pop-up setup: illuminated props, a camera and screen, and space to step in and play."
+heroAlt: "Illuminated wooden swords, a camera, and a vertical TV at the Molecule pop-up."
+heroCaption: "My setup at Moongoat Coffee, with the wooden swords and camera-based body tracking demo."
 imageClass: "portrait"
 ---
 
-## Out of the workshop
+## Body tracking without a suit
 
-Molecule is where I bring my interests in software, light, and physical interaction together.
-The pop-up at Moongoat Coffee was a chance to take that work into a shared space.
+Visitors could walk in front of a large vertical TV and see their body automatically tracked, with a wireframe drawn over the live video.
 
-The setup brought together illuminated sword props, a camera and vertical display, and a small LED face display.
-The invitation was simple: come play with swords and motion capture.
+I wrote a custom C++ motion capture application that took a high-speed webcam video stream and converted the image data into 3D body points. It drew a wireframe over those points and composited it back over the video, running at **60 fps**.
 
-## A connection you can see
+This was outside-in motion capture: the camera tracked the person without a motion capture suit.
 
-I'm interested in experiences where the relationship between a person's movement and what they see feels immediate.
-Light and a physical object offer a different starting point from a conventional screen interface.
-The object, the visual response, and the space around the participant all become part of the work.
+## Swords that change color with direction
 
-## Building the tools to make it
+I also built wooden swords fitted with **IMU sensors, speakers, and LED strips**. These used inside-out motion capture, with the sensors on the swords themselves.
 
-My independent embedded work includes ESP32 firmware, motion sensor data, networking, and LED experiments.
-Alongside the physical work, I build the software and tools needed to explore those connections.
+The LED color was determined by the sword's orientation in real-world space. Point a sword north or up, and it shows the same corresponding color, wherever you are in the world.
 
-This exploration continues through Molecule's light and sensor projects, with the pop-up forming one chapter in that practice.
+## Current hardware work
 
-## Related experience
+I'm continuing to build lightsaber and motion capture hardware, including embedded firmware for lights and sensors. I'm doing more of the hardware myself so I can make the hardware + software + art.
 
-At [Enflux](/work/enflux/), I developed motion capture applications and tools that connected people to real-time software and animation workflows.
-My [film-set work](/work/paper-ghost/) brought software and visuals into physical production environments.
-Those experiences inform the independent work I make as Molecule.
+[Enflux motion capture applications + tools →](/work/enflux/)
