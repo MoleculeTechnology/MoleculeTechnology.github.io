@@ -44,6 +44,8 @@ Open [the local preview](http://127.0.0.1:1313/).
 Use `-Port 1314` if the default port is already in use.
 Press Ctrl+C in the terminal to stop the server.
 
+Russell's workflow instruction (2026-10-25): after website updates, the assistant restarts the preview script, verifies that the updated site responds, and leaves it running for review. This is recorded in the repository's [agent instructions](../../AGENTS.md).
+
 The script downloads the official Hugo Extended `0.115.4` release if needed, checks its published SHA-256 checksum, and caches it under ignored `.tools/`.
 Generated preview files go to ignored `.preview/site/`. The script cleans that dedicated output directory so removed pages do not persist from an earlier build. Earlier QA snapshots under `.preview/` are outside the served site.
 Neither folder belongs in the commit.
