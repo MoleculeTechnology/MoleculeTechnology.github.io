@@ -1,0 +1,18 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}Russell Jahn — Software Engineer &amp; Artist | Molecule</title>
+  <meta name="description" content="{{ .Description | default .Site.Language.Params.description }}">
+  <meta name="theme-color" content="#050707">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+  <link rel="preload" href="{{ "fonts/RobotoCondensed/RobotoCondensed-Bold.ttf" | relURL }}" as="font" type="font/ttf" crossorigin>
+  {{ $css := slice (resources.Get "css/schemes/molecule.css") (resources.Get "css/compiled/main.css") (resources.Get "css/portfolio.css") | resources.Concat "css/molecule.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ if .IsHome }}
+    {{ $pyramid := resources.Get "js/specialization-pyramid.js" | minify | fingerprint }}
+    <script src="{{ $pyramid.RelPermalink }}" integrity="{{ $pyramid.Data.Integrity }}" defer></script>
+  {{ end }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ if not (or .IsHome (eq .Section "work")) }}{{ partial "vendor.html" . }}{{ end }}
+</head>

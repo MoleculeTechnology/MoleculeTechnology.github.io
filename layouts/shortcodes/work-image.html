@@ -1,0 +1,4 @@
+<figure class="work-figure">
+  {{ partial "portfolio/image.html" (dict "source" (.Get "source") "alt" (.Get "alt") "sizes" "(max-width: 760px) 100vw, 760px") }}
+  <figcaption>{{ .Get "caption" }}</figcaption>
+</figure>

@@ -29,6 +29,7 @@ It does not change or publish the website.
 11. [Historical CV review](11-historical-cv-review.md) — original typography, additional installation experience, and chronology to update.
 12. [Archive review](12-archive-review.md) — Moongoat event evidence, exact source paths, and a shortlist from the VADER archives.
 13. [WebGL specialization pyramid](13-webgl-specialization-pyramid.md) — rotation, projected screen-space labels, typography, and implementation checks.
+14. [Local implementation](14-local-implementation.md) — testing branch, preview command, completed checks, and deferred GitHub workflow.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.
