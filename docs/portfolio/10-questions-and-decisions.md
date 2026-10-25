@@ -129,3 +129,9 @@ Use that original material as the source for the next edit.
 Study how established artist/studio portfolios name and document work, including Rhizomatiks, without adopting their slogans or inventing an artistic motivation for Russell.
 The [reference study](16-artist-and-studio-references.md) and [copy/media plan](17-copy-and-media-revision-plan.md) replace the earlier copy draft's tone recommendation.
 An optional question asks Russell to describe what he showed at Moongoat and what a visitor could actually do.
+
+### 2026-10-24 — Moongoat interaction described by Russell
+
+Russell supplied the actual behavior of two distinct demonstrations: suit-free outside-in capture from webcam video with a C++ wireframe composite at 60 fps, and inside-out capture using IMU-equipped wooden swords whose LED colors followed real-world orientation deterministically.
+Use these facts and Russell's direct language for the next Moongoat copy pass.
+The [demonstration note](18-moongoat-demonstrations.md) records the source, proposed descriptions, and separate media needs.

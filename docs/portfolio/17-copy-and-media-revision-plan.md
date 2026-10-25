@@ -155,9 +155,10 @@ Three possible treatments:
 | Catalogue entry | **Molecule at Moongoat Coffee** / Pop-up demonstration | A work grid with strong documentation and little explanatory text. |
 | Specific interaction | "I built [the actual piece]. At Moongoat Coffee, visitors could [actual action], which [actual response]." | Complete from Russell's account and matching footage. Brackets are planning prompts, not website copy. |
 
-An optional question has been sent asking Russell what he showed and what a visitor could actually do.
-The rest of the revision can proceed from the existing About material while that detail is collected.
-Do not infer motion-controlled lighting, tracking methods, audience reactions, or the relationship between every device from the event photo.
+Russell has now answered the question about the demonstration.
+See [Moongoat demonstrations and copy source](18-moongoat-demonstrations.md) for the two separate systems and new factual drafts: camera-based C++ body tracking with a composited wireframe at 60 fps, and IMU-equipped wooden swords with deterministic colors based on world orientation.
+The holding descriptions above are earlier options; the supplied facts now support a specific account of what happened.
+Do not infer audience reactions or unreported relationships between devices from the event photo.
 
 ## Replace vague display headings with useful names
 
@@ -206,7 +207,8 @@ Keep both options available. The first implementation promoted Moongoat before i
 - [ ] Use the original About copy as the source for an annotated edit, preserving useful specifics and adding the current role.
 - [ ] Replace generic homepage headings with actual project/production names and direct contribution lines.
 - [ ] Restore richer Paper Ghost and Enflux image sequences, with captions derived from the original work descriptions.
-- [ ] Write Moongoat from Russell's own account; choose a matching demonstration clip.
+- [x] Record Russell's account and draft the specific Moongoat description in the demonstration note.
+- [ ] Select matching demonstration clips and apply the revised Moongoat copy during the writing pass.
 - [ ] Keep factual project description, personal artistic intent, and implementation detail distinct enough for each to be clear.
 - [ ] Read the copy aloud and remove sentences that could be transferred unchanged to an unrelated portfolio.
 - [ ] Record the chosen wording and media decisions here as they are made.

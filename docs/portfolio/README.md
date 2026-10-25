@@ -35,6 +35,7 @@ For the next writing and media pass, start with [Copy and media revision plan](1
 15. [Deferred deployment repair](15-deferred-deployment.md) — failed workflow, later release checks, and completed preview cleanup.
 16. [Artist and studio references](16-artist-and-studio-references.md) — Rhizomatiks and ten other practices, official project sources, and useful writing structures.
 17. [Copy and media revision plan](17-copy-and-media-revision-plan.md) — four wording directions, concrete examples, Moongoat treatments, and original galleries to recover.
+18. [Moongoat demonstrations](18-moongoat-demonstrations.md) — Russell's account of the C++ camera system and IMU-equipped swords, with factual copy drafts.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

@@ -64,6 +64,12 @@ See [Archive review](12-archive-review.md) for exact folders and image observati
 `Photos/IMG_0794.jpg` in the PixelPerf event archive provides concrete visual evidence of a Molecule light-prop and screen-based demonstration setup.
 The event date remains a corroborated candidate from folder/poster names, pending Russell's confirmation.
 
+**S10 — Russell's account of the Moongoat demonstrations.**
+Russell describes a custom C++ application converting high-speed webcam video into 3D body points, drawing a wireframe, and compositing it over the live video on a vertical TV at 60 fps, without requiring suits.
+Separately, wooden swords contained IMU sensors, speakers, and LED strips, with deterministic LED colors based on real-world orientation.
+These are Russell's reported results, not measurements performed during the website work.
+The [source and copy note](18-moongoat-demonstrations.md) preserves the distinction between the outside-in camera system and inside-out sensor-equipped swords.
+
 ## Claim review
 
 | Claim                                                                                                | Basis                               | How to use it                                                                             |
