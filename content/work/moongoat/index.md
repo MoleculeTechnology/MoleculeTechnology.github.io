@@ -1,14 +1,10 @@
 ---
 title: "Molecule at Moongoat Coffee"
 description: "Two motion capture demos: camera-based body tracking at 60 fps, and wooden swords with LEDs that change color with their orientation."
-weight: 10
+weight: 40
 context: "Molecule / Pop-up demos"
 contribution: "C++ body tracking application + sensor-equipped wooden swords"
 projectContext: "A pop-up at Moongoat Coffee"
-hero: "portfolio/moongoat-light-and-motion.jpg"
-heroAlt: "Illuminated wooden swords, a camera, and a vertical TV at the Molecule pop-up."
-heroCaption: "The Molecule setup at Moongoat Coffee: sensor-equipped wooden swords + camera-based body tracking."
-imageClass: "portrait"
 ---
 
 ## Camera-based body tracking

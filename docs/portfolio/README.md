@@ -16,7 +16,7 @@ The website rework is being tested locally on `feature/portfolio-rework-v1`; dep
 
 ## Start here
 
-The original About page's facts and pictures form the basis of the revised portfolio. The latest edit makes the homepage and project descriptions less personal, with more emphasis on the work; see [Work-focused editorial voice](20-work-focused-editorial-voice.md) for the applied changes and verification. [Applied copy and media revision](19-applied-copy-and-media-revision.md) records the preceding copy and media pass.
+The original About page's facts and pictures form the basis of the revised portfolio. This iteration uses [the existing curated About galleries](21-curated-about-media.md), with their original image selections and order. [Work-focused editorial voice](20-work-focused-editorial-voice.md) records the less personal descriptions and contribution credits. [Applied copy and media revision](19-applied-copy-and-media-revision.md) records the preceding copy and media pass.
 
 1. [Brief and positioning](01-brief-and-positioning.md) — audience, offer, and the connection between the work.
 2. [Evidence and CV review](02-evidence-and-cv-review.md) — reviewed sources, supported claims, and missing facts.
@@ -38,6 +38,7 @@ The original About page's facts and pictures form the basis of the revised portf
 18. [Moongoat demonstrations](18-moongoat-demonstrations.md) — Russell's account of the C++ camera system and IMU-equipped swords, with factual copy drafts.
 19. [Applied copy and media revision](19-applied-copy-and-media-revision.md) — the chosen wording, original image selection, source mapping, and verification for the applied pass.
 20. [Work-focused editorial voice](20-work-focused-editorial-voice.md) — reference comparisons, the applied voice revision, explicit contribution credits, and verification.
+21. [Use the curated About Me media](21-curated-about-media.md) — the current iteration's image selection, shared galleries, Moongoat treatment, and verification.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

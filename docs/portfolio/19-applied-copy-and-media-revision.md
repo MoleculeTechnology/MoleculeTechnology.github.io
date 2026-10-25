@@ -30,6 +30,8 @@ The Moongoat page no longer supplies an invented workshop-to-public story or gue
 
 ## Restored images
 
+The subsequent [curated About media decision](21-curated-about-media.md) replaces the subset and cover choices below with the complete existing project galleries and their original lead images. The list below records the earlier pass.
+
 All selected source files already exist in the original About collection. The project pages use Hugo-generated WebP sizes rather than new copies of the originals.
 
 - **Homepage:** The Glass Castle's curved projection setup replaces the small X-Men set image. The Enflux booth demonstration replaces the Blender screenshot as the card image.

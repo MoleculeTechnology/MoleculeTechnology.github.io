@@ -1,7 +1,7 @@
 ---
 title: "Hearthstone"
 description: "Core engine systems, content pipelines, FX artist tools, and native mobile development at Blizzard."
-weight: 40
+weight: 30
 context: "Blizzard / Engine + content technology"
 contribution: "Core systems + asset pipeline + artist tools + performance + native mobile development"
 projectContext: "A live-service game for large audiences across desktop + mobile"
@@ -22,6 +22,8 @@ Low-level engine debugging and cross-team engineering support addressed blocking
 ## Content pipeline + artist tools
 
 The asset pipeline packs + ships the game's content worldwide across desktop and mobile. Engineering work included pipeline maintenance and improvements, client build tooling, and tools for FX artists.
+
+{{< about-gallery marker="### Hearthstone (Blizzard Entertainment). ###" title="Hearthstone" description="gameplay, credits + visual effects" skip="1" >}}
 
 ## Current work / Unannounced game
 

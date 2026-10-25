@@ -141,3 +141,7 @@ The [demonstration note](18-moongoat-demonstrations.md) records the source, prop
 Russell is inclined to reduce first-person language and make the work more prominent. The [editorial voice study](20-work-focused-editorial-voice.md) compares official artist and studio portfolios and recommends making the work the subject of homepage and project descriptions, with explicit contribution fields. First person can remain in a short About introduction or process essay when useful. The note contains examples; this research pass does not change website copy.
 
 Russell subsequently authorized applying the direction. The homepage and four project pages now describe the work directly, each project names Russell Jahn in its contribution block, and Paper Ghost separately credits Zed Axiz Productions. The About page keeps its personal voice and original galleries. Implementation and verification are recorded in the editorial voice note.
+
+### 2026-10-25 — Use the existing curated About images for this iteration
+
+Russell specified the image selection already curated on the About Me page. The project pages now share that source directly, preserving the active selections and order. Homepage covers use the original lead images. Moongoat remains a text entry because it has no image in that selection. See [Curated About media](21-curated-about-media.md) for the implementation and checks.

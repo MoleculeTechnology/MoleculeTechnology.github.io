@@ -81,7 +81,12 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .project-tags { display: flex; flex-wrap: wrap; gap: 10px; margin: 27px 0; padding: 0; list-style: none; }
 .project-tags li { border: 1px solid var(--rule); padding: 5px 10px; text-transform: uppercase; font-size: 10px; letter-spacing: .08em; }
 .wide-project { margin-top: 88px; }
+.wide-project.lead-project { margin-top: 0; }
 .film-image img { height: auto; }
+.project-pair .project-image.curated-image, .work-index-grid .project-image.curated-image { aspect-ratio: auto; }
+.curated-image img { height: auto; }
+.text-project { margin-top: 70px; border-top: 1px solid var(--rule); }
+.text-project .project-caption > div > p + p { margin-top: 16px; }
 .image-credit { position: absolute; bottom: 0; left: 0; right: 0; padding: 34px 22px 18px; background: linear-gradient(transparent, #050707e6); font-size: 11px; letter-spacing: .07em; text-transform: uppercase; }
 .project-caption { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding-top: 30px; }
 .project-caption h3 { font-size: clamp(30px, 3.5vw, 46px); font-weight: 700; line-height: 1.12; margin-top: 12px !important; }
@@ -157,6 +162,12 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .work-figure { margin: 36px -5vw; }
 .work-figure img { width: 100%; height: auto; }
 .work-figure figcaption { font-size: 13px; color: var(--muted); padding-top: 12px; }
+.work-gallery { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 12px; align-items: start; margin: 36px -5vw; }
+.work-gallery .gallery-frame { margin: 0; min-width: 0; width: 100%; grid-column: span 12; }
+.work-gallery .grid-w66 { grid-column: span 8; }
+.work-gallery .grid-w55 { grid-column: span 6; }
+.work-gallery .grid-w33 { grid-column: span 4; }
+.work-gallery img { display: block; width: 100%; height: auto; }
 .case-next { border-top: 1px solid var(--rule); padding-top: 28px; margin-top: 70px; display: flex; justify-content: space-between; gap: 24px; align-items: center; }
 .case-next p { color: var(--muted); }
 .work-index-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px 42px; margin-top: 60px; }
@@ -166,6 +177,7 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .work-index-grid h2 { font-size: 34px; line-height: 1.1; font-weight: 700; text-transform: uppercase; margin-block: 12px 18px !important; }
 .work-index-grid article > p:not(.eyebrow) { color: var(--muted); max-width: 38ch; }
 .work-index-grid .text-link { margin-top: 15px; }
+.work-index-text { grid-column: 1 / -1; padding-top: 25px; border-top: 1px solid var(--rule); }
 /* Existing Blowfish articles and galleries share the new navigation and palette. */
 .legacy-content { width: min(1050px, calc(100% - 128px)); margin-inline: auto; padding-block: 50px 85px; min-height: 60vh; }
 .legacy-content h1, .legacy-content h2, .legacy-content h3 { color: var(--ghost); font-family: "Roboto Condensed", sans-serif; font-weight: 700; }
@@ -261,6 +273,9 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
   .case-hero.portrait img { max-height: 620px; }
   .case-body h2 { font-size: 29px; }
   .work-figure { margin-inline: 0; }
+  .work-gallery { margin-inline: 0; gap: 8px; }
+  .work-gallery .grid-w66 { grid-column: span 12; }
+  .work-gallery .grid-w33, .work-gallery .grid-w55 { grid-column: span 6; }
   .case-next { flex-direction: column; align-items: flex-start; gap: 10px; }
   .work-index-grid { grid-template-columns: 1fr; gap: 52px; margin-top: 45px; }
   .legacy-content h1 { font-size: 35px; }
