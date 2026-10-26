@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Molecule / Brace casing comparison</title>
+<style>
+@font-face { font-family: "Roboto Condensed"; src: url("media/RobotoCondensed-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "Roboto Condensed"; src: url("media/RobotoCondensed-Bold.ttf"); font-weight: 700; }
+:root { color-scheme: dark; --canvas: #050707; --surface: #101615; --ghost: #f8f8ff; --mint: #84f9eb; --muted: #b7c4c1; --rule: #334541; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--canvas); color: var(--ghost); font: 18px/1.5 "Roboto Condensed", sans-serif; }
+main { max-width: 1480px; margin: auto; padding: 36px 28px 64px; }
+h1,h2,h3,p { margin: 0; }
+h1 { font-size: clamp(32px,4vw,48px); line-height: 1.1; font-weight: 700; }
+header > p { max-width: 72ch; color: var(--muted); margin-top: 12px; }
+.eyebrow { color: var(--mint); text-transform: uppercase; font-size: 12px; letter-spacing: .1em; margin-bottom: 10px; }
+button,select { color: var(--ghost); background: var(--canvas); border: 1px solid var(--rule); font: inherit; }
+button { min-height: 44px; padding: 9px 16px; cursor: pointer; }
+button:hover { border-color: var(--mint); }
+button[aria-pressed="true"] { color: var(--canvas); background: var(--mint); border-color: var(--mint); }
+button:focus-visible,select:focus-visible,a:focus-visible { outline: 2px solid var(--mint); outline-offset: 4px; }
+a { color: var(--mint); text-underline-offset: 4px; }
+[hidden] { display: none !important; }
+.toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; margin: 28px 0 18px; padding: 20px 0; border-block: 1px solid var(--rule); }
+.button-group { display: flex; gap: 6px; flex-wrap: wrap; }
+.summary { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+.group-heading { font-size: 20px; font-weight: 700; margin: 36px 0 8px; }
+.specimen { padding: 24px 0; border-bottom: 1px solid var(--rule); }
+.specimen-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.specimen-header h3 { font-size: 16px; font-weight: 400; color: var(--muted); }
+.context-jump { border: 0; padding: 4px 0; color: var(--mint); font-size: 13px; background: none; }
+.pair { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+.pair > div { min-width: 0; padding: 16px; border: 1px solid var(--rule); background: var(--surface); }
+.case-name { color: var(--muted); font-size: 12px; margin-bottom: 10px; }
+.sample { font-size: clamp(16px,4.5vw,32px); line-height: 1.3; white-space: nowrap; }
+body[data-case="lowercase"] .pair,body[data-case="uppercase"] .pair { grid-template-columns: 1fr; }
+.context-controls { display: flex; align-items: end; flex-wrap: wrap; gap: 18px; margin: 26px 0 18px; }
+.context-controls label { display: grid; gap: 7px; min-width: 0; font-size: 13px; color: var(--muted); }
+.context-controls label:first-child { flex: 1; }
+select { width: 100%; min-height: 44px; padding: 8px 12px; font-size: 16px; }
+.context-note { font-size: 14px; color: var(--muted); margin: 14px 0 22px; max-width: 88ch; }
+.frames { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; align-items: start; }
+body[data-case="lowercase"] .frames,body[data-case="uppercase"] .frames { grid-template-columns: 1fr; }
+.frame-panel { min-width: 0; border: 1px solid var(--rule); background: var(--surface); }
+.frame-heading { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; padding: 14px 16px; border-bottom: 1px solid var(--rule); }
+.frame-heading h2 { font-size: 20px; font-weight: 700; }
+.frame-heading a { font-size: 13px; }
+.frame-host { overflow: hidden; margin-inline: auto; position: relative; max-width: 100%; }
+iframe { display: block; border: 0; position: absolute; inset: 0; transform-origin: top left; background: var(--canvas); }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--rule); padding-top: 24px; margin-top: 40px; }
+@media(max-width:800px) {
+  main { padding: 24px 18px 44px; }
+  .toolbar { flex-direction: column; }
+  .pair,.frames { grid-template-columns: 1fr; }
+  .context-controls { align-items: stretch; flex-direction: column; }
+  .pair > div { padding: 14px; }
+}
+</style>
+<script src="brace-casing/inventory.js"></script>
+</head>
+<body data-case="both">
+<main>
+<header>
+  <p class="eyebrow">Molecule / Typography concepts</p>
+  <h1>lowercase / UPPERCASE</h1>
+  <p>Compare every brace label, then see either treatment in the actual page layout. The website is unchanged.</p>
+</header>
+<div class="toolbar">
+  <div class="button-group" role="group" aria-label="Comparison view">
+    <button type="button" data-view="index" aria-pressed="true">All occurrences</button>
+    <button type="button" data-view="context" aria-pressed="false">In context</button>
+  </div>
+  <div class="button-group" role="group" aria-label="Case treatment">
+    <button type="button" data-case="both" aria-pressed="true">Both</button>
+    <button type="button" data-case="lowercase" aria-pressed="false">lowercase</button>
+    <button type="button" data-case="uppercase" aria-pressed="false">UPPERCASE</button>
+  </div>
+</div>
+<section id="index-view" aria-label="All brace occurrences">
+  <p class="summary" id="inventory-summary"></p>
+  <div id="specimens"></div>
+</section>
+<section id="context-view" aria-label="Page layout comparison" hidden>
+  <div class="context-controls">
+    <label>Location<select id="location" aria-label="Location"></select></label>
+    <label>Page width<select id="page-width" aria-label="Page width"><option value="1280">Desktop / 1280px</option><option value="390">Mobile / 390px</option><option value="320">Mobile / 320px</option></select></label>
+  </div>
+  <p class="context-note">These previews keep the site's current type sizes, weights, colors, spacing, and alignment. Desktop pages scale to fit the comparison. Use “Open full size” for an unscaled view. The pyramid stays still for this comparison.</p>
+  <div class="frames">
+    <section class="frame-panel" data-treatment="lowercase" aria-label="Lowercase page preview">
+      <div class="frame-heading"><h2>lowercase</h2><a data-full-size target="_blank" rel="noopener">Open full size ↗</a></div>
+      <div class="frame-host"><iframe title="Lowercase page preview" loading="lazy"></iframe></div>
+    </section>
+    <section class="frame-panel" data-treatment="uppercase" aria-label="Uppercase page preview">
+      <div class="frame-heading"><h2>UPPERCASE</h2><a data-full-size target="_blank" rel="noopener">Open full size ↗</a></div>
+      <div class="frame-host"><iframe title="Uppercase page preview" loading="lazy"></iframe></div>
+    </section>
+  </div>
+</section>
+<footer>Review concepts only. The paired list uses a common type size. In-context previews use the site's actual sizes and retain its current color differences. The legacy mood board and Experiments redirect are included for completeness.</footer>
+</main>
+<script>
+(() => {
+  const locations = braceCasingInventory.locations;
+  const specimens = document.getElementById('specimens');
+  const picker = document.getElementById('location');
+  const widthPicker = document.getElementById('page-width');
+  const panels = [...document.querySelectorAll('.frame-panel')];
+  let currentView = 'index';
+  let lastGroup = '';
+
+  document.getElementById('inventory-summary').textContent = `${locations.length} occurrences / ${new Set(locations.map(item => item.label)).size} distinct labels. Same wording and color in each pair.`;
+
+  locations.forEach((item, index) => {
+    const option = document.createElement('option');
+    option.value = String(index);
+    option.textContent = `${item.pageTitle} / ${item.label}`;
+    picker.append(option);
+    if (item.group !== lastGroup) {
+      const groupHeading = document.createElement('h2');
+      groupHeading.className = 'group-heading';
+      groupHeading.textContent = item.group;
+      specimens.append(groupHeading);
+      lastGroup = item.group;
+    }
+    const row = document.createElement('article');
+    row.className = 'specimen';
+    row.dataset.occurrence = item.id;
+    const header = document.createElement('div');
+    header.className = 'specimen-header';
+    const title = document.createElement('h3');
+    title.textContent = `${item.pageTitle} / ${item.role} / now ${item.current}`;
+    const jump = document.createElement('button');
+    jump.type = 'button';
+    jump.className = 'context-jump';
+    jump.textContent = 'View in context ↗';
+    jump.setAttribute('aria-label', `View ${item.pageTitle} ${item.label} in context`);
+    jump.addEventListener('click', () => { picker.value = String(index); setView('context'); document.getElementById('context-view').scrollIntoView({block:'start'}); });
+    header.append(title, jump);
+    const pair = document.createElement('div');
+    pair.className = 'pair';
+    ['lowercase','uppercase'].forEach(treatment => {
+      const sample = document.createElement('div');
+      sample.dataset.treatment = treatment;
+      const name = document.createElement('p');
+      name.className = 'case-name';
+      name.textContent = treatment === 'lowercase' ? 'lowercase' : 'UPPERCASE';
+      const text = document.createElement('p');
+      text.className = 'sample';
+      text.style.color = item.color;
+      text.style.fontWeight = item.weight;
+      text.textContent = `{ ${treatment === 'lowercase' ? item.label : item.label.toUpperCase()} }`;
+      sample.append(name, text);
+      pair.append(sample);
+    });
+    row.append(header, pair);
+    specimens.append(row);
+  });
+
+  function fitFrames() {
+    if (currentView !== 'context') return;
+    const width = Number(widthPicker.value);
+    panels.filter(panel => !panel.hidden).forEach(panel => {
+      const host = panel.querySelector('.frame-host');
+      const frame = panel.querySelector('iframe');
+      const scale = Math.min(1, panel.clientWidth / width);
+      host.style.width = `${width * scale}px`;
+      host.style.height = `${1000 * scale}px`;
+      frame.style.width = `${width}px`;
+      frame.style.height = '1000px';
+      frame.style.transform = `scale(${scale})`;
+    });
+    requestAnimationFrame(() => {
+      const item = locations[Number(picker.value)];
+      panels.filter(panel => !panel.hidden).forEach(panel => {
+        panel.querySelector('iframe').contentDocument?.getElementById(item.contextAnchor)?.scrollIntoView({block:'start'});
+      });
+    });
+  }
+
+  function updateContext() {
+    const item = locations[Number(picker.value)];
+    panels.forEach(panel => {
+      const url = `brace-casing/${item.page}-${panel.dataset.treatment}.html#${item.contextAnchor}`;
+      const frame = panel.querySelector('iframe');
+      if (frame.getAttribute('src') !== url) frame.src = url;
+      panel.querySelector('[data-full-size]').href = url;
+    });
+    fitFrames();
+  }
+
+  function setView(view) {
+    currentView = view;
+    document.getElementById('index-view').hidden = view !== 'index';
+    document.getElementById('context-view').hidden = view !== 'context';
+    document.querySelectorAll('[data-view]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.view === view)));
+    if (view === 'context') updateContext();
+  }
+
+  document.querySelectorAll('[data-view]').forEach(button => button.addEventListener('click', () => setView(button.dataset.view)));
+  document.querySelectorAll('button[data-case]').forEach(button => button.addEventListener('click', () => {
+    const selected = button.dataset.case;
+    document.body.dataset.case = selected;
+    document.querySelectorAll('button[data-case]').forEach(choice => choice.setAttribute('aria-pressed', String(choice.dataset.case === selected)));
+    document.querySelectorAll('[data-treatment]').forEach(sample => { sample.hidden = selected !== 'both' && sample.dataset.treatment !== selected; });
+    if (currentView === 'context') updateContext();
+  }));
+  picker.addEventListener('change', updateContext);
+  widthPicker.addEventListener('change', fitFrames);
+  window.addEventListener('resize', fitFrames);
+  panels.forEach(panel => panel.querySelector('iframe').addEventListener('load', () => {
+    const item = locations[Number(picker.value)];
+    panel.querySelector('iframe').contentDocument?.getElementById(item.contextAnchor)?.scrollIntoView({block:'start'});
+  }));
+})();
+</script>
+</body>
+</html>

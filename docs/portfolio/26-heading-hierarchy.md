@@ -25,6 +25,8 @@ Color follows the heading's role rather than its HTML level. Homepage cards rema
 
 The repository's `AGENTS.md` now records this rule for later iterations.
 
+The later [brace casing concepts](39-brace-casing-concepts.md) compare lowercase and UPPERCASE across every brace label. They retain the current color hierarchy and do not apply a casing choice to the website.
+
 ## Verification
 
 - Production build passed with pinned Hugo Extended 0.115.4.
