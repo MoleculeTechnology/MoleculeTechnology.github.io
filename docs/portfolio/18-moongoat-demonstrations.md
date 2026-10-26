@@ -20,9 +20,10 @@ The Moongoat setup contained two distinct demonstrations.
 - It demonstrated real-time outside-in motion capture without suits.
 - Russell reports that the application ran at 60 fps. This is his account of the demonstration, not a benchmark measured during this website work.
 
-## Inside-out: wooden swords with IMU sensors
+## Inside-out: bokken with IMU sensors
 
-- The wooden swords were fitted with IMU sensors, speakers, and LED light strips.
+- Russell subsequently identified the swords as bokken, wooden martial arts practice swords, and requested that terminology throughout the portfolio.
+- The bokken were fitted with IMU sensors, speakers, and LED light strips.
 - The LED colors changed deterministically with the direction the sword pointed in real-world space.
 - A given direction corresponded to the same color wherever the sword was used. Russell gives north and up as examples.
 - Russell describes this as inside-out motion capture.
@@ -37,13 +38,13 @@ Keep the event hardware distinct from later Saga firmware and hardware revisions
 
 At Moongoat Coffee, visitors could see their bodies tracked live on a vertical TV. I wrote the C++ motion capture application, which converted webcam video into 3D body points and composited a wireframe over the live image at 60 fps.
 
-I also brought wooden swords fitted with IMU sensors and LEDs. Each sword's color followed its real-world orientation: pointing it in the same direction produced the same color.
+I also brought bokken fitted with IMU sensors and LEDs. Each bokken's color followed its real-world orientation: pointing it in the same direction produced the same color.
 
 ## Short work-card alternative
 
 **Molecule at Moongoat Coffee**
 
-Custom C++ body tracking + IMU-equipped LED swords.
+Custom C++ body tracking + IMU-equipped bokken.
 
 ## Project-page draft
 
@@ -53,9 +54,9 @@ Visitors could walk in front of the vertical TV and see a wireframe over their b
 I wrote a C++ application that converted the high-speed webcam stream into 3D body points, drew the wireframe, and composited it back over the video at 60 fps.
 The demonstration captured body movement without a motion capture suit.
 
-### IMU-equipped wooden swords
+### IMU-equipped bokken
 
-The wooden swords contained IMU sensors, speakers, and LED strips.
+The bokken contained IMU sensors, speakers, and LED strips.
 Their colors were determined by orientation in real-world space.
 Pointing a sword north or up would produce the same corresponding color wherever it was used.
 

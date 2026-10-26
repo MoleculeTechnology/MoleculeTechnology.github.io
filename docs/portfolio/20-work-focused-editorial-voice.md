@@ -83,7 +83,7 @@ This is a candidate for the shorter introduction, not an additional headline to 
 
 **Molecule at Moongoat Coffee**
 
-Two motion capture demos: body tracking from webcam video, with a live wireframe overlay at 60 fps, and wooden swords whose LED colors follow their real-world orientation.
+Two motion capture demos: body tracking from webcam video, with a live wireframe overlay at 60 fps, and bokken whose LED colors follow their real-world orientation.
 
 ### Moongoat / project description
 
@@ -91,11 +91,11 @@ Two motion capture demos: body tracking from webcam video, with a live wireframe
 
 A custom C++ application converts high-speed webcam video into 3D body points and composites a wireframe over the live image at 60 fps. Visitors could walk in front of a large vertical TV and see their bodies tracked without a motion capture suit.
 
-**Orientation-controlled LED swords**
+**Orientation-controlled bokken**
 
-Wooden swords fitted with IMU sensors, speakers, and LED strips map real-world orientation to color. Pointing a sword in the same direction produces the same corresponding color, wherever it is used.
+Bokken fitted with IMU sensors, speakers, and LED strips map real-world orientation to color. Pointing a bokken in the same direction produces the same corresponding color, wherever it is used.
 
-Contribution: **C++ application + sensor-equipped swords — Russell Jahn.**
+Contribution: **C++ application + sensor-equipped bokken — Russell Jahn.**
 
 The source facts remain those recorded in [Russell's account](18-moongoat-demonstrations.md). Speaker behavior is still unspecified.
 

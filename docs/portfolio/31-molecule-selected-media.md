@@ -7,11 +7,11 @@ Russell supplied ten specific archive files for Motion Capture + Lightsabers, gr
 ## Applied presentation
 
 - The landscape photograph of a visitor beside the body-tracking screen is the new lead on Home, Work, and the case study.
-- Two portrait photographs show a visitor using the swords in front of the live tracking display.
+- Two portrait photographs show a visitor using the bokken in front of the live tracking display, with the windup before the extended pose.
 - The event GIF becomes a manually played portrait video beneath the orientation-to-color description.
-- The two prototype photographs sit together under Lightsaber prototypes, distinct from the event documentation.
+- The two prototype photographs sit together under Bokken prototypes, distinct from the event documentation.
 - Custom Patch computer has its own section with the supplied MP4 and a video version of the LED matrix GIF.
-- Two additional event photographs show the wider installation and another visitor using a sword.
+- Two additional event photographs show the wider installation and another visitor using a bokken.
 
 All ten selections are represented as seven photographs and three videos. The project remains Experimental. The original 60 fps body-tracking account and fixed real-world orientation-to-color behavior remain as Russell described them. The recording frame rates do not independently measure the application's performance.
 
@@ -31,14 +31,18 @@ The copies total 98,003,186 bytes. Every copy was verified against the recorded 
 | --- | --- | --- |
 | `20230509 204759-1.mp4` | 1920 × 1080 | Patch LED eyes video, 10.32 s |
 | `ezgif-5-5d129b59f5.gif` | 600 × 338 | Patch LED animation video, 7.24 s |
-| `20220926_185841.jpg` | 1758 × 792 | Held lightsaber prototype |
-| `20220926_200930.jpg` | 1816 × 4032 | Upright illuminated prototype |
+| `20220926_185841.jpg` | 1758 × 792 | Held bokken lightsaber prototype |
+| `20220926_200930.jpg` | 1816 × 4032 | Upright illuminated bokken prototype |
 | `6B6893E6-EF2E-41E2-8B7A-221764C88E1A.jpeg` | 4592 × 3448 | New lead photograph |
-| `20230903_120930.gif` | 540 × 960 | Orientation-controlled sword demonstration, 6 s |
-| `C92D9BF1-DD97-4BCA-88A7-83F49037B4C7.jpeg` | 3448 × 4592 | Visitor pointing a sword toward the display |
-| `49DF8843-13AC-41F3-9E11-BD25674B0334.jpeg` | 3448 × 4592 | Visitor moving the sword beside the tracking display |
+| `20230903_120930.gif` | 540 × 960 | Orientation-controlled bokken demonstration, 6 s |
+| `C92D9BF1-DD97-4BCA-88A7-83F49037B4C7.jpeg` | 3448 × 4592 | Visitor pointing a bokken toward the display |
+| `49DF8843-13AC-41F3-9E11-BD25674B0334.jpeg` | 3448 × 4592 | Visitor winding up the bokken beside the tracking display |
 | `20230902_104130.jpg` | 4000 × 1848 | Wider event view |
 | `IMG_0741.JPG` | 3520 × 1980 | Visitor beside the banner and display |
+
+Russell subsequently clarified that the props are bokken, wooden martial arts practice swords. Public copy now uses that term, defined on the project and About pages. The first body-tracking pair shows `pixelperf-sword-movement.jpg` first and `pixelperf-sword-pointing.jpg` second. Only the image and its descriptive alt text change slots. “Body tracking + light props / PixelPerf Market.” remains the first caption and “Live wireframe overlay on the vertical display.” remains the second. Preserved source files and asset filenames stay unchanged.
+
+The windup-first order and both unchanged captions were checked at 1280px, 390px, and 320px. Updated terminology rendered on Home, Work, and About at 1280px and 390px without horizontal overflow. The production build and ten-route content/asset checks passed. Preview restarted after the copy changes.
 
 Three supplied `.jpeg` files are MPO containers with a second stored photographic frame. Used the primary frame and applied its EXIF orientation. The portrait prototype also needed its stored rotation baked in. These exports retain native dimensions and use JPEG quality 95 with no chroma subsampling. The other upright JPEGs are copied without re-encoding. Hugo produces responsive WebP derivatives at quality 90 with Lanczos resizing.
 

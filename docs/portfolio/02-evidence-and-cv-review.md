@@ -79,6 +79,9 @@ Russell says he is leading the performance initiative and transforming the team 
 
 Capture the leadership context in notes. Russell does not necessarily want it emphasized on this creative portfolio. For this iteration, public copy names automated art performance benchmarking and client performance monitoring without an individual ownership claim. See [Blizzard project responsibilities](30-blizzard-project-responsibilities.md).
 
+**S13 — Russell's bokken clarification, 2026-10-25.**
+Russell identifies the wooden props as bokken, wooden martial arts practice swords, and requests that terminology throughout the portfolio. Use bokken for these props and define the term in longer descriptions. Keep the broader lightsaber project name and the distinction between these event props and later hardware revisions.
+
 ## Claim review
 
 | Claim                                                                                                | Basis                               | How to use it                                                                             |

@@ -40,7 +40,7 @@ In my current role at Blizzard on an unannounced game, I work heavily on 3D grap
 
 Alongside that work, I'm building lightsaber and motion capture hardware as Molecule. I'm doing more embedded development so I can make the hardware + software + art myself.
 
-At [Moongoat Coffee](/work/moongoat/), I showed a custom C++ application that tracked people's bodies from a webcam and composited a wireframe over the live video at 60 fps. I also brought wooden swords with motion sensors and LEDs that changed color based on their orientation in real-world space.
+At [Moongoat Coffee](/work/moongoat/), I showed a custom C++ application that tracked people's bodies from a webcam and composited a wireframe over the live video at 60 fps. I also brought **bokken**, wooden martial arts practice swords fitted with motion sensors and LEDs that changed color based on their orientation in real-world space.
 
 ## { my professional experience }
 

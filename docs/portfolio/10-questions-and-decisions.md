@@ -213,3 +213,7 @@ Russell supplied ten specific files for the custom Patch computer, lightsaber pr
 ### 2026-10-25 — Preserve original portfolio media in the repository
 
 Russell requested organized copies of the GIFs and original media in the portfolio source. Preserved all ten selected Molecule files under `source-media/molecule/`, grouped into Patch computer, lightsaber prototypes, and PixelPerf Market/date folders. Original filenames and bytes are retained. The manifest links each repository copy to its VADER source and prepared website asset. See [the source-media index](../../source-media/README.md).
+
+### 2026-10-25 — Bokken terminology and windup-first photos
+
+Russell identified the props as bokken, wooden martial arts practice swords, and requested that wording throughout the portfolio. Updated public project copy, About, accessible image/video descriptions, and the current copy drafts. He also requested the windup image before the extended pose in the first body-tracking photo pair. Swapped the image sources and their alt text while keeping the two captions in their original positions. See [the media record](31-molecule-selected-media.md).
