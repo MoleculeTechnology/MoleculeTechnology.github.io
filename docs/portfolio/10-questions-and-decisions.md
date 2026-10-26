@@ -209,3 +209,7 @@ Russell found the closing press-kit/artwork/contribution paragraph unnecessary a
 ### 2026-10-25 — Selected Molecule archive media
 
 Russell supplied ten specific files for the custom Patch computer, lightsaber prototypes, and PixelPerf Market at Moongoat Coffee. Applied all ten as seven photos and three playable clips. A supplied landscape event photograph replaces the earlier portrait lead. Keep prototype documentation distinct from event photos and retain the existing factual demonstration copy. GIFs are delivered as controlled MP4 videos, with original source paths and hashes saved in [the media record](31-molecule-selected-media.md).
+
+### 2026-10-25 — Preserve original portfolio media in the repository
+
+Russell requested organized copies of the GIFs and original media in the portfolio source. Preserved all ten selected Molecule files under `source-media/molecule/`, grouped into Patch computer, lightsaber prototypes, and PixelPerf Market/date folders. Original filenames and bytes are retained. The manifest links each repository copy to its VADER source and prepared website asset. See [the source-media index](../../source-media/README.md).

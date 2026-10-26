@@ -51,7 +51,7 @@ The subsequent [tagged-project revision](24-tagged-projects-and-new-headliners.m
 28. [Hearthstone headliner and media research](28-hearthstone-headliner-and-media-research.md) — requested Blizzard cover, official 4K gameplay sources, sharper supporting excerpts, alternate artwork candidates, and provenance.
 29. [Writing punctuation preference](29-writing-punctuation.md) — the no-semicolons rule, reusable writing skill, and applied prose cleanup.
 30. [Blizzard project responsibilities](30-blizzard-project-responsibilities.md) — separate horizontal project overviews, performance initiative leadership context, and Hearthstone details and media kept with its engineering work.
-31. [Molecule selected photos and motion](31-molecule-selected-media.md) — Russell's selected Patch, prototype, and PixelPerf Market media, original source paths, delivery preparation, and checks.
+31. [Molecule selected photos and motion](31-molecule-selected-media.md) — Russell's selected Patch, prototype, and PixelPerf Market media, preserved original copies, source paths, delivery preparation, and checks.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

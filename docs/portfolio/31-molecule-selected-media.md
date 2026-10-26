@@ -17,7 +17,15 @@ All ten selections are represented as seven photographs and three videos. The pr
 
 ## Sources and delivery
 
-The [source manifest](assets/molecule-selected-media.json) records each exact VADER path, original filename, SHA-256 hash, source dimensions, preparation, and resulting asset. Prepared media lives in `assets/portfolio/molecule/`. Originals copied for review remain in ignored `.preview/molecule-media-review/`.
+The [source manifest](assets/molecule-selected-media.json) records each exact VADER path, original filename, SHA-256 hash, source dimensions, preparation, and resulting asset. Its `repository_source` field identifies the preserved original in this repo. Prepared media lives in `assets/portfolio/molecule/`.
+
+Russell subsequently requested copies of the original files, including both GIFs, organized in the portfolio source. All ten originals are now preserved under `source-media/molecule/` with their original filenames and unchanged bytes:
+
+- `patch-computer/` contains the MP4 and GIF.
+- `lightsaber-prototypes/` contains both source photographs.
+- `pixelperf-market/2023-09-02/` contains five source photographs and the GIF.
+
+The copies total 98,003,186 bytes. Every copy was verified against the recorded original SHA-256 hash. The source directory is outside Hugo's mounted input folders. See the [source-media index](../../source-media/README.md).
 
 | Supplied file | Prepared dimensions | Use |
 | --- | --- | --- |
@@ -41,6 +49,7 @@ Videos use native controls, inline playback, still posters, and `preload="none"`
 ## Verification
 
 - Production build passed with Hugo Extended `0.115.4`.
+- The preserved source copies all match their original SHA-256 hashes. A production rebuild confirmed that `source-media/` is absent from the generated website.
 - Ten core routes passed heading, local link/asset, selected-image, alias, and project-order checks. All 247 responsive image width descriptors matched their decoded files.
 - The project has seven still images, three videos, and four paired media groups. All video and poster paths resolve.
 - All three videos decoded fully with FFmpeg and played through the browser's native controls. Browser metadata confirmed 540 × 960 / 6 s, 1920 × 1080 / 10.32 s, and 600 × 338 / 7.24 s.

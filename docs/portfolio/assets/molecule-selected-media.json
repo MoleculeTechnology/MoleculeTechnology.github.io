@@ -24,7 +24,8 @@
       1080
     ],
     "output_bytes": 6705369,
-    "output_sha256": "ea1cfdbb9b3467c0f5dd57cdd3e492f62ad01166459f6747c29ad53282c90734"
+    "output_sha256": "ea1cfdbb9b3467c0f5dd57cdd3e492f62ad01166459f6747c29ad53282c90734",
+    "repository_source": "source-media/molecule/patch-computer/20230509 204759-1.mp4"
   },
   {
     "id": "patch-gif",
@@ -55,7 +56,8 @@
       338
     ],
     "output_bytes": 3206669,
-    "output_sha256": "8cd16e0d468032520ee65c6f0d915ec911be1b7af482742971c53bb7442b4333"
+    "output_sha256": "8cd16e0d468032520ee65c6f0d915ec911be1b7af482742971c53bb7442b4333",
+    "repository_source": "source-media/molecule/patch-computer/ezgif-5-5d129b59f5.gif"
   },
   {
     "id": "prototype-a",
@@ -82,7 +84,8 @@
     ],
     "output_image": "assets/portfolio/molecule/lightsaber-prototype-held.jpg",
     "output_bytes": 201119,
-    "output_sha256": "0f9492b44fe945b63cfd45b0743540338f4f01f45a481839f895b0c560bf25ec"
+    "output_sha256": "0f9492b44fe945b63cfd45b0743540338f4f01f45a481839f895b0c560bf25ec",
+    "repository_source": "source-media/molecule/lightsaber-prototypes/20220926_185841.jpg"
   },
   {
     "id": "prototype-b",
@@ -109,7 +112,8 @@
     ],
     "output_image": "assets/portfolio/molecule/lightsaber-prototype-lit.jpg",
     "output_bytes": 1398854,
-    "output_sha256": "477ccb905e0240ef99ce02f292de33f014731740cfea247e2d5d0433259941e2"
+    "output_sha256": "477ccb905e0240ef99ce02f292de33f014731740cfea247e2d5d0433259941e2",
+    "repository_source": "source-media/molecule/lightsaber-prototypes/20220926_200930.jpg"
   },
   {
     "id": "event-a",
@@ -136,7 +140,8 @@
     ],
     "output_image": "assets/portfolio/molecule/pixelperf-body-tracking.jpg",
     "output_bytes": 3982920,
-    "output_sha256": "026d5e1eebb2e82452fb173d1b2f76cf28472b00cfd2d3041bb57e091e483d5d"
+    "output_sha256": "026d5e1eebb2e82452fb173d1b2f76cf28472b00cfd2d3041bb57e091e483d5d",
+    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/6B6893E6-EF2E-41E2-8B7A-221764C88E1A.jpeg"
   },
   {
     "id": "event-gif",
@@ -167,7 +172,8 @@
       960
     ],
     "output_bytes": 8116109,
-    "output_sha256": "d72bbebf5d6c81bd385975190d1363433dddcf6728baae21cf7c64fe661f3325"
+    "output_sha256": "d72bbebf5d6c81bd385975190d1363433dddcf6728baae21cf7c64fe661f3325",
+    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/20230903_120930.gif"
   },
   {
     "id": "event-b",
@@ -194,7 +200,8 @@
     ],
     "output_image": "assets/portfolio/molecule/pixelperf-sword-pointing.jpg",
     "output_bytes": 4180891,
-    "output_sha256": "b612119243d1add85c00757b0daa32d6c56b7fe2a20819bafbbe66b4d8163abb"
+    "output_sha256": "b612119243d1add85c00757b0daa32d6c56b7fe2a20819bafbbe66b4d8163abb",
+    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/C92D9BF1-DD97-4BCA-88A7-83F49037B4C7.jpeg"
   },
   {
     "id": "event-c",
@@ -221,7 +228,8 @@
     ],
     "output_image": "assets/portfolio/molecule/pixelperf-sword-movement.jpg",
     "output_bytes": 4093262,
-    "output_sha256": "5e86d82a22c6208aa0d3616f679098d7167c5a2981bd0726fd23523bd41c738b"
+    "output_sha256": "5e86d82a22c6208aa0d3616f679098d7167c5a2981bd0726fd23523bd41c738b",
+    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/49DF8843-13AC-41F3-9E11-BD25674B0334.jpeg"
   },
   {
     "id": "event-d",
@@ -248,7 +256,8 @@
     ],
     "output_image": "assets/portfolio/molecule/pixelperf-installation-wide.jpg",
     "output_bytes": 2022535,
-    "output_sha256": "aa7a7d35b7ca79012ab3f97234effc0bbf4636384c4fb01fc1a9200e4a25c868"
+    "output_sha256": "aa7a7d35b7ca79012ab3f97234effc0bbf4636384c4fb01fc1a9200e4a25c868",
+    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/20230902_104130.jpg"
   },
   {
     "id": "event-e",
@@ -275,6 +284,7 @@
     ],
     "output_image": "assets/portfolio/molecule/pixelperf-sword-visitor.jpg",
     "output_bytes": 268207,
-    "output_sha256": "533bdf96cfecf3f286f91198480dd6d4465a96be032dbf1bb2430ac588b3d194"
+    "output_sha256": "533bdf96cfecf3f286f91198480dd6d4465a96be032dbf1bb2430ac588b3d194",
+    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/IMG_0741.JPG"
   }
 ]
