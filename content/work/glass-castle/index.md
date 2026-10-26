@@ -39,6 +39,18 @@ galleries:
     -
       source: "PaperGhost/glasscastle_final1.jpg"
       class: "grid-w33"
+carousel:
+  - label: "Projection setup"
+  - label: "Monitors"
+    source: "PaperGhost/glasscastle_test3.jpg"
+    alt: "Production monitors showing the station wagon and its projected road background on The Glass Castle set."
+    caption: "Production monitors beside the car set."
+  - label: "Finished scene"
+    source: "PaperGhost/glasscastle_final3.gif"
+    alt: "An animated excerpt from The Glass Castle showing a child riding in the car with the landscape moving outside."
+    caption: "A finished car scene from The Glass Castle."
+    animated: true
+    thumbnail: "portfolio/carousel-thumbnails/glasscastle_final3.webp"
 ---
 
 4K/360° video playback supports a large rear-projection setup for shooting car scenes in a film studio.

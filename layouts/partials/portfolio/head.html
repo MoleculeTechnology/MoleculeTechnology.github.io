@@ -10,6 +10,10 @@
   {{ $css := slice (resources.Get "css/schemes/molecule.css") (resources.Get "css/compiled/main.css") (resources.Get "css/portfolio.css") | resources.Concat "css/molecule.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
   {{ if .IsHome }}
+    {{ $carouselCSS := resources.Get "css/project-carousels.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $carouselCSS.RelPermalink }}" integrity="{{ $carouselCSS.Data.Integrity }}">
+    {{ $carousels := resources.Get "js/project-carousels.js" | minify | fingerprint }}
+    <script src="{{ $carousels.RelPermalink }}" integrity="{{ $carousels.Data.Integrity }}" defer></script>
     {{ $pyramid := resources.Get "js/specialization-pyramid.js" | minify | fingerprint }}
     <script src="{{ $pyramid.RelPermalink }}" integrity="{{ $pyramid.Data.Integrity }}" defer></script>
   {{ end }}

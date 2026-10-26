@@ -2,6 +2,8 @@
 
 Date: 2026-10-25
 
+Update: The later [C carousel implementation](37-homepage-contact-strip-carousels.md) adds thumbnails and image selection to each homepage project. The shared film structure below is retained.
+
 Russell clarified that X-Men: Apocalypse, The Glass Castle, mother!, and Arrival belong under Film + television. Their order is the same on Home and the combined film page. Work should continue to offer separate project pages.
 
 ## Presentation

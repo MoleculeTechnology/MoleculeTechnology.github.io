@@ -21,7 +21,7 @@ The [development blog is removed](22-development-blog-removal.md). The portfolio
 The latest pass separates [Professional Work and Experiments](23-professional-work-experiments-and-image-quality.md), keeps Blizzard prominent, and restores higher-resolution originals for two existing photographs.
 The subsequent [tagged-project revision](24-tagged-projects-and-new-headliners.md) puts every project in one collection, adds Work filters, leads with The Glass Castle, and features mother! and Enflux. The latest [heading hierarchy](26-heading-hierarchy.md) gives project titles ghost white and reserves mint for the identity, primary page/section headings, and accents.
 
-The current [film structure](34-reusable-film-projects.md) groups X-Men: Apocalypse, The Glass Castle, mother!, and Arrival under Film + television on Home and the combined film page, while Work offers their individual pages. The [updated carousel comparison](35-carousel-concept-comparison.md) has three interactive treatments for each of the seven homepage projects. These are planning versions for the next pass.
+The current [film structure](34-reusable-film-projects.md) groups X-Men: Apocalypse, The Glass Castle, mother!, and Arrival under Film + television on Home and the combined film page, while Work offers their individual pages. Russell selected C from the [carousel comparison](35-carousel-concept-comparison.md). The [thumbnail-strip carousels](37-homepage-contact-strip-carousels.md) are now implemented on all seven homepage projects.
 
 [Shared project metadata](36-shared-project-metadata.md) now generates About's project sections while preserving its existing appearance. Project records own the facts and curated gallery selections. About no longer acts as a source for other project pages.
 
@@ -61,6 +61,7 @@ The current [film structure](34-reusable-film-projects.md) groups X-Men: Apocaly
 34. [Reusable film projects](34-reusable-film-projects.md) — Film + television's ordered Home presentation, full combined page, separate Work pages, shared sources, requested X-Men cover, and verification.
 35. [Carousel concept comparison](35-carousel-concept-comparison.md) — three interactive treatments across all seven homepage projects, selected image sequences, looping images, controls, and the next implementation step.
 36. [Shared project metadata](36-shared-project-metadata.md) — project-owned About facts and media, dynamic generation, preserved presentation, and regression checks.
+37. [Homepage thumbnail-strip carousels](37-homepage-contact-strip-carousels.md) — selected C design, shared metadata, lazy image delivery, keyboard controls, loops, and validation.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

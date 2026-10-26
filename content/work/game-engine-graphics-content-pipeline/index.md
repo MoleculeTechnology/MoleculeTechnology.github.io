@@ -67,6 +67,12 @@ galleries:
       source: "Blizzard/hearthstone_card_zephrys1.gif"
       class: "grid-w33"
 aboutNow: "In my current role at Blizzard on an unannounced game, I work heavily on 3D graphics techniques, rendering, and content pipeline tools for art + audio."
+carousel:
+  - label: "Gameplay"
+  - label: "Credits"
+    source: "Blizzard/hearthstone_credits_russelljahn2.webp"
+    alt: "Russell Jahn's Hearthstone credits card."
+    caption: "Russell Jahn's Hearthstone credits card."
 ---
 
 {{< project-section name="unannounced" >}}

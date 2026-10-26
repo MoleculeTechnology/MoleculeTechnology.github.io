@@ -2,6 +2,8 @@
 
 Date: 2026-10-25
 
+Decision update: Russell selected **C / Small contact strip**. It is now [implemented on the homepage](37-homepage-contact-strip-carousels.md). The comparison and recommendations below record the earlier exploration.
+
 Prepared after committing the reusable Film + television structure in `b677402` and updating [PR #4](https://github.com/MoleculeTechnology/MoleculeTechnology.github.io/pull/4).
 
 The [interactive comparison](http://127.0.0.1:1314/project-carousels-v2.html) lets Russell choose any of the seven homepage projects and see the same images in three treatments. Its [HTML source](concepts/project-carousels-v2.html), [image choices](concepts/project-carousel-data.js), and static animation thumbnails are saved here in the repo. These are proposals for the next pass. The production homepage still uses one selected image per project.

@@ -49,6 +49,18 @@ galleries:
     -
       source: "Enflux/enflux_blender1.jpg"
       class: "grid-w99"
+carousel:
+  - label: "Blender"
+  - label: "Clothing"
+    source: "Enflux/enflux_suit1.png"
+    alt: "Enflux motion capture clothing."
+    caption: "Enflux motion capture clothing."
+  - label: "Live demo"
+    source: "Enflux/enflux_convention2.gif"
+    alt: "A live motion capture demonstration."
+    caption: "A live motion capture demonstration."
+    animated: true
+    thumbnail: "portfolio/carousel-thumbnails/enflux_convention2.webp"
 ---
 
 ## Motion capture clothing

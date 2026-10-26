@@ -42,6 +42,16 @@ galleries:
     -
       source: "PaperGhost/arrival_cryptotent1.jpg"
       class: "grid-w33"
+carousel:
+  - label: "Surveillance tent"
+  - label: "Office screens"
+    source: "PaperGhost/arrival_office1.jpg"
+    alt: "Screen applications for the office set."
+    caption: "Screen applications for the office set."
+  - label: "Cryptography tent"
+    source: "PaperGhost/arrival_cryptotent1.jpg"
+    alt: "Screen visuals in the cryptography tent."
+    caption: "Screen visuals in the cryptography tent."
 ---
 
 Drag-and-drop tools let the production team customize dozens of **military maps, surveillance controls, and simulations** for the screens on set.

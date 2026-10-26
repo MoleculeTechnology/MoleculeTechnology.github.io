@@ -18,6 +18,20 @@ aboutNow: |
   Alongside that work, I'm building lightsaber and motion capture hardware as Molecule. I'm doing more embedded development so I can make the hardware + software + art myself.
 
   At [Moongoat Coffee](/work/moongoat/), I showed a custom C++ application that used a webcam to track people's bodies and draw lines over the live video at 60 fps. I also brought wooden martial arts practice swords (**bokken**) fitted with motion sensors and LEDs. The lights changed color depending on which way the sword pointed.
+carousel:
+  - label: "PixelPerf"
+  - label: "Bokken loop"
+    source: "portfolio/molecule/pixelperf-sword-demo.webp"
+    alt: "A visitor spinning a bokken at PixelPerf Market as its lights change color."
+    caption: "Bokken lights change color as the sword turns."
+    animated: true
+    thumbnail: "portfolio/carousel-thumbnails/pixelperf-sword-demo.webp"
+  - label: "Patch loop"
+    source: "portfolio/molecule/patch-led-animation.webp"
+    alt: "Looping LED matrix animation on the custom Patch computer."
+    caption: "Patch's LED display shows animated images."
+    animated: true
+    thumbnail: "portfolio/carousel-thumbnails/patch-led-animation.webp"
 ---
 
 At PixelPerf Market in Moongoat Coffee, visitors could try body tracking on a TV and bokken swords with lights.

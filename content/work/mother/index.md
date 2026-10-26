@@ -36,6 +36,16 @@ galleries:
     -
       source: "PaperGhost/mother_preproduction3.png"
       class: "grid-w33"
+carousel:
+  - label: "Virtual camera"
+  - label: "On set"
+    source: "PaperGhost/mother_preproduction5.jpeg"
+    alt: "The tool in use during preproduction."
+    caption: "The tool in use during preproduction."
+  - label: "Gear VR"
+    source: "PaperGhost/mother_preproduction4.png"
+    alt: "The Gear VR version of the set visualization tool."
+    caption: "The Gear VR version of the set visualization tool."
 ---
 
 Set visualization software lets the director and cinematographer frame shots and block actors before filming.

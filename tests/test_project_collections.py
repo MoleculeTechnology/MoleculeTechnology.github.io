@@ -74,6 +74,8 @@ class FilmCollectionTests(unittest.TestCase):
                 projects = page.find_all(lambda item: 'data-collection-project' in item.attrs)
                 self.assertEqual([item.attrs['data-collection-project'] for item in projects], self.FILMS)
                 lead = self.one(projects[0], lambda item: item.has_class('case-hero'))
+                if route == '/':
+                    lead = self.one(lead, lambda item: 'data-carousel-stage' in item.attrs)
                 self.assertIn('xmen_apocalypse_pentagon3', self.one(lead, lambda item: item.tag == 'img').attrs['src'])
                 self.assertEqual(len(page.find_all(lambda item: item.tag == 'h1')), 1)
                 ids = [item.attrs['id'] for item in page.find_all(lambda item: 'id' in item.attrs)]

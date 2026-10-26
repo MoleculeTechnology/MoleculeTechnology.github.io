@@ -32,6 +32,16 @@ galleries:
     -
       source: "PaperGhost/xmen_apocalypse_submarine1.jpg"
       class: "grid-w33"
+carousel:
+  - label: "Pentagon wall"
+  - label: "Wide view"
+    source: "PaperGhost/xmen_apocalypse_pentagon2.jpg"
+    alt: "A wider view of the Pentagon screen work."
+    caption: "A wider view of the Pentagon screen work."
+  - label: "Submarine"
+    source: "PaperGhost/xmen_apocalypse_submarine1.jpg"
+    alt: "Screen visuals for the submarine set."
+    caption: "Screen visuals for the submarine set."
 ---
 
 A **nine-projector video wall** shows missile timers, world maps, world clocks, and aircraft and submarine controls on the Pentagon set.

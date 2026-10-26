@@ -3,7 +3,11 @@
 {{ range $projects }}
 <section class="collection-project" id="{{ path.Base .RelPermalink }}" data-collection-project="{{ .RelPermalink }}">
 {{ if $.home }}<h4 class="collection-project-title{{ if .Params.preserveTitleCase }} title-case{{ end }}"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>{{ else }}<h2 class="collection-project-title{{ if .Params.preserveTitleCase }} title-case{{ end }}">{{ .Title }}</h2>{{ end }}
+{{ if and $.home .Params.carousel }}
+{{ partial "portfolio/carousel.html" (dict "page" . "hero" true) }}
+{{ else }}
 {{ partial "portfolio/case-hero.html" (dict "page" . "loading" "lazy") }}
+{{ end }}
 <div class="collection-project-copy">
 {{ if $.home }}
 {{ partial "portfolio/project-summary.html" (dict "page" .) }}
