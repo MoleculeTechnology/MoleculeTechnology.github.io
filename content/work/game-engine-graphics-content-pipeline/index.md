@@ -17,9 +17,9 @@ projectContext: "Hearthstone + an unannounced game at Blizzard"
 
 ## Unannounced game
 
-### Game performance
+### Performance tools
 
-Responsible for **game performance**, including **automated art performance benchmarking** and **client performance monitoring**.
+**Automated art performance benchmarking** and **client performance monitoring**.
 
 ### Graphics + rendering
 

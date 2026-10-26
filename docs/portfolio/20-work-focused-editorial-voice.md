@@ -144,6 +144,6 @@ Review at [the local preview](http://127.0.0.1:1313/). Deployment repair remains
 
 ## Responsibility wording and project scope
 
-Describe responsibility through the actual work. For the current Blizzard project, use “Responsible for game performance” followed by benchmarking and monitoring. Avoid claims about final authority in public copy. Preserve the factual scope in the evidence notes.
+Describe responsibility through the actual work. The earlier “Responsible for game performance” phrasing incorrectly implied individual ownership. Russell leads a team-wide performance initiative through tools, education, and culture change. Performance is everyone's responsibility. Keep that context in notes and name benchmarking and monitoring in public copy for this iteration.
 
 Keep each game's responsibilities inside its own named section. A shared employer page should not combine different project roles into an undifferentiated list. The [Blizzard revision](30-blizzard-project-responsibilities.md) applies this rule and keeps Hearthstone imagery with Hearthstone's engineering description.

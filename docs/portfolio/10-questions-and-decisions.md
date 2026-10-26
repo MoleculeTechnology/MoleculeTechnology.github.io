@@ -187,3 +187,9 @@ Russell requested no semicolons in the writing and asked for the rule to be save
 Russell rejected “Final responsibility for game performance” as too showy for the portfolio and identified the mixed responsibility summary as inaccurate in its grouping. Public copy now uses “Responsible for game performance” and names automated art performance benchmarking and client performance monitoring. This supersedes the earlier public-copy decision about performance accountability without changing the reported facts.
 
 Unannounced game comes first with performance, graphics/rendering, and art/audio tools. Hearthstone follows with its own engine, platform, pipeline, artist-tools, and team-support work. Its gameplay cover, clips, and credits sit within that section. The shared summary no longer combines the two responsibility lists. See [Blizzard project responsibilities](30-blizzard-project-responsibilities.md) for the applied structure and checks.
+
+### 2026-10-25 — Performance initiative leadership, not individual ownership
+
+Russell corrected the previous interpretation. He leads the performance initiative and is transforming the team culture through tools, education, and initiative. Performance is everyone's responsibility. The earlier “final responsibility” and “Responsible for game performance” descriptions incorrectly implied individual ownership.
+
+Preserve this context in the notes. Russell is uncertain that the leadership/culture aspect should be emphasized on this portfolio. For this iteration, the public section is “Performance tools” and names automated art performance benchmarking and client performance monitoring. Keep the two game sections separate. This clarification supersedes the individual-ownership wording in the earlier entries above. See [the role record](30-blizzard-project-responsibilities.md) and S12 in [Evidence and CV review](02-evidence-and-cv-review.md).
