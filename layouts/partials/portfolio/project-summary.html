@@ -1,0 +1,12 @@
+{{ with .page.Params.projectSummaries }}
+  <dl class="project-summaries" aria-label="Project contributions">
+    {{ range . }}
+      <div>
+        <dt>{{ .title }}</dt>
+        <dd><ul><li>{{ .detail }}</li></ul></dd>
+      </div>
+    {{ end }}
+  </dl>
+{{ else }}
+  <p{{ with .class }} class="{{ . }}"{{ end }}>{{ .page.Description }}</p>
+{{ end }}

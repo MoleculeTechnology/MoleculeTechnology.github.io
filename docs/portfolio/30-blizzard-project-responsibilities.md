@@ -21,7 +21,7 @@ The homepage mentions game performance alongside the current graphics, rendering
 | Unannounced game | Automated art performance benchmarking, client performance monitoring, 3D graphics, rendering, and content pipeline tools for art and audio |
 | Hearthstone | Core systems, memory/download performance, native mobile, low-level debugging, SDK integrations, client build tooling, asset pipeline work, FX artist tools, and cross-team engineering support |
 
-Unannounced game comes first. Hearthstone follows with its historical nine-expansion claim and its own responsibilities. The earlier explicit Unannounced game naming decision still applies.
+The detailed current-project section comes first. Hearthstone follows with its historical nine-expansion claim and its own responsibilities. The current project's public heading is now Unannounced title, following Russell's latest summary format.
 
 The selected Hearthstone gameplay cover remains on Home and Work. On the case study, it now appears inside Hearthstone's section, followed by the two official gameplay excerpts and Russell's credits card. Team artwork and effects attribution remains visible. This avoids placing Hearthstone imagery above the current project's responsibilities.
 
@@ -34,6 +34,26 @@ Russell is leading the performance initiative and transforming the team culture 
 This is a correction to the role description, beyond a softer choice of words. Neither “final responsibility” nor “responsible for game performance” captures that distinction. Do not infer sole ownership from the earlier “The buck stops at me” statement.
 
 Russell wants this context preserved in the notes but is uncertain that it should receive much emphasis on the creative portfolio. Keep the public description focused on the actual benchmarking and monitoring work for this iteration. Do not expand it into a leadership or team-culture pitch without revisiting that editorial choice.
+
+## Opening summary format
+
+Russell replaced the opening prose paragraph with two compact project labels and contribution bullets:
+
+**HEARTHSTONE**
+
+- Core systems + multiplatform development
+
+**UNANNOUNCED TITLE**
+
+- Graphics + Content pipeline tools + performance
+
+Use this order in the overview on Home, Work, and the case study. The detailed body sections remain separate. The new label follows Russell's latest wording and still identifies the title as unannounced. Preserve the existing `#unannounced-game` section anchor for links.
+
+The shared summary partial reads `projectSummaries` frontmatter. Other projects retain their prose descriptions. Overview labels are ghost white on project cards and mint in the Blizzard case header, using Roboto Condensed Black 900. Bullet text stays readable in the existing muted text color.
+
+The summary was checked on Home, Work, and the Blizzard case study at 1280px, 390px, and 320px. Labels remain on one line with no horizontal overflow. Both contribution bullets fit on one line in the desktop case header and wrap naturally at mobile widths. The pinned production build and ten-route asset/content checks passed. The preview script was restarted after the final CSS adjustment.
+
+![Blizzard overview with separate project labels and contribution bullets](assets/2026-10-25-blizzard-project-summary.jpg)
 
 ## Verification
 

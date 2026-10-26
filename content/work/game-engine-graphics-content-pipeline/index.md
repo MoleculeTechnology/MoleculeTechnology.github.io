@@ -1,6 +1,11 @@
 ---
 title: "Game Engine, Graphics + Content Pipeline"
-description: "Graphics, rendering, content tools, and performance on an unannounced game. Core systems + multi-platform development for Hearthstone."
+description: "Hearthstone: Core systems + multiplatform development. Unannounced title: Graphics + content pipeline tools + performance."
+projectSummaries:
+  - title: "Hearthstone"
+    detail: "Core systems + multiplatform development"
+  - title: "Unannounced title"
+    detail: "Graphics + Content pipeline tools + performance"
 weight: 50
 tags: [professional]
 accentSectionHeadings: true
@@ -15,7 +20,7 @@ contribution: "Software engineering. Responsibilities listed by project below."
 projectContext: "Hearthstone + an unannounced game at Blizzard"
 ---
 
-## Unannounced game
+## Unannounced title {#unannounced-game}
 
 ### Performance tools
 

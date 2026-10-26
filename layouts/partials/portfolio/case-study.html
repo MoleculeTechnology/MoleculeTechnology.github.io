@@ -3,7 +3,7 @@
   <header class="case-header">
     <p class="eyebrow mint-text">{{ .Params.context }}</p>
     <h1{{ if .Params.preserveTitleCase }} class="title-case"{{ end }}>{{ .Title }}</h1>
-    <p class="case-deck">{{ .Description }}</p>
+    {{ partial "portfolio/project-summary.html" (dict "page" . "class" "case-deck") }}
     {{ partial "portfolio/project-tags.html" . }}
     <dl class="case-facts">
       <div><dt>Contribution</dt><dd><strong>{{ .Site.Author.name | default "Russell Jahn" }}</strong><br>{{ .Params.contribution }}</dd></div>

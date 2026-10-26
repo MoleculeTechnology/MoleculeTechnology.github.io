@@ -8,7 +8,7 @@
       <div class="project-card-copy">
       <p class="eyebrow mint-text">{{ .Params.context }}</p>
       {{ if $.home }}<h3 class="project-title{{ if .Params.preserveTitleCase }} title-case{{ end }}"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>{{ else }}<h2 class="project-title{{ if .Params.preserveTitleCase }} title-case{{ end }}"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>{{ end }}
-      <p>{{ .Description }}</p>
+      {{ partial "portfolio/project-summary.html" (dict "page" .) }}
       {{ partial "portfolio/project-tags.html" . }}
       <a class="text-link" href="{{ .RelPermalink }}">Explore the project <span aria-hidden="true">↗</span></a>
       </div>

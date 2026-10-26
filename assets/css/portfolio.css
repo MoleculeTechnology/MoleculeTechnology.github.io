@@ -162,6 +162,13 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .case-header h1, .work-index h1 { font-size: var(--heading-page-size); font-weight: 700; line-height: 1.02; text-transform: uppercase; letter-spacing: -.025em; margin-block: 18px 23px !important; max-width: 17ch; }
 .work-index h1 { white-space: nowrap; }
 .case-deck { font-size: clamp(22px, 2.4vw, 29px); color: var(--muted); max-width: 42ch; line-height: 1.4; }
+.project-summaries { display: grid; gap: 20px; max-width: 42ch; margin: 0; }
+.project-summaries dt { color: var(--ghost); font-size: 19px; font-weight: 900; line-height: 1.2; text-transform: uppercase; letter-spacing: .025em; }
+.project-summaries dd { margin: 0; }
+.project-summaries ul { list-style: disc; margin: 6px 0 0; padding-left: 21px; color: var(--muted); font-size: 19px; line-height: 1.4; }
+.case-header .project-summaries { max-width: 720px; }
+.case-header .project-summaries dt { color: var(--mint); font-size: 23px; }
+.case-header .project-summaries ul { font-size: clamp(20px, 2.1vw, 25px); }
 .case-facts { display: grid; grid-template-columns: 1.3fr 1fr; gap: 36px; border-top: 1px solid var(--rule); padding-top: 25px; margin-block: 36px; }
 .case-facts dt { color: var(--mint); text-transform: uppercase; letter-spacing: .1em; font-size: 11px; margin-bottom: 8px; }
 .case-facts dd { margin: 0; color: var(--muted); font-size: 16px; }
