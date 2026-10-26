@@ -39,7 +39,7 @@ Applied verbatim to Home, Work, and the case-study introduction. `summaryLines` 
 - The later summary wording was checked on Home, Work, and the project page at 1280px and 390px, with one explicit line break between the two supplied sentences and no horizontal overflow. Rebuilt the site and restarted the preview after this update.
 - Production build passed with Hugo Extended `0.115.4`. The existing ten-route content and asset checks passed.
 - Checked Home, Work, About, and Motion Capture + Lightsabers at 1280px and 390px. The revised copy appears in the expected places without horizontal overflow.
-- Confirmed the north-pointing example and simple sensor explanation on the rendered project page. The original photo order and its two captions remain unchanged, and Melissa's animation is still an image loop.
+- Confirmed the north-pointing example and simple sensor explanation on the rendered project page. The original photo order and its two captions remain unchanged, and the sword animation is still an image loop.
 - Restarted `scripts/preview.ps1` and left the updated project preview running.
 
 ![Bokken copy on desktop](assets/2026-10-25-plain-copy-desktop.jpg)
@@ -47,3 +47,13 @@ Applied verbatim to Home, Work, and the case-study introduction. `summaryLines` 
 ![Bokken copy on mobile](assets/2026-10-25-plain-copy-mobile.jpg)
 
 ![Russell's revised project summary](assets/2026-10-25-wireless-summary.jpg)
+
+## Patch placement and description
+
+Russell clarified that Patch was custom built with specific hardware to run the motion capture software at 60 fps. Added his two-sentence description verbatim and moved the whole Patch section, including its media, immediately before Bokken prototypes. The prototypes use a separate section heading so they do not appear to be part of the Patch computer.
+
+The sword animation's public caption and alt text now describe the demo without naming the participant, as Russell requested.
+
+Checked the new order, exact Patch paragraph, and participant descriptions in the restarted preview at 1280px and 390px. The media pairs stack on mobile without horizontal overflow. The production build and existing ten-route checks passed.
+
+![Patch above the bokken prototypes](assets/2026-10-25-molecule-patch-computer.jpg)

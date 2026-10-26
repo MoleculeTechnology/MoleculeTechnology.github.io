@@ -35,22 +35,22 @@ Wooden martial arts practice swords (**bokken**) are fitted with **IMU sensors, 
 
 Each direction has a different color. Point a sword north and it always shows the same color, wherever you are.
 
-{{< work-image source="portfolio/molecule/pixelperf-sword-demo.webp" animated="true" class="portrait" alt="Melissa spinning a bokken at PixelPerf Market as its lights change color." caption="Melissa spinning a bokken / PixelPerf Market." >}}
-
-### Bokken prototypes {#lightsaber-prototypes}
-
-{{< media-grid >}}
-{{< work-image source="portfolio/molecule/lightsaber-prototype-held.jpg" alt="An early bokken lightsaber prototype held horizontally, with the exposed LED strip illuminated in several colors." caption="Early bokken lightsaber prototype." >}}
-{{< work-image source="portfolio/molecule/lightsaber-prototype-lit.jpg" class="portrait" alt="An illuminated bokken prototype leaning upright against a wall." caption="Illuminated bokken prototype." >}}
-{{< /media-grid >}}
+{{< work-image source="portfolio/molecule/pixelperf-sword-demo.webp" animated="true" class="portrait" alt="A visitor spinning a bokken at PixelPerf Market as its lights change color." caption="Bokken demo / PixelPerf Market." >}}
 
 ## Custom Patch computer
 
-Patch is a custom computer with an LED display that shows animated eyes and other images.
+Patch is a custom computer with an LED display that shows animated eyes and other images. It was custom built with specific hardware to run the motion capture software at 60 fps.
 
 {{< media-grid >}}
 {{< work-video source="portfolio/molecule/patch-led-eyes.mp4" poster="portfolio/molecule/patch-led-eyes.jpg" label="Play the custom Patch computer LED display demonstration" caption="Patch / animated LED eyes." >}}
 {{< work-image source="portfolio/molecule/patch-led-animation.webp" animated="true" alt="Looping LED matrix animation on the custom Patch computer." caption="Patch / LED matrix animation." >}}
+{{< /media-grid >}}
+
+## Bokken prototypes {#lightsaber-prototypes}
+
+{{< media-grid >}}
+{{< work-image source="portfolio/molecule/lightsaber-prototype-held.jpg" alt="An early bokken lightsaber prototype held horizontally, with the exposed LED strip illuminated in several colors." caption="Early bokken lightsaber prototype." >}}
+{{< work-image source="portfolio/molecule/lightsaber-prototype-lit.jpg" class="portrait" alt="An illuminated bokken prototype leaning upright against a wall." caption="Illuminated bokken prototype." >}}
 {{< /media-grid >}}
 
 ## PixelPerf Market
