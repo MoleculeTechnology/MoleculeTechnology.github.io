@@ -46,6 +46,8 @@ projectContext: "Hearthstone + an unannounced game at Blizzard"
 
 {{< project-section name="hearthstone" >}}
 
+{{< work-image source="Blizzard/hearthstone_credits_russelljahn2.webp" alt="Russell Jahn's Hearthstone credits card." caption="Russell Jahn / Hearthstone credits." >}}
+
 Core systems engineering supported **nine major Hearthstone expansions between March 2021 and August 2023**.
 
 The asset pipeline packs + ships the game's content worldwide across desktop and mobile.
@@ -55,10 +57,6 @@ The asset pipeline packs + ships the game's content worldwide across desktop and
 {{< work-video source="portfolio/hearthstone/eonar-flourish.mp4" poster="portfolio/hearthstone/eonar-flourish.jpg" label="Play Eonar's Flourish: a silent seven-second Hearthstone gameplay excerpt" caption="TITANS / Eonar's Flourish. Official Hearthstone gameplay, 2023." >}}
 
 {{< work-video source="portfolio/hearthstone/norgannon-progenitors-power.mp4" poster="portfolio/hearthstone/norgannon-progenitors-power.jpg" label="Play Norgannon's Progenitor's Power: a silent six-second Hearthstone gameplay excerpt" caption="TITANS / Norgannon's Progenitor's Power. Official Hearthstone gameplay, 2023." >}}
-
-{{< work-image source="Blizzard/hearthstone_credits_russelljahn2.webp" alt="Russell Jahn's Hearthstone credits card." caption="Russell Jahn / Hearthstone credits." >}}
-
-Gameplay excerpts are from the [official Blizzard TITANS press kit](https://blizzard.gamespress.com/en/Hearthstone-TITANS---Press-Kit). Game artwork and visual effects are by the Hearthstone team. Russell's Hearthstone contributions are the engineering work described in this section.
 
 [More Hearthstone images + earlier engineering work →](/about/)
 

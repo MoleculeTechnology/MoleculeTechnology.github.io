@@ -66,7 +66,7 @@ Russell clarified the intended case-study hierarchy:
 
 The earlier conversion of each overview item into a large vertical heading was a misunderstanding. Each project now has three overview columns with 23px ghost-white bold labels and 17px descriptions. Columns stack at mobile widths. The game headings remain mint.
 
-Unannounced title has Performance tools, Graphics + rendering, and Art + audio pipelines. Hearthstone has Engine + multi-platform expert, Content pipeline + artist tools, and Team support. Its expansion history and asset-delivery description follow the overview, then the selected gameplay image, two clips, and credits card. No additional unannounced-project imagery or narrative was invented.
+Unannounced title has Performance tools, Graphics + rendering, and Art + audio pipelines. Hearthstone has Engine + multi-platform expert, Content pipeline + artist tools, and Team support. Its credits card follows the overview, then expansion history, the asset-delivery description, the selected gameplay image, and two clips.
 
 The `project-section` shortcode renders each section from its own `projectSections` entry and places its Markdown body below the overview. The case-study body allows the overview to span the page width, while prose and supporting media retain the narrower reading width. The duplicate summary was removed from the case-study header. Home and Work retain the approved compact project-label summaries.
 
@@ -80,6 +80,14 @@ Verification for this structure:
 - Restarted the preview script after the final website changes and left it running.
 
 ![Separate compact horizontal overviews followed by Hearthstone details and media](assets/2026-10-25-blizzard-horizontal-overviews.jpg)
+
+## Credits card and shorter public copy
+
+Russell requested removal of the closing paragraph explaining the press-kit source, team artwork/effects credit, and the distinction between the pictured gameplay and his engineering contributions. Removed that paragraph without adding replacement copy. The source records remain in [Hearthstone media research](28-hearthstone-headliner-and-media-research.md).
+
+Moved Russell's Hearthstone credits card to the beginning of the section's supporting content, directly below the horizontal overview and before the additional prose, gameplay cover, and clips. The earlier screenshot above records its former placement.
+
+The production build and ten-route content/asset checks passed. Browser checks at 1280px, 390px, and 320px confirmed the new media order, removal of the paragraph, and no horizontal overflow. The card remains capped at its original 350px width. Restarted the preview script and left it running.
 
 ## Verification
 

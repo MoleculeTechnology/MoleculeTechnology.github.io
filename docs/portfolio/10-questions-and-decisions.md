@@ -201,3 +201,7 @@ Russell requested Hearthstone followed by Unannounced title as separate overview
 ### 2026-10-25 — Keep a compact horizontal overview within each project section
 
 Russell clarified that separate sections should each retain the earlier compact horizontal overview, followed by important details, description, and photos. The large vertical responsibility headings were a misunderstanding of that request. The Blizzard case study now presents Unannounced title with its own three-column overview, then Hearthstone with its own overview and supporting content. The duplicate case-header project summary is removed. Home and Work card summaries retain the approved labels and bullets. See [the section structure](30-blizzard-project-responsibilities.md).
+
+### 2026-10-25 — Remove the closing explanation and raise the Hearthstone credits card
+
+Russell found the closing press-kit/artwork/contribution paragraph unnecessary and requested his Hearthstone card higher on the page. Removed the paragraph and moved the credits card directly below Hearthstone's horizontal overview, before its prose and gameplay media. Source provenance stays in the media research notes. See [the placement decision](30-blizzard-project-responsibilities.md).
