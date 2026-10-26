@@ -1,15 +1,16 @@
 ---
-title: "Game Engine, Graphics + Content Pipeline"
-description: "Hearthstone: Core systems + multiplatform development. Unannounced title: Graphics + content pipeline tools + performance."
+title: "Graphics + Content Pipeline + Performance"
+description: "Hearthstone: Core systems + multiplatform development. Unannounced title: Lead Engineer for Graphics + content pipeline tools + performance."
 projectSummaries:
   - title: "Hearthstone"
     detail: "Core systems + multiplatform development"
   - title: "Unannounced title"
-    detail: "Graphics + Content pipeline tools + performance"
+    detail: "Lead Engineer for Graphics + content pipeline tools + performance"
 projectSections:
   unannounced:
     title: "Unannounced title"
     anchor: "unannounced-game"
+    role: "Lead Engineer for Graphics + content pipeline tools + performance"
     overview:
       - title: "Performance tools"
         detail: "Automated art performance benchmarking and client performance monitoring."

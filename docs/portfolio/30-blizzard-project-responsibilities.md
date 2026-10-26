@@ -1,5 +1,13 @@
 # Blizzard project responsibilities
 
+## Current title and role wording
+
+Russell renamed the project to **Graphics + Content Pipeline + Performance**. Home and Work show **Lead Engineer for Graphics + content pipeline tools + performance** beneath Unannounced title. The case study repeats that role immediately below its Unannounced title heading, before the horizontal overview. Hearthstone's contribution summary remains Core systems + multiplatform development. The existing project URL is retained.
+
+The pinned Hugo build and all eighteen tracked tests pass. Home, Work, and the case study show the updated wording in the browser. About's visible copy and gallery selection remain unchanged. Its generated logo alt text and four gallery alt labels follow the new project title. The preview script was restarted after the changes.
+
+![Unannounced title lead engineer wording](assets/2026-10-25-blizzard-lead-role.png)
+
 Date: 2026-10-25
 
 Russell found “Final responsibility for game performance on the unannounced game” too showy for the portfolio. He also identified that the shared contribution list mixed responsibilities from two different projects.
