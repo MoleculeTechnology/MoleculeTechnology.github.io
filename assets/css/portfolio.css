@@ -200,8 +200,12 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .case-body strong { color: var(--ghost); font-weight: 700; }
 .work-figure { margin: 36px -5vw; }
 .work-figure img { width: 100%; height: auto; }
-.work-figure video { display: block; width: 100%; height: auto; background: var(--surface); }
+.work-figure video { display: block; width: 100%; max-width: min(100%, var(--video-width, 100%)); height: auto; background: var(--surface); }
 .work-figure figcaption { font-size: 13px; color: var(--muted); padding-top: 12px; }
+.work-figure.portrait { width: min(100%, 360px); margin-inline: auto; }
+.media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; margin: 36px -5vw; }
+.media-grid > .work-figure { min-width: 0; width: 100%; margin: 0; }
+.media-grid > .work-figure.portrait { max-width: 260px; justify-self: center; }
 .work-gallery { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 12px; align-items: start; margin: 36px max(-80px, -5vw); }
 .work-gallery .gallery-frame { margin: 0; min-width: 0; width: 100%; grid-column: span 12; }
 .work-gallery .grid-w66 { grid-column: span 8; }
@@ -339,6 +343,7 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
   .case-hero { margin-block: 30px 40px; }
   .case-hero.portrait img { max-height: 620px; }
   .work-figure { margin-inline: 0; }
+  .media-grid { grid-template-columns: 1fr; margin-inline: 0; }
   .work-gallery { margin-inline: 0; gap: 8px; }
   .work-gallery .grid-w66 { grid-column: span 12; }
   .work-gallery .grid-w33, .work-gallery .grid-w55 { grid-column: span 6; }

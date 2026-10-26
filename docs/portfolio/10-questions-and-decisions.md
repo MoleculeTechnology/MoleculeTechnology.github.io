@@ -205,3 +205,7 @@ Russell clarified that separate sections should each retain the earlier compact 
 ### 2026-10-25 — Remove the closing explanation and raise the Hearthstone credits card
 
 Russell found the closing press-kit/artwork/contribution paragraph unnecessary and requested his Hearthstone card higher on the page. Removed the paragraph and moved the credits card directly below Hearthstone's horizontal overview, before its prose and gameplay media. Source provenance stays in the media research notes. See [the placement decision](30-blizzard-project-responsibilities.md).
+
+### 2026-10-25 — Selected Molecule archive media
+
+Russell supplied ten specific files for the custom Patch computer, lightsaber prototypes, and PixelPerf Market at Moongoat Coffee. Applied all ten as seven photos and three playable clips. A supplied landscape event photograph replaces the earlier portrait lead. Keep prototype documentation distinct from event photos and retain the existing factual demonstration copy. GIFs are delivered as controlled MP4 videos, with original source paths and hashes saved in [the media record](31-molecule-selected-media.md).
