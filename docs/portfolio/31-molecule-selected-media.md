@@ -9,9 +9,9 @@ Russell supplied ten specific archive files for Motion Capture + Lightsabers, gr
 - The landscape photograph of a visitor beside the body-tracking screen is the new lead on Home, Work, and the case study.
 - Two portrait photographs show a visitor using the bokken in front of the live tracking display, with the windup before the extended pose.
 - Melissa's spinning-bokken GIF appears as a continuously looping portrait WebP image beneath the orientation-to-color description.
-- Custom Patch computer has its own section before the prototypes, with the supplied MP4 and a continuously looping WebP version of the LED matrix GIF. Russell clarified that it was custom built with specific hardware to run the motion capture software at 60 fps.
+- Two additional event photographs show the wider installation and another visitor using a bokken, in PixelPerf Market before the Patch section.
+- Custom Patch computer has its own section before the prototypes, with the supplied MP4 and a continuously looping WebP version of the LED matrix GIF. Russell clarified that it has a custom, hand-built LED display and was built with specific hardware to stay compact and run the motion capture software at 60 fps.
 - The two prototype photographs sit together under Bokken prototypes, distinct from the event documentation.
-- Two additional event photographs show the wider installation and another visitor using a bokken.
 
 All ten selections are represented as seven photographs, two looping images, and one video. The project remains Experimental. The original 60 fps body-tracking account and fixed real-world orientation-to-color behavior remain as Russell described them. The recording frame rates do not independently measure the application's performance.
 

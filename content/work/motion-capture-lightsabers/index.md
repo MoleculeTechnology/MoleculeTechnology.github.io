@@ -37,9 +37,16 @@ Each direction has a different color. Point a sword north and it always shows th
 
 {{< work-image source="portfolio/molecule/pixelperf-sword-demo.webp" animated="true" class="portrait" alt="A visitor spinning a bokken at PixelPerf Market as its lights change color." caption="Bokken demo / PixelPerf Market." >}}
 
+## PixelPerf Market
+
+{{< media-grid >}}
+{{< work-image source="portfolio/molecule/pixelperf-installation-wide.jpg" alt="Visitors watching the bokken and body-tracking demonstration inside Moongoat Coffee." caption="The test installation at Moongoat Coffee." >}}
+{{< work-image source="portfolio/molecule/pixelperf-sword-visitor.jpg" alt="A young visitor holding an illuminated bokken beside the display and Molecule banner." caption="PixelPerf Market / Moongoat Coffee." >}}
+{{< /media-grid >}}
+
 ## Custom Patch computer
 
-Patch is a custom computer with an LED display that shows animated eyes and other images. It was custom built with specific hardware to run the motion capture software at 60 fps.
+Patch is retrofitted with a custom, hand-built LED display that renders animated images. It was custom built with specific hardware to stay compact and run the motion capture software at 60 fps.
 
 {{< media-grid >}}
 {{< work-video source="portfolio/molecule/patch-led-eyes.mp4" poster="portfolio/molecule/patch-led-eyes.jpg" label="Play the custom Patch computer LED display demonstration" caption="Patch / animated LED eyes." >}}
@@ -51,13 +58,6 @@ Patch is a custom computer with an LED display that shows animated eyes and othe
 {{< media-grid >}}
 {{< work-image source="portfolio/molecule/lightsaber-prototype-held.jpg" alt="An early bokken lightsaber prototype held horizontally, with the exposed LED strip illuminated in several colors." caption="Early bokken lightsaber prototype." >}}
 {{< work-image source="portfolio/molecule/lightsaber-prototype-lit.jpg" class="portrait" alt="An illuminated bokken prototype leaning upright against a wall." caption="Illuminated bokken prototype." >}}
-{{< /media-grid >}}
-
-## PixelPerf Market
-
-{{< media-grid >}}
-{{< work-image source="portfolio/molecule/pixelperf-installation-wide.jpg" alt="Visitors watching the bokken and body-tracking demonstration inside Moongoat Coffee." caption="The test installation at Moongoat Coffee." >}}
-{{< work-image source="portfolio/molecule/pixelperf-sword-visitor.jpg" alt="A young visitor holding an illuminated bokken beside the display and Molecule banner." caption="PixelPerf Market / Moongoat Coffee." >}}
 {{< /media-grid >}}
 
 ## Current hardware work

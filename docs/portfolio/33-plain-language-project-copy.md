@@ -50,10 +50,10 @@ Applied verbatim to Home, Work, and the case-study introduction. `summaryLines` 
 
 ## Patch placement and description
 
-Russell clarified that Patch was custom built with specific hardware to run the motion capture software at 60 fps. Added his two-sentence description verbatim and moved the whole Patch section, including its media, immediately before Bokken prototypes. The prototypes use a separate section heading so they do not appear to be part of the Patch computer.
+Russell clarified that Patch was retrofitted with a custom, hand-built LED display. Its hardware was selected to stay compact and run the motion capture software at 60 fps. Applied his revised two-sentence description verbatim. The current order is PixelPerf Market, Custom Patch computer, then Bokken prototypes, with each section's media kept together. The prototypes use a separate section heading so they do not appear to be part of the Patch computer.
 
 The sword animation's public caption and alt text now describe the demo without naming the participant, as Russell requested.
 
 Checked the new order, exact Patch paragraph, and participant descriptions in the restarted preview at 1280px and 390px. The media pairs stack on mobile without horizontal overflow. The production build and existing ten-route checks passed.
 
-![Patch above the bokken prototypes](assets/2026-10-25-molecule-patch-computer.jpg)
+![PixelPerf Market above Patch](assets/2026-10-25-pixelperf-before-patch.jpg)
