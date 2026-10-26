@@ -53,6 +53,7 @@ The subsequent [tagged-project revision](24-tagged-projects-and-new-headliners.m
 30. [Blizzard project responsibilities](30-blizzard-project-responsibilities.md) — separate horizontal project overviews, performance initiative leadership context, and Hearthstone details and media kept with its engineering work.
 31. [Molecule selected photos and motion](31-molecule-selected-media.md) — Russell's selected Patch, prototype, and PixelPerf Market media, preserved original copies, source paths, delivery preparation, and checks.
 32. [Looping portfolio images](32-looping-portfolio-images.md) — animated WebP delivery for Melissa's bokken spin and Patch's LED animation, browser support, original GIF preservation, and checks.
+33. [Plain-language project copy](33-plain-language-project-copy.md) — simple explanations of what visitors see and how the demos work, with the Molecule copy revision and future writing guidance.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

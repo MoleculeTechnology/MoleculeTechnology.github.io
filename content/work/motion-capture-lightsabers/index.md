@@ -1,11 +1,11 @@
 ---
 title: "Motion Capture + Lightsabers"
-description: "Two motion capture demos: camera-based body tracking at 60 fps, and bokken swords with LEDs that change color with their orientation."
+description: "Body tracking at 60 fps and bokken swords with lights that change color as you turn them."
 weight: 60
 tags: [experimental]
 context: "Molecule / Test installation"
-contribution: "C++ body tracking application + sensor-equipped bokken"
-projectContext: "An independent test installation at PixelPerf Market, Moongoat Coffee"
+contribution: "C++ body tracking software + lights and sensors for bokken"
+projectContext: "A small test installation at PixelPerf Market, Moongoat Coffee"
 aliases: ["/work/moongoat/", "/experiments/moongoat/"]
 hero: "portfolio/molecule/pixelperf-body-tracking.jpg"
 heroAlt: "A visitor using an illuminated bokken beside the vertical body-tracking screen at PixelPerf Market."
@@ -13,13 +13,13 @@ heroCaption: "PixelPerf Market / Moongoat Coffee."
 imageClass: "uncropped"
 ---
 
-A small test installation at PixelPerf Market, Moongoat Coffee, demonstrated camera-based body tracking and orientation-controlled bokken.
+At PixelPerf Market in Moongoat Coffee, visitors could try body tracking on a TV and bokken swords with lights.
 
 ## Camera-based body tracking
 
-A custom C++ application converts high-speed webcam video into 3D body points and composites a wireframe over the live image at **60 fps**.
+Visitors could walk in front of a large vertical TV and see lines drawn over their bodies in the live video. No motion capture suit was needed.
 
-Visitors could walk in front of a large vertical TV and see their bodies automatically tracked without wearing a motion capture suit. This outside-in setup tracked the person through the camera.
+A custom C++ application turns video from a high-speed webcam into 3D body points and draws a wireframe over the image at **60 fps**.
 
 {{< media-grid >}}
 {{< work-image source="portfolio/molecule/pixelperf-sword-movement.jpg" alt="A visitor winding up an illuminated bokken beside the body-tracking display." caption="Body tracking + light props / PixelPerf Market." >}}
@@ -28,11 +28,11 @@ Visitors could walk in front of a large vertical TV and see their bodies automat
 
 ## Bokken swords {#led-swords}
 
-The **bokken**, wooden martial arts practice swords, are fitted with **IMU sensors, speakers, and LED strips**. This inside-out setup uses the swords' sensors to map real-world orientation to color.
+Wooden martial arts practice swords (**bokken**) are fitted with **IMU sensors, speakers, and LED strips**. The sensors track which way each sword points, and the lights change color to match.
 
-Each real-world direction has a fixed color. Pointing a bokken north or up returns it to the same corresponding color, wherever it is used.
+Each direction has a fixed color. Point a sword north and it always shows the same color, wherever you are.
 
-{{< work-image source="portfolio/molecule/pixelperf-sword-demo.webp" animated="true" class="portrait" alt="Melissa spinning an illuminated bokken at PixelPerf Market, with the LEDs changing color as it turns." caption="Orientation-controlled bokken demo / PixelPerf Market." >}}
+{{< work-image source="portfolio/molecule/pixelperf-sword-demo.webp" animated="true" class="portrait" alt="Melissa spinning a bokken at PixelPerf Market as its lights change color." caption="Melissa spinning a bokken / PixelPerf Market." >}}
 
 ### Bokken prototypes {#lightsaber-prototypes}
 
@@ -43,7 +43,7 @@ Each real-world direction has a fixed color. Pointing a bokken north or up retur
 
 ## Custom Patch computer
 
-Patch is a custom computer with an animated LED matrix display.
+Patch is a custom computer with an LED display that shows animated eyes and other images.
 
 {{< media-grid >}}
 {{< work-video source="portfolio/molecule/patch-led-eyes.mp4" poster="portfolio/molecule/patch-led-eyes.jpg" label="Play the custom Patch computer LED display demonstration" caption="Patch / animated LED eyes." >}}
@@ -59,6 +59,6 @@ Patch is a custom computer with an animated LED matrix display.
 
 ## Current hardware work
 
-Current Molecule projects include lightsaber and motion capture hardware, with embedded firmware for lights and sensors.
+Current Molecule projects include lightsabers and motion capture devices, with custom software for their lights and sensors.
 
 [Enflux motion capture applications + tools →](/work/enflux/)

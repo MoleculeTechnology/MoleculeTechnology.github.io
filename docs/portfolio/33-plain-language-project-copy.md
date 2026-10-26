@@ -1,0 +1,37 @@
+# Plain-language project copy
+
+Date: 2026-10-25
+
+Russell found the bokken copy too full of jargon and asked for natural, succinct explanations that an everyday reader can understand. His suggested wording starts with wooden martial arts practice swords, with bokken in parentheses, then explains the lights and sensors.
+
+## Writing direction
+
+- Describe what someone can see or do before describing the technology.
+- Use ordinary verbs and concrete examples. “Which way a sword points” explains orientation without needing that label.
+- Keep technical facts that show the work, such as C++, 3D body points, 60 fps, IMUs, speakers, and LEDs. Explain their purpose instead of adding a chain of technical terms.
+- A work-focused voice should still sound like a person explaining something. Avoid formal wording added just to sound professional.
+- Introduce bokken once as wooden martial arts practice swords. Use “sword” where repeating bokken would sound forced.
+- Keep project roles and claims accurate. Do not invent behavior for the speakers or imply the camera controls the sword lights.
+
+## Applied scope
+
+Rewrote Motion Capture + Lightsabers, its shared Home/Work description, and the matching About paragraph. The camera section now begins with what visitors saw. The sword section explains the sensors and lights with a north-pointing example. The Patch introduction and current hardware paragraph also use simpler wording.
+
+The earlier inside-out and outside-in labels remain in [Russell's source account](18-moongoat-demonstrations.md). They are not needed in this short public introduction. The original account remains the factual basis.
+
+## Bokken section
+
+Wooden martial arts practice swords (**bokken**) are fitted with **IMU sensors, speakers, and LED strips**. The sensors track which way each sword points, and the lights change color to match.
+
+Each direction has a fixed color. Point a sword north and it always shows the same color, wherever you are.
+
+## Verification
+
+- Production build passed with Hugo Extended `0.115.4`. The existing ten-route content and asset checks passed.
+- Checked Home, Work, About, and Motion Capture + Lightsabers at 1280px and 390px. The revised copy appears in the expected places without horizontal overflow.
+- Confirmed the north-pointing example and simple sensor explanation on the rendered project page. The original photo order and its two captions remain unchanged, and Melissa's animation is still an image loop.
+- Restarted `scripts/preview.ps1` and left the updated project preview running.
+
+![Bokken copy on desktop](assets/2026-10-25-plain-copy-desktop.jpg)
+
+![Bokken copy on mobile](assets/2026-10-25-plain-copy-mobile.jpg)

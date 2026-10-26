@@ -11,6 +11,8 @@ Russell's punctuation rule is to use no semicolons in original prose. Rewrite wi
 
 Russell's preference after the first copy revision: slightly less personal, with more emphasis on the work. He asked whether removing “I” would feel more professional, what common portfolio conventions are, and what other artists and studios do.
 
+Russell's later clarification is to explain the work in everyday language. Less personal does not mean formal or full of technical labels. Lead with what people see or do, then explain how it works. The [plain-language copy pass](33-plain-language-project-copy.md) updates the Molecule project and its About paragraph. The research and earlier examples below remain a record of the preceding revision.
+
 ## Recommendation
 
 Make the work the subject of most homepage and project-page sentences. Keep Russell's authorship visible through a consistent contribution field and collaborator credits. Retain a personal voice where it provides useful context: a short About introduction, an actual artistic motivation, or a process note.

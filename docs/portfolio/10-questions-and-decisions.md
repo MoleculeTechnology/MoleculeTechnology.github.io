@@ -221,3 +221,7 @@ Russell identified the props as bokken, wooden martial arts practice swords, and
 ### 2026-10-25 — Preserve GIFs as continuously looping images
 
 Russell clarified that Melissa's spinning-lightsaber GIF and the original portfolio GIFs are intended as cool looping images. Use animated WebP for smaller delivery with broad modern-browser support. This supersedes the earlier controlled-MP4 delivery for GIF selections. Preserve both original GIFs, every frame, dimensions, timing, and infinite loops. Keep the separate Patch source video as a video with audio. See [Looping portfolio images](32-looping-portfolio-images.md).
+
+### 2026-10-25 — Explain the work in everyday language
+
+Russell found the bokken copy too full of jargon and asked for a more natural, succinct explanation. Use his wooden-practice-sword introduction, then describe what the sensors and lights do. Lead with what a visitor sees and keep useful technical facts without formal labels added for effect. Applied this to the Molecule case study, shared card description, and matching About paragraph. See [Plain-language project copy](33-plain-language-project-copy.md).
