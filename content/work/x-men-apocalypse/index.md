@@ -12,10 +12,30 @@ hero: "PaperGhost/xmen_apocalypse_pentagon3.jpg"
 heroAlt: "The X-Men: Apocalypse Pentagon set with a projected video wall and illuminated command consoles."
 heroCaption: "X-Men: Apocalypse: the Pentagon video wall and command consoles."
 imageClass: "uncropped"
+resume:
+  title: "X-Men: Apocalypse."
+  details: |
+    - Created Pentagon video wall using 9 projectors to show missile timers, world maps, world clocks, and aircraft/submarine controls.
+    - Designed & programmed digital art for dozens of 1980's CRT TVs and computers retrofitted with projectors.
+  gallery: "archive"
+galleries:
+  archive:
+    -
+      source: "PaperGhost/xmen_apocalypse_pentagon3.jpg"
+      class: "grid-w99"
+    -
+      source: "PaperGhost/xmen_apocalypse_pentagon2.jpg"
+      class: "grid-w99"
+    -
+      source: "PaperGhost/xmen_apocalypse_pentagon1.jpg"
+      class: "grid-w66"
+    -
+      source: "PaperGhost/xmen_apocalypse_submarine1.jpg"
+      class: "grid-w33"
 ---
 
 A **nine-projector video wall** shows missile timers, world maps, world clocks, and aircraft and submarine controls on the Pentagon set.
 
 Dozens of 1980s CRT TVs and computers were retrofitted with projectors to display custom digital art.
 
-{{< about-gallery marker="### X-Men: Apocalypse. ###" title="X-Men: Apocalypse" description="film-set screen visuals" exclude="PaperGhost/xmen_apocalypse_pentagon3.jpg" >}}
+{{< project-gallery project="/work/x-men-apocalypse" title="X-Men: Apocalypse" description="film-set screen visuals" exclude="PaperGhost/xmen_apocalypse_pentagon3.jpg" >}}

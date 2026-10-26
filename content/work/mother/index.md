@@ -13,6 +13,29 @@ hero: "PaperGhost/mother_preproduction3.png"
 heroAlt: "The mother! virtual camera application displaying a stairwell with lens, camera-height, and framing controls."
 heroCaption: "mother!: the set previsualization tool and virtual camera controls."
 imageClass: "uncropped"
+resume:
+  title: "mother! by Darren Aronofsky."
+  details: |
+    - Programmed set visualization software for director & cinematographer to analyze their shots & block their actors.
+    - Mac + Windows + Gear VR versions.
+  gallery: "archive"
+galleries:
+  archive:
+    -
+      source: "PaperGhost/mother_preproduction6.gif"
+      class: "grid-w99"
+    -
+      source: "PaperGhost/mother_software_1.jpeg"
+      class: "grid-w66"
+    -
+      source: "PaperGhost/mother_preproduction5.jpeg"
+      class: "grid-w33"
+    -
+      source: "PaperGhost/mother_preproduction4.png"
+      class: "grid-w33"
+    -
+      source: "PaperGhost/mother_preproduction3.png"
+      class: "grid-w33"
 ---
 
 Set visualization software lets the director and cinematographer frame shots and block actors before filming.
@@ -21,4 +44,4 @@ The virtual camera uses **real-world measurements and physically based lens sett
 
 The images below show the tool in use during preproduction, including the Gear VR version.
 
-{{< about-gallery marker="### mother! by Darren Aronofsky. ###" title="mother!" description="set previsualization + virtual camera software" exclude="PaperGhost/mother_preproduction3.png" >}}
+{{< project-gallery project="/work/mother" title="mother!" description="set previsualization + virtual camera software" exclude="PaperGhost/mother_preproduction3.png" >}}

@@ -39,6 +39,34 @@ aliases: ["/work/hearthstone/"]
 context: "Blizzard / Engine + content technology"
 contribution: "Software engineering"
 projectContext: "Hearthstone + an unannounced game at Blizzard"
+resume:
+  title: "Hearthstone (Blizzard Entertainment)."
+  details: |
+    - Shipped 9 major game expansions for the most popular digital collectible card game (from 03/2021 - 08/2023).
+    - Responsible for core systems, memory & download performance, native mobile development, client build tooling, FX artist tools, and SDK integrations.
+    - Maintained + improved asset pipeline to pack + ship all the game's content worldwide for a long-running live service game.
+    - Debugged + provided solutions for low-level game engine issues.
+    - Supported engineers across other teams to provide guidance + resolve blocking issues.
+  gallery: "archive"
+  logo: "Blizzard/hearthstone_logo.png"
+galleries:
+  archive:
+    -
+      source: "Blizzard/hearthstone_gameplay1.jpg"
+      class: "grid-w99"
+    -
+      source: "Blizzard/hearthstone_credits_russelljahn2.webp"
+      class: "grid-w55"
+    -
+      source: "Blizzard/hearthstone_gameplay3.gif"
+      class: "grid-w33"
+    -
+      source: "Blizzard/hearthstone_vfx1.webp"
+      class: "grid-w33"
+    -
+      source: "Blizzard/hearthstone_card_zephrys1.gif"
+      class: "grid-w33"
+aboutNow: "In my current role at Blizzard on an unannounced game, I work heavily on 3D graphics techniques, rendering, and content pipeline tools for art + audio."
 ---
 
 {{< project-section name="unannounced" >}}

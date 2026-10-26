@@ -12,6 +12,33 @@ hero: "PaperGhost/glasscastle_test1.jpg"
 heroAlt: "A station wagon on The Glass Castle studio set in front of a curved rear-projection screen displaying a road scene."
 heroCaption: "The Glass Castle: the car set and curved rear-projection screen."
 imageClass: "uncropped"
+resume:
+  title: "The Glass Castle."
+  details: "- Programmed 4k/360 video software for a massive rear projection installation to shoot realistic car scenes in film studios."
+  gallery: "archive"
+galleries:
+  archive:
+    -
+      source: "PaperGhost/glasscastle_test4.jpg"
+      class: "grid-w99"
+    -
+      source: "PaperGhost/glasscastle_test1.jpg"
+      class: "grid-w66"
+    -
+      source: "PaperGhost/glasscastle_test3.jpg"
+      class: "grid-w66"
+    -
+      source: "PaperGhost/glasscastle_software1.jpg"
+      class: "grid-w33"
+    -
+      source: "PaperGhost/glasscastle_final2.gif"
+      class: "grid-w33"
+    -
+      source: "PaperGhost/glasscastle_final3.gif"
+      class: "grid-w33"
+    -
+      source: "PaperGhost/glasscastle_final1.jpg"
+      class: "grid-w33"
 ---
 
 4K/360° video playback supports a large rear-projection setup for shooting car scenes in a film studio.

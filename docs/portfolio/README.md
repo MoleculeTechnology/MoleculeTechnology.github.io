@@ -23,6 +23,8 @@ The subsequent [tagged-project revision](24-tagged-projects-and-new-headliners.m
 
 The current [film structure](34-reusable-film-projects.md) groups X-Men: Apocalypse, The Glass Castle, mother!, and Arrival under Film + television on Home and the combined film page, while Work offers their individual pages. The [updated carousel comparison](35-carousel-concept-comparison.md) has three interactive treatments for each of the seven homepage projects. These are planning versions for the next pass.
 
+[Shared project metadata](36-shared-project-metadata.md) now generates About's project sections while preserving its existing appearance. Project records own the facts and curated gallery selections. About no longer acts as a source for other project pages.
+
 1. [Brief and positioning](01-brief-and-positioning.md) — audience, offer, and the connection between the work.
 2. [Evidence and CV review](02-evidence-and-cv-review.md) — reviewed sources, supported claims, and missing facts.
 3. [Site audit and Hugo decision](03-site-audit-and-hugo-decision.md) — keep Hugo, change the presentation.
@@ -58,6 +60,7 @@ The current [film structure](34-reusable-film-projects.md) groups X-Men: Apocaly
 33. [Plain-language project copy](33-plain-language-project-copy.md) — simple explanations of what visitors see and how the demos work, with the Molecule copy revision and future writing guidance.
 34. [Reusable film projects](34-reusable-film-projects.md) — Film + television's ordered Home presentation, full combined page, separate Work pages, shared sources, requested X-Men cover, and verification.
 35. [Carousel concept comparison](35-carousel-concept-comparison.md) — three interactive treatments across all seven homepage projects, selected image sequences, looping images, controls, and the next implementation step.
+36. [Shared project metadata](36-shared-project-metadata.md) — project-owned About facts and media, dynamic generation, preserved presentation, and regression checks.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

@@ -12,8 +12,38 @@ hero: "PaperGhost/arrival_spytent2.jpg"
 heroAlt: "The Arrival surveillance tent set with maps and monitoring applications on its screens."
 heroCaption: "Arrival: on-set maps, surveillance controls, and screen applications."
 imageClass: "uncropped"
+resume:
+  title: "Arrival."
+  details: |
+    - Programmed drag-and-drop software to customize dozens of military maps, surveillance controls, and simulation software.
+
+    [Article about the Arrival set design.](https://www.setdecorators.org/?art=film_decor_features&SHOW=SetDecor_Film_ARRIVAL)
+  gallery: "archive"
+galleries:
+  archive:
+    -
+      source: "PaperGhost/arrival_spytent2.jpg"
+      class: "grid-w99"
+    -
+      source: "PaperGhost/arrival_spytent1.jpg"
+      class: "grid-w33"
+    -
+      source: "PaperGhost/arrival_spytent3.jpg"
+      class: "grid-w33"
+    -
+      source: "PaperGhost/quantico_tablet1.jpeg"
+      class: "grid-w33"
+    -
+      source: "PaperGhost/arrival_office1.jpg"
+      class: "grid-w33"
+    -
+      source: "PaperGhost/arrival_sciencetentt1.webp"
+      class: "grid-w33"
+    -
+      source: "PaperGhost/arrival_cryptotent1.jpg"
+      class: "grid-w33"
 ---
 
 Drag-and-drop tools let the production team customize dozens of **military maps, surveillance controls, and simulations** for the screens on set.
 
-{{< about-gallery marker="### Arrival. ###" title="Arrival" description="on-set maps + surveillance screens" exclude="PaperGhost/arrival_spytent2.jpg" >}}
+{{< project-gallery project="/work/arrival" title="Arrival" description="on-set maps + surveillance screens" exclude="PaperGhost/arrival_spytent2.jpg" >}}

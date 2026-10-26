@@ -20,4 +20,9 @@
   {{ with .Params.redirect }}<meta http-equiv="refresh" content="0; url={{ . | relURL }}">{{ end }}
   {{ template "_internal/opengraph.html" . }}
   {{ if not (or .IsHome (eq .Section "work")) }}{{ partial "vendor.html" . }}{{ end }}
+  {{/* The theme cannot detect gallery shortcodes generated from project metadata. */}}
+  {{ if and (.HasShortcode "project-resume") (not (.HasShortcode "gallery")) }}
+    {{ $packery := resources.Get "lib/packery/packery.pkgd.min.js" }}
+    <script defer src="{{ $packery.RelPermalink }}" integrity="{{ $packery.Data.Integrity }}"></script>
+  {{ end }}
 </head>

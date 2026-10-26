@@ -1,0 +1,31 @@
+{{/* Compose the original About presentation from a project's structured metadata. */}}
+{{- $parts := slice -}}
+{{- $page := .page -}}
+{{- $resume := .resume -}}
+{{- with $resume.title -}}
+  {{- $prefix := strings.Repeat ($resume.level | default 3) "#" -}}
+  {{- $parts = $parts | append (printf "%s %s %s" $prefix . $prefix) -}}
+{{- end -}}
+{{- if $resume.breakBefore -}}{{- $parts = $parts | append "<br/>" -}}{{- end -}}
+{{- with $resume.label -}}{{- $parts = $parts | append (printf "**%s**" .) -}}{{- end -}}
+{{- with $resume.logo -}}{{- $parts = $parts | append (printf "{{< figure src=%q >}}" .) -}}{{- end -}}
+{{- with $resume.details -}}{{- $parts = $parts | append (trim . "\n\r ") -}}{{- end -}}
+{{- with $resume.video -}}{{- $parts = $parts | append (printf "{{< youtube id=%q >}}" .) -}}{{- end -}}
+{{- with $resume.gallery -}}
+  {{- $images := index $page.Params.galleries . -}}
+  {{- if not $images -}}{{- errorf "Missing gallery %q on %s" . $page.RelPermalink -}}{{- end -}}
+  {{- $tags := slice -}}
+  {{- range $images -}}{{- $tags = $tags | append (printf "<img src=%q class=%q />" .source .class) -}}{{- end -}}
+  {{- $gallery := printf "{{< gallery >}}\n%s\n{{< /gallery >}}" (delimit $tags "\n") -}}
+  {{- if $resume.breakBeforeGallery -}}{{- $gallery = printf "<br/>\n%s" $gallery -}}{{- end -}}
+  {{- $parts = $parts | append $gallery -}}
+{{- end -}}
+{{- range $resume.sections -}}
+  {{- $parts = $parts | append (partial "portfolio/resume-markdown.html" (dict "page" $page "resume" .)) -}}
+{{- end -}}
+{{- range $resume.projectRefs -}}
+  {{- $child := site.GetPage . -}}
+  {{- if not $child -}}{{- errorf "Missing resume project: %s" . -}}{{- end -}}
+  {{- $parts = $parts | append (partial "portfolio/resume-markdown.html" (dict "page" $child "resume" $child.Params.resume)) -}}
+{{- end -}}
+{{- return (delimit $parts "\n\n") -}}

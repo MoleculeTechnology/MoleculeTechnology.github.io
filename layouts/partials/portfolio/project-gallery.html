@@ -1,27 +1,22 @@
-{{/* The About page owns the selection and order. Ignore its commented-out images. */}}
-{{ $about := site.GetPage "/about" }}
-{{ $source := replaceRE `(?s)<!--.*?-->` "" $about.RawContent }}
-{{ $sections := split $source .marker }}
-{{ if ne (len $sections) 2 }}
-  {{ errorf "Expected one About gallery marker: %s" .marker }}
+{{/* Project metadata owns the curated selection and order for every view. */}}
+{{ $project := .page }}
+{{ $projectRef := printf "/%s" (replace $project.File.Dir "\\" "/") }}
+{{ $name := .gallery | default "archive" }}
+{{ $images := index $project.Params.galleries $name }}
+{{ if not $images }}
+  {{ errorf "Missing project gallery %q on %s" $name $project.RelPermalink }}
 {{ else }}
-  {{ $section := index (split (index $sections 1) "\n### ") 0 }}
-  {{ $galleries := findRE `(?s)\{\{< gallery >\}\}.*?\{\{< /gallery >\}\}` $section 1 }}
-  {{ if not $galleries }}
-    {{ errorf "About gallery missing for: %s" .marker }}
-  {{ else }}
-    {{ $images := findRE `<img\s[^>]*>` (index $galleries 0) }}
-    {{ $title := .title }}
+    {{ $title := .title | default $project.Title }}
     {{ $description := .description }}
     {{ $skip := int .skip }}
     {{ $exclude := .exclude | default "" }}
-    <div class="work-gallery" role="group" aria-label="{{ $title }} gallery" data-about-gallery="{{ .marker }}">
-      {{ range $index, $tag := $images }}
-        {{ $path := replaceRE `.*src="([^"]+)".*` "$1" $tag }}
+    <div class="work-gallery" role="group" aria-label="{{ $title }} gallery" data-project-gallery="{{ $projectRef }}:{{ $name }}">
+      {{ range $index, $image := $images }}
+        {{ $path := $image.source }}
         {{ if and (ge $index $skip) (ne $path $exclude) }}
-          {{ $width := replaceRE `.*class="([^"]+)".*` "$1" $tag }}
+          {{ $width := $image.class }}
           {{ $alt := printf "%s: %s (%d of %d)." $title $description (add $index 1) (len $images) }}
-          <figure class="gallery-frame {{ $width }}" data-about-image="{{ $path }}">
+          <figure class="gallery-frame {{ $width }}" data-project-image="{{ $path }}">
             {{ if eq (path.Ext $path) ".gif" }}
               {{ $image := resources.Get (printf "legacy-work/%s" $path) }}
               <img src="{{ printf "about/%s" $path | relURL }}" width="{{ $image.Width }}" height="{{ $image.Height }}" data-source-width="{{ $image.Width }}" style="--image-width: {{ printf "%dpx" $image.Width | safeCSS }}" alt="{{ $alt }}" loading="lazy" decoding="async">
@@ -40,5 +35,4 @@
         {{ end }}
       {{ end }}
     </div>
-  {{ end }}
 {{ end }}

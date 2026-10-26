@@ -1,0 +1,4 @@
+{{- $project := site.GetPage (.Get "project") -}}
+{{- if not $project -}}{{- errorf "Current project not found: %s" (.Get "project") -}}{{- end -}}
+{{- if not $project.Params.aboutNow -}}{{- errorf "Current-work metadata missing on %s" $project.RelPermalink -}}{{- end -}}
+{{- .Page.RenderString (dict "display" "block") $project.Params.aboutNow -}}

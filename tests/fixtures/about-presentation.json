@@ -1,0 +1,8 @@
+{
+  "baselineCommit": "a20dff2f3abc65be3207c29a9d26b71cb7908847",
+  "note": "Pre-refactor About presentation, excluding whitespace and generated gallery IDs. Update only after reviewing an intentional presentation change.",
+  "mainSha256": "390165dc6b6d0756ad0a4bd89901aa93463ce373a7bb6c728f0bfc85f35ea502",
+  "stylesheets": [
+    "/css/molecule.min.84254aaa0c037c87fec1289613bd99b40363fdc5f76a45ca6d8204b700d348a6.css"
+  ]
+}

@@ -7,6 +7,8 @@ tags: [portfolio, media, curation, implementation]
 
 # Use the curated About Me media
 
+Update: [Shared project metadata](36-shared-project-metadata.md) preserves these selections in the projects' frontmatter. About now renders from those records. It is no longer parsed as a gallery source.
+
 Russell specified that this iteration should use the photos already curated on the existing About Me page.
 
 The active galleries in [About Me](../../content/about/_index.md) are the source of the project image selection and order. An image being present in the asset directory or VADER archive does not put it in that selection. Commented-out About images remain excluded.

@@ -14,6 +14,10 @@ hero: "portfolio/molecule/pixelperf-body-tracking.jpg"
 heroAlt: "A visitor using an illuminated bokken beside the vertical body-tracking screen at PixelPerf Market."
 heroCaption: "PixelPerf Market / Moongoat Coffee."
 imageClass: "uncropped"
+aboutNow: |
+  Alongside that work, I'm building lightsaber and motion capture hardware as Molecule. I'm doing more embedded development so I can make the hardware + software + art myself.
+
+  At [Moongoat Coffee](/work/moongoat/), I showed a custom C++ application that used a webcam to track people's bodies and draw lines over the live video at 60 fps. I also brought wooden martial arts practice swords (**bokken**) fitted with motion sensors and LEDs. The lights changed color depending on which way the sword pointed.
 ---
 
 At PixelPerf Market in Moongoat Coffee, visitors could try body tracking on a TV and bokken swords with lights.
