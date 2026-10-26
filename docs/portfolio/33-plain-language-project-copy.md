@@ -25,8 +25,18 @@ Wooden martial arts practice swords (**bokken**) are fitted with **IMU sensors, 
 
 Each direction has a fixed color. Point a sword north and it always shows the same color, wherever you are.
 
+## Russell's summary wording
+
+Russell supplied this replacement for the project summary:
+
+> Wireless body tracking at 60 fps.<br>
+> Bokken swords with lights that change color as they move.
+
+Applied verbatim to Home, Work, and the case-study introduction. `summaryLines` keeps the two sentences on separate lines through the shared summary partial. The description metadata uses the same sentences as plain text. The detailed sword explanation still describes direction determining color.
+
 ## Verification
 
+- The later summary wording was checked on Home, Work, and the project page at 1280px and 390px, with one explicit line break between the two supplied sentences and no horizontal overflow. Rebuilt the site and restarted the preview after this update.
 - Production build passed with Hugo Extended `0.115.4`. The existing ten-route content and asset checks passed.
 - Checked Home, Work, About, and Motion Capture + Lightsabers at 1280px and 390px. The revised copy appears in the expected places without horizontal overflow.
 - Confirmed the north-pointing example and simple sensor explanation on the rendered project page. The original photo order and its two captions remain unchanged, and Melissa's animation is still an image loop.
@@ -35,3 +45,5 @@ Each direction has a fixed color. Point a sword north and it always shows the sa
 ![Bokken copy on desktop](assets/2026-10-25-plain-copy-desktop.jpg)
 
 ![Bokken copy on mobile](assets/2026-10-25-plain-copy-mobile.jpg)
+
+![Russell's revised project summary](assets/2026-10-25-wireless-summary.jpg)

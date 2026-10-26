@@ -1,6 +1,9 @@
 ---
 title: "Motion Capture + Lightsabers"
-description: "Body tracking at 60 fps and bokken swords with lights that change color as you turn them."
+description: "Wireless body tracking at 60 fps. Bokken swords with lights that change color as they move."
+summaryLines:
+  - "Wireless body tracking at 60 fps."
+  - "Bokken swords with lights that change color as they move."
 weight: 60
 tags: [experimental]
 context: "Molecule / Test installation"
