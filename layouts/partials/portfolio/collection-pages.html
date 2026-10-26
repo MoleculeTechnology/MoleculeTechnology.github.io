@@ -1,0 +1,8 @@
+{{ $pages := slice }}
+{{ range .Params.projectRefs }}
+{{ $project := site.GetPage . }}
+{{ if not $project }}{{ errorf "Collection project not found: %s" . }}{{ else }}
+{{ $pages = $pages | append $project }}
+{{ end }}
+{{ end }}
+{{ return $pages }}

@@ -6,6 +6,10 @@ tags: [portfolio, decisions]
 
 # Questions and decisions
 
+## Current film-project structure
+
+On 2026-10-25 Russell clarified that Film + television should contain X-Men: Apocalypse, The Glass Castle, mother!, and Arrival, in that order. Home presents those films vertically within the collection. The combined film page reuses their complete source pages, while Work lists them individually. The requested X-Men Pentagon photograph leads the collection. See [Reusable film projects](34-reusable-film-projects.md). This replaces the earlier flat homepage structure.
+
 ## Recorded from Russell's brief
 
 - Brand: Molecule.

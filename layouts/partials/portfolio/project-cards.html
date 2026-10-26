@@ -1,5 +1,8 @@
 <div class="work-index-grid{{ if .home }} home-projects{{ end }}{{ if .split }} split-projects{{ end }}">
   {{ range $index, $project := .pages.ByWeight }}
+    {{ if and $.home .Params.projectRefs }}
+    {{ partial "portfolio/collection-card.html" . }}
+    {{ else }}
     {{ $lead := and $.lead (eq $index 0) }}
     <article class="project-card{{ if $lead }} work-index-lead{{ end }}"{{ if $.filterable }} data-project-card data-project-tags="{{ delimit .Params.tags " " }}"{{ end }}>
       {{ with .Params.hero }}<a class="project-image curated-image {{ $project.Params.coverClass }}" href="{{ $project.RelPermalink }}" aria-label="{{ $project.Title }}">{{ partial "portfolio/image.html" (dict "source" . "alt" $project.Params.heroAlt "sizes" (cond $lead "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc(100vw - 80px), (max-width: 1408px) calc(100vw - 128px), 1280px" "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc((100vw - 122px) / 2), (max-width: 1408px) calc((100vw - 170px) / 2), 619px")) }}</a>{{ else }}
@@ -13,5 +16,6 @@
       <a class="text-link" href="{{ .RelPermalink }}">Explore the project <span aria-hidden="true">↗</span></a>
       </div>
     </article>
+    {{ end }}
   {{ end }}
 </div>

@@ -7,6 +7,8 @@ tags: [portfolio, projects, media, filters]
 
 # Tagged projects and new headliners
 
+The later [reusable film-project revision](34-reusable-film-projects.md) supersedes this note's flat homepage ordering and Arrival collection cover. Film + television now groups X-Men, The Glass Castle, mother!, and Arrival while keeping their individual Work pages.
+
 ## Russell's updated direction
 
 Every entry is a project, with professional/experimental classification stored as tags. The homepage still has Professional Work and Experiments sections. Work becomes a single catalogue with filters. Tag values must remain stable while their visible labels are readable.

@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ $projects := where .Site.RegularPages "Section" "work" }}
+{{ $projects = where $projects "Params.parentProject" "eq" nil }}
 <section class="home-hero site-width" aria-labelledby="intro-heading">
   <div class="hero-copy">
     <p class="eyebrow hero-name"><span class="status-dot" aria-hidden="true"></span> Russell Jahn / Molecule</p>

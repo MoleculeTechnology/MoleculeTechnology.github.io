@@ -1,0 +1,10 @@
+<article class="project-card project-collection work-index-lead">
+<header class="collection-intro">
+<p class="eyebrow mint-text">{{ .Params.context }}</p>
+<h3 class="project-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+{{ partial "portfolio/project-summary.html" (dict "page" .) }}
+{{ partial "portfolio/project-tags.html" . }}
+<a class="text-link" href="{{ .RelPermalink }}">Explore {{ .Title }} <span aria-hidden="true">↗</span></a>
+</header>
+{{ partial "portfolio/collection-projects.html" (dict "page" . "home" true) }}
+</article>

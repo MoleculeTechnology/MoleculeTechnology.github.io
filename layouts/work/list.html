@@ -1,11 +1,12 @@
 {{ define "main" }}
+{{ $projects := where .RegularPages "Params.projectRefs" "eq" nil }}
 <div class="work-index site-width" data-project-catalogue>
   <header><p class="eyebrow mint-text">Russell Jahn / Molecule</p><h1 class="heading-accent">{ WORK }</h1><p class="case-deck">Film-set visuals, motion capture, and game engineering, alongside independent experiments.</p></header>
   <div class="project-filter" role="group" aria-label="Filter projects" data-project-filters hidden>
     <button type="button" data-project-filter="all" aria-pressed="true">All projects</button>
     {{ range slice "professional" "experimental" }}{{ $tag := index site.Data.project_tags . }}<button type="button" data-project-filter="{{ $tag.value }}" aria-pressed="false">{{ $tag.label }}</button>{{ end }}
   </div>
-  <p class="filter-status" data-project-count aria-live="polite" aria-atomic="true">{{ len .RegularPages }} projects</p>
-  {{ partial "portfolio/project-cards.html" (dict "pages" .RegularPages "lead" false "filterable" true) }}
+  <p class="filter-status" data-project-count aria-live="polite" aria-atomic="true">{{ len $projects }} projects</p>
+  {{ partial "portfolio/project-cards.html" (dict "pages" $projects "lead" false "filterable" true) }}
 </div>
 {{ end }}
