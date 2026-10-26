@@ -30,9 +30,9 @@ projectSections:
 weight: 50
 tags: [professional]
 accentSectionHeadings: true
-hero: "Blizzard/hearthstone_gameplay1.jpg"
-heroAlt: "Hearthstone gameplay on the Festival of Legends board, with Infinitize the Maxitude selected."
-heroCaption: "Hearthstone gameplay. Game artwork by the Hearthstone team."
+hero: "portfolio/hearthstone/eonar-flourish.jpg"
+heroAlt: "Hearthstone gameplay showing Eonar's Flourish and its green spell effect on the TITANS board."
+heroCaption: "TITANS / Eonar's Flourish. Hearthstone gameplay, 2023."
 heroInContent: true
 imageClass: "uncropped"
 aliases: ["/work/hearthstone/"]
@@ -53,6 +53,7 @@ galleries:
   archive:
     -
       source: "Blizzard/hearthstone_gameplay1.jpg"
+      alt: "Hearthstone gameplay on the Festival of Legends board, with Infinitize the Maxitude selected."
       class: "grid-w99"
     -
       source: "Blizzard/hearthstone_credits_russelljahn2.webp"
@@ -67,12 +68,6 @@ galleries:
       source: "Blizzard/hearthstone_card_zephrys1.gif"
       class: "grid-w33"
 aboutNow: "In my current role at Blizzard on an unannounced game, I work heavily on 3D graphics techniques, rendering, and content pipeline tools for art + audio."
-carousel:
-  - label: "Gameplay"
-  - label: "Credits"
-    source: "Blizzard/hearthstone_credits_russelljahn2.webp"
-    alt: "Russell Jahn's Hearthstone credits card."
-    caption: "Russell Jahn's Hearthstone credits card."
 ---
 
 {{< project-section name="unannounced" >}}
@@ -87,10 +82,6 @@ Core systems engineering supported **nine major Hearthstone expansions between M
 The asset pipeline packs + ships the game's content worldwide across desktop and mobile.
 
 {{< project-hero >}}
-
-{{< work-video source="portfolio/hearthstone/eonar-flourish.mp4" poster="portfolio/hearthstone/eonar-flourish.jpg" label="Play Eonar's Flourish: a silent seven-second Hearthstone gameplay excerpt" caption="TITANS / Eonar's Flourish. Official Hearthstone gameplay, 2023." >}}
-
-{{< work-video source="portfolio/hearthstone/norgannon-progenitors-power.mp4" poster="portfolio/hearthstone/norgannon-progenitors-power.jpg" label="Play Norgannon's Progenitor's Power: a silent six-second Hearthstone gameplay excerpt" caption="TITANS / Norgannon's Progenitor's Power. Official Hearthstone gameplay, 2023." >}}
 
 [More Hearthstone images + earlier engineering work →](/about/)
 

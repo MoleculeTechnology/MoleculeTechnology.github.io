@@ -4,12 +4,12 @@ Date: 2026-10-25
 
 Russell selected **C / Small contact strip** from the [carousel comparison](35-carousel-concept-comparison.md). That choice replaces the earlier recommendation to start with A.
 
-All seven homepage projects now use C: X-Men, The Glass Castle, mother!, Arrival, Enflux, Game Engine, Graphics + Content Pipeline, and Motion Capture + Lightsabers. The film order, project links, contribution summaries, and selected lead images are preserved.
+The initial implementation used C on all seven homepage projects. The later [media revision](42-lowercase-media-and-film-layouts.md) removes Blizzard's carousel because it has one selected image and gives Enflux four selections. Six projects now use C. The film order, project links, and contribution summaries are preserved.
 
 ## Presentation and controls
 
 - One image appears in a fixed 16:10 frame, preserving its full composition and limiting display to the original width.
-- Two or three small, still thumbnails sit underneath. The selected thumbnail has a mint border.
+- Two or more small, still thumbnails sit underneath. The selected thumbnail has a mint border. Single-image projects render without a carousel.
 - A short caption and image count follow the thumbnails. Their reserved space keeps the surrounding content steady when images change.
 - Selection is manual. Selected GIF and WebP loops keep looping as images.
 - Thumbnail controls have 64 × 48px hit areas. Tab enters at the selected thumbnail. Left and right arrows select adjacent images and wrap. Home and End select the first and last image. Keyboard focus follows selection.

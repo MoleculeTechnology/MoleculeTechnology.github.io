@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Molecule / Film + Television layouts</title>
+  <style>
+    @font-face { font-family: "Roboto Condensed"; src: url("http://127.0.0.1:1313/fonts/RobotoCondensed/RobotoCondensed-Regular.woff2") format("woff2"); font-weight: 400; }
+    @font-face { font-family: "Roboto Condensed"; src: url("http://127.0.0.1:1313/fonts/RobotoCondensed/RobotoCondensed-Bold.woff2") format("woff2"); font-weight: 700; }
+    :root { color-scheme: dark; font-family: "Roboto Condensed", sans-serif; background: #050707; color: #f8f8ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header { padding: 26px max(22px, calc((100vw - 1280px) / 2)); border-bottom: 1px solid #334541; }
+    .eyebrow { color: #84f9eb; font-size: 12px; letter-spacing: .12em; margin: 0 0 10px; }
+    h1 { font-size: clamp(26px, 4vw, 38px); margin: 0 0 12px; line-height: 1.1; }
+    p { color: #b7c4c1; margin: 0; line-height: 1.5; }
+    .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 26px; margin-top: 22px; }
+    .choices { display: flex; flex-wrap: wrap; gap: 8px; }
+    button, select, a { font: inherit; font-size: 15px; }
+    button, select { min-height: 44px; padding: 10px 16px; border: 1px solid #334541; background: transparent; color: #f8f8ff; cursor: pointer; }
+    button[aria-pressed="true"] { background: #84f9eb; border-color: #84f9eb; color: #050707; }
+    button:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid #84f9eb; outline-offset: 4px; }
+    label { display: flex; align-items: center; gap: 10px; }
+    a { color: #84f9eb; text-underline-offset: 4px; }
+    #measurement { font-size: 14px; margin-top: 18px; }
+    .preview { padding: 0 12px 30px; }
+    iframe { display: block; border: 0; margin-inline: auto; width: min(100%, 1280px); height: 1200px; background: #050707; }
+  </style>
+</head>
+<body>
+<header>
+  <p class="eyebrow">MOLECULE / LAYOUT STUDY</p>
+  <h1>Film + television</h1>
+  <p>The same four projects, images, captions, and thumbnail controls. Compare image scale and scrolling.</p>
+  <div class="controls">
+    <div class="choices" role="group" aria-label="Film layout">
+      <button type="button" data-layout="full" aria-pressed="true">A / Full width</button>
+      <button type="button" data-layout="grid" aria-pressed="false">B / Two-column grid</button>
+    </div>
+    <label>Preview width <select id="width"><option value="1280">Desktop / 1280px</option><option value="390">Phone / 390px</option><option value="320">Small phone / 320px</option></select></label>
+    <a id="open" href="film-layouts/full.html" target="_blank" rel="noopener">Open full size ↗</a>
+  </div>
+  <p id="measurement" role="status" aria-live="polite">Loading the film section…</p>
+</header>
+<main class="preview"><iframe title="Film + Television layout preview" src="film-layouts/full.html"></iframe></main>
+<script>
+  const frame = document.querySelector('iframe');
+  const measurement = document.querySelector('#measurement');
+  let mode = 'full';
+  let observer;
+  function measure() {
+    const section = frame.contentDocument?.querySelector('main');
+    if (!section) return;
+    const height = Math.ceil(section.getBoundingClientRect().height);
+    frame.style.height = height + 'px';
+    measurement.textContent = (mode === 'full' ? 'A / Full width' : 'B / Two-column grid') + ' · ' + frame.clientWidth + 'px wide · ' + height.toLocaleString() + 'px of scrolling. Both use one column on phones.';
+  }
+  frame.addEventListener('load', () => {
+    observer?.disconnect();
+    observer = new ResizeObserver(measure);
+    observer.observe(frame.contentDocument.querySelector('main'));
+    measure();
+  });
+  document.querySelectorAll('[data-layout]').forEach(button => button.addEventListener('click', () => {
+    mode = button.dataset.layout;
+    document.querySelectorAll('[data-layout]').forEach(choice => choice.setAttribute('aria-pressed', String(choice === button)));
+    frame.src = 'film-layouts/' + mode + '.html';
+    document.querySelector('#open').href = frame.src;
+  }));
+  document.querySelector('#width').addEventListener('change', event => {
+    frame.style.width = 'min(100%, ' + event.target.value + 'px)';
+  });
+  window.addEventListener('resize', measure);
+</script>
+</body>
+</html>

@@ -1,13 +1,13 @@
 ---
 title: Brace casing concepts
 date: 2026-10-25
-status: awaiting-design-choice
+status: lowercase-selected
 tags: [portfolio, typography, concepts]
 ---
 
 # Brace casing concepts
 
-Russell requested lowercase and UPPERCASE concepts for every visible `{ }` label. No casing decision has been applied to the website.
+Russell requested lowercase and UPPERCASE concepts for every visible `{ }` label, then selected lowercase for this iteration. The website now uses that choice, including the pyramid caption previously uppercased by CSS. The comparison and inventory below preserve the earlier design review.
 
 Open the [interactive comparison](http://127.0.0.1:1314/brace-casing.html). **All occurrences** shows paired specimens. **In context** shows the same treatments in copies of the actual page layouts. Choose a location and a page width of 1280px, 390px, or 320px. **Open full size** opens either page without comparison scaling.
 
@@ -15,7 +15,7 @@ The comparison covers **16 occurrences across 13 distinct labels**. The source's
 
 ## Complete inventory
 
-| Lowercase | UPPERCASE | Occurrences | Current appearance |
+| Lowercase | UPPERCASE | Occurrences | Appearance before the choice |
 | --- | --- | --- | --- |
 | `{ professional work }` | `{ PROFESSIONAL WORK }` | Home section | Uppercase, mint |
 | `{ experiments }` | `{ EXPERIMENTS }` | Home section and legacy Experiments redirect | Uppercase, mint |

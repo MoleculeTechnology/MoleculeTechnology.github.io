@@ -11,16 +11,16 @@ import test_project_collections as collections
 class HomeCarouselTests(unittest.TestCase):
     BUILD = collections.FilmCollectionTests.BUILD
     PROJECTS = ['x-men-apocalypse', 'glass-castle', 'mother', 'arrival', 'enflux',
-                'game-engine-graphics-content-pipeline', 'motion-capture-lightsabers']
+                'motion-capture-lightsabers']
 
     def page(self, route='/'):
         return Document((self.BUILD / route.strip('/') / 'index.html').read_text(encoding='utf-8')).root
 
-    def test_all_seven_home_projects_have_the_selected_contact_strip(self):
+    def test_multiple_image_projects_have_the_selected_contact_strip(self):
         carousels = self.page().find_all(lambda item: 'data-project-carousel' in item.attrs)
         self.assertEqual([item.attrs['data-project-carousel'] for item in carousels],
                          ['/work/' + slug + '/' for slug in self.PROJECTS])
-        for carousel, total in zip(carousels, [3, 3, 3, 3, 3, 2, 3]):
+        for carousel, total in zip(carousels, [3, 3, 3, 3, 4, 3]):
             with self.subTest(project=carousel.attrs['data-project-carousel']):
                 choices = carousel.find_all(lambda item: 'data-carousel-choice' in item.attrs)
                 self.assertEqual(len(choices), total)
@@ -34,7 +34,7 @@ class HomeCarouselTests(unittest.TestCase):
             images = stage.find_all(lambda item: item.tag == 'img')
             self.assertEqual(len(images), 1)
             self.assertTrue(images[0].attrs['alt'])
-            self.assertTrue(images[0].attrs.get('srcset'))
+            self.assertTrue(images[0].attrs.get('srcset') or images[0].attrs.get('data-loop-src'))
             caption = carousel.find_all(lambda item: 'data-carousel-caption' in item.attrs)[0]
             self.assertTrue(caption.text())
             controls = carousel.find_all(lambda item: 'data-carousel-controls' in item.attrs)[0]
@@ -42,7 +42,7 @@ class HomeCarouselTests(unittest.TestCase):
 
     def test_additional_images_stay_inert_and_loops_are_preserved(self):
         templates = self.page().find_all(lambda item: item.tag == 'template' and 'data-carousel-slide' in item.attrs)
-        self.assertEqual(len(templates), 20)
+        self.assertEqual(len(templates), 19)
         loops = []
         for template in templates:
             images = template.find_all(lambda item: item.tag == 'img')
@@ -52,14 +52,14 @@ class HomeCarouselTests(unittest.TestCase):
                 loops.append(images[0].attrs['src'])
         self.assertEqual(len(loops), 4)
         self.assertTrue(any('glasscastle_final3' in source for source in loops))
-        self.assertTrue(any('enflux_convention2' in source for source in loops))
+        self.assertTrue(any('enflux-convention-loop' in source for source in loops))
         self.assertTrue(any('pixelperf-sword-demo' in source for source in loops))
         self.assertTrue(any('patch-led-animation' in source for source in loops))
 
     def test_thumbnails_are_small_still_images(self):
         controls = self.page().find_all(lambda item: 'data-carousel-controls' in item.attrs)
         thumbnails = [image for group in controls for image in group.find_all(lambda item: item.tag == 'img')]
-        self.assertEqual(len(thumbnails), 20)
+        self.assertEqual(len(thumbnails), 19)
         for thumbnail in thumbnails:
             self.assertLessEqual(int(thumbnail.attrs['width']), 160)
             self.assertLessEqual(int(thumbnail.attrs['height']), 100)
@@ -79,6 +79,21 @@ class HomeCarouselTests(unittest.TestCase):
             self.assertFalse(page.find_all(lambda item: item.tag == 'script' and 'project-carousels' in item.attrs.get('src', '')))
         home = self.page()
         self.assertEqual(len(home.find_all(lambda item: item.tag == 'script' and 'project-carousels' in item.attrs.get('src', ''))), 1)
+
+    def test_enflux_order_and_single_blizzard_image(self):
+        home = self.page()
+        enflux = home.find_all(lambda item: item.attrs.get('data-project-carousel') == '/work/enflux/')[0]
+        slides = enflux.find_all(lambda item: 'data-carousel-slide' in item.attrs)
+        for slide, source in zip(slides, ['enflux-convention-loop.webp', 'enflux_blender1', 'enflux_convention1', 'enflux_convention4']):
+            image = slide.find_all(lambda item: item.tag == 'img')[0]
+            self.assertIn(source, image.attrs['src'])
+        self.assertFalse(home.find_all(lambda item: item.tag == 'img' and 'hearthstone_credits' in item.attrs.get('src', '')))
+        for route in ['/', '/work/game-engine-graphics-content-pipeline/']:
+            page = self.page(route)
+            self.assertTrue(page.find_all(lambda item: item.tag == 'img' and 'eonar-flourish' in item.attrs.get('src', '')))
+            self.assertFalse(page.find_all(lambda item: item.tag == 'video'))
+        self.assertTrue(self.page('/work/game-engine-graphics-content-pipeline/').find_all(
+            lambda item: item.tag == 'img' and 'hearthstone_credits' in item.attrs.get('src', '')))
 
 
 if __name__ == '__main__':

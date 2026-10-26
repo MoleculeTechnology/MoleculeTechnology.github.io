@@ -6,9 +6,10 @@ tags: [professional]
 context: "Enflux"
 contribution: "Unity SDK + applications + Blender plugin + workshops + trade show booths"
 projectContext: "Motion capture clothing, developer tools, and public demonstrations"
-hero: "Enflux/enflux_blender1.jpg"
-heroAlt: "The Enflux motion capture recording plugin in Blender, with a tracked character and recording controls."
-heroCaption: "Enflux Blender plugin: motion capture recording + FBX export."
+hero: "portfolio/enflux/enflux-convention-loop.webp"
+heroAnimated: true
+heroAlt: "A live demonstration of Enflux motion capture clothing at a trade show."
+heroCaption: "Enflux / live motion capture demonstration."
 imageClass: "uncropped"
 resume:
   title: "Motion Capture Clothing (Enflux)."
@@ -35,6 +36,7 @@ galleries:
       class: "grid-w66"
     -
       source: "Enflux/enflux_convention2.gif"
+      alt: "Motion capture project documentation (2 of 5)."
       class: "grid-w66"
     -
       source: "Enflux/enflux_convention1.jpeg"
@@ -48,19 +50,24 @@ galleries:
   blender:
     -
       source: "Enflux/enflux_blender1.jpg"
+      alt: "The Enflux motion capture recording plugin in Blender, with a tracked character and recording controls."
       class: "grid-w99"
 carousel:
-  - label: "Blender"
-  - label: "Clothing"
-    source: "Enflux/enflux_suit1.png"
-    alt: "Enflux motion capture clothing."
-    caption: "Enflux motion capture clothing."
   - label: "Live demo"
-    source: "Enflux/enflux_convention2.gif"
-    alt: "A live motion capture demonstration."
-    caption: "A live motion capture demonstration."
     animated: true
     thumbnail: "portfolio/carousel-thumbnails/enflux_convention2.webp"
+  - label: "Blender"
+    source: "Enflux/enflux_blender1.jpg"
+    alt: "The Enflux motion capture recording plugin in Blender, with a tracked character and recording controls."
+    caption: "Enflux Blender plugin: motion capture recording + FBX export."
+  - label: "Convention demo"
+    source: "Enflux/enflux_convention1.jpeg"
+    alt: "An Enflux motion capture demonstration at a convention."
+    caption: "Enflux / convention demonstration."
+  - label: "Trade show booth"
+    source: "Enflux/enflux_convention4.jpg"
+    alt: "The Enflux trade show booth and motion capture demonstration."
+    caption: "Enflux / trade show booth."
 ---
 
 ## Motion capture clothing
@@ -75,7 +82,7 @@ The application work spans **five first-party applications + four investor demos
 
 The Blender plugin records motion capture animation + exports FBX files. A Unity-based Windows application sends smooth motion data over Wi-Fi to Blender on other computers.
 
-The recording interface is shown in the project image above.
+{{< project-gallery project="/work/enflux" gallery="blender" title="Blender plugin" description="motion capture recording + FBX export" >}}
 
 ## Workshops + live demos
 
