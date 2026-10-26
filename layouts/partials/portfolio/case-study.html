@@ -3,7 +3,7 @@
   <header class="case-header">
     <p class="eyebrow mint-text">{{ .Params.context }}</p>
     <h1{{ if .Params.preserveTitleCase }} class="title-case"{{ end }}>{{ .Title }}</h1>
-    {{ partial "portfolio/project-summary.html" (dict "page" . "class" "case-deck") }}
+    {{ if not .Params.projectSections }}{{ partial "portfolio/project-summary.html" (dict "page" . "class" "case-deck") }}{{ end }}
     {{ partial "portfolio/project-tags.html" . }}
     <dl class="case-facts">
       <div><dt>Contribution</dt><dd><strong>{{ .Site.Author.name | default "Russell Jahn" }}</strong><br>{{ .Params.contribution }}</dd></div>
@@ -18,6 +18,6 @@
   </section>
   {{ end }}
   {{ if not .Params.heroInContent }}{{ partial "portfolio/case-hero.html" (dict "page" .) }}{{ end }}
-  <div class="case-body{{ if .Params.accentSectionHeadings }} section-headings-accent{{ end }}">{{ .Content }}</div>
+  <div class="case-body{{ if .Params.projectSections }} case-project-sections{{ end }}{{ if .Params.accentSectionHeadings }} section-headings-accent{{ end }}">{{ .Content }}</div>
   <div class="case-next"><p>For project inquiries + collaborations.</p><a class="text-link" href="{{ "contact/" | relURL }}">Contact me <span aria-hidden="true">↗</span></a></div>
 </article>

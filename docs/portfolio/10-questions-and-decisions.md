@@ -197,3 +197,7 @@ Preserve this context in the notes. Russell is uncertain that the leadership/cul
 ### 2026-10-25 — Project labels and bullets replace the Blizzard summary paragraph
 
 Russell requested Hearthstone followed by Unannounced title as separate overview labels, with “Core systems + multiplatform development” and “Graphics + Content pipeline tools + performance” beneath them. Applied this format to Home, Work, and the case-study introduction through shared frontmatter. The detailed current-project heading also uses Unannounced title, preserving the old section anchor. This updates the earlier Unannounced game display label while keeping the project unannounced. See [the summary format](30-blizzard-project-responsibilities.md).
+
+### 2026-10-25 — Keep a compact horizontal overview within each project section
+
+Russell clarified that separate sections should each retain the earlier compact horizontal overview, followed by important details, description, and photos. The large vertical responsibility headings were a misunderstanding of that request. The Blizzard case study now presents Unannounced title with its own three-column overview, then Hearthstone with its own overview and supporting content. The duplicate case-header project summary is removed. Home and Work card summaries retain the approved labels and bullets. See [the section structure](30-blizzard-project-responsibilities.md).

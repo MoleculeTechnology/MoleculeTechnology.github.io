@@ -18,8 +18,8 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 /* Content and project headings are ghost white. Mint marks primary navigation
    through the page, independently of the semantic h1/h2/h3 level. */
 .molecule-site :is(h1, h2, h3, h4, h5, h6) { color: var(--ghost); }
-.molecule-site .heading-accent, .molecule-site .section-headings-accent > h2 { color: var(--mint); }
-.molecule-site .section-headings-accent > :is(h2, h3) { font-weight: 900; }
+.molecule-site .heading-accent, .molecule-site .section-headings-accent > h2, .molecule-site .section-headings-accent .case-project > h2 { color: var(--mint); }
+.molecule-site .section-headings-accent > :is(h2, h3), .molecule-site .section-headings-accent .case-project > h2 { font-weight: 900; }
 .molecule-site a { color: inherit; text-decoration: none; }
 .molecule-site button { color: inherit; font: inherit; }
 .molecule-site a:focus-visible, .molecule-site button:focus-visible, .molecule-site canvas:focus-visible { outline: 2px solid var(--mint); outline-offset: 7px; }
@@ -186,6 +186,12 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .case-hero.uncropped img { height: auto; max-height: none; object-fit: contain; }
 .case-hero figcaption { color: var(--muted); font-size: 13px; padding-top: 13px; }
 .case-body { max-width: 720px; margin-inline: auto; }
+.case-body.case-project-sections { max-width: none; margin-top: 52px; }
+.case-project + .case-project { border-top: 1px solid var(--rule); padding-top: 40px; margin-top: 56px; }
+.case-project-sections .case-project > h2 { font-size: clamp(27px, 3.5vw, var(--heading-subsection-size)); white-space: nowrap; margin-block: 0 24px !important; }
+.case-project .project-overview { margin: 0; }
+.case-project .project-overview > div { min-width: 0; }
+.case-project-details { max-width: 720px; margin: 32px auto 0; }
 .case-body h2 { font-size: var(--heading-subsection-size); line-height: 1.15; text-transform: uppercase; font-weight: 700; margin-block: 52px 22px !important; }
 .case-body p { color: var(--muted); margin-bottom: 20px !important; }
 .case-body a { color: var(--mint); text-decoration: underline; text-underline-offset: 4px; }

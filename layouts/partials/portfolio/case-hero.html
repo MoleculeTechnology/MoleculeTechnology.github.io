@@ -1,7 +1,7 @@
 {{ $page := .page }}
 {{ with $page.Params.hero }}
-  <figure class="case-hero {{ $page.Params.imageClass }}">
-    {{ partial "portfolio/image.html" (dict "source" . "alt" $page.Params.heroAlt "loading" ($.loading | default "eager") "sizes" ($.sizes | default "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc(100vw - 80px), (max-width: 1408px) calc(100vw - 128px), 1280px")) }}
-    <figcaption>{{ $page.Params.heroCaption }}</figcaption>
-  </figure>
+<figure class="case-hero {{ $page.Params.imageClass }}">
+{{ partial "portfolio/image.html" (dict "source" . "alt" $page.Params.heroAlt "loading" ($.loading | default "eager") "sizes" ($.sizes | default "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc(100vw - 80px), (max-width: 1408px) calc(100vw - 128px), 1280px")) }}
+<figcaption>{{ $page.Params.heroCaption }}</figcaption>
+</figure>
 {{ end }}

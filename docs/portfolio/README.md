@@ -50,7 +50,7 @@ The subsequent [tagged-project revision](24-tagged-projects-and-new-headliners.m
 27. [Glass Castle selected media](27-glass-castle-media-selection.md) — Russell's chosen headliner, accent photograph, and finished-scene GIF, with original dimensions and delivery checks.
 28. [Hearthstone headliner and media research](28-hearthstone-headliner-and-media-research.md) — requested Blizzard cover, official 4K gameplay sources, sharper supporting excerpts, alternate artwork candidates, and provenance.
 29. [Writing punctuation preference](29-writing-punctuation.md) — the no-semicolons rule, reusable writing skill, and applied prose cleanup.
-30. [Blizzard project responsibilities](30-blizzard-project-responsibilities.md) — separate project summaries and responsibilities, performance initiative leadership context, and Hearthstone media kept with its engineering work.
+30. [Blizzard project responsibilities](30-blizzard-project-responsibilities.md) — separate horizontal project overviews, performance initiative leadership context, and Hearthstone details and media kept with its engineering work.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

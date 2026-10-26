@@ -14,7 +14,7 @@ The page now says:
 
 This sits under “Performance tools.”
 
-The homepage mentions game performance alongside the current graphics, rendering, and art/audio pipeline work without a claim about final authority. The shared contribution field identifies software engineering and directs readers to the separate project responsibilities.
+The homepage mentions game performance alongside the current graphics, rendering, and art/audio pipeline work without a claim about final authority. The shared contribution field identifies software engineering.
 
 | Section | Responsibilities |
 | --- | --- |
@@ -25,7 +25,7 @@ The detailed current-project section comes first. Hearthstone follows with its h
 
 The selected Hearthstone gameplay cover remains on Home and Work. On the case study, it now appears inside Hearthstone's section, followed by the two official gameplay excerpts and Russell's credits card. Team artwork and effects attribution remains visible. This avoids placing Hearthstone imagery above the current project's responsibilities.
 
-A shared hero partial and a `project-hero` shortcode reuse the selected cover metadata. Other case studies retain their existing hero placement. Game headings remain mint and responsibility headings remain ghost white, both using Roboto Condensed Black 900.
+A shared hero partial and a `project-hero` shortcode reuse the selected cover metadata. Other case studies retain their existing hero placement. Game headings remain mint and responsibility labels remain ghost white, both using Roboto Condensed Black 900.
 
 ## Performance leadership clarification
 
@@ -47,13 +47,39 @@ Russell replaced the opening prose paragraph with two compact project labels and
 
 - Graphics + Content pipeline tools + performance
 
-Use this order in the overview on Home, Work, and the case study. The detailed body sections remain separate. The new label follows Russell's latest wording and still identifies the title as unannounced. Preserve the existing `#unannounced-game` section anchor for links.
+Use this order on Home and Work cards. The case-study introduction initially used the same summary, but Russell subsequently clarified that he wanted a horizontal overview within each project section, as recorded below. The new label follows Russell's latest wording and still identifies the title as unannounced. Preserve the existing `#unannounced-game` section anchor for links.
 
-The shared summary partial reads `projectSummaries` frontmatter. Other projects retain their prose descriptions. Overview labels are ghost white on project cards and mint in the Blizzard case header, using Roboto Condensed Black 900. Bullet text stays readable in the existing muted text color.
+The shared summary partial reads `projectSummaries` frontmatter for Home and Work cards. Other projects retain their prose descriptions. Card labels are ghost white in Roboto Condensed Black 900. Bullet text stays readable in the existing muted text color.
 
 The summary was checked on Home, Work, and the Blizzard case study at 1280px, 390px, and 320px. Labels remain on one line with no horizontal overflow. Both contribution bullets fit on one line in the desktop case header and wrap naturally at mobile widths. The pinned production build and ten-route asset/content checks passed. The preview script was restarted after the final CSS adjustment.
 
-![Blizzard overview with separate project labels and contribution bullets](assets/2026-10-25-blizzard-project-summary.jpg)
+The following screenshot records the earlier case-header summary, before the horizontal-section clarification.
+
+![Earlier Blizzard case-header summary](assets/2026-10-25-blizzard-project-summary.jpg)
+
+## Separate horizontal overviews within each project
+
+Russell clarified the intended case-study hierarchy:
+
+1. Unannounced title, followed by its compact horizontal overview and then any additional details or media.
+2. Hearthstone, followed by its own compact horizontal overview and then its additional description and media.
+
+The earlier conversion of each overview item into a large vertical heading was a misunderstanding. Each project now has three overview columns with 23px ghost-white bold labels and 17px descriptions. Columns stack at mobile widths. The game headings remain mint.
+
+Unannounced title has Performance tools, Graphics + rendering, and Art + audio pipelines. Hearthstone has Engine + multi-platform expert, Content pipeline + artist tools, and Team support. Its expansion history and asset-delivery description follow the overview, then the selected gameplay image, two clips, and credits card. No additional unannounced-project imagery or narrative was invented.
+
+The `project-section` shortcode renders each section from its own `projectSections` entry and places its Markdown body below the overview. The case-study body allows the overview to span the page width, while prose and supporting media retain the narrower reading width. The duplicate summary was removed from the case-study header. Home and Work retain the approved compact project-label summaries.
+
+Verification for this structure:
+
+- The pinned production build and ten-route content/asset checks passed, including the two scoped overviews and the unchanged card summaries.
+- At 1280px and 820px, both overviews render as three columns. At 390px and 320px, they stack into one column. No horizontal overflow or offscreen body elements were found after reloading the final preview.
+- Both game headings remain mint at weight 900. Overview labels render at 23px and descriptions at 17px. The large vertical responsibility headings and duplicate header summary are absent.
+- Hearthstone's additional prose, selected cover, two videos, and credits card remain inside its section after its overview. Image captions render as captions, with no accidental code blocks.
+- Glass Castle retains its normal hero and caption at 390px without horizontal overflow.
+- Restarted the preview script after the final website changes and left it running.
+
+![Separate compact horizontal overviews followed by Hearthstone details and media](assets/2026-10-25-blizzard-horizontal-overviews.jpg)
 
 ## Verification
 
