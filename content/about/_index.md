@@ -20,7 +20,7 @@ I'm Russell → software engineer + artist.<br/>I build creative products that m
 
 <div class="about-box">
 <div class="headshot-column">
-{{< figure src="img/headshots/headshot_russelljahn_2021-11-08_095745.png" >}}
+{{< portfolio-figure source="img/headshots/headshot_russelljahn_2021-11-08_095745.png" alt="Russell Jahn" loading="eager" priority="high" sizes="(max-width: 760px) 230px, 315px" >}}
 </div>
 <div class="column text-column">
 

@@ -29,6 +29,8 @@ The [Contact revision](38-contact-without-advertising.md) removes HubSpot's adve
 
 The [brace casing comparison](39-brace-casing-concepts.md) shows lowercase and UPPERCASE for all 16 occurrences, with actual-page previews at desktop and mobile widths. The casing choice is still open.
 
+The [mobile and performance pass](40-mobile-performance-and-release-checks.md) adds repeatable Lighthouse measurements, defers heavy media, compresses fonts without changing their outlines, and checks 84 responsive layouts. Contact now uses Russell's supplied public email address.
+
 1. [Brief and positioning](01-brief-and-positioning.md) — audience, offer, and the connection between the work.
 2. [Evidence and CV review](02-evidence-and-cv-review.md) — reviewed sources, supported claims, and missing facts.
 3. [Site audit and Hugo decision](03-site-audit-and-hugo-decision.md) — keep Hugo, change the presentation.
@@ -68,6 +70,7 @@ The [brace casing comparison](39-brace-casing-concepts.md) shows lowercase and U
 37. [Homepage thumbnail-strip carousels](37-homepage-contact-strip-carousels.md) — selected C design, shared metadata, lazy image delivery, keyboard controls, loops, and validation.
 38. [Contact without advertising](38-contact-without-advertising.md) — removed HubSpot embed, verified delivery failure, direct contact option, and checks.
 39. [Brace casing concepts](39-brace-casing-concepts.md) — complete lowercase and UPPERCASE specimens, page-layout comparisons, mobile wrapping, and a pending design choice.
+40. [Mobile readiness and performance](40-mobile-performance-and-release-checks.md) — measured before/after loading, media and font delivery, mobile checks, repeatable Lighthouse commands, and remaining device/hosting checks.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

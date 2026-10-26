@@ -18,8 +18,7 @@
           {{ $alt := printf "%s: %s (%d of %d)." $title $description (add $index 1) (len $images) }}
           <figure class="gallery-frame {{ $width }}" data-project-image="{{ $path }}">
             {{ if eq (path.Ext $path) ".gif" }}
-              {{ $image := resources.Get (printf "legacy-work/%s" $path) }}
-              <img src="{{ printf "about/%s" $path | relURL }}" width="{{ $image.Width }}" height="{{ $image.Height }}" data-source-width="{{ $image.Width }}" style="--image-width: {{ printf "%dpx" $image.Width | safeCSS }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+              {{ partial "portfolio/image.html" (dict "source" $path "alt" $alt) }}
             {{ else }}
               {{ $sizes := "(max-width: 760px) calc(100vw - 44px), (max-width: 800px) calc(110vw - 80px), (max-width: 1600px) calc(720px + 10vw), 880px" }}
               {{ if eq $width "grid-w66" }}

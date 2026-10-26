@@ -1,0 +1,27 @@
+{
+  "fontTools": "4.67.0",
+  "fonts": [
+    {
+      "face": "Regular",
+      "source": "static/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf",
+      "woff2": "static/fonts/RobotoCondensed/RobotoCondensed-Regular.woff2",
+      "sourceBytes": 169848,
+      "deliveryBytes": 64788,
+      "sourceSha256": "f05ab6c1eade444bbf4e3e00710756e95c2a1d09a10425967149802219c0c0cb",
+      "deliverySha256": "b11361e9aab0800c4bb5d264d0f80610e153b272e5c65ca3b5355d6cb2fe7f84",
+      "glyphs": 1294,
+      "verification": "Every glyph outline, cmap entry, and horizontal advance matches the original font"
+    },
+    {
+      "face": "Bold",
+      "source": "static/fonts/RobotoCondensed/RobotoCondensed-Bold.ttf",
+      "woff2": "static/fonts/RobotoCondensed/RobotoCondensed-Bold.woff2",
+      "sourceBytes": 169352,
+      "deliveryBytes": 64684,
+      "sourceSha256": "d1ab7a9092d779eb7eb97f3f7d4563c857e86572fb829c42f2972a8e232ec67d",
+      "deliverySha256": "18fa2ac76ea8307f09274b763a9e29d5b5ffdcb349c00b4c9a241e1349217fbc",
+      "glyphs": 1294,
+      "verification": "Every glyph outline, cmap entry, and horizontal advance matches the original font"
+    }
+  ]
+}

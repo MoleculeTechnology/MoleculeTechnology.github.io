@@ -1,0 +1,13 @@
+{
+  "name": "molecule-portfolio",
+  "private": true,
+  "scripts": {
+    "performance": "node scripts/audit-performance.mjs"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "devDependencies": {
+    "lighthouse": "13.5.0"
+  }
+}

@@ -3,10 +3,23 @@
 {{ if $image }}
   {{ if or .animated (eq (lower (path.Ext .source)) ".gif") }}
   {{/* Publish animated images directly. Hugo's resizing would flatten them to one frame. */}}
-  <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" data-source-width="{{ $image.Width }}" style="--image-width: {{ printf "%dpx" $image.Width | safeCSS }}" alt="{{ .alt }}" loading="{{ .loading | default "lazy" }}" decoding="async"{{ with .class }} class="{{ . }}"{{ end }}>
+  {{ if ne (.loading | default "lazy") "eager" }}
+  {{ $posterSource := printf "%s-poster.webp" (strings.TrimSuffix (path.Ext .source) .source) }}
+  {{ $poster := resources.Get $posterSource }}
+  {{ if not $poster }}
+    {{ if eq (lower (path.Ext .source)) ".gif" }}
+      {{/* Flatten only the preview. The original loop remains byte-identical. */}}
+      {{ $poster = $image.Resize (printf "%dx webp q90 lanczos" (int (math.Min 960 $image.Width))) }}
+    {{ else }}{{ errorf "Animated image needs a still preview: %s" $posterSource }}{{ end }}
+  {{ end }}
+  <img src="{{ $poster.RelPermalink }}" data-loop-src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" data-source-width="{{ $image.Width }}" style="--image-width: {{ printf "%dpx" $image.Width | safeCSS }}" alt="{{ .alt }}" loading="lazy" decoding="async"{{ with .originalSource }} data-project-image="{{ . }}"{{ end }}{{ with .class }} class="{{ . }}"{{ end }}>
+  <noscript><a href="{{ $image.RelPermalink }}">View looping image</a></noscript>
+  {{ else }}
+  <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" data-source-width="{{ $image.Width }}" style="--image-width: {{ printf "%dpx" $image.Width | safeCSS }}" alt="{{ .alt }}" loading="{{ .loading | default "lazy" }}" decoding="async"{{ with .priority }} fetchpriority="{{ . }}"{{ end }}{{ with .originalSource }} data-project-image="{{ . }}"{{ end }}{{ with .class }} class="{{ . }}"{{ end }}>
+  {{ end }}
   {{ else }}
   {{ $variants := slice }}
-  {{ $widths := slice 320 480 640 960 1280 1600 1920 2560 }}
+  {{ $widths := slice 320 480 640 768 960 1152 1280 1600 1920 2560 }}
   {{ range $widths }}
     {{ if lt . $image.Width }}
       {{ $variant := $image.Resize (printf "%dx webp q90 lanczos" .) }}
@@ -18,6 +31,6 @@
     {{ $variants = $variants | append (printf "%s %dw" $native.RelPermalink $native.Width) }}
   {{ end }}
   {{ $fallback := $image.Resize (printf "%dx webp q90 lanczos" (int (math.Min 960 $image.Width))) }}
-  <img src="{{ $fallback.RelPermalink }}" srcset="{{ delimit $variants ", " }}" sizes="{{ .sizes | default "(max-width: 760px) calc(100vw - 44px), 720px" }}" width="{{ $image.Width }}" height="{{ $image.Height }}" data-source-width="{{ $image.Width }}" style="--image-width: {{ printf "%dpx" $image.Width | safeCSS }}" alt="{{ .alt }}" loading="{{ .loading | default "lazy" }}" decoding="async"{{ with .class }} class="{{ . }}"{{ end }}>
+  <img src="{{ $fallback.RelPermalink }}" srcset="{{ delimit $variants ", " }}" sizes="{{ .sizes | default "(max-width: 760px) calc(100vw - 44px), 720px" }}" width="{{ $image.Width }}" height="{{ $image.Height }}" data-source-width="{{ $image.Width }}" style="--image-width: {{ printf "%dpx" $image.Width | safeCSS }}" alt="{{ .alt }}" loading="{{ .loading | default "lazy" }}" decoding="async"{{ with .priority }} fetchpriority="{{ . }}"{{ end }}{{ with .originalSource }} data-project-image="{{ . }}"{{ end }}{{ with .class }} class="{{ . }}"{{ end }}>
   {{ end }}
 {{ else }}{{ errorf "Portfolio image not found: %s" .source }}{{ end }}

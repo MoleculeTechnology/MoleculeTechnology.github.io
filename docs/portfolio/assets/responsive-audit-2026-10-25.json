@@ -1,0 +1,2527 @@
+{
+  "date": "2026-10-25",
+  "browser": "Codex in-app Chromium browser",
+  "physicalDevicesTested": false,
+  "cases": [
+    {
+      "route": "/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 305,
+      "unsized": 0,
+      "width": 320
+    },
+    {
+      "route": "/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 345,
+      "unsized": 0,
+      "width": 360
+    },
+    {
+      "route": "/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 375,
+      "unsized": 0,
+      "width": 390
+    },
+    {
+      "route": "/",
+      "h1": 1,
+      "height": 932,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 415,
+      "unsized": 0,
+      "width": 430
+    },
+    {
+      "route": "/",
+      "h1": 1,
+      "height": 375,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 652,
+      "unsized": 0,
+      "width": 667
+    },
+    {
+      "route": "/",
+      "h1": 1,
+      "height": 1024,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 753,
+      "unsized": 0,
+      "width": 768
+    },
+    {
+      "route": "/",
+      "h1": 1,
+      "height": 900,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 1265,
+      "unsized": 0,
+      "width": 1280
+    },
+    {
+      "route": "/work/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 305,
+      "unsized": 0,
+      "width": 320
+    },
+    {
+      "route": "/work/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 345,
+      "unsized": 0,
+      "width": 360
+    },
+    {
+      "route": "/work/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 375,
+      "unsized": 0,
+      "width": 390
+    },
+    {
+      "route": "/work/",
+      "h1": 1,
+      "height": 932,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 415,
+      "unsized": 0,
+      "width": 430
+    },
+    {
+      "route": "/work/",
+      "h1": 1,
+      "height": 375,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 652,
+      "unsized": 0,
+      "width": 667
+    },
+    {
+      "route": "/work/",
+      "h1": 1,
+      "height": 1024,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 753,
+      "unsized": 0,
+      "width": 768
+    },
+    {
+      "route": "/work/",
+      "h1": 1,
+      "height": 900,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 1265,
+      "unsized": 0,
+      "width": 1280
+    },
+    {
+      "route": "/about/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 305,
+      "unsized": 0,
+      "width": 320
+    },
+    {
+      "route": "/about/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 345,
+      "unsized": 0,
+      "width": 360
+    },
+    {
+      "route": "/about/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 375,
+      "unsized": 0,
+      "width": 390
+    },
+    {
+      "route": "/about/",
+      "h1": 1,
+      "height": 932,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 415,
+      "unsized": 0,
+      "width": 430
+    },
+    {
+      "route": "/about/",
+      "h1": 1,
+      "height": 375,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 652,
+      "unsized": 0,
+      "width": 667
+    },
+    {
+      "route": "/about/",
+      "h1": 1,
+      "height": 1024,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 753,
+      "unsized": 0,
+      "width": 768
+    },
+    {
+      "route": "/about/",
+      "h1": 1,
+      "height": 900,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 1265,
+      "unsized": 0,
+      "width": 1280
+    },
+    {
+      "route": "/contact/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 305,
+      "unsized": 0,
+      "width": 320
+    },
+    {
+      "route": "/contact/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 345,
+      "unsized": 0,
+      "width": 360
+    },
+    {
+      "route": "/contact/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 375,
+      "unsized": 0,
+      "width": 390
+    },
+    {
+      "route": "/contact/",
+      "h1": 1,
+      "height": 932,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 415,
+      "unsized": 0,
+      "width": 430
+    },
+    {
+      "route": "/contact/",
+      "h1": 1,
+      "height": 375,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 652,
+      "unsized": 0,
+      "width": 667
+    },
+    {
+      "route": "/contact/",
+      "h1": 1,
+      "height": 1024,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 753,
+      "unsized": 0,
+      "width": 768
+    },
+    {
+      "route": "/contact/",
+      "h1": 1,
+      "height": 900,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 1265,
+      "unsized": 0,
+      "width": 1280
+    },
+    {
+      "route": "/work/paper-ghost/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 305,
+      "unsized": 0,
+      "width": 320
+    },
+    {
+      "route": "/work/paper-ghost/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 345,
+      "unsized": 0,
+      "width": 360
+    },
+    {
+      "route": "/work/paper-ghost/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 375,
+      "unsized": 0,
+      "width": 390
+    },
+    {
+      "route": "/work/paper-ghost/",
+      "h1": 1,
+      "height": 932,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 415,
+      "unsized": 0,
+      "width": 430
+    },
+    {
+      "route": "/work/paper-ghost/",
+      "h1": 1,
+      "height": 375,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 652,
+      "unsized": 0,
+      "width": 667
+    },
+    {
+      "route": "/work/paper-ghost/",
+      "h1": 1,
+      "height": 1024,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 753,
+      "unsized": 0,
+      "width": 768
+    },
+    {
+      "route": "/work/paper-ghost/",
+      "h1": 1,
+      "height": 900,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 1265,
+      "unsized": 0,
+      "width": 1280
+    },
+    {
+      "route": "/work/x-men-apocalypse/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 305,
+      "unsized": 0,
+      "width": 320
+    },
+    {
+      "route": "/work/x-men-apocalypse/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 345,
+      "unsized": 0,
+      "width": 360
+    },
+    {
+      "route": "/work/x-men-apocalypse/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 375,
+      "unsized": 0,
+      "width": 390
+    },
+    {
+      "route": "/work/x-men-apocalypse/",
+      "h1": 1,
+      "height": 932,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 415,
+      "unsized": 0,
+      "width": 430
+    },
+    {
+      "route": "/work/x-men-apocalypse/",
+      "h1": 1,
+      "height": 375,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 652,
+      "unsized": 0,
+      "width": 667
+    },
+    {
+      "route": "/work/x-men-apocalypse/",
+      "h1": 1,
+      "height": 1024,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 753,
+      "unsized": 0,
+      "width": 768
+    },
+    {
+      "route": "/work/x-men-apocalypse/",
+      "h1": 1,
+      "height": 900,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 1265,
+      "unsized": 0,
+      "width": 1280
+    },
+    {
+      "route": "/work/glass-castle/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 305,
+      "unsized": 0,
+      "width": 320
+    },
+    {
+      "route": "/work/glass-castle/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 345,
+      "unsized": 0,
+      "width": 360
+    },
+    {
+      "route": "/work/glass-castle/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 375,
+      "unsized": 0,
+      "width": 390
+    },
+    {
+      "route": "/work/glass-castle/",
+      "h1": 1,
+      "height": 932,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 415,
+      "unsized": 0,
+      "width": 430
+    },
+    {
+      "route": "/work/glass-castle/",
+      "h1": 1,
+      "height": 375,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 652,
+      "unsized": 0,
+      "width": 667
+    },
+    {
+      "route": "/work/glass-castle/",
+      "h1": 1,
+      "height": 1024,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 753,
+      "unsized": 0,
+      "width": 768
+    },
+    {
+      "route": "/work/glass-castle/",
+      "h1": 1,
+      "height": 900,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 1265,
+      "unsized": 0,
+      "width": 1280
+    },
+    {
+      "route": "/work/mother/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 305,
+      "unsized": 0,
+      "width": 320
+    },
+    {
+      "route": "/work/mother/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 345,
+      "unsized": 0,
+      "width": 360
+    },
+    {
+      "route": "/work/mother/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 375,
+      "unsized": 0,
+      "width": 390
+    },
+    {
+      "route": "/work/mother/",
+      "h1": 1,
+      "height": 932,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 415,
+      "unsized": 0,
+      "width": 430
+    },
+    {
+      "route": "/work/mother/",
+      "h1": 1,
+      "height": 375,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 652,
+      "unsized": 0,
+      "width": 667
+    },
+    {
+      "route": "/work/mother/",
+      "h1": 1,
+      "height": 1024,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 753,
+      "unsized": 0,
+      "width": 768
+    },
+    {
+      "route": "/work/mother/",
+      "h1": 1,
+      "height": 900,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 1265,
+      "unsized": 0,
+      "width": 1280
+    },
+    {
+      "route": "/work/arrival/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 305,
+      "unsized": 0,
+      "width": 320
+    },
+    {
+      "route": "/work/arrival/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 345,
+      "unsized": 0,
+      "width": 360
+    },
+    {
+      "route": "/work/arrival/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 375,
+      "unsized": 0,
+      "width": 390
+    },
+    {
+      "route": "/work/arrival/",
+      "h1": 1,
+      "height": 932,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 415,
+      "unsized": 0,
+      "width": 430
+    },
+    {
+      "route": "/work/arrival/",
+      "h1": 1,
+      "height": 375,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 652,
+      "unsized": 0,
+      "width": 667
+    },
+    {
+      "route": "/work/arrival/",
+      "h1": 1,
+      "height": 1024,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 753,
+      "unsized": 0,
+      "width": 768
+    },
+    {
+      "route": "/work/arrival/",
+      "h1": 1,
+      "height": 900,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 1265,
+      "unsized": 0,
+      "width": 1280
+    },
+    {
+      "route": "/work/enflux/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 305,
+      "unsized": 0,
+      "width": 320
+    },
+    {
+      "route": "/work/enflux/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 345,
+      "unsized": 0,
+      "width": 360
+    },
+    {
+      "route": "/work/enflux/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 375,
+      "unsized": 0,
+      "width": 390
+    },
+    {
+      "route": "/work/enflux/",
+      "h1": 1,
+      "height": 932,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 415,
+      "unsized": 0,
+      "width": 430
+    },
+    {
+      "route": "/work/enflux/",
+      "h1": 1,
+      "height": 375,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 652,
+      "unsized": 0,
+      "width": 667
+    },
+    {
+      "route": "/work/enflux/",
+      "h1": 1,
+      "height": 1024,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 753,
+      "unsized": 0,
+      "width": 768
+    },
+    {
+      "route": "/work/enflux/",
+      "h1": 1,
+      "height": 900,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 1265,
+      "unsized": 0,
+      "width": 1280
+    },
+    {
+      "route": "/work/game-engine-graphics-content-pipeline/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 305,
+      "unsized": 0,
+      "width": 320
+    },
+    {
+      "route": "/work/game-engine-graphics-content-pipeline/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 345,
+      "unsized": 0,
+      "width": 360
+    },
+    {
+      "route": "/work/game-engine-graphics-content-pipeline/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 375,
+      "unsized": 0,
+      "width": 390
+    },
+    {
+      "route": "/work/game-engine-graphics-content-pipeline/",
+      "h1": 1,
+      "height": 932,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 415,
+      "unsized": 0,
+      "width": 430
+    },
+    {
+      "route": "/work/game-engine-graphics-content-pipeline/",
+      "h1": 1,
+      "height": 375,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 652,
+      "unsized": 0,
+      "width": 667
+    },
+    {
+      "route": "/work/game-engine-graphics-content-pipeline/",
+      "h1": 1,
+      "height": 1024,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 753,
+      "unsized": 0,
+      "width": 768
+    },
+    {
+      "route": "/work/game-engine-graphics-content-pipeline/",
+      "h1": 1,
+      "height": 900,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 1265,
+      "unsized": 0,
+      "width": 1280
+    },
+    {
+      "route": "/work/motion-capture-lightsabers/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 305,
+      "unsized": 0,
+      "width": 320
+    },
+    {
+      "route": "/work/motion-capture-lightsabers/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 53.20000076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 345,
+      "unsized": 0,
+      "width": 360
+    },
+    {
+      "route": "/work/motion-capture-lightsabers/",
+      "h1": 1,
+      "height": 844,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 375,
+      "unsized": 0,
+      "width": 390
+    },
+    {
+      "route": "/work/motion-capture-lightsabers/",
+      "h1": 1,
+      "height": 932,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 415,
+      "unsized": 0,
+      "width": 430
+    },
+    {
+      "route": "/work/motion-capture-lightsabers/",
+      "h1": 1,
+      "height": 375,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "About",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 44,
+          "text": "Contact ↗",
+          "width": 48.76250076293945
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 652,
+      "unsized": 0,
+      "width": 667
+    },
+    {
+      "route": "/work/motion-capture-lightsabers/",
+      "h1": 1,
+      "height": 1024,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 753,
+      "unsized": 0,
+      "width": 768
+    },
+    {
+      "route": "/work/motion-capture-lightsabers/",
+      "h1": 1,
+      "height": 900,
+      "mediaOverflow": [],
+      "nav": [
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Work",
+          "width": 44
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "About",
+          "width": 45.17499923706055
+        },
+        {
+          "display": "flex",
+          "height": 45.70000076293945,
+          "text": "Contact ↗",
+          "width": 80.30000305175781
+        }
+      ],
+      "overflow": false,
+      "scrollWidth": 1265,
+      "unsized": 0,
+      "width": 1280
+    }
+  ]
+}

@@ -8,15 +8,27 @@
 {{- end -}}
 {{- if $resume.breakBefore -}}{{- $parts = $parts | append "<br/>" -}}{{- end -}}
 {{- with $resume.label -}}{{- $parts = $parts | append (printf "**%s**" .) -}}{{- end -}}
-{{- with $resume.logo -}}{{- $parts = $parts | append (printf "{{< figure src=%q >}}" .) -}}{{- end -}}
+{{- with $resume.logo -}}{{- $parts = $parts | append (printf "{{< portfolio-figure source=%q alt=%q >}}" . (printf "%s logo" $page.Title)) -}}{{- end -}}
 {{- with $resume.details -}}{{- $parts = $parts | append (trim . "\n\r ") -}}{{- end -}}
 {{- with $resume.video -}}{{- $parts = $parts | append (printf "{{< youtube id=%q >}}" .) -}}{{- end -}}
 {{- with $resume.gallery -}}
   {{- $images := index $page.Params.galleries . -}}
   {{- if not $images -}}{{- errorf "Missing gallery %q on %s" . $page.RelPermalink -}}{{- end -}}
   {{- $tags := slice -}}
-  {{- range $images -}}{{- $tags = $tags | append (printf "<img src=%q class=%q />" .source .class) -}}{{- end -}}
-  {{- $gallery := printf "{{< gallery >}}\n%s\n{{< /gallery >}}" (delimit $tags "\n") -}}
+  {{- range $index, $image := $images -}}
+    {{- $sizes := "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc(100vw - 80px), (max-width: 1178px) calc(100vw - 128px), 1050px" -}}
+    {{- if eq $image.class "grid-w66" -}}
+      {{- $sizes = "(max-width: 760px) calc(65vw - 28.6px), (max-width: 1050px) calc(65vw - 52px), (max-width: 1178px) calc(65vw - 83.2px), 683px" -}}
+    {{- else if eq $image.class "grid-w33" -}}
+      {{- $sizes = "(max-width: 760px) calc(32vw - 14.08px), (max-width: 1050px) calc(32vw - 25.6px), (max-width: 1178px) calc(32vw - 40.96px), 336px" -}}
+    {{- else if eq $image.class "grid-w55" -}}
+      {{- $sizes = "(max-width: 760px) calc(54vw - 23.76px), (max-width: 1050px) calc(54vw - 43.2px), (max-width: 1178px) calc(54vw - 69.12px), 567px" -}}
+    {{- end -}}
+    {{- $alt := $image.alt | default (printf "%s project documentation (%d of %d)." $page.Title (add $index 1) (len $images)) -}}
+    {{- if eq $image.source $page.Params.hero -}}{{- $alt = $image.alt | default $page.Params.heroAlt -}}{{- end -}}
+    {{- $tags = $tags | append (partial "portfolio/image.html" (dict "source" $image.source "originalSource" $image.source "alt" $alt "class" $image.class "sizes" $sizes)) -}}
+  {{- end -}}
+  {{- $gallery := printf "{{< resume-gallery >}}\n%s\n{{< /resume-gallery >}}" (delimit $tags "\n") -}}
   {{- if $resume.breakBeforeGallery -}}{{- $gallery = printf "<br/>\n%s" $gallery -}}{{- end -}}
   {{- $parts = $parts | append $gallery -}}
 {{- end -}}

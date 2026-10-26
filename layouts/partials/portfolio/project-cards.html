@@ -4,11 +4,12 @@
     {{ partial "portfolio/collection-card.html" . }}
     {{ else }}
     {{ $lead := and $.lead (eq $index 0) }}
+    {{ $firstOnWork := and (not $.home) (eq $index 0) }}
     <article class="project-card{{ if $lead }} work-index-lead{{ end }}"{{ if $.filterable }} data-project-card data-project-tags="{{ delimit .Params.tags " " }}"{{ end }}>
       {{ if and $.home .Params.carousel }}
       {{ partial "portfolio/carousel.html" (dict "page" . "sizes" (cond ($.split | default false) "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc((100vw - 144px) * 0.46), (max-width: 1408px) calc((100vw - 192px) * 0.46), 559px" "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc((100vw - 122px) / 2), (max-width: 1408px) calc((100vw - 170px) / 2), 619px")) }}
       {{ else }}
-      {{ with .Params.hero }}<a class="project-image curated-image {{ $project.Params.coverClass }}" href="{{ $project.RelPermalink }}" aria-label="{{ $project.Title }}">{{ partial "portfolio/image.html" (dict "source" . "alt" $project.Params.heroAlt "sizes" (cond $lead "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc(100vw - 80px), (max-width: 1408px) calc(100vw - 128px), 1280px" "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc((100vw - 122px) / 2), (max-width: 1408px) calc((100vw - 170px) / 2), 619px")) }}</a>{{ else }}
+      {{ with .Params.hero }}<a class="project-image curated-image {{ $project.Params.coverClass }}" href="{{ $project.RelPermalink }}" aria-label="{{ $project.Title }}">{{ partial "portfolio/image.html" (dict "source" . "alt" $project.Params.heroAlt "loading" (cond $firstOnWork "eager" "lazy") "priority" (cond $firstOnWork "high" "auto") "sizes" (cond $lead "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc(100vw - 80px), (max-width: 1408px) calc(100vw - 128px), 1280px" "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc((100vw - 122px) / 2), (max-width: 1408px) calc((100vw - 170px) / 2), 619px")) }}</a>{{ else }}
       {{ with .Params.coverLines }}<a class="engineering-cover" href="{{ $project.RelPermalink }}" aria-label="{{ $project.Title }}">{{ range . }}<span>{{ . }}</span>{{ end }}</a>{{ end }}
       {{ end }}
       {{ end }}

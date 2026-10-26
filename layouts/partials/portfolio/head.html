@@ -6,9 +6,14 @@
   <meta name="theme-color" content="#050707">
   <link rel="canonical" href="{{ with .Params.redirect }}{{ . | absURL }}{{ else }}{{ .Permalink }}{{ end }}">
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
-  <link rel="preload" href="{{ "fonts/RobotoCondensed/RobotoCondensed-Bold.ttf" | relURL }}" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="{{ "fonts/RobotoCondensed/RobotoCondensed-Bold.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ "fonts/RobotoCondensed/RobotoCondensed-Regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
   {{ $css := slice (resources.Get "css/schemes/molecule.css") (resources.Get "css/compiled/main.css") (resources.Get "css/portfolio.css") | resources.Concat "css/molecule.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ if or .IsHome (eq .Section "work") (eq .Section "about") }}
+    {{ $media := resources.Get "js/deferred-media.js" | minify | fingerprint }}
+    <script defer src="{{ $media.RelPermalink }}" integrity="{{ $media.Data.Integrity }}"></script>
+  {{ end }}
   {{ if .IsHome }}
     {{ $carouselCSS := resources.Get "css/project-carousels.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $carouselCSS.RelPermalink }}" integrity="{{ $carouselCSS.Data.Integrity }}">
@@ -27,10 +32,11 @@
     <link rel="stylesheet" href="{{ $contactCSS.RelPermalink }}" integrity="{{ $contactCSS.Data.Integrity }}">
   {{ end }}
   {{ template "_internal/opengraph.html" . }}
-  {{ if not (or .IsHome (eq .Section "work") (eq .Section "contact")) }}{{ partial "vendor.html" . }}{{ end }}
-  {{/* The theme cannot detect gallery shortcodes generated from project metadata. */}}
-  {{ if and (.HasShortcode "project-resume") (not (.HasShortcode "gallery")) }}
+  {{ if not (or .IsHome (eq .Section "work") (eq .Section "contact") (eq .Section "about")) }}{{ partial "vendor.html" . }}{{ end }}
+  {{ if .HasShortcode "project-resume" }}
     {{ $packery := resources.Get "lib/packery/packery.pkgd.min.js" }}
     <script defer src="{{ $packery.RelPermalink }}" integrity="{{ $packery.Data.Integrity }}"></script>
+    {{ $galleries := resources.Get "js/resume-galleries.js" | minify | fingerprint }}
+    <script defer src="{{ $galleries.RelPermalink }}" integrity="{{ $galleries.Data.Integrity }}"></script>
   {{ end }}
 </head>

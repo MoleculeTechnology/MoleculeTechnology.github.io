@@ -29,18 +29,28 @@ def presentation_hash(main):
     return hashlib.sha256(encoded).hexdigest()
 
 
+def copy_hash(main):
+    passages = [item.text() for item in main.find_all(
+        lambda item: item.tag in ['h1', 'h2', 'h3', 'p', 'li'])]
+    return hashlib.sha256(json.dumps(passages, ensure_ascii=False).encode('utf-8')).hexdigest()
+
+
 class AboutMetadataTests(unittest.TestCase):
     BUILD = collections.FilmCollectionTests.BUILD
 
     def page(self, route):
         return Document((self.BUILD / route.strip('/') / 'index.html').read_text(encoding='utf-8')).root
 
-    def test_about_preserves_the_pre_refactor_presentation(self):
+    def test_about_preserves_the_reviewed_presentation_and_original_copy(self):
         fixture = json.loads((Path(__file__).parent / 'fixtures/about-presentation.json').read_text(encoding='utf-8'))
         about = self.page('/about/')
         main = about.find_all(lambda item: item.tag == 'main')[0]
         self.assertEqual(presentation_hash(main), fixture['mainSha256'],
                          'About content or markup changed. Review any intentional edit before updating the presentation fixture.')
+        self.assertEqual(copy_hash(main), fixture['originalCopySha256'])
+        sources = [item.attrs['data-project-image'] for item in main.find_all(
+            lambda item: item.tag == 'img' and 'data-project-image' in item.attrs)]
+        self.assertEqual(sources, fixture['originalGallerySources'])
         stylesheets = [item.attrs['href'] for item in about.find_all(
             lambda item: item.tag == 'link' and item.attrs.get('rel') == 'stylesheet')]
         self.assertEqual(stylesheets, fixture['stylesheets'])
@@ -67,7 +77,7 @@ class AboutMetadataTests(unittest.TestCase):
         ]
         for route, project, index, excluded in pairs:
             with self.subTest(project=project):
-                original = [item.attrs['src'] for item in galleries[index].find_all(lambda item: item.tag == 'img')]
+                original = [item.attrs['data-project-image'] for item in galleries[index].find_all(lambda item: item.tag == 'img')]
                 shared = self.page(route).find_all(lambda item: item.attrs.get('data-project-gallery') == project + ':archive')
                 self.assertEqual(len(shared), 1)
                 selected = [item.attrs['data-project-image'] for item in shared[0].find_all(

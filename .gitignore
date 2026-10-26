@@ -16,3 +16,4 @@ hugo.linux
 /.tools/
 /.preview/
 /tests/__pycache__/
+/node_modules/

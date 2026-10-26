@@ -2,6 +2,8 @@
 
 Date: 2026-10-25
 
+Update: Russell subsequently supplied **info@ilovemolecule.com**. The Contact card now shows that address and links to `mailto:info@ilovemolecule.com`. No message was sent. The original findings and temporary LinkedIn implementation below remain as history. See the [mobile and performance pass](40-mobile-performance-and-release-checks.md) for the current review.
+
 Russell reported a HubSpot advertisement in the Contact form and said it should never appear on the portfolio.
 
 ## Findings

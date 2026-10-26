@@ -1,5 +1,5 @@
-@font-face { font-family: "Roboto Condensed"; src: url("/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: "Roboto Condensed"; src: url("/fonts/RobotoCondensed/RobotoCondensed-Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Roboto Condensed"; src: url("/fonts/RobotoCondensed/RobotoCondensed-Regular.woff2") format("woff2"), url("/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Roboto Condensed"; src: url("/fonts/RobotoCondensed/RobotoCondensed-Bold.woff2") format("woff2"), url("/fonts/RobotoCondensed/RobotoCondensed-Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
 @font-face { font-family: "Roboto Condensed"; src: url("/fonts/RobotoCondensed/RobotoCondensed-Black-latin.woff2") format("woff2"); font-weight: 900; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 :root {
   color-scheme: dark;
@@ -37,7 +37,7 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .wordmark svg { width: 31px; height: 34px; fill: none; stroke: var(--ghost); stroke-width: 1.5; }
 .mint-stroke { stroke: var(--mint); }
 .site-header nav { display: flex; align-items: center; gap: 34px; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; }
-.site-header nav a { padding: 12px 0; }
+.site-header nav a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; padding: 12px 0; }
 .site-header nav a:hover { text-decoration: underline; text-underline-offset: 6px; }
 .site-header nav a[aria-current="page"], .footer-links a:hover { color: var(--mint); }
 .nav-contact span { padding-left: 7px; }
@@ -73,7 +73,7 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .pyramid-caption { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 20px; border-top: 1px solid var(--rule); }
 .pyramid-caption .eyebrow { color: var(--muted); font-size: 10px; letter-spacing: .1em; }
 .pyramid-controls { display: flex; align-items: center; gap: 4px; }
-.pyramid-controls button { background: none; border: 0; padding: 7px 9px; min-height: 36px; cursor: pointer; color: var(--muted); font-size: 12px; }
+.pyramid-controls button { background: none; border: 0; padding: 7px 9px; min-width: 44px; min-height: 44px; cursor: pointer; color: var(--muted); font-size: 12px; }
 .pyramid-controls button:hover { color: var(--mint); }
 .pyramid-controls [data-reset] { border-left: 1px solid var(--rule); margin-left: 4px; padding-left: 14px; }
 .pyramid-instructions { color: var(--muted); text-align: right; font-size: 11px; letter-spacing: .03em; padding-top: 8px; }
@@ -314,16 +314,16 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
   .wordmark { font-size: 21px; gap: 9px; }
   .wordmark svg { width: 24px; }
   .site-header nav { gap: 14px; font-size: 11px; }
-  .site-header .nav-contact { display: none; }
+  .site-header .nav-contact span { display: none; }
   .home-hero { grid-template-columns: 1fr; padding-block: 45px 30px; gap: 25px; }
   .hero-name { font-size: 11px; margin-bottom: 23px !important; }
   .hero-intro { font-size: 23px; margin-top: 24px !important; }
   .hero-link { margin-top: 19px; }
   .pyramid { margin-top: 6px; }
   .pyramid-viewport { height: 330px; }
-  .pyramid-caption { display: flex; }
-  .pyramid-caption .eyebrow { font-size: 9px; max-width: 17ch; }
-  .pyramid-controls { margin-top: 0; }
+  .pyramid-caption { display: flex; flex-wrap: wrap; }
+  .pyramid-caption .eyebrow { font-size: 10px; white-space: nowrap; }
+  .pyramid-controls { margin-top: 0; margin-left: auto; }
   .pyramid-instructions { font-size: 10px; padding-top: 9px; }
   .experience-strip { grid-template-columns: 1fr 1fr; gap: 25px; padding-block: 25px; }
   .experience-strip strong { font-size: 19px; }
@@ -381,5 +381,9 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
   .legacy-content h1 { font-size: 35px; }
   .about-box { display: block; }
   .about-box .headshot-column { max-width: 230px; }
+}
+@media (max-width: 380px) {
+  .site-header { flex-wrap: wrap; gap: 0; padding-block: 12px 6px; }
+  .site-header nav { width: 100%; justify-content: space-between; font-size: 12px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .project-image img, .text-link span { transition: none; } }
