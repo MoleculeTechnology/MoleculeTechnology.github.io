@@ -33,7 +33,7 @@ A custom C++ application turns video from a high-speed webcam into 3D body point
 
 Wooden martial arts practice swords (**bokken**) are fitted with **IMU sensors, speakers, and LED strips**. The sensors track which way each sword points, and the lights change color to match.
 
-Each direction has a fixed color. Point a sword north and it always shows the same color, wherever you are.
+Each direction has a different color. Point a sword north and it always shows the same color, wherever you are.
 
 {{< work-image source="portfolio/molecule/pixelperf-sword-demo.webp" animated="true" class="portrait" alt="Melissa spinning a bokken at PixelPerf Market as its lights change color." caption="Melissa spinning a bokken / PixelPerf Market." >}}
 

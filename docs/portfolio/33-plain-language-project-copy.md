@@ -23,7 +23,7 @@ The earlier inside-out and outside-in labels remain in [Russell's source account
 
 Wooden martial arts practice swords (**bokken**) are fitted with **IMU sensors, speakers, and LED strips**. The sensors track which way each sword points, and the lights change color to match.
 
-Each direction has a fixed color. Point a sword north and it always shows the same color, wherever you are.
+Each direction has a different color. Point a sword north and it always shows the same color, wherever you are.
 
 ## Russell's summary wording
 
