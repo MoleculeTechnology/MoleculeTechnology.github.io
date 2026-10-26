@@ -25,6 +25,8 @@ The current [film structure](34-reusable-film-projects.md) groups X-Men: Apocaly
 
 [Shared project metadata](36-shared-project-metadata.md) now generates About's project sections while preserving its existing appearance. Project records own the facts and curated gallery selections. About no longer acts as a source for other project pages.
 
+The [Contact revision](38-contact-without-advertising.md) removes HubSpot's advertising embed and uses a direct LinkedIn contact option. The existing HubSpot portal was also rejecting submissions.
+
 1. [Brief and positioning](01-brief-and-positioning.md) — audience, offer, and the connection between the work.
 2. [Evidence and CV review](02-evidence-and-cv-review.md) — reviewed sources, supported claims, and missing facts.
 3. [Site audit and Hugo decision](03-site-audit-and-hugo-decision.md) — keep Hugo, change the presentation.
@@ -62,6 +64,7 @@ The current [film structure](34-reusable-film-projects.md) groups X-Men: Apocaly
 35. [Carousel concept comparison](35-carousel-concept-comparison.md) — three interactive treatments across all seven homepage projects, selected image sequences, looping images, controls, and the next implementation step.
 36. [Shared project metadata](36-shared-project-metadata.md) — project-owned About facts and media, dynamic generation, preserved presentation, and regression checks.
 37. [Homepage thumbnail-strip carousels](37-homepage-contact-strip-carousels.md) — selected C design, shared metadata, lazy image delivery, keyboard controls, loops, and validation.
+38. [Contact without advertising](38-contact-without-advertising.md) — removed HubSpot embed, verified delivery failure, direct contact option, and checks.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

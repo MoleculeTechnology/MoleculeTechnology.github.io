@@ -22,8 +22,12 @@
     <script src="{{ $filters.RelPermalink }}" integrity="{{ $filters.Data.Integrity }}" defer></script>
   {{ end }}
   {{ with .Params.redirect }}<meta http-equiv="refresh" content="0; url={{ . | relURL }}">{{ end }}
+  {{ if eq .Section "contact" }}
+    {{ $contactCSS := resources.Get "css/contact.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $contactCSS.RelPermalink }}" integrity="{{ $contactCSS.Data.Integrity }}">
+  {{ end }}
   {{ template "_internal/opengraph.html" . }}
-  {{ if not (or .IsHome (eq .Section "work")) }}{{ partial "vendor.html" . }}{{ end }}
+  {{ if not (or .IsHome (eq .Section "work") (eq .Section "contact")) }}{{ partial "vendor.html" . }}{{ end }}
   {{/* The theme cannot detect gallery shortcodes generated from project metadata. */}}
   {{ if and (.HasShortcode "project-resume") (not (.HasShortcode "gallery")) }}
     {{ $packery := resources.Get "lib/packery/packery.pkgd.min.js" }}

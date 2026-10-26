@@ -56,7 +56,7 @@ The original shell scripts remain available.
 The deferred deployment notes and updated preview instructions were committed separately as `ac3a690`.
 The website pass adds a dedicated contact layout using the portfolio's typography, colors, and spacing, with project prompts and a LinkedIn fallback beside the existing form.
 A "Write a message" link jumps to the inquiry and moves keyboard focus to its heading.
-The existing HubSpot form service and fields are retained.
+The existing HubSpot form service and fields were retained at this stage. The later [Contact revision](38-contact-without-advertising.md) removes the embed after finding an advertisement and a service-side submission failure.
 
 The homepage now calls out large-audience desktop/mobile engineering and the current focus on graphics, rendering, and art/audio tools.
 The Blizzard project page distinguishes the current unannounced-game focus from the Hearthstone work.
