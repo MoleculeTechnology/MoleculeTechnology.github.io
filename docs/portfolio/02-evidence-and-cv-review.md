@@ -74,13 +74,15 @@ The [source and copy note](18-moongoat-demonstrations.md) preserves the distinct
 Russell says automated art performance benchmarking and client performance monitoring should be highlighted for the current project: "The buck stops at me for game performance on that project."
 Use this as final responsibility for overall game performance on the project labeled Unannounced game, following his earlier explicit naming clarification. Do not transfer that scope of accountability to Hearthstone. No benchmark results or implementation details were supplied.
 
+Russell subsequently rejected “final responsibility” as public portfolio wording. The factual source above remains evidence of his scope. Public copy now says “Responsible for game performance” and names the benchmarking and monitoring work. Keep the two games' responsibilities separate, as recorded in [Blizzard project responsibilities](30-blizzard-project-responsibilities.md).
+
 ## Claim review
 
 | Claim                                                                                                | Basis                               | How to use it                                                                             |
 | ---------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------- |
 | Software engineer and artist                                                                         | Russell's requested positioning, S1 | Lead description. Support artistic authorship with project decisions and work             |
 | Current work focuses on 3D graphics, rendering, and art/audio pipelines on an unannounced game       | S1                                  | Draft broadly. Confirm wording appropriate for public use before publication              |
-| Final responsibility for current-project game performance, automated art performance benchmarking, and client performance monitoring | S11 | Highlight in the current-project section and contribution summary. Keep the scope specific to that project |
+| Current-project game performance, automated art performance benchmarking, and client performance monitoring | S11 | Describe the work in the Unannounced game section. Use “Responsible for game performance” and keep Hearthstone's responsibilities separate |
 | Hearthstone core systems, memory/download work, native mobile, build tools, FX tools, asset pipeline | S2                                  | Strong engineering summary. Confirm individual examples and dates                         |
 | Nine major Hearthstone expansions during March 2021–August 2023                                      | S2                                  | Historical claim only. Verify the count and intended date range before highlighting       |
 | Interactive film props and set previsualization for Paper Ghost                                      | S1, S2                              | Feature prominently with a precise contribution and collaborator line                     |

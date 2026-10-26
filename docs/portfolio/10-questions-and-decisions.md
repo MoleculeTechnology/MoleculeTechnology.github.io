@@ -181,3 +181,9 @@ Pinned Hugo production build and whitespace checks passed. Home, Work, and the B
 ### 2026-10-25 — No semicolons in prose
 
 Russell requested no semicolons in the writing and asked for the rule to be saved in skills. The [writing preference](29-writing-punctuation.md) records the reusable skill and the applied cleanup of website copy and planning notes. Code, HTML entities, URLs, and exact quotations preserve their required syntax.
+
+### 2026-10-25 — Calmer wording and separate Blizzard responsibilities
+
+Russell rejected “Final responsibility for game performance” as too showy for the portfolio and identified the mixed responsibility summary as inaccurate in its grouping. Public copy now uses “Responsible for game performance” and names automated art performance benchmarking and client performance monitoring. This supersedes the earlier public-copy decision about performance accountability without changing the reported facts.
+
+Unannounced game comes first with performance, graphics/rendering, and art/audio tools. Hearthstone follows with its own engine, platform, pipeline, artist-tools, and team-support work. Its gameplay cover, clips, and credits sit within that section. The shared summary no longer combines the two responsibility lists. See [Blizzard project responsibilities](30-blizzard-project-responsibilities.md) for the applied structure and checks.
