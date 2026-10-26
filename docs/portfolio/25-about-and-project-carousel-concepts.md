@@ -7,6 +7,8 @@ tags: [portfolio, about, interaction, concepts]
 
 # About Me and project image concepts
 
+The later [carousel comparison](35-carousel-concept-comparison.md) supplies three treatments across all seven current homepage projects. Its looping-image behavior follows Russell's later direction in [Looping portfolio images](32-looping-portfolio-images.md), which supersedes this note's earlier GIF-to-video proposal. The About concepts below remain proposals.
+
 Prepared after opening [PR #4](https://github.com/MoleculeTechnology/MoleculeTechnology.github.io/pull/4), as Russell requested. These are proposals. The website has not gained a carousel or an expanded biography in this pass.
 
 ## Starting point
