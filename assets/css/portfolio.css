@@ -33,6 +33,7 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .mint-text { color: var(--mint); }
 .eyebrow { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1.6; }
 .molecule-site .brace-label { text-transform: lowercase; }
+.molecule-site .brace-label > .brace-glyph { font-weight: 400; }
 .skip-link { position: absolute; z-index: 10; top: 12px; left: 12px; transform: translateY(-180%); padding: 8px 16px; color: var(--canvas) !important; background: var(--mint); }
 .skip-link:focus { transform: translateY(0); }
 .site-header { min-height: 104px; display: flex; align-items: center; justify-content: space-between; gap: 32px; border-bottom: 1px solid var(--rule); }
@@ -66,7 +67,7 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .pyramid-leaders { pointer-events: none; overflow: visible; stroke: var(--rule); stroke-width: 1; }
 .pyramid-labels { list-style: none; padding: 0; margin: 0; }
 .pyramid-labels li { position: absolute; z-index: 2; white-space: nowrap; transform: translate(-50%, -50%); color: var(--mint); font-size: 18px; line-height: 1.3; pointer-events: none; }
-.pyramid-labels li span { padding: 3px 5px; background: var(--canvas); }
+.pyramid-labels li > .brace-label { padding: 3px 5px; background: var(--canvas); }
 .pyramid-labels [data-label="programming"] { left: 54%; top: 12%; color: var(--ghost); }
 .pyramid-labels [data-label="design"] { left: 21%; top: 39%; }
 .pyramid-labels [data-label="art"] { left: 89%; top: 66%; }

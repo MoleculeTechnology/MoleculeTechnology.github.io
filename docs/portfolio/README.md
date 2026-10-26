@@ -73,6 +73,7 @@ The [mobile and performance pass](40-mobile-performance-and-release-checks.md) a
 40. [Mobile readiness and performance](40-mobile-performance-and-release-checks.md) — measured before/after loading, media and font delivery, mobile checks, repeatable Lighthouse commands, and remaining device/hosting checks.
 41. [Original portfolio v1.0.0](41-original-portfolio-v1.md) — the pre-plan archive tag, verified commit, release and branch guidance, source comparisons, and separate preview instructions.
 42. [Lowercase labels, selected media, and film layouts](42-lowercase-media-and-film-layouts.md) — applied brace casing and smaller project headings, Enflux's chosen sequence, the Eonar still, a Sunken City media follow-up, and full-width versus grid prototypes.
+43. [Shared brace labels](43-shared-brace-labels.md) — reusable template and Markdown labels, normal-weight curly braces, inherited text weight, and all sixteen live occurrences.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.

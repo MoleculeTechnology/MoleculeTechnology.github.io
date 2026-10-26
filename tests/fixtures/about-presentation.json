@@ -1,9 +1,9 @@
 {
   "baselineCommit": "a20dff2f3abc65be3207c29a9d26b71cb7908847",
-  "note": "Original About copy and gallery selections preserved. Presentation reviewed after responsive image delivery, intrinsic dimensions, lazy loading, still previews for deferred original loops, and removal of inline gallery scripts.",
-  "mainSha256": "098c0dcf2296bcf88a837e31fb0e998ba357ab8c023bfdbaf78a55050937e2c8",
+  "note": "Original About copy and gallery selections preserved. Presentation reviewed after responsive image delivery, intrinsic dimensions, lazy loading, still previews for deferred original loops, removal of inline gallery scripts, and shared normal-weight brace markup.",
+  "mainSha256": "fd85674ac64adacc50af87637b6085e06e806b680c25ddcde0489d48813e5ece",
   "stylesheets": [
-    "/css/molecule.min.81fb0dd58977f12190ea48a166fdcd73f5e4dce2f1c9576b22b0bec395f52a18.css"
+    "/css/molecule.min.9756a5247962235904cc7877fd2ab7b5b6b9652ae70a2b0230b2f123d8a180ff.css"
   ],
   "originalMainSha256": "390165dc6b6d0756ad0a4bd89901aa93463ce373a7bb6c728f0bfc85f35ea502",
   "originalCopySha256": "aa54635ab3baa0f7a5aa7f3b1e6fbb352162026160d3d64d502324808ec3cadd",

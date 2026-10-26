@@ -1,6 +1,7 @@
 {{ define "main" }}
 <article>
-  <header><h1 class="heading-accent">{{ .Title }}</h1></header>
+  {{ $braced := and (strings.HasPrefix .Title "{") (strings.HasSuffix .Title "}") }}
+  <header><h1 class="heading-accent">{{ if $braced }}{{ partial "portfolio/braced-label.html" (replaceRE `^\{\s*|\s*\}$` "" .Title) }}{{ else }}{{ .Title }}{{ end }}</h1></header>
   <div class="prose dark:prose-invert max-w-full">{{ .Content }}</div>
 </article>
 {{ end }}
