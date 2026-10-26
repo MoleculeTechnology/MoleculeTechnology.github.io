@@ -12,4 +12,6 @@ These ten files total 98,003,186 bytes. All copies match the original SHA-256 ha
 
 See [Molecule selected photos and motion](../docs/portfolio/31-molecule-selected-media.md) for selection and preparation details.
 
+The two original GIFs are served as smaller animated WebP images that loop continuously. See [Looping portfolio images](../docs/portfolio/32-looping-portfolio-images.md). Keep these GIF source copies unchanged when preparing new delivery formats.
+
 This directory sits outside Hugo's content, asset, and static mounts. The website uses the prepared delivery files.

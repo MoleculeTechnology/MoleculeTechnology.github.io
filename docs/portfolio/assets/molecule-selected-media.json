@@ -46,18 +46,18 @@
     "container_format": "GIF",
     "duration_seconds": 7.24,
     "reviewed_on": "2026-10-25",
-    "preparation": "Full GIF animation converted to H.264 MP4 at CRF 18, YUV 4:2:0, original dimensions and variable frame timing. Square pixels normalize stale GIF pixel-aspect metadata. No audio. MP4 fast start.",
-    "output_video": "assets/portfolio/molecule/patch-led-animation.mp4",
-    "poster": "assets/portfolio/molecule/patch-led-animation.jpg",
-    "poster_time_seconds": 3.6,
-    "poster_bytes": 46409,
+    "preparation": "Animated WebP at quality 85, method 6. All source frames, original dimensions and frame durations preserved. Infinite loop. Published directly as an image without Hugo still-image resizing.",
     "output_dimensions": [
       600,
       338
     ],
-    "output_bytes": 3206669,
-    "output_sha256": "8cd16e0d468032520ee65c6f0d915ec911be1b7af482742971c53bb7442b4333",
-    "repository_source": "source-media/molecule/patch-computer/ezgif-5-5d129b59f5.gif"
+    "output_bytes": 7460580,
+    "output_sha256": "1bf76459ee18ce1a796bc05e3b754aa3f69ee499c9fb65aa749e1b82c224be0f",
+    "repository_source": "source-media/molecule/patch-computer/ezgif-5-5d129b59f5.gif",
+    "output_image": "assets/portfolio/molecule/patch-led-animation.webp",
+    "output_format": "Animated WebP",
+    "loop": 0,
+    "frame_durations_preserved": true
   },
   {
     "id": "prototype-a",
@@ -162,18 +162,18 @@
     "container_format": "GIF",
     "duration_seconds": 6.0,
     "reviewed_on": "2026-10-25",
-    "preparation": "Full GIF animation converted to H.264 MP4 at CRF 18, YUV 4:2:0, original dimensions and variable frame timing. Square pixels normalize stale GIF pixel-aspect metadata. No audio. MP4 fast start.",
-    "output_video": "assets/portfolio/molecule/pixelperf-sword-demo.mp4",
-    "poster": "assets/portfolio/molecule/pixelperf-sword-demo.jpg",
-    "poster_time_seconds": 0.0,
-    "poster_bytes": 129451,
+    "preparation": "Animated WebP at quality 75, method 4. All source frames, original dimensions and frame durations preserved. Infinite loop. Published directly as an image without Hugo still-image resizing.",
     "output_dimensions": [
       540,
       960
     ],
-    "output_bytes": 8116109,
-    "output_sha256": "d72bbebf5d6c81bd385975190d1363433dddcf6728baae21cf7c64fe661f3325",
-    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/20230903_120930.gif"
+    "output_bytes": 17191870,
+    "output_sha256": "1a0c752bdfc0c71d356ffe994cb32e54f38c0c6218ecf7d41773a99f3694a393",
+    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/20230903_120930.gif",
+    "output_image": "assets/portfolio/molecule/pixelperf-sword-demo.webp",
+    "output_format": "Animated WebP",
+    "loop": 0,
+    "frame_durations_preserved": true
   },
   {
     "id": "event-b",

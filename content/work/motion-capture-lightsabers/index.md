@@ -32,7 +32,7 @@ The **bokken**, wooden martial arts practice swords, are fitted with **IMU senso
 
 Each real-world direction has a fixed color. Pointing a bokken north or up returns it to the same corresponding color, wherever it is used.
 
-{{< work-video source="portfolio/molecule/pixelperf-sword-demo.mp4" poster="portfolio/molecule/pixelperf-sword-demo.jpg" class="portrait" label="Play the orientation-controlled bokken demonstration at PixelPerf Market" caption="Orientation-controlled bokken demo / PixelPerf Market." >}}
+{{< work-image source="portfolio/molecule/pixelperf-sword-demo.webp" animated="true" class="portrait" alt="Melissa spinning an illuminated bokken at PixelPerf Market, with the LEDs changing color as it turns." caption="Orientation-controlled bokken demo / PixelPerf Market." >}}
 
 ### Bokken prototypes {#lightsaber-prototypes}
 
@@ -47,7 +47,7 @@ Patch is a custom computer with an animated LED matrix display.
 
 {{< media-grid >}}
 {{< work-video source="portfolio/molecule/patch-led-eyes.mp4" poster="portfolio/molecule/patch-led-eyes.jpg" label="Play the custom Patch computer LED display demonstration" caption="Patch / animated LED eyes." >}}
-{{< work-video source="portfolio/molecule/patch-led-animation.mp4" poster="portfolio/molecule/patch-led-animation.jpg" label="Play the LED matrix animation on the custom Patch computer" caption="Patch / LED matrix animation." >}}
+{{< work-image source="portfolio/molecule/patch-led-animation.webp" animated="true" alt="Looping LED matrix animation on the custom Patch computer." caption="Patch / LED matrix animation." >}}
 {{< /media-grid >}}
 
 ## PixelPerf Market

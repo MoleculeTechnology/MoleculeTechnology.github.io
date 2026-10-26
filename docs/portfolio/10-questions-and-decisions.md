@@ -217,3 +217,7 @@ Russell requested organized copies of the GIFs and original media in the portfol
 ### 2026-10-25 — Bokken terminology and windup-first photos
 
 Russell identified the props as bokken, wooden martial arts practice swords, and requested that wording throughout the portfolio. Updated public project copy, About, accessible image/video descriptions, and the current copy drafts. He also requested the windup image before the extended pose in the first body-tracking photo pair. Swapped the image sources and their alt text while keeping the two captions in their original positions. See [the media record](31-molecule-selected-media.md).
+
+### 2026-10-25 — Preserve GIFs as continuously looping images
+
+Russell clarified that Melissa's spinning-lightsaber GIF and the original portfolio GIFs are intended as cool looping images. Use animated WebP for smaller delivery with broad modern-browser support. This supersedes the earlier controlled-MP4 delivery for GIF selections. Preserve both original GIFs, every frame, dimensions, timing, and infinite loops. Keep the separate Patch source video as a video with audio. See [Looping portfolio images](32-looping-portfolio-images.md).

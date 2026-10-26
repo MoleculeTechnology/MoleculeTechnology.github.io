@@ -1,8 +1,8 @@
 {{ $image := resources.Get .source }}
 {{ if not $image }}{{ $image = resources.Get (printf "legacy-work/%s" .source) }}{{ end }}
 {{ if $image }}
-  {{ if eq (lower (path.Ext .source)) ".gif" }}
-  {{/* Publish the original animation. Responsive still-image resizing would flatten it. */}}
+  {{ if or .animated (eq (lower (path.Ext .source)) ".gif") }}
+  {{/* Publish animated images directly. Hugo's resizing would flatten them to one frame. */}}
   <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" data-source-width="{{ $image.Width }}" style="--image-width: {{ printf "%dpx" $image.Width | safeCSS }}" alt="{{ .alt }}" loading="{{ .loading | default "lazy" }}" decoding="async"{{ with .class }} class="{{ . }}"{{ end }}>
   {{ else }}
   {{ $variants := slice }}
