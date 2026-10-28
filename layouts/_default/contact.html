@@ -8,19 +8,50 @@
   </header>
   <div class="contact-page-grid">
     <aside class="inquiry-context" aria-labelledby="inquiry-context-heading">
-      <h2 id="inquiry-context-heading">PROJECT INQUIRIES</h2>
-      <p>For installation projects, software work, and collaborations.</p>
-      <p class="eyebrow">Tell me about</p>
-      <ul>
+      <p class="eyebrow" id="inquiry-context-heading">Tell me about</p>
+      <ol class="inquiry-prompts">
         <li>What you'd like to make.</li>
         <li>The space, equipment, or software involved.</li>
         <li>Your location, timing, and budget.</li>
-      </ul>
+      </ol>
     </aside>
     <section class="inquiry-form-panel contact-method" aria-labelledby="contact-method-heading">
       <h2 id="contact-method-heading" tabindex="-1">Send a message</h2>
       {{ .Content }}
-      <a class="contact-action" href="{{ .Params.contactUrl }}">{{ .Params.contactLabel }} <span aria-hidden="true">↗</span></a>
+      {{ if not (findRE `^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$` (.Params.web3formsAccessKey | default "")) }}
+        {{ errorf "Contact requires a valid Web3Forms public access key." }}
+      {{ end }}
+      <noscript><p class="contact-noscript">Enable JavaScript to send this form, or use the email address below.</p></noscript>
+      <form class="native-contact-form" action="https://api.web3forms.com/submit" method="post" aria-describedby="contact-form-status" data-contact-form>
+        <input type="hidden" name="access_key" value="{{ .Params.web3formsAccessKey }}">
+        <input type="hidden" name="subject" value="Portfolio inquiry / ilovemolecule.com">
+        <input type="hidden" name="from_name" value="Molecule portfolio">
+        <fieldset class="contact-fields">
+          <legend class="sr-only">Your message</legend>
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="contact-name">Name <span>(optional)</span></label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" maxlength="120">
+            </div>
+            <div class="form-field">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="7" maxlength="5000" required></textarea>
+          </div>
+          <button class="contact-action" type="submit" disabled>Send message</button>
+        </fieldset>
+        <p class="form-status" id="contact-form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      </form>
+      <div class="direct-email">
+        <p>Or email <a href="{{ .Params.contactUrl }}">{{ .Params.contactLabel }}</a> directly.</p>
+        <button class="copy-email" type="button" data-copy-email="{{ .Params.contactLabel }}" hidden>Copy email address</button>
+        <p class="copy-status" data-copy-status role="status" aria-live="polite" aria-atomic="true"></p>
+      </div>
     </section>
   </div>
 </article>

@@ -1,6 +1,7 @@
 """Prevent eager gallery downloads and preserve original animation delivery."""
 
 import hashlib
+import json
 from pathlib import Path
 import unittest
 
@@ -10,6 +11,7 @@ import test_project_collections as collections
 
 class MediaDeliveryTests(unittest.TestCase):
     BUILD = collections.FilmCollectionTests.BUILD
+    GLASS_LOOPS = json.loads(Path('docs/portfolio/assets/glass-castle-loop-delivery.json').read_text(encoding='utf-8'))['animations']
 
     def page(self, route):
         return Document((self.BUILD / route.strip('/') / 'index.html').read_text(encoding='utf-8')).root
@@ -48,8 +50,50 @@ class MediaDeliveryTests(unittest.TestCase):
             source = Path('content/about') / image.attrs['data-project-image']
             self.assertTrue(image.attrs['src'].endswith('.webp'))
             delivered = self.BUILD / image.attrs['data-loop-src'].lstrip('/')
-            self.assertEqual(hashlib.sha256(source.read_bytes()).digest(),
-                             hashlib.sha256(delivered.read_bytes()).digest())
+            optimized = next((item for item in self.GLASS_LOOPS if item['source'] == source.as_posix()), None)
+            if optimized:
+                self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(), optimized['sourceSha256'])
+                self.assertEqual(hashlib.sha256(delivered.read_bytes()).hexdigest(), optimized['deliverySha256'])
+            else:
+                self.assertEqual(hashlib.sha256(source.read_bytes()).digest(),
+                                 hashlib.sha256(delivered.read_bytes()).digest())
+
+    def test_glass_castle_uses_verified_lossless_loops_in_every_view(self):
+        home = self.page('/')
+        gallery = self.page('/work/glass-castle/')
+        for item in self.GLASS_LOOPS:
+            with self.subTest(source=item['source']):
+                canonical = item['source'].removeprefix('content/about/')
+                preserved = Path(item['preservedSource']).read_bytes()
+                self.assertEqual(hashlib.sha256(preserved).hexdigest(), item['sourceSha256'])
+                published_original = (self.BUILD / 'legacy-work' / canonical).read_bytes()
+                self.assertEqual(hashlib.sha256(published_original).hexdigest(), item['sourceSha256'])
+                data = (self.BUILD / item['deliverySource']).read_bytes()
+                self.assertEqual(hashlib.sha256(data).hexdigest(), item['deliverySha256'])
+                self.assertLess(len(data), item['sourceBytes'])
+                self.assertTrue(item['framePixelsIdentical'])
+                self.assertEqual(data[:4], b'RIFF')
+                self.assertEqual(data[8:12], b'WEBP')
+                durations = []
+                offset = 12
+                while offset < len(data):
+                    kind = data[offset:offset + 4]
+                    size = int.from_bytes(data[offset + 4:offset + 8], 'little')
+                    payload = data[offset + 8:offset + 8 + size]
+                    if kind == b'ANIM':
+                        self.assertEqual(int.from_bytes(payload[4:6], 'little'), 0)
+                    elif kind == b'ANMF':
+                        durations.append(int.from_bytes(payload[12:15], 'little'))
+                    offset += 8 + size + (size % 2)
+                self.assertEqual(durations, item['durationsMs'])
+                slides = home.find_all(lambda e: e.tag == 'template' and 'data-carousel-slide' in e.attrs)
+                selected = [img for slide in slides for img in slide.find_all(
+                    lambda e: e.tag == 'img' and e.attrs.get('data-project-image') == canonical)]
+                self.assertEqual(len(selected), 1)
+                self.assertEqual(selected[0].attrs['src'], '/' + item['deliverySource'])
+                frame = gallery.find_all(lambda e: e.attrs.get('data-project-image') == canonical)[0]
+                image = frame.find_all(lambda e: e.tag == 'img')[0]
+                self.assertEqual(image.attrs['data-loop-src'], '/' + item['deliverySource'])
 
     def test_work_prioritizes_its_visible_first_image(self):
         images = self.page('/work/').find_all(lambda item: item.tag == 'img')

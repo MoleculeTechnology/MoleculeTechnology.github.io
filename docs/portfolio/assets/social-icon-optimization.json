@@ -1,0 +1,154 @@
+{
+  "optimizer": "SVGO 4.0.0",
+  "renderer": "@resvg/resvg-js 2.6.2",
+  "maxMeanChannelError": 0.5,
+  "measurements": [
+    {
+      "service": "linkedin",
+      "originalMonochromeBytes": 526,
+      "unoptimizedColorBytes": 611,
+      "optimizedColorBytes": 471,
+      "optimizedGzipBytes": 299,
+      "precision": 2,
+      "meanChannelErrorAt18px": 0.3827,
+      "meanChannelErrorAt36px": 0.0594,
+      "meanChannelErrorAt54px": 0.1209,
+      "candidates": [
+        {
+          "precision": 0,
+          "bytes": 256,
+          "meanChannelErrors": [
+            11.4249,
+            14.2505,
+            13.2662
+          ]
+        },
+        {
+          "precision": 1,
+          "bytes": 390,
+          "meanChannelErrors": [
+            1.6955,
+            0.6818,
+            0.6127
+          ]
+        },
+        {
+          "precision": 2,
+          "bytes": 471,
+          "meanChannelErrors": [
+            0.3827,
+            0.0594,
+            0.1209
+          ]
+        },
+        {
+          "precision": 3,
+          "bytes": 578,
+          "meanChannelErrors": [
+            0,
+            0.0069,
+            0.0032
+          ]
+        }
+      ]
+    },
+    {
+      "service": "github",
+      "originalMonochromeBytes": 1406,
+      "unoptimizedColorBytes": 1448,
+      "optimizedColorBytes": 1153,
+      "optimizedGzipBytes": 611,
+      "precision": 2,
+      "meanChannelErrorAt18px": 0.4846,
+      "meanChannelErrorAt36px": 0.323,
+      "meanChannelErrorAt54px": 0.3425,
+      "candidates": [
+        {
+          "precision": 0,
+          "bytes": 245,
+          "meanChannelErrors": [
+            9.6039,
+            11.5517,
+            11.1733
+          ]
+        },
+        {
+          "precision": 1,
+          "bytes": 645,
+          "meanChannelErrors": [
+            3.5463,
+            3.5463,
+            3.5794
+          ]
+        },
+        {
+          "precision": 2,
+          "bytes": 1153,
+          "meanChannelErrors": [
+            0.4846,
+            0.323,
+            0.3425
+          ]
+        },
+        {
+          "precision": 3,
+          "bytes": 1609,
+          "meanChannelErrors": [
+            0.0957,
+            0.0247,
+            0.0213
+          ]
+        }
+      ]
+    },
+    {
+      "service": "youtube",
+      "originalMonochromeBytes": 572,
+      "unoptimizedColorBytes": 686,
+      "optimizedColorBytes": 329,
+      "optimizedGzipBytes": 237,
+      "precision": 1,
+      "meanChannelErrorAt18px": 0.1872,
+      "meanChannelErrorAt36px": 0.2791,
+      "meanChannelErrorAt54px": 0.2503,
+      "candidates": [
+        {
+          "precision": 0,
+          "bytes": 168,
+          "meanChannelErrors": [
+            2.8508,
+            2.9997,
+            2.992
+          ]
+        },
+        {
+          "precision": 1,
+          "bytes": 329,
+          "meanChannelErrors": [
+            0.1872,
+            0.2791,
+            0.2503
+          ]
+        },
+        {
+          "precision": 2,
+          "bytes": 413,
+          "meanChannelErrors": [
+            0.0391,
+            0.0095,
+            0.0088
+          ]
+        },
+        {
+          "precision": 3,
+          "bytes": 472,
+          "meanChannelErrors": [
+            0,
+            0,
+            0.0023
+          ]
+        }
+      ]
+    }
+  ]
+}

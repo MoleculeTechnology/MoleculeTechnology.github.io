@@ -18,19 +18,28 @@ resume:
     - Created Pentagon video wall using 9 projectors to show missile timers, world maps, world clocks, and aircraft/submarine controls.
     - Designed & programmed digital art for dozens of 1980's CRT TVs and computers retrofitted with projectors.
   gallery: "archive"
+carouselGalleries: [archive]
 galleries:
   archive:
     -
       source: "PaperGhost/xmen_apocalypse_pentagon3.jpg"
+      label: "Pentagon wall"
+      caption: "X-Men: Apocalypse / the Pentagon video wall and command consoles."
       class: "grid-w99"
     -
       source: "PaperGhost/xmen_apocalypse_pentagon2.jpg"
+      label: "Wide view"
+      caption: "X-Men: Apocalypse / a wide view of the Pentagon screens."
       class: "grid-w99"
     -
       source: "PaperGhost/xmen_apocalypse_pentagon1.jpg"
+      label: "Pentagon consoles"
+      caption: "X-Men: Apocalypse / screens and consoles on the Pentagon set."
       class: "grid-w66"
     -
       source: "PaperGhost/xmen_apocalypse_submarine1.jpg"
+      label: "Submarine"
+      caption: "X-Men: Apocalypse / screen visuals for the submarine set."
       class: "grid-w33"
 carousel:
   - label: "Pentagon wall"

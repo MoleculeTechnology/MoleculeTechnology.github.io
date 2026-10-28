@@ -1,6 +1,6 @@
 {{ $sizes := "(max-width: 760px) calc(100vw - 44px), (max-width: 800px) calc(110vw - 80px), (max-width: 1600px) calc(720px + 10vw), 880px" }}
 {{ with .Parent }}{{ if eq .Name "media-grid" }}{{ $sizes = "(max-width: 760px) calc(100vw - 44px), (max-width: 800px) calc((110vw - 104px) / 2), (max-width: 1600px) calc((720px + 10vw - 24px) / 2), 428px" }}{{ end }}{{ end }}
 <figure class="work-figure{{ with .Get "class" }} {{ . }}{{ end }}">
-  {{ partial "portfolio/image.html" (dict "source" (.Get "source") "alt" (.Get "alt") "sizes" $sizes "animated" (eq (.Get "animated") "true")) }}
+  {{ partial "portfolio/image.html" (dict "source" (.Get "source") "originalSource" (.Get "source") "alt" (.Get "alt") "sizes" $sizes "animated" (eq (.Get "animated") "true")) }}
   <figcaption>{{ .Get "caption" }}</figcaption>
 </figure>

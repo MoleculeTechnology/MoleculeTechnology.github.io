@@ -2,6 +2,8 @@
 
 Date: 2026-10-25
 
+Update, October 27, 2026: All eligible About gallery images now feed the home carousels. Ten carousels contain 54 selections, including a restored Hearthstone carousel that excludes its credits card. See [Complete project galleries and public pages](52-complete-project-galleries-and-pages.md) for shared selection rules and current verification. The initial decisions below remain historical context.
+
 Russell selected **C / Small contact strip** from the [carousel comparison](35-carousel-concept-comparison.md). That choice replaces the earlier recommendation to start with A.
 
 The initial implementation used C on all seven homepage projects. The later [media revision](42-lowercase-media-and-film-layouts.md) removes Blizzard's carousel because it has one selected image and gives Enflux four selections. Six projects now use C. The film order, project links, and contribution summaries are preserved.

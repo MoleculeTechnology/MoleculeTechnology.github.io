@@ -1,7 +1,7 @@
 ---
 title: Deferred deployment repair
 date: 2026-10-24
-status: deferred
+status: repair-prepared-for-release-pr
 tags: [portfolio, deployment, follow-up]
 ---
 
@@ -9,7 +9,7 @@ tags: [portfolio, deployment, follow-up]
 
 Russell's decision: fix deployment after the reworked website has a good enough first version.
 Continue design, content, and interaction work with a local preview in the meantime.
-This note records the follow-up. It does not change the workflow or deploy the site.
+The historical findings below explain the failure. Russell has now requested a PR to bring the latest portfolio into main. The workflow repair is included in that release preparation. See [the current release checks](55-release-pr-and-deployment.md). A successful production deployment still needs to be verified after merging.
 
 ## Verified state
 
@@ -24,11 +24,11 @@ The successful merge therefore did not result in a successful deployment from th
 
 ## Resume when the first version is ready
 
-- [ ] Review the current GitHub Pages action documentation and choose compatible supported upload/deploy action versions.
-- [ ] Update the workflow in a focused change. Review its other action versions and runner compatibility at the same time.
-- [ ] Keep Hugo Extended `0.115.4` as the tested baseline unless a separate compatibility check justifies an upgrade.
-- [ ] Build the intended first version in production mode and inspect generated routes, asset URLs, and the custom domain configuration.
-- [ ] Confirm the diff excludes generated preview output and locally cached tools.
+- [x] Review the current GitHub Pages action documentation and choose compatible supported upload/deploy action versions.
+- [x] Update the workflow. Review its other action versions and runner compatibility at the same time.
+- [x] Keep Hugo Extended `0.115.4` as the tested baseline unless a separate compatibility check justifies an upgrade.
+- [x] Build the intended first version in production mode and inspect generated routes, asset URLs, and the custom domain configuration.
+- [x] Confirm the diff excludes generated preview output and locally cached tools.
 - [ ] Run the repaired workflow and verify both the build and deployment jobs succeed.
 - [ ] Check the published homepage, project pages, pyramid, media, and contact path at `https://www.ilovemolecule.com/`.
 

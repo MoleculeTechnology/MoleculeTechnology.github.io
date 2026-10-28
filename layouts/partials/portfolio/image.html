@@ -1,5 +1,13 @@
 {{ $image := resources.Get .source }}
 {{ if not $image }}{{ $image = resources.Get (printf "legacy-work/%s" .source) }}{{ end }}
+{{/* Keep existing original URLs available when serving an optimized delivery copy. */}}
+{{ with .originalSource }}
+  {{ if ne . $.source }}
+    {{ $original := resources.Get . }}
+    {{ if not $original }}{{ $original = resources.Get (printf "legacy-work/%s" .) }}{{ end }}
+    {{ if $original }}{{ $publishedOriginal := $original.RelPermalink }}{{ end }}
+  {{ end }}
+{{ end }}
 {{ if $image }}
   {{ if or .animated (eq (lower (path.Ext .source)) ".gif") }}
   {{/* Publish animated images directly. Hugo's resizing would flatten them to one frame. */}}

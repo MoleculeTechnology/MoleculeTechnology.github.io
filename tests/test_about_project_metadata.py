@@ -69,11 +69,15 @@ class AboutMetadataTests(unittest.TestCase):
         galleries = about.find_all(lambda item: item.attrs.get('id', '').startswith('gallery-'))
         pairs = [
             ('/work/x-men-apocalypse/', '/work/x-men-apocalypse/', 0, 'PaperGhost/xmen_apocalypse_pentagon3.jpg'),
-            ('/work/paper-ghost/', '/work/quantico/', 1, None),
-            ('/work/paper-ghost/', '/work/ca-decolle/', 3, None),
+            ('/work/quantico/', '/work/quantico/', 1, 'PaperGhost/quantico_van1.jpg'),
+            ('/work/glass-castle/', '/work/glass-castle/', 2, 'PaperGhost/glasscastle_test1.jpg'),
+            ('/work/ca-decolle/', '/work/ca-decolle/', 3, 'PaperGhost/cadecolle_plane1.jpg'),
             ('/work/mother/', '/work/mother/', 4, 'PaperGhost/mother_preproduction3.png'),
             ('/work/arrival/', '/work/arrival/', 5, 'PaperGhost/arrival_spytent2.jpg'),
             ('/work/enflux/', '/work/enflux/', 6, None),
+            ('/work/shoppermx/', '/work/shoppermx/', 8, 'InContext/incontext_store1.png'),
+            ('/work/game-engine-graphics-content-pipeline/', '/work/game-engine-graphics-content-pipeline/',
+             9, 'Blizzard/hearthstone_credits_russelljahn2.webp'),
         ]
         for route, project, index, excluded in pairs:
             with self.subTest(project=project):
@@ -83,11 +87,32 @@ class AboutMetadataTests(unittest.TestCase):
                 selected = [item.attrs['data-project-image'] for item in shared[0].find_all(
                     lambda item: 'data-project-image' in item.attrs)]
                 self.assertEqual(selected, [source for source in original if source != excluded])
+                all_sources = {item.attrs['data-project-image'] for item in self.page(route).find_all(
+                    lambda item: 'data-project-image' in item.attrs)}
+                self.assertTrue(set(original).issubset(all_sources), 'A curated About image is missing from its case study')
+                self.assertFalse(self.page(route).find_all(lambda item: item.tag == 'pre'),
+                                 'Gallery HTML must not render as an indented Markdown code block')
 
-    def test_metadata_only_records_do_not_add_public_pages(self):
-        for slug in ['quantico', 'ca-decolle', 'shoppermx']:
+        blender = self.page('/work/enflux/').find_all(
+            lambda item: item.attrs.get('data-project-gallery') == '/work/enflux/:blender')[0]
+        self.assertEqual([item.attrs['data-project-image'] for item in blender.find_all(
+            lambda item: 'data-project-image' in item.attrs)], ['Enflux/enflux_blender1.jpg'])
+
+    def test_major_projects_publish_their_shared_contribution_details(self):
+        expected = {
+            'quantico': ['259 Android apps', '21 episodes', 'Audio surveillance van.', 'Bomb timers.'],
+            'ca-decolle': ['generate and dynamically adjust clouds'],
+            'shoppermx': ['enterprise 3D store editor', 'VR-based multiplayer installation'],
+            'game-engine-graphics-content-pipeline': ['Shipped 9 major game expansions',
+                '03/2021 - 08/2023', 'FX artist tools', 'SDK integrations', 'low-level game engine issues'],
+        }
+        for slug, passages in expected.items():
             with self.subTest(project=slug):
-                self.assertFalse((self.BUILD / 'work' / slug / 'index.html').exists())
+                page = self.page('/work/' + slug + '/')
+                details = page.find_all(lambda item: item.attrs.get('data-project-details') == '/work/' + slug + '/')
+                self.assertEqual(len(details), 1)
+                for passage in passages:
+                    self.assertIn(passage, details[0].text())
 
 
 if __name__ == '__main__':

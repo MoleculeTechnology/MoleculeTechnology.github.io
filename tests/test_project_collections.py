@@ -57,7 +57,8 @@ class Document(HTMLParser):
 
 class FilmCollectionTests(unittest.TestCase):
     BUILD = Path(os.environ.get('PORTFOLIO_BUILD_DIR', '.preview/project-catalogue-check'))
-    FILMS = ['/work/x-men-apocalypse/', '/work/glass-castle/', '/work/mother/', '/work/arrival/']
+    FILMS = ['/work/x-men-apocalypse/', '/work/glass-castle/', '/work/mother/', '/work/arrival/',
+             '/work/quantico/', '/work/ca-decolle/']
 
     def page(self, route):
         return Document((self.BUILD / route.strip('/') / 'index.html').read_text(encoding='utf-8')).root
@@ -87,9 +88,10 @@ class FilmCollectionTests(unittest.TestCase):
         for card in cards:
             title = self.one(card, lambda item: item.has_class('project-title'))
             links.append(self.one(title, lambda item: item.tag == 'a').attrs['href'])
-        self.assertEqual(links[:4], self.FILMS)
+        self.assertEqual(links[:6], self.FILMS)
         self.assertNotIn('/work/paper-ghost/', links)
-        self.assertEqual(len(links), 7)
+        self.assertEqual(len(links), 10)
+        self.assertIn('/work/shoppermx/', links)
 
     def test_collection_contains_each_complete_project_and_its_credits(self):
         collection = self.page('/work/paper-ghost/')

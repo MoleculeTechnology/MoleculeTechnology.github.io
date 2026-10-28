@@ -1,9 +1,12 @@
 ---
 title: "Motion capture"
-description: "Unity SDK, live demonstrations, and Blender animation tools for Enflux motion capture clothing."
+description: "Unity SDK, live trade show installations, and Blender animation tools for Enflux motion capture clothing."
 weight: 30
 tags: [professional]
 context: "Enflux"
+experience:
+  role: "VP, Product"
+  summary: "Motion capture + developer tools + live trade show installations"
 contribution: "Unity SDK + applications + Blender plugin + workshops + trade show booths"
 projectContext: "Motion capture clothing, developer tools, and public demonstrations"
 hero: "portfolio/enflux/enflux-convention-loop.webp"
@@ -29,27 +32,42 @@ resume:
         - Programmed + shipped Unity-based Windows app to sync smooth mocap data over wifi to Blender on other computers.
       gallery: "blender"
       breakBefore: true
+carouselGalleries: [archive, blender]
+# The selected animated WebP is the same convention footage as this source GIF.
+carouselExclude: ["Enflux/enflux_convention2.gif"]
 galleries:
   archive:
     -
       source: "Enflux/enflux_suit1.png"
+      label: "Motion capture clothing"
+      caption: "Enflux / motion capture clothing."
       class: "grid-w66"
     -
       source: "Enflux/enflux_convention2.gif"
+      label: "Live demo"
+      caption: "Enflux / live motion capture demonstration."
       alt: "Motion capture project documentation (2 of 5)."
       class: "grid-w66"
     -
       source: "Enflux/enflux_convention1.jpeg"
+      label: "Convention demo"
+      caption: "Enflux / convention demonstration."
       class: "grid-w33"
     -
       source: "Enflux/enflux_convention4.jpg"
+      label: "Trade show booth"
+      caption: "Enflux / trade show booth."
       class: "grid-w33"
     -
       source: "Enflux/enflux_convention3.jpg"
+      label: "Installation"
+      caption: "Enflux / live trade show installation."
       class: "grid-w33"
   blender:
     -
       source: "Enflux/enflux_blender1.jpg"
+      label: "Blender"
+      caption: "Enflux / Blender motion capture recording and FBX export."
       alt: "The Enflux motion capture recording plugin in Blender, with a tracked character and recording controls."
       class: "grid-w99"
 carousel:
@@ -76,6 +94,8 @@ The Unity SDK connects Enflux's Bluetooth motion capture clothing to application
 
 The application work spans **five first-party applications + four investor demos**, including a demo featured on TechCrunch.
 
+{{< project-video >}}
+
 {{< project-gallery project="/work/enflux" title="Enflux" description="motion capture clothing + public demonstrations" >}}
 
 ## Blender motion capture plugin
@@ -84,8 +104,6 @@ The Blender plugin records motion capture animation + exports FBX files. A Unity
 
 {{< project-gallery project="/work/enflux" gallery="blender" title="Blender plugin" description="motion capture recording + FBX export" >}}
 
-## Workshops + live demos
+## Workshops + live trade show installations
 
 Developer events included workshops, tech talks, and hackathons at UploadVR + Microsoft Reactor. Trade show work covered booth management and demonstrations at **CES + SVVR + SIGGRAPH**.
-
-[More Enflux photos + demonstration footage →](/about/)

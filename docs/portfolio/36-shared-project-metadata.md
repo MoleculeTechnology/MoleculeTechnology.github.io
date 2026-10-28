@@ -2,6 +2,8 @@
 
 Date: 2026-10-25
 
+Update, October 27, 2026: Quantico, Ça Décolle!, and ShopperMX now publish case studies and Work cards. All About gallery selections also appear on their case studies and feed Home's carousels. The historical refactor details below remain recorded. See [Complete project galleries and public pages](52-complete-project-galleries-and-pages.md) for the current behavior and verification.
+
 Russell requested that About's project information belong to the projects and that About generate its presentation from that metadata. The existing appearance, wording, links, and curated image order must stay the same during this refactor.
 
 ## Ownership

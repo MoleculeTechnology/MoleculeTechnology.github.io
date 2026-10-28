@@ -112,3 +112,30 @@ The screenshot below records the earlier layout pass. Its “Responsible for gam
 ![Earlier layout showing the two separate project sections](assets/2026-10-25-blizzard-project-responsibilities.jpg)
 
 Source evidence and the role correction are S11 and S12 in [Evidence and CV review](02-evidence-and-cv-review.md). The latest clarification supersedes the earlier individual-ownership descriptions in the [decision log](10-questions-and-decisions.md).
+
+## Card punctuation and role casing, October 27, 2026
+
+Russell requested periods on the Blizzard project card's contribution bullets and lowercase graphics within the role description. The shared `projectSummaries` now reads:
+
+- Hearthstone: Core systems + multiplatform development.
+- Unannounced title: Lead Engineer for graphics + content pipeline tools + performance.
+
+The same project-owned data supplies Home and Work. The case-study role and plain-text description also use lowercase graphics after for. The displayed project title and section headings retain their established capitalization. The compact Selected Experience strip keeps its separate role lines and capability fragments without final periods.
+
+These copy changes remain uncommitted.
+
+The pinned Hugo build and all eighteen Python checks pass. A build comparison confirms the exact corrected bullets on both Home and Work, plus lowercase graphics in the case-study role. The live homepage card was checked in the browser. The preview script was restarted and returned HTTP 200 at port 1313.
+
+![Corrected contribution punctuation and role casing](assets/2026-10-27-blizzard-card-copy.png)
+
+## Remove contribution bullets, October 27, 2026
+
+The preceding copy correction retained bullet markup. Russell clarified that the bullet points should be removed. Home and Work now show one plain-text contribution description below each uppercase project label, without list markers or indentation. The descriptions retain their periods and lowercase graphics after for.
+
+The shared summary partial renders each description directly in its definition-list description. Its CSS applies the existing type and spacing to that description instead of styling a nested bullet list. This supersedes the earlier bullet treatment recorded above. The repository conventions now explicitly prohibit list markup and bullet points in these card summaries.
+
+These changes remain uncommitted.
+
+The pinned Hugo build and all eighteen Python checks pass. Both built card summaries contain no `ul`, `ol`, or `li` elements and preserve the exact approved wording. About's main presentation and copy hashes are unchanged, with only its stylesheet fingerprint updated. The live Home card was visually checked, with each description aligned to its project label and zero left padding. The preview script was restarted and left running.
+
+![Blizzard contribution descriptions without bullets or indentation](assets/2026-10-27-blizzard-no-bullets.png)

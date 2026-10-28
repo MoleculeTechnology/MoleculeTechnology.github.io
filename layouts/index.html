@@ -3,19 +3,38 @@
 {{ $projects = where $projects "Params.parentProject" "eq" nil }}
 <section class="home-hero site-width" aria-labelledby="intro-heading">
   <div class="hero-copy">
-    <p class="eyebrow hero-name"><span class="status-dot" aria-hidden="true"></span> Russell Jahn / Molecule</p>
+    <p class="hero-name">Russell Jahn</p>
     <h1 id="intro-heading" class="heading-accent">SOFTWARE<br>ENGINEER<br><span>&amp; ARTIST.</span></h1>
-    <p class="hero-intro">Software + hardware + art.<br>Film-set visuals, motion capture,<br>and real-time graphics.</p>
-    <p class="hero-current">At Blizzard: 3D graphics, rendering, art + audio pipeline tools, and game performance on an unannounced game.</p>
-    <a class="text-link hero-link" href="#selected-work">Selected work <span aria-hidden="true">↘</span></a>
+    <p class="hero-brand">Independent projects under the name <strong>MOLECULE</strong>.</p>
+    <div class="hero-intro">
+      <p>Software + hardware + art.</p>
+      <p>Real-time graphics + film-set visuals + motion capture.</p>
+    </div>
   </div>
   {{ partial "portfolio/pyramid.html" . }}
+  <a class="text-link hero-link" href="#selected-work">Selected work <span aria-hidden="true">↘</span></a>
 </section>
 <section class="experience-strip site-width" aria-label="Selected professional experience">
   <p class="eyebrow">Selected experience</p>
-  <p><strong>BLIZZARD</strong><span>Graphics, engines + content pipelines</span></p>
-  <p><strong>PAPER GHOST</strong><span>Interactive props + film-set visuals</span></p>
-  <p><strong>ENFLUX</strong><span>Motion capture + developer tools</span></p>
+  <article class="experience-company" aria-labelledby="experience-blizzard">
+    <h2 id="experience-blizzard" class="eyebrow heading-accent">Blizzard</h2>
+    {{ with .Site.GetPage "/work/game-engine-graphics-content-pipeline" }}
+      {{ $sections := .Params.projectSections }}
+      {{ range slice "unannounced" "hearthstone" }}
+        {{ with index $sections . }}
+          {{ partial "portfolio/experience-entry.html" (dict "title" .title "role" .experienceRole "summary" .experienceSummary) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </article>
+  {{ range slice "paper-ghost" "enflux" }}
+    {{ with $.Site.GetPage (printf "/work/%s" .) }}
+      <article class="experience-company" aria-labelledby="experience-{{ .File.ContentBaseName }}">
+        <h2 id="experience-{{ .File.ContentBaseName }}" class="eyebrow heading-accent">{{ .Params.context }}</h2>
+        {{ partial "portfolio/experience-entry.html" (dict "title" .Title "role" .Params.experience.role "summary" .Params.experience.summary) }}
+      </article>
+    {{ end }}
+  {{ end }}
 </section>
 <section class="selected-work site-width" id="selected-work" aria-labelledby="work-heading">
   <div class="section-heading"><p class="eyebrow">01 / Projects</p><h2 id="work-heading" class="heading-accent">{{ partial "portfolio/braced-label.html" "professional work" }}</h2></div>
@@ -35,6 +54,6 @@
 <section class="contact-section site-width" id="contact" aria-labelledby="contact-heading">
   <p class="eyebrow">04 / Get in touch</p><h2 id="contact-heading" class="heading-accent">{{ partial "portfolio/braced-label.html" "contact" }}</h2>
   <div class="contact-bottom"><p>For installation projects, software work,<br>and collaborations.</p><a class="contact-action" href="{{ "contact/" | relURL }}">Contact me <span aria-hidden="true">↗</span></a></div>
-  <a class="contact-fallback" href="https://www.linkedin.com/in/russelljahn/">Or connect on LinkedIn ↗</a>
+  <a class="contact-fallback" href="https://www.linkedin.com/in/russelljahn/">{{ partial "portfolio/social-icon.html" "linkedin" }}Or connect on LinkedIn ↗</a>
 </section>
 {{ end }}

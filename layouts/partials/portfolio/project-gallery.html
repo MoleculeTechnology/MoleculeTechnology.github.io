@@ -13,12 +13,13 @@
     <div class="work-gallery" role="group" aria-label="{{ $title }} gallery" data-project-gallery="{{ $projectRef }}:{{ $name }}">
       {{ range $index, $image := $images }}
         {{ $path := $image.source }}
+        {{ $deliverySource := $image.deliverySource | default $path }}
         {{ if and (ge $index $skip) (ne $path $exclude) }}
           {{ $width := $image.class }}
-          {{ $alt := printf "%s: %s (%d of %d)." $title $description (add $index 1) (len $images) }}
+          {{ $alt := $image.caption | default $image.alt | default (printf "%s: %s (%d of %d)." $title $description (add $index 1) (len $images)) }}
           <figure class="gallery-frame {{ $width }}" data-project-image="{{ $path }}">
             {{ if eq (path.Ext $path) ".gif" }}
-              {{ partial "portfolio/image.html" (dict "source" $path "alt" $alt) }}
+              {{ partial "portfolio/image.html" (dict "source" $deliverySource "animated" ($image.animated | default false) "alt" $alt) }}
             {{ else }}
               {{ $sizes := "(max-width: 760px) calc(100vw - 44px), (max-width: 800px) calc(110vw - 80px), (max-width: 1600px) calc(720px + 10vw), 880px" }}
               {{ if eq $width "grid-w66" }}
@@ -28,7 +29,7 @@
               {{ else if eq $width "grid-w55" }}
                 {{ $sizes = "(max-width: 760px) calc((100vw - 52px) / 2), (max-width: 800px) calc((110vw - 92px) / 2), (max-width: 1600px) calc((708px + 10vw) / 2), 434px" }}
               {{ end }}
-              {{ partial "portfolio/image.html" (dict "source" $path "alt" $alt "sizes" $sizes) }}
+              {{ partial "portfolio/image.html" (dict "source" $deliverySource "animated" ($image.animated | default false) "alt" $alt "sizes" $sizes) }}
             {{ end }}
           </figure>
         {{ end }}

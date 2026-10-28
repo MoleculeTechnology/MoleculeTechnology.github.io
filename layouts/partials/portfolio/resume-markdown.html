@@ -2,6 +2,7 @@
 {{- $parts := slice -}}
 {{- $page := .page -}}
 {{- $resume := .resume -}}
+{{- $galleryTitle := $resume.galleryTitle | default $page.Title -}}
 {{- with $resume.title -}}
   {{- $prefix := strings.Repeat ($resume.level | default 3) "#" -}}
   {{- $parts = $parts | append (printf "%s %s %s" $prefix . $prefix) -}}
@@ -24,9 +25,9 @@
     {{- else if eq $image.class "grid-w55" -}}
       {{- $sizes = "(max-width: 760px) calc(54vw - 23.76px), (max-width: 1050px) calc(54vw - 43.2px), (max-width: 1178px) calc(54vw - 69.12px), 567px" -}}
     {{- end -}}
-    {{- $alt := $image.alt | default (printf "%s project documentation (%d of %d)." $page.Title (add $index 1) (len $images)) -}}
+    {{- $alt := $image.alt | default (printf "%s project documentation (%d of %d)." $galleryTitle (add $index 1) (len $images)) -}}
     {{- if eq $image.source $page.Params.hero -}}{{- $alt = $image.alt | default $page.Params.heroAlt -}}{{- end -}}
-    {{- $tags = $tags | append (partial "portfolio/image.html" (dict "source" $image.source "originalSource" $image.source "alt" $alt "class" $image.class "sizes" $sizes)) -}}
+    {{- $tags = $tags | append (partial "portfolio/image.html" (dict "source" ($image.deliverySource | default $image.source) "animated" ($image.animated | default false) "originalSource" $image.source "alt" $alt "class" $image.class "sizes" $sizes)) -}}
   {{- end -}}
   {{- $gallery := printf "{{< resume-gallery >}}\n%s\n{{< /resume-gallery >}}" (delimit $tags "\n") -}}
   {{- if $resume.breakBeforeGallery -}}{{- $gallery = printf "<br/>\n%s" $gallery -}}{{- end -}}

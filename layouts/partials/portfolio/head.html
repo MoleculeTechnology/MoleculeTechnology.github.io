@@ -30,6 +30,8 @@
   {{ if eq .Section "contact" }}
     {{ $contactCSS := resources.Get "css/contact.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $contactCSS.RelPermalink }}" integrity="{{ $contactCSS.Data.Integrity }}">
+    {{ $contactForm := resources.Get "js/contact-form.js" | minify | fingerprint }}
+    <script defer src="{{ $contactForm.RelPermalink }}" integrity="{{ $contactForm.Data.Integrity }}"></script>
   {{ end }}
   {{ template "_internal/opengraph.html" . }}
   {{ if not (or .IsHome (eq .Section "work") (eq .Section "contact") (eq .Section "about")) }}{{ partial "vendor.html" . }}{{ end }}

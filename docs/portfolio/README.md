@@ -12,7 +12,7 @@ Use Molecule as the name of the creative practice, with Russell's name and perso
 Keep `ilovemolecule.com`.
 
 These notes contain the brief, research, copy decisions, visual direction, and implementation record.
-The website rework is being tested locally on `feature/portfolio-rework-v1`. Deployment repair remains deferred.
+The website rework is being tested locally on `feature/portfolio-rework-v1`. The latest [release PR preparation](55-release-pr-and-deployment.md) includes the deployment repair and fresh validation.
 
 ## Start here
 
@@ -74,6 +74,18 @@ The [mobile and performance pass](40-mobile-performance-and-release-checks.md) a
 41. [Original portfolio v1.0.0](41-original-portfolio-v1.md) — the pre-plan archive tag, verified commit, release and branch guidance, source comparisons, and separate preview instructions.
 42. [Lowercase labels, selected media, and film layouts](42-lowercase-media-and-film-layouts.md) — applied brace casing and smaller project headings, Enflux's chosen sequence, the Eonar still, a Sunken City media follow-up, and full-width versus grid prototypes.
 43. [Shared brace labels](43-shared-brace-labels.md) — reusable template and Markdown labels, normal-weight curly braces, inherited text weight, and all sixteen live occurrences.
+44. [Contact list and social icon options](44-contact-list-and-social-icon-options.md) — simplified Contact copy, numbered prompts without dividers, the Contact arrow explanation, selected social SVGs, and the commit approval requirement.
+45. [Social icon color concepts](45-social-icon-color-concepts.md) — white and colored SVG treatments across all 12 pages, full-page and phone previews, and regeneration instructions.
+46. [Optimized colored social icons](46-optimized-color-social-icons.md) — applied color selection, smaller SVGs, measured file sizes, rasterization comparisons, and regeneration steps.
+47. [Home navigation and identity pitches](47-home-navigation-and-identity-pitches.md) — logo and Home-link research, the applied name and Molecule introduction, responsive checks, and alternate identity pitches.
+48. [Home introduction and selected experience](48-home-intro-and-selected-experience.md) — uppercase mint MOLECULE, the revised intro lines, and separate Blizzard rows for Unannounced title and Hearthstone.
+49. [Selected Experience role concept](49-selected-experience-role-concept.md) — mint company labels, larger white project topics, regular white positions, muted descriptions, shared casing, and desktop and phone checks, with earlier treatments preserved.
+50. [Ad-free Contact form options](50-ad-free-contact-form-options.md) — the earlier email-link behavior, Web3Forms and Formspree comparisons, HubSpot branding removal, and the original form preview.
+51. [Web3Forms Contact integration](51-web3forms-contact-integration.md) — the connected native form, submission and error handling, copyable email fallback, and confirmed test-email receipt.
+52. [Complete project galleries and public pages](52-complete-project-galleries-and-pages.md) — all About project pictures on the case studies and Home, public Quantico, Ça Décolle!, and ShopperMX pages, shared details, and gallery coverage checks.
+53. [Glass Castle quality and loop delivery](53-glass-castle-quality-and-loop-delivery.md) — requested image order, original-resolution audit, smaller pixel-identical looping WebPs, source preservation, and verification.
+54. [X-Men image quality review](54-xmen-image-quality-review.md) — source-focus limits, verified full-size desktop and mobile delivery, and clearer archive photographs for comparison before changing the selected lead.
+55. [Release PR and deployment preparation](55-release-pr-and-deployment.md) — current release scope, deployment workflow repair, local checks, fresh Lighthouse measurements, and the remaining publication checks.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.
@@ -114,7 +126,7 @@ Repository access still determines who can read notes that are committed and pus
 
 ## Maintenance
 
-Deployment repair is deferred until the reworked website has a good enough first version. See [Deferred deployment repair](15-deferred-deployment.md) for the verified failure, release checks, and explanation of the separate generated-preview commit.
+See [the release preparation](55-release-pr-and-deployment.md) for the current workflow repair and publication checks. [Deferred deployment repair](15-deferred-deployment.md) preserves the original failure and explanation of the separate generated-preview commit.
 
 Update the evidence note when a CV or new project material becomes available.
 Record new decisions in [Questions and decisions](10-questions-and-decisions.md), then update affected drafts.

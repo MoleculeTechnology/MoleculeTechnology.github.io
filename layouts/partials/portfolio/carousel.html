@@ -1,12 +1,12 @@
 {{- $page := .page -}}
-{{- $slides := $page.Params.carousel -}}
+{{- $slides := .slides -}}
 {{- if lt (len $slides) 2 -}}{{- errorf "Carousel needs at least two images on %s" $page.File.Path -}}{{- end -}}
 {{- $id := printf "carousel-%s" (path.Base $page.RelPermalink) -}}
 {{- $sizes := .sizes | default "(max-width: 760px) calc(100vw - 44px), (max-width: 1050px) calc(100vw - 80px), (max-width: 1408px) calc(100vw - 128px), 1280px" -}}
 {{- $first := index $slides 0 -}}
 <figure class="project-carousel{{ if .hero }} case-hero{{ end }}" role="group" aria-roledescription="carousel" aria-label="{{ $page.Title }} images" data-project-carousel="{{ $page.RelPermalink }}">
   <div class="carousel-stage" id="{{ $id }}-stage" data-carousel-stage>
-    {{ partial "portfolio/image.html" (dict "source" ($first.source | default $page.Params.hero) "alt" ($first.alt | default $page.Params.heroAlt) "animated" $first.animated "loading" "lazy" "sizes" $sizes) }}
+    {{ partial "portfolio/image.html" (dict "source" $first.deliverySource "originalSource" $first.source "alt" $first.alt "animated" $first.animated "loading" "lazy" "sizes" $sizes) }}
   </div>
   <div class="carousel-thumbnails" role="group" aria-label="Choose an image" data-carousel-controls hidden>
     {{ range $index, $slide := $slides }}
@@ -14,7 +14,8 @@
       {{ $thumbnail := resources.Get $source }}
       {{ if not $thumbnail }}{{ $thumbnail = resources.Get (printf "legacy-work/%s" $source) }}{{ end }}
       {{ if not $thumbnail }}{{ errorf "Carousel thumbnail not found: %s" $source }}{{ end }}
-      {{ if and $slide.animated (not $slide.thumbnail) }}{{ errorf "Animated carousel image needs a still thumbnail: %s" $source }}{{ end }}
+      {{/* Hugo flattens only the GIF thumbnail. The selected slide keeps its original animation. */}}
+      {{ if and $slide.animated (not $slide.thumbnail) (ne (lower (path.Ext $source)) ".gif") }}{{ errorf "Animated carousel image needs a still thumbnail: %s" $source }}{{ end }}
       {{ if or (gt $thumbnail.Width 160) (gt $thumbnail.Height 100) }}{{ $thumbnail = $thumbnail.Fit "160x100 webp q85 lanczos" }}{{ end }}
       <button type="button" aria-label="Show {{ $slide.label }}" aria-pressed="{{ eq $index 0 }}" aria-controls="{{ $id }}-stage" tabindex="{{ cond (eq $index 0) 0 -1 }}" data-carousel-choice="{{ $index }}">
         <img src="{{ $thumbnail.RelPermalink }}" width="{{ $thumbnail.Width }}" height="{{ $thumbnail.Height }}" alt="" loading="lazy" decoding="async">
@@ -24,8 +25,8 @@
   <p class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-carousel-status></p>
   {{ range $slides }}
     {{/* Template contents stay inert until selected, including full animations. */}}
-    <template data-carousel-slide data-caption="{{ .caption | default $page.Params.heroCaption }}">
-      {{ partial "portfolio/image.html" (dict "source" (.source | default $page.Params.hero) "alt" (.alt | default $page.Params.heroAlt) "animated" .animated "loading" "eager" "sizes" $sizes) }}
+    <template data-carousel-slide data-caption="{{ .caption }}">
+      {{ partial "portfolio/image.html" (dict "source" .deliverySource "originalSource" .source "alt" .alt "animated" .animated "loading" "eager" "sizes" $sizes) }}
     </template>
   {{ end }}
   <figcaption class="carousel-footer">

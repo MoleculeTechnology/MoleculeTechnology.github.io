@@ -3,8 +3,10 @@
 {{ range $projects }}
 <section class="collection-project" id="{{ path.Base .RelPermalink }}" data-collection-project="{{ .RelPermalink }}">
 {{ if $.home }}<h4 class="collection-project-title{{ if .Params.preserveTitleCase }} title-case{{ end }}"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>{{ else }}<h2 class="collection-project-title{{ if .Params.preserveTitleCase }} title-case{{ end }}">{{ .Title }}</h2>{{ end }}
-{{ if and $.home (ge (len (.Params.carousel | default (slice))) 2) }}
-{{ partial "portfolio/carousel.html" (dict "page" . "hero" true) }}
+{{ $slides := slice }}
+{{ if $.home }}{{ $slides = partial "portfolio/project-slides.html" . }}{{ end }}
+{{ if ge (len $slides) 2 }}
+{{ partial "portfolio/carousel.html" (dict "page" . "slides" $slides "hero" true) }}
 {{ else }}
 {{ partial "portfolio/case-hero.html" (dict "page" . "loading" "lazy") }}
 {{ end }}

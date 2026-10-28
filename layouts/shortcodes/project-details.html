@@ -1,0 +1,8 @@
+{{- $project := .Page -}}
+{{- with .Get "project" -}}{{- $project = site.GetPage . -}}{{- end -}}
+{{- if not $project -}}{{- errorf "Contribution project not found: %s" (.Get "project") -}}{{- end -}}
+{{- with $project.Params.resume.details -}}
+<div class="project-contributions" data-project-details="{{ $project.RelPermalink }}">
+  {{ $project.RenderString (dict "display" "block") . }}
+</div>
+{{- end -}}

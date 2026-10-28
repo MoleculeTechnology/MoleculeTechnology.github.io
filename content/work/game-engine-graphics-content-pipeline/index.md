@@ -1,16 +1,18 @@
 ---
 title: "Graphics + Content Pipeline + Performance"
-description: "Hearthstone: Core systems + multiplatform development. Unannounced title: Lead Engineer for Graphics + content pipeline tools + performance."
+description: "Hearthstone: Core systems + multiplatform development. Unannounced title: Lead Engineer for graphics + content pipeline tools + performance."
 projectSummaries:
   - title: "Hearthstone"
-    detail: "Core systems + multiplatform development"
+    detail: "Core systems + multiplatform development."
   - title: "Unannounced title"
-    detail: "Lead Engineer for Graphics + content pipeline tools + performance"
+    detail: "Lead Engineer for graphics + content pipeline tools + performance."
 projectSections:
   unannounced:
     title: "Unannounced title"
+    experienceRole: "Lead Engineer"
+    experienceSummary: "Graphics + content pipeline tools + performance"
     anchor: "unannounced-game"
-    role: "Lead Engineer for Graphics + content pipeline tools + performance"
+    role: "Lead Engineer for graphics + content pipeline tools + performance"
     overview:
       - title: "Performance tools"
         detail: "Automated art performance benchmarking and client performance monitoring."
@@ -20,6 +22,8 @@ projectSections:
         detail: "Content pipeline tools for art and audio."
   hearthstone:
     title: "Hearthstone"
+    experienceRole: "Senior Engineer"
+    experienceSummary: "Core systems + multiplatform development"
     anchor: "hearthstone"
     overview:
       - title: "Engine + multi-platform expert"
@@ -50,23 +54,37 @@ resume:
     - Supported engineers across other teams to provide guidance + resolve blocking issues.
   gallery: "archive"
   logo: "Blizzard/hearthstone_logo.png"
+carousel:
+  - label: "Eonar's Flourish"
+carouselGalleries: [archive]
+carouselExclude: ["Blizzard/hearthstone_credits_russelljahn2.webp"]
 galleries:
   archive:
     -
       source: "Blizzard/hearthstone_gameplay1.jpg"
+      label: "Festival of Legends"
+      caption: "Hearthstone / Festival of Legends gameplay with Infinitize the Maxitude selected."
       alt: "Hearthstone gameplay on the Festival of Legends board, with Infinitize the Maxitude selected."
       class: "grid-w99"
     -
       source: "Blizzard/hearthstone_credits_russelljahn2.webp"
+      label: "Credits card"
+      caption: "Russell Jahn / Hearthstone credits."
       class: "grid-w55"
     -
       source: "Blizzard/hearthstone_gameplay3.gif"
+      label: "Gameplay loop"
+      caption: "Hearthstone / gameplay excerpt."
       class: "grid-w33"
     -
       source: "Blizzard/hearthstone_vfx1.webp"
+      label: "Visual effects"
+      caption: "Hearthstone / visual effects."
       class: "grid-w33"
     -
       source: "Blizzard/hearthstone_card_zephrys1.gif"
+      label: "Zephrys loop"
+      caption: "Hearthstone / Zephrys the Great card animation."
       class: "grid-w33"
 aboutNow: "In my current role at Blizzard on an unannounced game, I work heavily on 3D graphics techniques, rendering, and content pipeline tools for art + audio."
 ---
@@ -78,12 +96,10 @@ aboutNow: "In my current role at Blizzard on an unannounced game, I work heavily
 
 {{< work-image source="Blizzard/hearthstone_credits_russelljahn2.webp" alt="Russell Jahn's Hearthstone credits card." caption="Russell Jahn / Hearthstone credits." >}}
 
-Core systems engineering supported **nine major Hearthstone expansions between March 2021 and August 2023**.
-
-The asset pipeline packs + ships the game's content worldwide across desktop and mobile.
+{{< project-details >}}
 
 {{< project-hero >}}
 
-[More Hearthstone images + earlier engineering work →](/about/)
+{{< project-gallery exclude="Blizzard/hearthstone_credits_russelljahn2.webp" >}}
 
 {{< /project-section >}}
