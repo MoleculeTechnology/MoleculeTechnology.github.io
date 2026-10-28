@@ -1,0 +1,20 @@
+[
+  {
+    "source": "assets/portfolio/molecule/pixelperf-sword-demo.webp",
+    "poster": "assets/portfolio/molecule/pixelperf-sword-demo-poster.webp",
+    "width": 540,
+    "height": 960,
+    "bytes": 77438,
+    "sourceSha256": "1a0c752bdfc0c71d356ffe994cb32e54f38c0c6218ecf7d41773a99f3694a393",
+    "posterSha256": "6621bf31377a429c220e63f49f09740bbf6fcd22a65a00476c3dc5b45f0d8e72"
+  },
+  {
+    "source": "assets/portfolio/molecule/patch-led-animation.webp",
+    "poster": "assets/portfolio/molecule/patch-led-animation-poster.webp",
+    "width": 600,
+    "height": 338,
+    "bytes": 15036,
+    "sourceSha256": "1bf76459ee18ce1a796bc05e3b754aa3f69ee499c9fb65aa749e1b82c224be0f",
+    "posterSha256": "55a555323d66c12ed8bc2e85602c4486f15d008c5131ab924f3552c0cbaaaca9"
+  }
+]

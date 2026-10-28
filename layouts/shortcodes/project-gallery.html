@@ -1,0 +1,8 @@
+{{- $project := .Page -}}
+{{- with .Get "project" -}}
+  {{- $project = site.GetPage . -}}
+  {{- if not $project -}}{{- errorf "Gallery project not found: %s" . -}}{{- end -}}
+{{- end -}}
+{{- $html := partial "portfolio/project-gallery.html" (dict "page" $project "gallery" (.Get "gallery" | default "archive") "title" (.Get "title") "description" (.Get "description") "skip" (.Get "skip" | default 0) "exclude" (.Get "exclude" | default "")) -}}
+{{/* A project-section renders Markdown again. Keep gallery tags out of indented code blocks. */}}
+{{- replaceRE `(?m)^[\t ]+` "" (trim $html "\r\n\t ") | safeHTML -}}

@@ -1,0 +1,19 @@
+{{ $project := index .Page.Params.projectSections (.Get "name") }}
+{{ if not $project }}
+  {{ errorf "Project section not found: %s in %s" (.Get "name") .Page.File.Path }}
+{{ else }}
+  <section class="case-project" aria-labelledby="{{ $project.anchor }}">
+    <h2 id="{{ $project.anchor }}">{{ $project.title }}</h2>
+    {{ with $project.role }}<p class="case-project-role">{{ . }}</p>{{ end }}
+    <dl class="contribution-grid project-overview" aria-label="{{ $project.title }} engineering overview">
+      {{ range $project.overview }}
+        <div><dt>{{ .title }}</dt><dd>{{ .detail }}</dd></div>
+      {{ end }}
+    </dl>
+    {{ with trim .Inner " \r\n\t" }}
+      <div class="case-project-details">
+        {{ $.Page.RenderString (dict "display" "block") . }}
+      </div>
+    {{ end }}
+  </section>
+{{ end }}

@@ -1,0 +1,14 @@
+{{ $video := resources.Get (.Get "source") }}
+{{ $poster := resources.Get (.Get "poster") }}
+{{ if and $video $poster }}
+  {{ $preview := $poster.Resize (printf "%dx webp q90 lanczos" (int (math.Min 1920 $poster.Width))) }}
+  <figure class="work-figure{{ with .Get "class" }} {{ . }}{{ end }}">
+    <video controls playsinline loading="lazy" preload="none" width="{{ $poster.Width }}" height="{{ $poster.Height }}" data-source-width="{{ $poster.Width }}" style="--video-width: {{ printf "%dpx" $poster.Width | safeCSS }}" poster="{{ $preview.RelPermalink }}" aria-label="{{ .Get "label" }}">
+      <source src="{{ $video.RelPermalink }}" type="{{ $video.MediaType.Type }}">
+      <a href="{{ $video.RelPermalink }}">{{ .Get "label" }}</a>
+    </video>
+    <figcaption>{{ .Get "caption" }}</figcaption>
+  </figure>
+{{ else }}
+  {{ errorf "Portfolio video or poster not found: %s / %s" (.Get "source") (.Get "poster") }}
+{{ end }}

@@ -1,0 +1,5 @@
+<dl class="case-facts">
+<div><dt>Contribution</dt><dd><strong>{{ .Site.Author.name | default "Russell Jahn" }}</strong><br>{{ .Params.contribution }}</dd></div>
+<div><dt>Context</dt><dd>{{ .Params.projectContext }}</dd></div>
+{{ with .Params.collaborators }}<div class="case-collaborators"><dt>Collaborators</dt><dd>{{ . }}</dd></div>{{ end }}
+</dl>

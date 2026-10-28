@@ -1,0 +1,7 @@
+{{- $icon := resources.Get (printf "icons/social/%s.svg" .) -}}
+{{- with $icon -}}
+  {{- $svg := replace .Content " xmlns=\"http://www.w3.org/2000/svg\"" "" -}}
+  <span class="social-icon" aria-hidden="true">{{ replace $svg "<svg " "<svg focusable=\"false\" " | safeHTML }}</span>
+{{- else -}}
+  {{- errorf "Missing social icon: %s" . -}}
+{{- end -}}

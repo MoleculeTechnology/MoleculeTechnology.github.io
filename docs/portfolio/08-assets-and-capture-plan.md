@@ -6,6 +6,8 @@ tags: [portfolio, assets, media]
 
 # Assets and capture plan
 
+Current iteration: Russell specified using the photos already curated on the About Me page. Follow [the curated About media decision](21-curated-about-media.md) for the active selection. New archive-photo selection and capture work below remain future options.
+
 ## Source locations
 
 ```text

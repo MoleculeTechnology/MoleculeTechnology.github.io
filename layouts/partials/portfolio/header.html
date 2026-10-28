@@ -5,7 +5,6 @@
   <nav aria-label="Main navigation">
     <a href="{{ "work/" | relURL }}"{{ if eq .Section "work" }} aria-current="page"{{ end }}>Work</a>
     <a href="{{ "about/" | relURL }}"{{ if eq .Section "about" }} aria-current="page"{{ end }}>About</a>
-    <a href="{{ "devblog/" | relURL }}"{{ if eq .Section "devblog" }} aria-current="page"{{ end }}>Notes</a>
-    <a class="nav-contact" href="{{ "/#contact" | relURL }}">Let's talk <span aria-hidden="true">↗</span></a>
+    <a class="nav-contact" href="{{ "contact/" | relURL }}"{{ if eq .Section "contact" }} aria-current="page"{{ end }}>Contact <span aria-hidden="true">↗</span></a>
   </nav>
 </header>

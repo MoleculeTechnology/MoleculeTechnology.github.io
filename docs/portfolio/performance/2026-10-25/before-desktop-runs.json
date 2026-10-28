@@ -1,0 +1,269 @@
+{
+  "created": "2026-10-26T03:20:06.226Z",
+  "label": "before-desktop",
+  "commit": "bfc54e83ebb8b0db0f3515b6686328ba1ef6f307",
+  "dirty": true,
+  "node": "v24.19.0",
+  "runs": 3,
+  "origin": "http://127.0.0.1:4173",
+  "routes": [
+    "/"
+  ],
+  "forms": [
+    "desktop"
+  ],
+  "note": "Local production build, gzip text, fresh Lighthouse browser cache, standard simulated throttling. Public-host latency and real-device behavior require separate checks.",
+  "measurements": [
+    {
+      "route": "/",
+      "form": "desktop",
+      "run": 1,
+      "report": "home.desktop.1.html",
+      "lighthouse": "13.5.0",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "fcpMs": 446.5259,
+      "lcpMs": 766.5259,
+      "speedIndexMs": 446.5259,
+      "tbtMs": 0,
+      "cls": 0.05125307267421818,
+      "observedLoadMs": 90,
+      "transferBytes": 742264,
+      "requests": 18,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.98,
+          "value": "0.8 s"
+        },
+        {
+          "id": "cumulative-layout-shift",
+          "title": "Cumulative Layout Shift",
+          "score": 0.99,
+          "value": "0.051"
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "value": "Est savings of 21 KiB"
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "value": "Est savings of 657 KiB"
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "value": "Est savings of 79 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "value": "Est savings of 260 ms"
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "form": "desktop",
+      "run": 2,
+      "report": "home.desktop.2.html",
+      "lighthouse": "13.5.0",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "fcpMs": 445.57894999999996,
+      "lcpMs": 605.57895,
+      "speedIndexMs": 445.57894999999996,
+      "tbtMs": 0,
+      "cls": 0.0003145283969983731,
+      "observedLoadMs": 85,
+      "transferBytes": 626473,
+      "requests": 17,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "value": "0.6 s"
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "value": "Est savings of 21 KiB"
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "value": "Est savings of 553 KiB"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "value": "Est savings of 67 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "value": "Est savings of 220 ms"
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "form": "desktop",
+      "run": 3,
+      "report": "home.desktop.3.html",
+      "lighthouse": "13.5.0",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "fcpMs": 484.73325,
+      "lcpMs": 724.73325,
+      "speedIndexMs": 484.73325,
+      "tbtMs": 0,
+      "cls": 0.05125307267421818,
+      "observedLoadMs": 77,
+      "transferBytes": 742264,
+      "requests": 18,
+      "warnings": [],
+      "failedAudits": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "value": "0.7 s"
+        },
+        {
+          "id": "cumulative-layout-shift",
+          "title": "Cumulative Layout Shift",
+          "score": 0.99,
+          "value": "0.051"
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "value": "Est savings of 21 KiB"
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "value": "Est savings of 657 KiB"
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "value": "Est savings of 79 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "value": "Est savings of 300 ms"
+        }
+      ]
+    }
+  ]
+}

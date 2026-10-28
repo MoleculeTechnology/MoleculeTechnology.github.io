@@ -1,0 +1,117 @@
+{
+  "created": "2026-10-26T03:39:51.812Z",
+  "label": "after-mobile",
+  "commit": "bfc54e83ebb8b0db0f3515b6686328ba1ef6f307",
+  "dirty": true,
+  "node": "v24.19.0",
+  "runs": 3,
+  "origin": "http://127.0.0.1:4173",
+  "routes": [
+    "/",
+    "/work/",
+    "/about/",
+    "/work/paper-ghost/"
+  ],
+  "forms": [
+    "mobile"
+  ],
+  "note": "Local production build, gzip text, fresh Lighthouse browser cache, standard simulated throttling. Public-host latency and real-device behavior require separate checks.",
+  "summaries": [
+    {
+      "route": "/",
+      "form": "mobile",
+      "runs": 3,
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "fcpMs": 1207.0192499999998,
+      "lcpMs": 2104.6794999999997,
+      "speedIndexMs": 1207.0192499999998,
+      "tbtMs": 0,
+      "cls": 0.00261817271254951,
+      "observedLoadMs": 69,
+      "transferBytes": 403222,
+      "requests": 23,
+      "lcpRangeMs": [
+        1881.2168000000001,
+        2180.9354
+      ],
+      "representativeReport": "home.mobile.1.html"
+    },
+    {
+      "route": "/work/",
+      "form": "mobile",
+      "runs": 3,
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "fcpMs": 1055.9682,
+      "lcpMs": 2628.9788,
+      "speedIndexMs": 1055.9682,
+      "tbtMs": 0,
+      "cls": 0,
+      "observedLoadMs": 42,
+      "transferBytes": 478412,
+      "requests": 14,
+      "lcpRangeMs": [
+        2403.8616,
+        2629.4249
+      ],
+      "representativeReport": "work.mobile.1.html"
+    },
+    {
+      "route": "/about/",
+      "form": "mobile",
+      "runs": 3,
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "fcpMs": 906.1922,
+      "lcpMs": 2405.4343,
+      "speedIndexMs": 906.1922,
+      "tbtMs": 0,
+      "cls": 0,
+      "observedLoadMs": 49,
+      "transferBytes": 539675,
+      "requests": 18,
+      "lcpRangeMs": [
+        2110.4248000000002,
+        2481.1922000000004
+      ],
+      "representativeReport": "about.mobile.3.html"
+    },
+    {
+      "route": "/work/paper-ghost/",
+      "form": "mobile",
+      "runs": 3,
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "fcpMs": 903.8590999999999,
+      "lcpMs": 2328.8590999999997,
+      "speedIndexMs": 903.8590999999999,
+      "tbtMs": 0,
+      "cls": 0,
+      "observedLoadMs": 21,
+      "transferBytes": 429588,
+      "requests": 12,
+      "lcpRangeMs": [
+        2253.7151000000003,
+        2404.4250999999995
+      ],
+      "representativeReport": "work-paper-ghost.mobile.3.html"
+    }
+  ]
+}

@@ -10,13 +10,13 @@ title = "Molecule — Russell Jahn"
   dateFormat = "2 January 2006"
   logo = "img/icons/icon_patch3_header_256_v3.png"
   # secondaryLogo = "PATH"
-  description = "Interactive light, motion, and real-time graphics by Russell Jahn, software engineer and artist."
+  description = "Russell Jahn, software engineer + artist. Film-set visuals, motion capture applications, game engines, and embedded hardware."
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [author]
   name = "Russell Jahn"
   image = "img/headshots/headshot_russelljahn_2021-11-08_095745.png"
-  headline = "Software engineer & artist. Interactive light, motion, and real-time graphics."
+  headline = "Software engineer + artist. Software + hardware + art."
   bio = "Software engineer & artist. Film-set visuals, motion capture tools, and game engine technology."
   links = [
     { github = "https://github.com/MoleculeTechnology" },

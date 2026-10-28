@@ -1,0 +1,12 @@
+{{ with .page.Params.projectSummaries }}
+  <dl class="project-summaries" aria-label="Project contributions">
+    {{ range . }}
+      <div>
+        <dt>{{ .title }}</dt>
+        <dd>{{ .detail }}</dd>
+      </div>
+    {{ end }}
+  </dl>
+{{ else }}
+  <p{{ with .class }} class="{{ . }}"{{ end }}>{{ with .page.Params.summaryLines }}{{ range $index, $line := . }}{{ if $index }}<br>{{ end }}{{ $line }}{{ end }}{{ else }}{{ .page.Description }}{{ end }}</p>
+{{ end }}

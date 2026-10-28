@@ -1,11 +1,15 @@
 ---
 title: Copy drafts
 date: 2026-10-24
-status: draft
+status: superseded
 tags: [portfolio, writing]
 ---
 
 # Copy drafts
+
+Russell rejected this pass's generic promotional tone on 2026-10-24 and prefers the original About page's language and pictures.
+Use the [copy and media revision plan](17-copy-and-media-revision-plan.md) and [artist/studio references](16-artist-and-studio-references.md) for the next edit.
+The text below is retained as an earlier draft, not the recommended voice or approved personal artistic statement.
 
 These are proposed words for review, not published copy.
 Check them against the [evidence note](02-evidence-and-cv-review.md), supplied historical CV, and confirmed newer role details.

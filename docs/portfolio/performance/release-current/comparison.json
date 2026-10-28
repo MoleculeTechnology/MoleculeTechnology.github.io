@@ -1,0 +1,209 @@
+{
+  "note": "Comparable local production builds. Same Node, Chrome, Lighthouse configuration, three cold-cache mobile runs per route. Public hosting and physical devices are not measured.",
+  "comparisons": [
+    {
+      "route": "/",
+      "before": {
+        "route": "/",
+        "form": "mobile",
+        "runs": 3,
+        "scores": {
+          "performance": 87,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "fcpMs": 2105.0094,
+        "lcpMs": 3830.0094000000004,
+        "speedIndexMs": 2105.0094,
+        "tbtMs": 0,
+        "cls": 0,
+        "observedLoadMs": 70,
+        "transferBytes": 675045,
+        "requests": 22,
+        "lcpRangeMs": [
+          3005.01795,
+          3833.5586999999996
+        ],
+        "representativeReport": "home.mobile.2.html"
+      },
+      "current": {
+        "route": "/",
+        "form": "mobile",
+        "runs": 3,
+        "scores": {
+          "performance": 99,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "fcpMs": 1057.86,
+        "lcpMs": 2182.8599999999997,
+        "speedIndexMs": 1057.86,
+        "tbtMs": 0,
+        "cls": 0.0074165088570092574,
+        "observedLoadMs": 63,
+        "transferBytes": 405623,
+        "requests": 29,
+        "lcpRangeMs": [
+          2181.3809,
+          2555.5325000000003
+        ],
+        "representativeReport": "home.mobile.3.html"
+      }
+    },
+    {
+      "route": "/work/",
+      "before": {
+        "route": "/work/",
+        "form": "mobile",
+        "runs": 3,
+        "scores": {
+          "performance": 84,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "fcpMs": 2103.56325,
+        "lcpMs": 4278.56325,
+        "speedIndexMs": 2103.56325,
+        "tbtMs": 0,
+        "cls": 0,
+        "observedLoadMs": 44,
+        "transferBytes": 794776,
+        "requests": 13,
+        "lcpRangeMs": [
+          3979.8801,
+          4279.4012999999995
+        ],
+        "representativeReport": "work.mobile.1.html"
+      },
+      "current": {
+        "route": "/work/",
+        "form": "mobile",
+        "runs": 3,
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "fcpMs": 1056.4149,
+        "lcpMs": 2554.9871,
+        "speedIndexMs": 1056.4149,
+        "tbtMs": 0,
+        "cls": 0,
+        "observedLoadMs": 47,
+        "transferBytes": 534462,
+        "requests": 15,
+        "lcpRangeMs": [
+          2553.4561999999996,
+          2629.2766
+        ],
+        "representativeReport": "work.mobile.1.html"
+      }
+    },
+    {
+      "route": "/about/",
+      "before": {
+        "route": "/about/",
+        "form": "mobile",
+        "runs": 3,
+        "scores": {
+          "performance": 75,
+          "accessibility": 94,
+          "best-practices": 96,
+          "seo": 92
+        },
+        "fcpMs": 1057.71335,
+        "lcpMs": 51533.13397500013,
+        "speedIndexMs": 1057.71335,
+        "tbtMs": 0,
+        "cls": 0.04496834489246718,
+        "observedLoadMs": 428,
+        "transferBytes": 182566030,
+        "requests": 76,
+        "lcpRangeMs": [
+          48007.2271,
+          54543.194349999845
+        ],
+        "representativeReport": "about.mobile.1.html"
+      },
+      "current": {
+        "route": "/about/",
+        "form": "mobile",
+        "runs": 3,
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "fcpMs": 905.4683,
+        "lcpMs": 2555.4683,
+        "speedIndexMs": 905.4683,
+        "tbtMs": 0,
+        "cls": 0,
+        "observedLoadMs": 44,
+        "transferBytes": 540973,
+        "requests": 18,
+        "lcpRangeMs": [
+          2553.9557,
+          2556.2373
+        ],
+        "representativeReport": "about.mobile.1.html"
+      }
+    },
+    {
+      "route": "/work/paper-ghost/",
+      "before": {
+        "route": "/work/paper-ghost/",
+        "form": "mobile",
+        "runs": 3,
+        "scores": {
+          "performance": 87,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "fcpMs": 1804.5430500000002,
+        "lcpMs": 3903.73035,
+        "speedIndexMs": 1804.5430500000002,
+        "tbtMs": 0,
+        "cls": 0.002846056030216891,
+        "observedLoadMs": 13,
+        "transferBytes": 711353,
+        "requests": 11,
+        "lcpRangeMs": [
+          3755.11665,
+          3904.54305
+        ],
+        "representativeReport": "work-paper-ghost.mobile.1.html"
+      },
+      "current": {
+        "route": "/work/paper-ghost/",
+        "form": "mobile",
+        "runs": 3,
+        "scores": {
+          "performance": 99,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "fcpMs": 903.452,
+        "lcpMs": 2254.0373,
+        "speedIndexMs": 903.452,
+        "tbtMs": 0,
+        "cls": 0,
+        "observedLoadMs": 22,
+        "transferBytes": 407585,
+        "requests": 12,
+        "lcpRangeMs": [
+          2253.4519999999998,
+          2403.2570000000005
+        ],
+        "representativeReport": "work-paper-ghost.mobile.1.html"
+      }
+    }
+  ]
+}

@@ -15,3 +15,5 @@ hugo.linux
 # Local preview tools and output
 /.tools/
 /.preview/
+/tests/__pycache__/
+/node_modules/

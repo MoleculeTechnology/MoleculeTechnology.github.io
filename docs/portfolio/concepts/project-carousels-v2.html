@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Molecule / Project carousel comparison</title>
+<style>
+@font-face{font-family:Roboto Condensed;src:url(media/RobotoCondensed-Regular.ttf);font-weight:400}
+@font-face{font-family:Roboto Condensed;src:url(media/RobotoCondensed-Bold.ttf);font-weight:700 900}
+:root{color-scheme:dark;--black:#050707;--ghost:#f8f8ff;--mint:#84f9eb;--muted:#b7c4c1;--rule:#334541}
+*{box-sizing:border-box}body{margin:0;background:var(--black);color:var(--ghost);font:18px/1.5 Roboto Condensed,sans-serif}main{max-width:1060px;padding:40px 28px 80px;margin:auto}h1,h2,h3{font-weight:900;line-height:1.1;margin:0}h1{font-size:38px;color:var(--mint)}h2{font-size:29px}h3{font-size:clamp(25px,3.5vw,38px);text-transform:uppercase}.title-case{text-transform:none}p{color:var(--muted);margin:12px 0}.eyebrow{font-size:12px;letter-spacing:.1em;text-transform:uppercase}a{color:var(--mint);text-underline-offset:4px}button,select{font:inherit;color:var(--ghost);background:var(--black);border:1px solid var(--rule)}button{cursor:pointer;min-width:44px;min-height:44px}button:hover{color:var(--mint);border-color:var(--mint)}button:focus-visible,select:focus-visible{outline:2px solid var(--mint);outline-offset:4px}.picker{display:flex;align-items:center;gap:14px;margin:28px 0 36px;padding:20px 0;border-block:1px solid var(--rule)}.picker label{font-size:14px}.picker select{padding:10px 14px;min-width:0;max-width:100%;flex:1}.concept{padding:36px 0 44px;border-top:1px solid var(--rule)}.concept-intro{display:flex;justify-content:space-between;gap:24px;align-items:baseline;margin-bottom:24px}.concept-intro>p{font-size:15px;max-width:35ch}.sample{max-width:720px;margin:auto}.sample>header{margin-bottom:20px}.sample>header .eyebrow{margin:0 0 9px}.stage{position:relative;aspect-ratio:16/10;background:#0d1211;display:flex;align-items:center;justify-content:center;overflow:hidden}.stage>img{display:block;width:100%;height:100%;max-width:min(100%,var(--source-width));object-fit:contain}.sample-footer{display:flex;gap:18px;justify-content:space-between;align-items:flex-start;padding-top:12px;min-height:85px}.caption{font-size:14px;margin:0;max-width:42ch}.controls{display:flex;gap:5px;align-items:center;white-space:nowrap}.count{font-size:13px;font-variant-numeric:tabular-nums;min-width:52px;text-align:center}.controls button{border:0;font-size:22px}.overlay .controls{position:absolute;bottom:12px;right:12px;padding:2px 4px;background:#050707e8;border:1px solid var(--rule)}.overlay .controls button{background:transparent}.contact-strip{display:flex;gap:8px;padding-top:12px}.contact-strip button{padding:3px;width:64px;height:48px}.contact-strip img{display:block;width:100%;height:100%;object-fit:contain}.contact-strip button[aria-pressed=true]{border-color:var(--mint)}.contact .sample-footer{min-height:70px}.project-link{display:inline-block;font-size:13px;text-transform:uppercase;letter-spacing:.03em}.notes{max-width:720px;margin:18px auto 0;font-size:14px}.recommendation{font-size:12px;font-weight:400;color:var(--mint);display:block;margin-top:8px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}footer{border-top:1px solid var(--rule);padding-top:24px;font-size:14px}footer p{max-width:75ch}@media(max-width:600px){main{padding:28px 20px 50px}h1{font-size:30px}h2{font-size:25px}.concept-intro{display:block}.concept-intro>p{max-width:none}.picker{align-items:stretch;flex-direction:column;gap:6px}.picker select{width:100%;font-size:16px}.sample-footer{gap:10px}.caption{font-size:13px}.controls{gap:0}.overlay .controls{right:8px;bottom:8px}.count{min-width:45px}.contact-strip{gap:6px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+<script src="project-carousel-data.js"></script>
+</head>
+<body>
+<main>
+<p class="eyebrow">Molecule / Concepts for review</p>
+<h1>{ PROJECT CAROUSELS }</h1>
+<p>Choose a project to compare the same images with three different controls. These are planning versions, separate from the website.</p>
+<div class="picker"><label for="project-picker">Project</label><select id="project-picker"></select></div>
+
+<section class="concept" aria-labelledby="caption-rail">
+<div class="concept-intro"><h2 id="caption-rail">A / Caption rail <span class="recommendation">Recommended starting point</span></h2><p>A caption, count, and arrows sit below the image.</p></div>
+<div class="sample" data-mode="rail" role="group" aria-label="Caption rail concept"></div>
+<p class="notes">The controls stay clear of the image. This can be the common pattern for every project without adding another row of pictures.</p>
+</section>
+
+<section class="concept" aria-labelledby="corner-controls">
+<div class="concept-intro"><h2 id="corner-controls">B / Corner controls</h2><p>A small control panel sits inside the image frame.</p></div>
+<div class="sample overlay" data-mode="overlay" role="group" aria-label="Corner controls concept"></div>
+<p class="notes">Uses less space below the frame. It covers a corner of the photograph, which may be a problem for software interfaces or detailed set photos.</p>
+</section>
+
+<section class="concept" aria-labelledby="contact-strip">
+<div class="concept-intro"><h2 id="contact-strip">C / Small contact strip</h2><p>Still thumbnails show which other views are available.</p></div>
+<div class="sample contact" data-mode="contact" role="group" aria-label="Contact strip concept"></div>
+<p class="notes">Makes the other images easier to discover. The added row is busier when repeated under several films. Thumbnails stay still, including those for looping images.</p>
+</section>
+
+<footer><p>Images change only when selected. Looping images keep looping once selected. Titles, project links, and image frames stay in place. Try Tab, the arrow keys, Home, and End while a control has focus.</p><p>The comparison uses images from the local portfolio preview at port 1313. Film order remains X-Men, The Glass Castle, mother!, then Arrival. No production carousel has been added.</p></footer>
+</main>
+<script>
+const picker=document.querySelector('#project-picker');
+for(const [index,project] of carouselProjects.entries()){
+  const option=document.createElement('option');
+  option.value=String(index);option.textContent=project.title;picker.append(option);
+}
+const demos=[...document.querySelectorAll('[data-mode]')];
+function mount(demo,project){
+  demo.replaceChildren();
+  let active=0;
+  const header=document.createElement('header');
+  const context=document.createElement('p');context.className='eyebrow';context.textContent=project.context;
+  const title=document.createElement('h3');title.textContent=project.title;
+  if(project.title==='mother!')title.className='title-case';
+  header.append(context,title);
+  const stage=document.createElement('div');stage.className='stage';
+  const image=document.createElement('img');image.loading='lazy';image.decoding='async';stage.append(image);
+  const footer=document.createElement('div');footer.className='sample-footer';
+  const caption=document.createElement('p');caption.className='caption';footer.append(caption);
+  const count=document.createElement('span');count.className='count';count.setAttribute('aria-hidden','true');
+  const controls=document.createElement('div');controls.className='controls';
+  const announcement=document.createElement('p');announcement.className='sr-only';announcement.setAttribute('aria-live','polite');announcement.setAttribute('aria-atomic','true');
+  const thumbnails=[];
+  let strip;
+  if(demo.dataset.mode==='contact'){
+    strip=document.createElement('div');strip.className='contact-strip';strip.setAttribute('role','group');strip.setAttribute('aria-label','Choose an image');
+    for(const [index,view] of project.views.entries()){
+      const button=document.createElement('button');button.type='button';button.setAttribute('aria-label','Show '+view.label);
+      const thumb=document.createElement('img');thumb.src=view.thumb;thumb.alt='';thumb.loading='lazy';thumb.width=160;thumb.height=100;
+      button.append(thumb);button.addEventListener('click',()=>show(index));strip.append(button);thumbnails.push(button);
+    }
+    footer.append(count);
+  }else{
+    const previous=document.createElement('button');previous.type='button';previous.textContent='←';previous.setAttribute('aria-label','Previous image');previous.addEventListener('click',()=>show(active-1));
+    const next=document.createElement('button');next.type='button';next.textContent='→';next.setAttribute('aria-label','Next image');next.addEventListener('click',()=>show(active+1));
+    controls.append(previous,count,next);
+    if(demo.dataset.mode==='overlay')stage.append(controls);else footer.append(controls);
+  }
+  const link=document.createElement('a');link.className='project-link';link.href=project.url;link.textContent='View full project ↗';
+  demo.append(header,stage);if(strip)demo.append(strip);demo.append(footer,link,announcement);
+  function show(index,announce=true){
+    active=(index+project.views.length)%project.views.length;
+    const view=project.views[active];image.src=view.src;image.alt=view.alt;image.style.setProperty('--source-width',view.width+'px');
+    caption.textContent=view.caption;count.textContent=String(active+1).padStart(2,'0')+' / '+String(project.views.length).padStart(2,'0');
+    thumbnails.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===active)));
+    if(announce)announcement.textContent='Image '+(active+1)+' of '+project.views.length+'. '+view.caption;
+  }
+  demo.onkeydown=event=>{
+    const move={ArrowLeft:active-1,ArrowRight:active+1,Home:0,End:project.views.length-1};
+    if(Object.prototype.hasOwnProperty.call(move,event.key)){event.preventDefault();show(move[event.key]);}
+  };
+  show(0,false);
+}
+function choose(){const project=carouselProjects[Number(picker.value)];demos.forEach(demo=>mount(demo,project));}
+picker.addEventListener('change',choose);choose();
+</script>
+</body>
+</html>

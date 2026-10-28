@@ -1,0 +1,114 @@
+{
+  "status": "research-only, current website selections unchanged",
+  "currentSources": [
+    {
+      "path": "content/about/PaperGhost/xmen_apocalypse_pentagon3.jpg",
+      "dimensions": [
+        2784,
+        1856
+      ],
+      "bytes": 583321,
+      "sha256": "79e73152a0770233f64eff3e3144980cf43a0c3f9da842de2b6bd9111d1937aa"
+    },
+    {
+      "path": "content/about/PaperGhost/xmen_apocalypse_pentagon2.jpg",
+      "dimensions": [
+        1400,
+        350
+      ],
+      "bytes": 119613,
+      "sha256": "1d125312583485eb1de203245c6e7f91e2526d772dc34e6f0ebae2c3a219838f"
+    },
+    {
+      "path": "content/about/PaperGhost/xmen_apocalypse_submarine1.jpg",
+      "dimensions": [
+        2492,
+        1402
+      ],
+      "bytes": 491763,
+      "sha256": "2f16a05ede5c549e4b1f9bd28b40d8be9e9c9076467a1e467d7d39d3646d8eea"
+    },
+    {
+      "path": "content/about/PaperGhost/xmen_apocalypse_pentagon1.jpg",
+      "dimensions": [
+        800,
+        337
+      ],
+      "bytes": 40749,
+      "sha256": "a60124f37ff740d182d0aeb90329dd0f36c27da8019c1a4998fcf3f8eb2563a1"
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "path": "source-media/paper-ghost/x-men-apocalypse/IMG_20161012_033625_01.jpg",
+      "dimensions": [
+        2492,
+        1402
+      ],
+      "bytes": 663419,
+      "sha256": "b46c6036525216e02164284076e0eadaa5ceb7590d0ec806ebdbe8625b16771f",
+      "archivePath": "\\\\VADER\\data\\MotherBrain\\Molecule\\Portfolio Website\\Portfolio Pics\\Paper Ghost\\X-Men Apocalypse\\IMG_20161012_033625_01.jpg"
+    },
+    {
+      "path": "source-media/paper-ghost/x-men-apocalypse/IMG_20161012_033641_01.jpg",
+      "dimensions": [
+        2492,
+        1402
+      ],
+      "bytes": 549158,
+      "sha256": "ead888ccabcfb73fb620081f34b0f0bb84d451c2114667bb06117c21a97a7c35",
+      "archivePath": "\\\\VADER\\data\\MotherBrain\\Molecule\\Portfolio Website\\Portfolio Pics\\Paper Ghost\\X-Men Apocalypse\\IMG_20161012_033641_01.jpg"
+    }
+  ],
+  "browserChecks": {
+    "desktop": [
+      {
+        "dpr": 1.100000023841858,
+        "nativeWidth": "2784",
+        "objectFit": "contain",
+        "source": "http://127.0.0.1:1313/legacy-work/PaperGhost/xmen_apocalypse_pentagon3_hu775d97200bf63f21ba1f5f757e525942_583321_1600x0_resize_q90_h2_lanczos.webp",
+        "stageHeight": 729.6448364257812,
+        "stageWidth": 1167.443115234375,
+        "viewport": 1309
+      },
+      {
+        "dpr": 1.100000023841858,
+        "nativeWidth": "1400",
+        "objectFit": "contain",
+        "source": "http://127.0.0.1:1313/legacy-work/PaperGhost/xmen_apocalypse_pentagon2_hu78920f6870ff633cffdb943173a9bf97_119613_1400x0_resize_q90_h2_lanczos.webp",
+        "stageHeight": 729.6448364257812,
+        "stageWidth": 1167.443115234375,
+        "viewport": 1309
+      },
+      {
+        "dpr": 1.100000023841858,
+        "nativeWidth": "2492",
+        "objectFit": "contain",
+        "source": "http://127.0.0.1:1313/legacy-work/PaperGhost/xmen_apocalypse_submarine1_hu9e3bd185fd228631432ee13131f5ee7b_491763_1600x0_resize_q90_h2_lanczos.webp",
+        "stageHeight": 729.6448364257812,
+        "stageWidth": 1167.443115234375,
+        "viewport": 1309
+      },
+      {
+        "dpr": 1.100000023841858,
+        "nativeWidth": "800",
+        "objectFit": "contain",
+        "source": "http://127.0.0.1:1313/legacy-work/PaperGhost/xmen_apocalypse_pentagon1_huf16b5d63b30f4c18a25f925cba165017_40749_800x0_resize_q90_h2_lanczos.webp",
+        "stageHeight": 729.6448364257812,
+        "stageWidth": 1167.443115234375,
+        "viewport": 1309
+      }
+    ],
+    "phone": {
+      "dpr": 1.100000023841858,
+      "nativeWidth": "2784",
+      "objectFit": "contain",
+      "overflow": false,
+      "source": "http://127.0.0.1:1313/legacy-work/PaperGhost/xmen_apocalypse_pentagon3_hu775d97200bf63f21ba1f5f757e525942_583321_480x0_resize_q90_h2_lanczos.webp",
+      "stageHeight": 185.5539703369141,
+      "stageWidth": 296.9034118652344,
+      "viewport": 355
+    }
+  },
+  "archiveReview": "57 curated X-Men JPEGs, nearby Paper Ghost production folders, and the archived Zed Axiz showreel were reviewed. No sharper matching copy of the selected lead was found in that focused search."
+}

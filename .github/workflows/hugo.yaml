@@ -7,19 +7,20 @@ on:
     branches:
       - main
 
+  pull_request:
+    branches:
+      - main
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
+  group: "pages-${{ github.event.pull_request.number || 'production' }}"
   cancel-in-progress: false
 
 # Default to bash
@@ -31,25 +32,49 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
     env:
       HUGO_VERSION: 0.115.4
     steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
+      - name: Install Hugo Extended
+        run: |
+          release_url="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}"
+          archive="hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+          cd "${{ runner.temp }}"
+          curl --fail --location --retry 3 --output "$archive" "$release_url/$archive"
+          curl --fail --location --retry 3 --output checksums.txt "$release_url/hugo_${HUGO_VERSION}_checksums.txt"
+          sha256sum --check --ignore-missing checksums.txt
+          tar -xzf "$archive" hugo
+          sudo install hugo /usr/local/bin/hugo
+          hugo version
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+          cache: npm
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: npm ci
+      - name: Build test site
+        run: hugo --destination .preview/project-catalogue-check --cleanDestinationDir
+      - name: Check project data and media delivery
+        run: python -m unittest discover -s tests
+      - name: Check contact form behavior
+        run: node --test tests/contact-form.test.mjs
+      - name: Setup Pages
+        if: github.ref == 'refs/heads/main'
+        id: pages
+        uses: actions/configure-pages@v5
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -59,14 +84,19 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${{ steps.pages.outputs.base_url || 'https://www.ilovemolecule.com' }}/"
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
   # Deployment job
   deploy:
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -75,4 +105,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4

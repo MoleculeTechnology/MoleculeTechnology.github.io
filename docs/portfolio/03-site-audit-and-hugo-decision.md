@@ -10,7 +10,7 @@ tags: [portfolio, architecture, hugo]
 
 **Continue with Hugo and GitHub Pages. Build a custom portfolio presentation.**
 
-The proposed site is mostly authored project stories, carefully presented media, a biography, a journal, and contact links.
+The proposed site is mostly authored project stories, carefully presented media, a biography, and contact links. Russell requested removal of the development blog on 2026-10-25. The current implementation follows [that decision](22-development-blog-removal.md).
 Those requirements suit a static site.
 Changing the generator would not resolve the main problems: the current story, project hierarchy, media selection, and typography.
 This is a recommendation based on this site's needs, not a claim that Hugo is the best choice for every portfolio.
@@ -21,7 +21,7 @@ Small interactive demonstrations can be added as JavaScript within individual pa
 ## Theme choice — keep Blowfish as the starting foundation
 
 There is no need to switch to another premade Hugo theme for this direction.
-Blowfish is a useful foundation for the existing journal and content features, but its stock blog/profile/card presentation does not provide the distinctive art portfolio being planned.
+Blowfish remains a useful foundation for existing About-page shortcodes and content features. Its stock blog/profile/card presentation does not provide the distinctive art portfolio being planned, and the development blog has since been removed.
 Build the homepage, work index, and project presentation specifically for Molecule, including the typography, spacing, media treatment, and WebGL pyramid.
 
 Blowfish documents both a [custom homepage](https://blowfish.page/docs/homepage-layout/) and [project-level overrides for layouts, styles, and fonts](https://blowfish.page/docs/advanced-customisation/).
@@ -47,7 +47,7 @@ Use that concrete dependency review to decide, rather than starting another them
 | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | Homepage introduces Molecule as a software framework                                          | The visitor must discover the person and portfolio elsewhere         | Lead with Russell, the creative practice, and selected work                              |
 | Most professional work is in one long About page                                              | Strong projects have little independent hierarchy or shareability    | Create focused project pages with their own URLs                                         |
-| Navigation emphasizes development blog and mood board                                         | The first choices are less useful to a commissioner                  | Lead with Work, About, Notes, Contact                                                    |
+| Navigation emphasizes development blog and mood board                                         | The first choices are less useful to a commissioner                  | Lead with Work, About, Contact                                                           |
 | Existing biography leads with video game engineering                                          | Installation experience feels secondary                              | Lead with software engineer and artist, then prove depth                                 |
 | CSS hardcodes magenta headings and cyan links                                                 | Existing mint theme variables cannot control the whole palette       | Define and use a single palette throughout the custom presentation                       |
 | Header logo raster contains magenta text and a cyan character                                 | A CSS palette change will leave old branding visible                 | Re-export from the preferred source art or compose the wordmark and character separately |
@@ -81,7 +81,7 @@ Hugo was not available on the shell PATH, so this review did not run a baseline 
 
 Keep project content in Markdown and page bundles.
 Author the portfolio home, work index, project presentation, shared navigation, and typography in repository-owned layouts and styles.
-Retain working journal/shortcode behavior while the portfolio templates are introduced.
+Retain the required About galleries and portfolio shortcodes while the portfolio templates are introduced.
 Then explicitly assess and remove unused Blowfish features or replace remaining dependencies after those routes have been checked.
 Avoid a theme-wide upgrade and content redesign in the same first implementation step.
 

@@ -1,0 +1,22 @@
+<article class="case-study site-width">
+  <nav class="case-navigation" aria-label="Project navigation">
+  <a class="back-link" href="{{ "work/" | relURL }}">← All projects</a>
+  {{ with .Params.parentProject }}{{ with site.GetPage . }}<a class="back-link" href="{{ .RelPermalink }}">{{ .Title }} <span aria-hidden="true">↗</span></a>{{ end }}{{ end }}
+  </nav>
+  <header class="case-header">
+    <p class="eyebrow mint-text">{{ .Params.context }}</p>
+    <h1{{ if .Params.preserveTitleCase }} class="title-case"{{ end }}>{{ .Title }}</h1>
+    {{ if not .Params.projectSections }}{{ partial "portfolio/project-summary.html" (dict "page" . "class" "case-deck") }}{{ end }}
+    {{ partial "portfolio/project-tags.html" . }}
+    {{ partial "portfolio/project-facts.html" . }}
+  </header>
+  {{ with .Params.contributions }}
+  <section class="contribution-section" aria-labelledby="contribution-heading">
+    <h2 id="contribution-heading">Russell Jahn / Engineering contributions</h2>
+    <dl class="contribution-grid">{{ range . }}<div><dt>{{ .title }}</dt><dd>{{ .detail }}</dd></div>{{ end }}</dl>
+  </section>
+  {{ end }}
+  {{ if not .Params.heroInContent }}{{ partial "portfolio/case-hero.html" (dict "page" .) }}{{ end }}
+  <div class="case-body{{ if .Params.projectRefs }} collection-body{{ end }}{{ if .Params.projectSections }} case-project-sections{{ end }}{{ if .Params.accentSectionHeadings }} section-headings-accent{{ end }}">{{ .Content }}</div>
+  <div class="case-next"><p>For project inquiries + collaborations.</p><a class="text-link" href="{{ "contact/" | relURL }}">Contact me <span aria-hidden="true">↗</span></a></div>
+</article>

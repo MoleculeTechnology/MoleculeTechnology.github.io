@@ -1,0 +1,26 @@
+{{/* Keep selected leads first, then include the project's shared About galleries. */}}
+{{- $page := . -}}
+{{- $deliveries := dict -}}
+{{- range $page.Params.galleries -}}
+  {{- range . -}}
+    {{- if .deliverySource -}}{{- $deliveries = merge $deliveries (dict .source .deliverySource) -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $candidates := $page.Params.carousel | default (slice) -}}
+{{- range $page.Params.carouselGalleries -}}
+  {{- $images := index $page.Params.galleries . -}}
+  {{- if not $images -}}{{- errorf "Carousel gallery %q not found on %s" . $page.File.Path -}}{{- end -}}
+  {{- $candidates = $candidates | append $images -}}
+{{- end -}}
+{{- $slides := slice -}}
+{{- $seen := $page.Params.carouselExclude | default (slice) -}}
+{{- range $candidates -}}
+  {{- $source := .source | default $page.Params.hero -}}
+  {{- if not (in $seen $source) -}}
+    {{- $seen = $seen | append $source -}}
+    {{- $caption := .caption | default .alt | default $page.Params.heroCaption -}}
+    {{- $alt := .alt | default .caption | default $page.Params.heroAlt -}}
+    {{- $slides = $slides | append (dict "source" $source "deliverySource" (.deliverySource | default (index $deliveries $source) | default $source) "alt" $alt "caption" $caption "label" (.label | default $caption) "animated" (or .animated (eq (lower (path.Ext $source)) ".gif")) "thumbnail" .thumbnail) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $slides -}}

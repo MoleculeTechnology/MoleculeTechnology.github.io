@@ -1,0 +1,42 @@
+{
+  "created": "2026-10-26T03:20:06.226Z",
+  "label": "before-desktop",
+  "commit": "bfc54e83ebb8b0db0f3515b6686328ba1ef6f307",
+  "dirty": true,
+  "node": "v24.19.0",
+  "runs": 3,
+  "origin": "http://127.0.0.1:4173",
+  "routes": [
+    "/"
+  ],
+  "forms": [
+    "desktop"
+  ],
+  "note": "Local production build, gzip text, fresh Lighthouse browser cache, standard simulated throttling. Public-host latency and real-device behavior require separate checks.",
+  "summaries": [
+    {
+      "route": "/",
+      "form": "desktop",
+      "runs": 3,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "fcpMs": 446.5259,
+      "lcpMs": 724.73325,
+      "speedIndexMs": 446.5259,
+      "tbtMs": 0,
+      "cls": 0.05125307267421818,
+      "observedLoadMs": 85,
+      "transferBytes": 742264,
+      "requests": 18,
+      "lcpRangeMs": [
+        605.57895,
+        766.5259
+      ],
+      "representativeReport": "home.desktop.3.html"
+    }
+  ]
+}

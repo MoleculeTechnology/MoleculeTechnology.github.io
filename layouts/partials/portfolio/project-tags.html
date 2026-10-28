@@ -1,0 +1,8 @@
+<ul class="project-labels" aria-label="Project tags">
+  {{ range .Params.tags }}
+    {{ $tag := index site.Data.project_tags . }}
+    {{ if not $tag }}{{ errorf "Unknown project tag %q on %s" . $.RelPermalink }}{{ else }}
+    <li><a href="{{ "work/" | relURL }}?tag={{ $tag.value }}" data-project-tag="{{ $tag.value }}">{{ $tag.label }}</a></li>
+    {{ end }}
+  {{ end }}
+</ul>

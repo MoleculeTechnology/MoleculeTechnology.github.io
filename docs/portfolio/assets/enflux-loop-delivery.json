@@ -1,0 +1,20 @@
+{
+  "source": "content/about/Enflux/enflux_convention2.gif",
+  "source_bytes": 32664853,
+  "source_sha256": "f70223dcc58d44be90515b4ea4123949628fc96d13d06c95bb0426cae8c29aff",
+  "source_frames": 330,
+  "output": "assets/portfolio/enflux/enflux-convention-loop.webp",
+  "output_bytes": 24531550,
+  "output_sha256": "f1488c667dac82bd5606bb9e13a6f86008b562e4d72a28900a54ecfd30450625",
+  "output_frames": 299,
+  "dimensions": [
+    600,
+    338
+  ],
+  "duration_ms": 10000,
+  "loop": 0,
+  "encoding": "Pillow animated WebP, quality 95, method 6",
+  "timing_verification": "Duplicate source frames coalesced. Every unique-frame duration matches the source timeline.",
+  "poster": "assets/portfolio/enflux/enflux-convention-loop-poster.webp",
+  "review": "Compared original and delivery frames at 0, 3, and 6 seconds. Original GIF unchanged."
+}

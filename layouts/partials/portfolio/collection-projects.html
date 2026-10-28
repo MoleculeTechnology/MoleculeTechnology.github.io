@@ -1,0 +1,24 @@
+{{ $projects := partial "portfolio/collection-pages.html" .page }}
+<div class="collection-projects{{ if .home }} home-collection-projects{{ end }}" data-project-collection="{{ .page.RelPermalink }}">
+{{ range $projects }}
+<section class="collection-project" id="{{ path.Base .RelPermalink }}" data-collection-project="{{ .RelPermalink }}">
+{{ if $.home }}<h4 class="collection-project-title{{ if .Params.preserveTitleCase }} title-case{{ end }}"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>{{ else }}<h2 class="collection-project-title{{ if .Params.preserveTitleCase }} title-case{{ end }}">{{ .Title }}</h2>{{ end }}
+{{ $slides := slice }}
+{{ if $.home }}{{ $slides = partial "portfolio/project-slides.html" . }}{{ end }}
+{{ if ge (len $slides) 2 }}
+{{ partial "portfolio/carousel.html" (dict "page" . "slides" $slides "hero" true) }}
+{{ else }}
+{{ partial "portfolio/case-hero.html" (dict "page" . "loading" "lazy") }}
+{{ end }}
+<div class="collection-project-copy">
+{{ if $.home }}
+{{ partial "portfolio/project-summary.html" (dict "page" .) }}
+{{ else }}
+{{ partial "portfolio/project-facts.html" . }}
+{{ .Content }}
+{{ end }}
+<a class="text-link" href="{{ .RelPermalink }}">View {{ .Title }} <span aria-hidden="true">↗</span></a>
+</div>
+</section>
+{{ end }}
+</div>

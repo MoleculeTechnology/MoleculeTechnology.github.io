@@ -6,6 +6,8 @@ tags: [portfolio, projects, storytelling]
 
 # Case study plan
 
+Writing and media direction updated: Russell prefers the original About page's direct contribution descriptions and richer picture selection. Use the [copy and media revision plan](17-copy-and-media-revision-plan.md) before carrying this note's proposed narrative headings into the website.
+
 Use the [template](templates/case-study.md) and [evidence ledger](02-evidence-and-cv-review.md) for every published story.
 The headings below are editorial proposals, not assertions that new work has already been completed.
 

@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.querySelectorAll("[data-loop-src]"),t=e=>{e.src=e.dataset.loopSrc};if(!("IntersectionObserver"in window)){e.forEach(t);return}const n=new IntersectionObserver(e=>{e.forEach(e=>{if(!e.isIntersecting)return;t(e.target),n.unobserve(e.target)})},{rootMargin:"600px 0px"});e.forEach(e=>n.observe(e))})()

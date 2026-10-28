@@ -9,16 +9,15 @@ tags: [portfolio, implementation, git]
 
 ## Branches
 
-- `feature/portfolio-rework-plan` holds the original planning commit `f36356e`.
-- `feature/portfolio-rework-test` contains the initial website implementation, based on that planning commit.
-- Local `main` matches the fetched GitHub commit `09772f6`.
+- `main` contains the planning and initial website implementation through [PR #1](https://github.com/MoleculeTechnology/MoleculeTechnology.github.io/pull/1), merged at `055e35c`.
+- `feature/portfolio-rework-test` preserves the first implementation commit `cac8945`.
+- `feature/portfolio-rework-plan` has received the generated-preview cleanup through [PR #2](https://github.com/MoleculeTechnology/MoleculeTechnology.github.io/pull/2), merged at `4a0d79f`.
+- `feature/portfolio-rework-v1` continues website work from the merged `main` commit `055e35c`.
 
-The requested push was refused by GitHub ruleset `Rule` (`3178930`).
-It restricts creation and updates on all branches, has no bypass actors, and reports that the current account cannot bypass it.
-Russell chose to keep the work local rather than change those settings.
-No PR was created or merged, and no repository protection was changed.
-The testing branch therefore starts from the preserved planning commit, not a merged-main commit.
-Resume the push/PR/merge workflow only when Russell chooses to resume it and the repository permits the operations.
+The earlier push was refused by GitHub ruleset `Rule`, and Russell initially chose local work.
+Russell subsequently pushed and merged PR #1, then merged the requested cleanup PR #2.
+The original ruleset refusal is historical. No repository protection was changed by the assistant.
+Deployment of PR #1 failed. Russell chose to [defer its repair](15-deferred-deployment.md) until the first website version is good enough.
 
 ## Implemented in the first pass
 
@@ -45,10 +44,37 @@ Open [the local preview](http://127.0.0.1:1313/).
 Use `-Port 1314` if the default port is already in use.
 Press Ctrl+C in the terminal to stop the server.
 
+Russell's workflow instruction (2026-10-25): after website updates, the assistant restarts the preview script, verifies that the updated site responds, and leaves it running for review. This is recorded in the repository's [agent instructions](../../AGENTS.md).
+
 The script downloads the official Hugo Extended `0.115.4` release if needed, checks its published SHA-256 checksum, and caches it under ignored `.tools/`.
-Generated preview files go to ignored `.preview/`.
+Generated preview files go to ignored `.preview/site/`. The script cleans that dedicated output directory so removed pages do not persist from an earlier build. Earlier QA snapshots under `.preview/` are outside the served site.
 Neither folder belongs in the commit.
 The original shell scripts remain available.
+
+## Follow-up pass on `feature/portfolio-rework-v1`
+
+The deferred deployment notes and updated preview instructions were committed separately as `ac3a690`.
+The website pass adds a dedicated contact layout using the portfolio's typography, colors, and spacing, with project prompts and a LinkedIn fallback beside the existing form.
+A "Write a message" link jumps to the inquiry and moves keyboard focus to its heading.
+The existing HubSpot form service and fields were retained at this stage. The later [Contact revision](38-contact-without-advertising.md) removes the embed after finding an advertisement and a service-side submission failure.
+
+The homepage now calls out large-audience desktop/mobile engineering and the current focus on graphics, rendering, and art/audio tools.
+The Blizzard project page distinguishes the current unannounced-game focus from the Hearthstone work.
+
+Verification for this pass:
+
+- Production build passed with Hugo Extended `0.115.4`.
+- Nine core routes and their local asset/link targets resolved in the generated build.
+- The changed pages retained one primary heading each.
+- Contact layout was inspected at desktop, 390px, and 320px widths. No horizontal page overflow was observed at phone widths.
+- The inquiry jump moved focus to the form heading, and the embedded email, name, message, and submit controls rendered.
+- The tested contact tab had no warning/error console entries. No form inquiry was submitted.
+- Generated preview output and tools remain untracked and ignored.
+
+To review locally, start with the homepage, rotate/pause/reset the pyramid, open the project pages, and follow the contact link.
+On Contact, try "Write a message" and inspect the page at a narrow browser width.
+The preview refreshes as source files change.
+Deployment repair remains deferred under Russell's decision.
 
 ## Checks performed
 
@@ -66,11 +92,14 @@ The original shell scripts remain available.
 
 ## Remaining work before publishing
 
-Review the drafted prose and image credits with Russell.
+The latest [Professional Work / Experiments pass](23-professional-work-experiments-and-image-quality.md) moves Moongoat to `/experiments/moongoat/`, adds an old-URL redirect, and records image-quality fixes and verification. Its Professional Work order is provisional.
+
+The [copy and media revision](19-applied-copy-and-media-revision.md) now uses the original About page's language and stronger still images, with the actual Moongoat demos described. Review this applied wording and the image credits with Russell.
+The subsequent [editorial voice revision](20-work-focused-editorial-voice.md) makes homepage and project descriptions less personal and adds named contribution fields while preserving the About page's personal voice.
 Choose final specialization wording and refine the pyramid's interaction and label placement across more orientations and devices.
 Exercise physical touch input, actual browser zoom, reduced-motion settings, and WebGL context-loss recovery.
-Select stronger interaction clips and original-resolution project images, and refine the legacy About/journal presentation.
+Select and prepare stronger interaction clips, and continue refining the legacy About presentation. Original Paper Ghost and Enflux galleries are now restored on the project pages. The development blog has been removed at Russell's request. See [Development blog removal](22-development-blog-removal.md).
 Settle the current role chronology, event date, public current-game wording, and updated CV.
 Review sample routes and inherited theme features before reducing dependencies.
 Finish contact-form visual styling and verify delivery with an explicitly authorized test.
-The current work is a local testing pass, not a published redesign.
+The current work is a local testing pass. The merged first implementation has not been published by the failed deployment run.

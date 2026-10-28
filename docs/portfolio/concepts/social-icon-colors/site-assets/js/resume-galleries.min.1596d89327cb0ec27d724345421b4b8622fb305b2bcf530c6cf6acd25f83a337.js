@@ -1,0 +1,1 @@
+(()=>{"use strict";if(typeof Packery=="undefined")return;document.querySelectorAll("[data-resume-gallery]").forEach(e=>{const t=new Packery(e,{itemSelector:"img",percentPosition:!0,gutter:5,resize:!0});e.querySelectorAll("img").forEach(e=>{e.addEventListener("load",()=>t.layout(),{once:!0})})})})()

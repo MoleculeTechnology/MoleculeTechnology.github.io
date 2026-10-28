@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-25",
+  "comparison": [
+    {
+      "width": 1280,
+      "images": 54,
+      "copyMatches": true,
+      "originalHeight": 17470,
+      "finalHeight": 17471,
+      "maxImageDimensionDifference": 0.32501220703130684
+    },
+    {
+      "width": 390,
+      "images": 54,
+      "copyMatches": true,
+      "originalHeight": 18462,
+      "finalHeight": 18462,
+      "maxImageDimensionDifference": 0.23748779296875
+    },
+    {
+      "width": 320,
+      "images": 54,
+      "copyMatches": true,
+      "originalHeight": 19406,
+      "finalHeight": 19418,
+      "maxImageDimensionDifference": 0.23748779296875
+    }
+  ]
+}

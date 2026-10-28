@@ -1,0 +1,290 @@
+[
+  {
+    "id": "patch-video",
+    "group": "Custom Patch computer",
+    "source_path": "\\\\VADER\\data\\MotherBrain\\Molecule\\Portfolio Website\\Portfolio Pics\\Molecule\\20230509 204759-1.mp4",
+    "source_file": "20230509 204759-1.mp4",
+    "source_bytes": 6706043,
+    "source_sha256": "762c5f7f6bee67b6c25a79377ec55c6092d9b839188790bf9a954221d023aff7",
+    "duration_seconds": 10.32,
+    "has_audio": true,
+    "video_stream": "Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 5018 kb/s, 59.94 fps, 120 tbr, 90k tbn (default)",
+    "source_dimensions": [
+      1920,
+      1080
+    ],
+    "reviewed_on": "2026-10-25",
+    "preparation": "Remux original video and audio without re-encoding. MP4 fast start. Source dimensions and frame rate retained.",
+    "output_video": "assets/portfolio/molecule/patch-led-eyes.mp4",
+    "poster": "assets/portfolio/molecule/patch-led-eyes.jpg",
+    "poster_time_seconds": 5.16,
+    "poster_bytes": 223603,
+    "output_dimensions": [
+      1920,
+      1080
+    ],
+    "output_bytes": 6705369,
+    "output_sha256": "ea1cfdbb9b3467c0f5dd57cdd3e492f62ad01166459f6747c29ad53282c90734",
+    "repository_source": "source-media/molecule/patch-computer/20230509 204759-1.mp4"
+  },
+  {
+    "id": "patch-gif",
+    "group": "Custom Patch computer",
+    "source_path": "\\\\VADER\\data\\MotherBrain\\Molecule\\Portfolio Website\\Portfolio Pics\\Molecule\\ezgif-5-5d129b59f5.gif",
+    "source_file": "ezgif-5-5d129b59f5.gif",
+    "source_bytes": 20873641,
+    "source_sha256": "651ac46316ac9caa64d3f5af11a8705483f62f5148fd6e32b77423b2e615991e",
+    "source_dimensions": [
+      600,
+      338
+    ],
+    "display_dimensions": [
+      600,
+      338
+    ],
+    "frames": 239,
+    "container_format": "GIF",
+    "duration_seconds": 7.24,
+    "reviewed_on": "2026-10-25",
+    "preparation": "Animated WebP at quality 85, method 6. All source frames, original dimensions and frame durations preserved. Infinite loop. Published directly as an image without Hugo still-image resizing.",
+    "output_dimensions": [
+      600,
+      338
+    ],
+    "output_bytes": 7460580,
+    "output_sha256": "1bf76459ee18ce1a796bc05e3b754aa3f69ee499c9fb65aa749e1b82c224be0f",
+    "repository_source": "source-media/molecule/patch-computer/ezgif-5-5d129b59f5.gif",
+    "output_image": "assets/portfolio/molecule/patch-led-animation.webp",
+    "output_format": "Animated WebP",
+    "loop": 0,
+    "frame_durations_preserved": true
+  },
+  {
+    "id": "prototype-a",
+    "group": "Lightsaber prototype",
+    "source_path": "\\\\VADER\\data\\MotherBrain\\Molecule\\Portfolio Website\\Portfolio Pics\\Projects\\20220926_185841.jpg",
+    "source_file": "20220926_185841.jpg",
+    "source_bytes": 201119,
+    "source_sha256": "0f9492b44fe945b63cfd45b0743540338f4f01f45a481839f895b0c560bf25ec",
+    "source_dimensions": [
+      1758,
+      792
+    ],
+    "display_dimensions": [
+      1758,
+      792
+    ],
+    "frames": 1,
+    "container_format": "JPEG",
+    "reviewed_on": "2026-10-25",
+    "preparation": "Original upright JPEG copied byte-for-byte. Native dimensions and image data retained.",
+    "output_dimensions": [
+      1758,
+      792
+    ],
+    "output_image": "assets/portfolio/molecule/lightsaber-prototype-held.jpg",
+    "output_bytes": 201119,
+    "output_sha256": "0f9492b44fe945b63cfd45b0743540338f4f01f45a481839f895b0c560bf25ec",
+    "repository_source": "source-media/molecule/lightsaber-prototypes/20220926_185841.jpg"
+  },
+  {
+    "id": "prototype-b",
+    "group": "Lightsaber prototype",
+    "source_path": "\\\\VADER\\data\\MotherBrain\\Molecule\\Portfolio Website\\Portfolio Pics\\Projects\\20220926_200930.jpg",
+    "source_file": "20220926_200930.jpg",
+    "source_bytes": 1631589,
+    "source_sha256": "7eafe4615f5f9299b103f4ef0c586dfcf543c083e1c84a96fb789245e2b3f11d",
+    "source_dimensions": [
+      4032,
+      1816
+    ],
+    "display_dimensions": [
+      1816,
+      4032
+    ],
+    "frames": 1,
+    "container_format": "JPEG",
+    "reviewed_on": "2026-10-25",
+    "preparation": "Primary photographic frame exported as JPEG quality 95 with no chroma subsampling. EXIF rotation baked in. Native dimensions retained. Auxiliary MPO frames and metadata omitted.",
+    "output_dimensions": [
+      1816,
+      4032
+    ],
+    "output_image": "assets/portfolio/molecule/lightsaber-prototype-lit.jpg",
+    "output_bytes": 1398854,
+    "output_sha256": "477ccb905e0240ef99ce02f292de33f014731740cfea247e2d5d0433259941e2",
+    "repository_source": "source-media/molecule/lightsaber-prototypes/20220926_200930.jpg"
+  },
+  {
+    "id": "event-a",
+    "group": "PixelPerf Market",
+    "source_path": "\\\\VADER\\data\\MotherBrain\\Molecule\\Events\\2023-09-02 PixelPerf Market\\Makers Market 9-2-23\\6B6893E6-EF2E-41E2-8B7A-221764C88E1A.jpeg",
+    "source_file": "6B6893E6-EF2E-41E2-8B7A-221764C88E1A.jpeg",
+    "source_bytes": 6929408,
+    "source_sha256": "903efe500f8432a0fb73adf80a7c84c2d3d8ea2f964ca1c8efba15d71cc4b23f",
+    "source_dimensions": [
+      4592,
+      3448
+    ],
+    "display_dimensions": [
+      4592,
+      3448
+    ],
+    "frames": 2,
+    "container_format": "MPO",
+    "reviewed_on": "2026-10-25",
+    "preparation": "Primary photographic frame exported as JPEG quality 95 with no chroma subsampling. EXIF rotation baked in. Native dimensions retained. Auxiliary MPO frames and metadata omitted.",
+    "output_dimensions": [
+      4592,
+      3448
+    ],
+    "output_image": "assets/portfolio/molecule/pixelperf-body-tracking.jpg",
+    "output_bytes": 3982920,
+    "output_sha256": "026d5e1eebb2e82452fb173d1b2f76cf28472b00cfd2d3041bb57e091e483d5d",
+    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/6B6893E6-EF2E-41E2-8B7A-221764C88E1A.jpeg"
+  },
+  {
+    "id": "event-gif",
+    "group": "PixelPerf Market",
+    "source_path": "\\\\VADER\\data\\MotherBrain\\Molecule\\Events\\2023-09-02 PixelPerf Market\\Photos\\Pics\\20230903_120930.gif",
+    "source_file": "20230903_120930.gif",
+    "source_bytes": 45138068,
+    "source_sha256": "2db0f97c87333f74e869ec79f05704c27f95336206d8a47b3b06d0cf31e5a10e",
+    "source_dimensions": [
+      540,
+      960
+    ],
+    "display_dimensions": [
+      540,
+      960
+    ],
+    "frames": 300,
+    "container_format": "GIF",
+    "duration_seconds": 6.0,
+    "reviewed_on": "2026-10-25",
+    "preparation": "Animated WebP at quality 75, method 4. All source frames, original dimensions and frame durations preserved. Infinite loop. Published directly as an image without Hugo still-image resizing.",
+    "output_dimensions": [
+      540,
+      960
+    ],
+    "output_bytes": 17191870,
+    "output_sha256": "1a0c752bdfc0c71d356ffe994cb32e54f38c0c6218ecf7d41773a99f3694a393",
+    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/20230903_120930.gif",
+    "output_image": "assets/portfolio/molecule/pixelperf-sword-demo.webp",
+    "output_format": "Animated WebP",
+    "loop": 0,
+    "frame_durations_preserved": true
+  },
+  {
+    "id": "event-b",
+    "group": "PixelPerf Market",
+    "source_path": "\\\\VADER\\data\\MotherBrain\\Molecule\\Events\\2023-09-02 PixelPerf Market\\Photos\\Pics\\C92D9BF1-DD97-4BCA-88A7-83F49037B4C7.jpeg",
+    "source_file": "C92D9BF1-DD97-4BCA-88A7-83F49037B4C7.jpeg",
+    "source_bytes": 7185920,
+    "source_sha256": "fa7e9608bdc2657065cef03699fac8c74ca82bd8ae813f0351b48082a77ae2e9",
+    "source_dimensions": [
+      4592,
+      3448
+    ],
+    "display_dimensions": [
+      3448,
+      4592
+    ],
+    "frames": 2,
+    "container_format": "MPO",
+    "reviewed_on": "2026-10-25",
+    "preparation": "Primary photographic frame exported as JPEG quality 95 with no chroma subsampling. EXIF rotation baked in. Native dimensions retained. Auxiliary MPO frames and metadata omitted.",
+    "output_dimensions": [
+      3448,
+      4592
+    ],
+    "output_image": "assets/portfolio/molecule/pixelperf-sword-pointing.jpg",
+    "output_bytes": 4180891,
+    "output_sha256": "b612119243d1add85c00757b0daa32d6c56b7fe2a20819bafbbe66b4d8163abb",
+    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/C92D9BF1-DD97-4BCA-88A7-83F49037B4C7.jpeg"
+  },
+  {
+    "id": "event-c",
+    "group": "PixelPerf Market",
+    "source_path": "\\\\VADER\\data\\MotherBrain\\Molecule\\Events\\2023-09-02 PixelPerf Market\\Photos\\Pics\\49DF8843-13AC-41F3-9E11-BD25674B0334.jpeg",
+    "source_file": "49DF8843-13AC-41F3-9E11-BD25674B0334.jpeg",
+    "source_bytes": 7046656,
+    "source_sha256": "cab7de775e5bb7f50fae570cc8efe798cb3319402524f32ac183bbf2f95d6333",
+    "source_dimensions": [
+      4592,
+      3448
+    ],
+    "display_dimensions": [
+      3448,
+      4592
+    ],
+    "frames": 2,
+    "container_format": "MPO",
+    "reviewed_on": "2026-10-25",
+    "preparation": "Primary photographic frame exported as JPEG quality 95 with no chroma subsampling. EXIF rotation baked in. Native dimensions retained. Auxiliary MPO frames and metadata omitted.",
+    "output_dimensions": [
+      3448,
+      4592
+    ],
+    "output_image": "assets/portfolio/molecule/pixelperf-sword-movement.jpg",
+    "output_bytes": 4093262,
+    "output_sha256": "5e86d82a22c6208aa0d3616f679098d7167c5a2981bd0726fd23523bd41c738b",
+    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/49DF8843-13AC-41F3-9E11-BD25674B0334.jpeg"
+  },
+  {
+    "id": "event-d",
+    "group": "PixelPerf Market",
+    "source_path": "\\\\VADER\\data\\MotherBrain\\Molecule\\Events\\2023-09-02 PixelPerf Market\\Photos\\Pics\\20230902_104130.jpg",
+    "source_file": "20230902_104130.jpg",
+    "source_bytes": 2022535,
+    "source_sha256": "aa7a7d35b7ca79012ab3f97234effc0bbf4636384c4fb01fc1a9200e4a25c868",
+    "source_dimensions": [
+      4000,
+      1848
+    ],
+    "display_dimensions": [
+      4000,
+      1848
+    ],
+    "frames": 1,
+    "container_format": "JPEG",
+    "reviewed_on": "2026-10-25",
+    "preparation": "Original upright JPEG copied byte-for-byte. Native dimensions and image data retained.",
+    "output_dimensions": [
+      4000,
+      1848
+    ],
+    "output_image": "assets/portfolio/molecule/pixelperf-installation-wide.jpg",
+    "output_bytes": 2022535,
+    "output_sha256": "aa7a7d35b7ca79012ab3f97234effc0bbf4636384c4fb01fc1a9200e4a25c868",
+    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/20230902_104130.jpg"
+  },
+  {
+    "id": "event-e",
+    "group": "PixelPerf Market",
+    "source_path": "\\\\VADER\\data\\MotherBrain\\Molecule\\Events\\2023-09-02 PixelPerf Market\\Photos\\Pics\\IMG_0741.JPG",
+    "source_file": "IMG_0741.JPG",
+    "source_bytes": 268207,
+    "source_sha256": "533bdf96cfecf3f286f91198480dd6d4465a96be032dbf1bb2430ac588b3d194",
+    "source_dimensions": [
+      3520,
+      1980
+    ],
+    "display_dimensions": [
+      3520,
+      1980
+    ],
+    "frames": 1,
+    "container_format": "JPEG",
+    "reviewed_on": "2026-10-25",
+    "preparation": "Original upright JPEG copied byte-for-byte. Native dimensions and image data retained.",
+    "output_dimensions": [
+      3520,
+      1980
+    ],
+    "output_image": "assets/portfolio/molecule/pixelperf-sword-visitor.jpg",
+    "output_bytes": 268207,
+    "output_sha256": "533bdf96cfecf3f286f91198480dd6d4465a96be032dbf1bb2430ac588b3d194",
+    "repository_source": "source-media/molecule/pixelperf-market/2023-09-02/IMG_0741.JPG"
+  }
+]

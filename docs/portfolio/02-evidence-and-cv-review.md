@@ -64,12 +64,31 @@ See [Archive review](12-archive-review.md) for exact folders and image observati
 `Photos/IMG_0794.jpg` in the PixelPerf event archive provides concrete visual evidence of a Molecule light-prop and screen-based demonstration setup.
 The event date remains a corroborated candidate from folder/poster names, pending Russell's confirmation.
 
+**S10 — Russell's account of the Moongoat demonstrations.**
+Russell describes a custom C++ application converting high-speed webcam video into 3D body points, drawing a wireframe, and compositing it over the live video on a vertical TV at 60 fps, without requiring suits.
+Separately, wooden swords contained IMU sensors, speakers, and LED strips, with deterministic LED colors based on real-world orientation.
+These are Russell's reported results, not measurements performed during the website work.
+The [source and copy note](18-moongoat-demonstrations.md) preserves the distinction between the outside-in camera system and inside-out sensor-equipped swords.
+
+**S11 — Russell's current-project performance clarification, 2026-10-25.**
+Russell says automated art performance benchmarking and client performance monitoring should be highlighted for the current project: "The buck stops at me for game performance on that project."
+The first draft interpreted this as individual final responsibility for overall game performance. Russell's subsequent clarification in S12 corrects that interpretation. Keep this work scoped to Unannounced game, following his earlier explicit naming clarification. No benchmark results or implementation details were supplied.
+
+**S12 — Russell's performance leadership clarification, 2026-10-25.**
+Russell says he is leading the performance initiative and transforming the team culture. Performance is everyone's responsibility. His contribution is providing the tools, education, and initiative to make that happen. “Responsible for game performance” is therefore an inaccurate description of the role, beyond the earlier concern about tone.
+
+Capture the leadership context in notes. Russell does not necessarily want it emphasized on this creative portfolio. For this iteration, public copy names automated art performance benchmarking and client performance monitoring without an individual ownership claim. See [Blizzard project responsibilities](30-blizzard-project-responsibilities.md).
+
+**S13 — Russell's bokken clarification, 2026-10-25.**
+Russell identifies the wooden props as bokken, wooden martial arts practice swords, and requests that terminology throughout the portfolio. Use bokken for these props and define the term in longer descriptions. Keep the broader lightsaber project name and the distinction between these event props and later hardware revisions.
+
 ## Claim review
 
 | Claim                                                                                                | Basis                               | How to use it                                                                             |
 | ---------------------------------------------------------------------------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------- |
 | Software engineer and artist                                                                         | Russell's requested positioning, S1 | Lead description. Support artistic authorship with project decisions and work             |
 | Current work focuses on 3D graphics, rendering, and art/audio pipelines on an unannounced game       | S1                                  | Draft broadly. Confirm wording appropriate for public use before publication              |
+| Leading the current project's performance initiative through tools, education, and team culture change | S11, clarified by S12 | Keep leadership context in notes. Public copy names benchmarking and monitoring. Performance is everyone's responsibility |
 | Hearthstone core systems, memory/download work, native mobile, build tools, FX tools, asset pipeline | S2                                  | Strong engineering summary. Confirm individual examples and dates                         |
 | Nine major Hearthstone expansions during March 2021–August 2023                                      | S2                                  | Historical claim only. Verify the count and intended date range before highlighting       |
 | Interactive film props and set previsualization for Paper Ghost                                      | S1, S2                              | Feature prominently with a precise contribution and collaborator line                     |
@@ -103,7 +122,7 @@ Saga firmware code does not by itself establish custom PCB design, enclosure fab
 - Selected up-to-date light sword and sensor footage.
 - Rights/credits for source media and permission for any republished testimonial.
 
-The 2023 [Pixel Perf Market note](../../content/devblog/2023-08-02/_index.md) records plans for a MoonGoat event on one of two possible dates.
+The 2023 Pixel Perf Market note records plans for a MoonGoat event on one of two possible dates. Russell later requested removal of the development blog. The historical source can be read with `git show 8995b3e:content/devblog/2023-08-02/_index.md`.
 It does not document completion or settle the date of the pop-up Russell now describes.
 The subsequently reviewed event imagery adds evidence of a completed physical demo setup. Folder/poster names point to September 2, 2023, without settling every event detail.
 

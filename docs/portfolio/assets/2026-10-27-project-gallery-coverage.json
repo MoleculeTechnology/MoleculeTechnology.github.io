@@ -1,0 +1,208 @@
+{
+  "date": "2026-10-27",
+  "aboutGallerySelections": 51,
+  "routesChecked": [
+    "/",
+    "/about/",
+    "/work/",
+    "/work/paper-ghost/",
+    "/work/x-men-apocalypse/",
+    "/work/glass-castle/",
+    "/work/mother/",
+    "/work/arrival/",
+    "/work/quantico/",
+    "/work/ca-decolle/",
+    "/work/enflux/",
+    "/work/shoppermx/",
+    "/work/game-engine-graphics-content-pipeline/",
+    "/work/motion-capture-lightsabers/"
+  ],
+  "uniqueLocalReferencesChecked": 510,
+  "missingLocalReferences": [],
+  "carousels": [
+    {
+      "project": "/work/x-men-apocalypse/",
+      "sources": [
+        "PaperGhost/xmen_apocalypse_pentagon3.jpg",
+        "PaperGhost/xmen_apocalypse_pentagon2.jpg",
+        "PaperGhost/xmen_apocalypse_submarine1.jpg",
+        "PaperGhost/xmen_apocalypse_pentagon1.jpg"
+      ],
+      "thumbnailBytes": [
+        4264,
+        2204,
+        4178,
+        4006
+      ]
+    },
+    {
+      "project": "/work/glass-castle/",
+      "sources": [
+        "PaperGhost/glasscastle_test1.jpg",
+        "PaperGhost/glasscastle_test3.jpg",
+        "PaperGhost/glasscastle_test4.jpg",
+        "PaperGhost/glasscastle_software1.jpg",
+        "PaperGhost/glasscastle_final3.gif",
+        "PaperGhost/glasscastle_final2.gif",
+        "PaperGhost/glasscastle_final1.jpg"
+      ],
+      "thumbnailBytes": [
+        2872,
+        5204,
+        2222,
+        2196,
+        1736,
+        1938,
+        5626
+      ]
+    },
+    {
+      "project": "/work/mother/",
+      "sources": [
+        "PaperGhost/mother_preproduction5.jpeg",
+        "PaperGhost/mother_preproduction4.png",
+        "PaperGhost/mother_preproduction3.png",
+        "PaperGhost/mother_software_1.jpeg",
+        "PaperGhost/mother_preproduction6.gif"
+      ],
+      "thumbnailBytes": [
+        3586,
+        3184,
+        3608,
+        2966,
+        2896
+      ]
+    },
+    {
+      "project": "/work/arrival/",
+      "sources": [
+        "PaperGhost/arrival_spytent3.jpg",
+        "PaperGhost/arrival_cryptotent1.jpg",
+        "PaperGhost/arrival_spytent1.jpg",
+        "PaperGhost/arrival_spytent2.jpg",
+        "PaperGhost/arrival_office1.jpg",
+        "PaperGhost/quantico_tablet1.jpeg",
+        "PaperGhost/arrival_sciencetentt1.webp"
+      ],
+      "thumbnailBytes": [
+        5104,
+        4510,
+        4692,
+        2038,
+        5418,
+        3206,
+        4112
+      ]
+    },
+    {
+      "project": "/work/quantico/",
+      "sources": [
+        "PaperGhost/quantico_cut1.gif",
+        "PaperGhost/quantico_cut2.gif",
+        "PaperGhost/quantico_bomb1.gif",
+        "PaperGhost/quantico_van1.jpg",
+        "PaperGhost/quantico_training4.jpg"
+      ],
+      "thumbnailBytes": [
+        4696,
+        5886,
+        1480,
+        4030,
+        4414
+      ]
+    },
+    {
+      "project": "/work/ca-decolle/",
+      "sources": [
+        "PaperGhost/cadecolle_plane1.jpg",
+        "PaperGhost/cadecolle_plane3.gif",
+        "PaperGhost/cadecolle_plane4.jpg",
+        "PaperGhost/cadecolle_set2.jpg",
+        "PaperGhost/cadecolle_plane2.jpg",
+        "PaperGhost/cadecolle_plane5.jpg"
+      ],
+      "thumbnailBytes": [
+        4614,
+        3930,
+        4748,
+        3260,
+        3668,
+        3248
+      ]
+    },
+    {
+      "project": "/work/enflux/",
+      "sources": [
+        "portfolio/enflux/enflux-convention-loop.webp",
+        "Enflux/enflux_blender1.jpg",
+        "Enflux/enflux_convention1.jpeg",
+        "Enflux/enflux_convention4.jpg",
+        "Enflux/enflux_suit1.png",
+        "Enflux/enflux_convention3.jpg"
+      ],
+      "thumbnailBytes": [
+        4008,
+        1616,
+        4564,
+        3810,
+        3278,
+        6116
+      ]
+    },
+    {
+      "project": "/work/shoppermx/",
+      "sources": [
+        "InContext/incontext_aisle1.png",
+        "InContext/incontext_bottle1.gif",
+        "InContext/incontext_aisle3.jpg",
+        "InContext/incontext_store2.png",
+        "InContext/incontext_store1.png",
+        "InContext/incontext_aisle2.png"
+      ],
+      "thumbnailBytes": [
+        7666,
+        3618,
+        6050,
+        3828,
+        3910,
+        6536
+      ]
+    },
+    {
+      "project": "/work/game-engine-graphics-content-pipeline/",
+      "sources": [
+        "portfolio/hearthstone/eonar-flourish.jpg",
+        "Blizzard/hearthstone_gameplay1.jpg",
+        "Blizzard/hearthstone_gameplay3.gif",
+        "Blizzard/hearthstone_vfx1.webp",
+        "Blizzard/hearthstone_card_zephrys1.gif"
+      ],
+      "thumbnailBytes": [
+        7010,
+        6240,
+        5126,
+        6492,
+        2802
+      ]
+    },
+    {
+      "project": "/work/motion-capture-lightsabers/",
+      "sources": [
+        "portfolio/molecule/pixelperf-body-tracking.jpg",
+        "portfolio/molecule/pixelperf-sword-demo.webp",
+        "portfolio/molecule/patch-led-animation.webp"
+      ],
+      "thumbnailBytes": [
+        4328,
+        1732,
+        2146
+      ]
+    }
+  ],
+  "homeSelections": 54,
+  "thumbnailBytesTotal": 216616,
+  "thumbnailBytesRange": [
+    1480,
+    7666
+  ]
+}

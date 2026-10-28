@@ -1,0 +1,6 @@
+{{- $project := site.GetPage (.Get "project") -}}
+{{- if not $project -}}{{- errorf "Resume project not found: %s" (.Get "project") -}}{{- end -}}
+{{- if not $project.Params.resume -}}{{- errorf "Resume metadata missing on %s" $project.RelPermalink -}}{{- end -}}
+{{- $html := .Page.RenderString (dict "display" "block") (partial "portfolio/resume-markdown.html" (dict "page" $project "resume" $project.Params.resume)) -}}
+{{/* RenderString starts shortcode ordinals again. Namespace gallery IDs per invocation. */}}
+{{- replaceRE `gallery-(\d+)` (printf "gallery-resume-%d-${1}" .Ordinal) $html | safeHTML -}}
