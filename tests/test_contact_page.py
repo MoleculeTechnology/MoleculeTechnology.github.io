@@ -34,7 +34,7 @@ class ContactPageTests(unittest.TestCase):
         self.assertEqual(fields['email'].attrs['type'], 'email')
         self.assertIn('required', fields['email'].attrs)
         self.assertIn('required', fields['message'].attrs)
-        self.assertNotIn('required', fields['name'].attrs)
+        self.assertIn('required', fields['name'].attrs)
         self.assertIn('hidden', fields['botcheck'].attrs)
         self.assertEqual(fields['botcheck'].attrs['tabindex'], '-1')
         labels = {item.attrs['for'] for item in form.find_all(lambda item: item.tag == 'label')}

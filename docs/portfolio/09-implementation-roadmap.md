@@ -59,7 +59,7 @@ Do not replace the workflow's pinned version without first checking compatibilit
 - [ ] Declare the actual Roboto families/weights and retain required font licensing files.
 - [ ] Establish mint/black/ghost-white tokens and remove conflicting global color overrides in the implementation branch.
 - [ ] Create repository-owned navigation, footer, home, work index, and project presentation.
-- [ ] Build the rotatable WebGL specialization pyramid with screen-space labels following each projected vertex, using the [component plan](13-webgl-specialization-pyramid.md).
+- [ ] Build the rotatable WebGL specialization tetrahedron with screen-space labels following each projected vertex, using the [component plan](13-webgl-specialization-pyramid.md).
 - [ ] Check label collisions, resize/zoom alignment, rotation controls, reduced motion, and the static vector fallback.
 - [ ] Use final-intent typography, media proportions, and contribution captions.
 - [ ] Check keyboard access, reduced motion, zoom, phone layout, and readable image captions.
@@ -119,3 +119,11 @@ No deployment, external message, profile edit, or main-branch push is performed 
 The first launch needs a clear proposition, a few convincing projects, accurate credits, good typography, and a reliable contact path.
 Interactive experiments and more elaborate motion can be added when they improve a project story.
 Keep the normal portfolio useful while experiments load or fail.
+
+## After the current release: higher-quality looping media
+
+- [ ] Obtain the source videos for the selected GIFs, starting with the small Glass Castle finished-scene loops and the large Quantico clips.
+- [ ] Match each reference's scene, frames, crop, speed, pauses, and loop boundary using the actual source footage.
+- [ ] Prepare and review higher-resolution animated WebP deliveries, measuring quality and file size while preserving original sources and the current lazy-loading behavior.
+
+The [source-footage loop plan](56-rebuild-loops-from-source-footage.md) records the matching process, limits on exact reproduction, source preservation, delivery choices, and acceptance checks. This follow-up does not delay the current portfolio PR.

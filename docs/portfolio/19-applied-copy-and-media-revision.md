@@ -24,7 +24,7 @@ Use the direct first-person approach from [the revision plan](17-copy-and-media-
 | Blizzard | Use specific engine, asset pipeline, FX tool, and native mobile contributions. Keep the nine expansions tied to March 2021–August 2023. Give current unannounced-game work its own paragraph. | Original About page + Russell's current-role description. |
 | Moongoat | Describe suit-free C++ body tracking from high-speed webcam video, composited wireframe on a vertical TV, and 60 fps. Describe the IMU-equipped wooden swords separately, including speakers, LED strips, and deterministic world-orientation colors. | [Russell's own account](18-moongoat-demonstrations.md). |
 | About | Retain the headshot, contribution bullets, original project text, and all existing galleries. Add current graphics/art/audio work and the independent hardware direction. Remove the second H1 and correct Darren Aronofsky's spelling. | Existing About page + Russell's brief. |
-| Contact + shared elements | Replace promotional slogans with project inquiries, useful project details, and a direct contact link. Use “specializations” beside the pyramid. | The direct wording direction in the revision plan. |
+| Contact + shared elements | Replace promotional slogans with project inquiries, useful project details, and a direct contact link. Use “specializations” beside the tetrahedron. | The direct wording direction in the revision plan. |
 
 The Moongoat page no longer supplies an invented workshop-to-public story or guesses at participant reactions. It does not mix later firmware revisions into the account of the pop-up.
 

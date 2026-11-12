@@ -12,7 +12,7 @@ function fixture(fetchResult = async () => ({ ok: true, status: 200, json: async
   const honeypot = { checked: false };
   const values = {
     access_key: '00000000-0000-0000-0000-000000000000',
-    name: '',
+    name: 'Portfolio visitor',
     email: 'preview@example.com',
     message: 'Local submission-handler test.',
   };

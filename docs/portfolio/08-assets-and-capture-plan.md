@@ -101,8 +101,8 @@ These checks are part of making an accurate portfolio, not a claim that all exis
 ## Web preparation
 
 Several existing GIFs are very large: `enflux_convention2.gif` is about 31.2 MiB, `enflux_analysis3.gif` about 29.1 MiB, and `quantico_cut1.gif` about 20.8 MiB.
-Use appropriately encoded video plus a still poster for suitable motion material.
-Retain source originals outside public page bundles when they are not meant to be served.
+The current direction preserves the selected GIFs as continuous looping images, using animated WebP where appropriate and separate still previews. Use native video with a still poster for actual video presentations that need playback controls.
+After the current release, [rebuild the selected loops from higher-quality source footage](56-rebuild-loops-from-source-footage.md), matching the existing frames, crop, playback, and loop sections. Retain unchanged source videos and GIFs outside Hugo's mounts.
 
 For stills, export responsive derivatives with explicit dimensions and suitable crops.
 For video, provide a poster, deliberate preload behavior, playback controls, and captions when needed.

@@ -22,7 +22,7 @@ On 2026-10-25 Russell clarified that Film + television should contain X-Men: Apo
 - Typography: primarily Roboto Condensed, with Roboto where a rounder shape is useful. Careful widths, bold caps, and Black weight where appropriate.
 - Current technology: Hugo.
 - Planning destination: this repository, readable in Obsidian.
-- Follow-up visual decision: a rotatable WebGL specialization pyramid, with screen-space text anchored to each point.
+- Follow-up visual decision: a rotatable WebGL specialization tetrahedron, with screen-space text anchored to each point.
 
 ## Recommendations made in this planning pass
 
@@ -97,9 +97,9 @@ Found the PixelPerf event folder, a strong Molecule light-prop/display setup pho
 Move Moongoat up as a leading independent case-study candidate.
 September 2, 2023 is supported by folder/poster names and remains a date to confirm.
 
-### 2026-10-24 — Rotating specialization pyramid
+### 2026-10-24 — Rotating specialization tetrahedron
 
-Russell specified a WebGL-rendered pyramid that can rotate, with text anchored to each point in screen space.
+Russell specified a WebGL-rendered tetrahedron that can rotate, with text anchored to each point in screen space.
 Plan a four-vertex triangular wireframe with HTML labels that follow projected vertex positions while staying upright and consistently sized.
 The [component plan](13-webgl-specialization-pyramid.md) covers readable label placement, rotation, responsive projection, and fallback.
 Idle rotation and final specialization wording remain design choices.
@@ -107,7 +107,7 @@ Idle rotation and final specialization wording remain design choices.
 ### 2026-10-24 — Theme recommendation clarified
 
 Keep Blowfish as the starting foundation and build custom Molecule homepage, work, and project layouts in the repository's own layout/style directories.
-A move to another premade theme is not needed for the proposed visual direction or WebGL pyramid.
+A move to another premade theme is not needed for the proposed visual direction or WebGL tetrahedron.
 Review the remaining Blowfish dependency after the first custom pages work, and consider a small custom theme only if little useful theme behavior remains.
 The stored theme identifies version `2.38.3`, so current online examples need checking against the local implementation.
 

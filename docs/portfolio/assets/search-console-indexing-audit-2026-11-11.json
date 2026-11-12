@@ -1,0 +1,521 @@
+{
+  "checkedOn": "2026-11-11",
+  "method": "Public HTTP requests, response redirects, server-rendered head tags, XML feeds, source files and local Hugo output. No browser or desktop access.",
+  "reportedUrlChecks": [
+    {
+      "reason": "Alternate page with proper canonical tag",
+      "url": "https://www.ilovemolecule.com/work/?tag=professional",
+      "reportedLastCrawl": "2026-11-04",
+      "liveStatus": 200,
+      "finalUrl": "https://www.ilovemolecule.com/work/?tag=professional",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://www.ilovemolecule.com/work/"
+      ],
+      "robots": [],
+      "xRobotsTag": null
+    },
+    {
+      "reason": "Alternate page with proper canonical tag",
+      "url": "https://www.ilovemolecule.com/work/?tag=experimental",
+      "reportedLastCrawl": "2026-11-04",
+      "liveStatus": 200,
+      "finalUrl": "https://www.ilovemolecule.com/work/?tag=experimental",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://www.ilovemolecule.com/work/"
+      ],
+      "robots": [],
+      "xRobotsTag": null
+    },
+    {
+      "reason": "Page with redirect",
+      "url": "https://ilovemolecule.com/",
+      "reportedLastCrawl": "2026-11-02",
+      "liveStatus": 200,
+      "finalUrl": "https://www.ilovemolecule.com/",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://ilovemolecule.com/",
+          "to": "https://www.ilovemolecule.com/"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://www.ilovemolecule.com/"
+      ],
+      "robots": [],
+      "xRobotsTag": null
+    },
+    {
+      "reason": "Page with redirect",
+      "url": "http://ilovemolecule.com/",
+      "reportedLastCrawl": "2026-10-29",
+      "liveStatus": 200,
+      "finalUrl": "https://www.ilovemolecule.com/",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "http://ilovemolecule.com/",
+          "to": "https://www.ilovemolecule.com/"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://www.ilovemolecule.com/"
+      ],
+      "robots": [],
+      "xRobotsTag": null
+    },
+    {
+      "reason": "Page with redirect",
+      "url": "https://ilovemolecule.com/index.xml",
+      "reportedLastCrawl": "2026-09-05",
+      "liveStatus": 200,
+      "finalUrl": "https://www.ilovemolecule.com/index.xml",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://ilovemolecule.com/index.xml",
+          "to": "https://www.ilovemolecule.com/index.xml"
+        }
+      ],
+      "contentType": "application/xml",
+      "canonical": [],
+      "robots": [],
+      "xRobotsTag": null,
+      "feedRoot": "rss",
+      "hasRemovedBlogLinks": false
+    },
+    {
+      "reason": "Crawled - currently not indexed",
+      "url": "https://www.ilovemolecule.com/index.xml",
+      "reportedLastCrawl": "2026-09-05",
+      "liveStatus": 200,
+      "finalUrl": "https://www.ilovemolecule.com/index.xml",
+      "redirects": [],
+      "contentType": "application/xml",
+      "canonical": [],
+      "robots": [],
+      "xRobotsTag": null,
+      "feedRoot": "rss",
+      "hasRemovedBlogLinks": false
+    },
+    {
+      "reason": "Crawled - currently not indexed",
+      "url": "https://www.ilovemolecule.com/devblog/2023-08-02/",
+      "reportedLastCrawl": "2026-07-04",
+      "liveStatus": 404,
+      "finalUrl": "https://www.ilovemolecule.com/devblog/2023-08-02/",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://www.ilovemolecule.com/404.html"
+      ],
+      "robots": [],
+      "xRobotsTag": null
+    },
+    {
+      "reason": "Crawled - currently not indexed",
+      "url": "https://www.ilovemolecule.com/devblog/2019-10-01/",
+      "reportedLastCrawl": "2026-06-13",
+      "liveStatus": 404,
+      "finalUrl": "https://www.ilovemolecule.com/devblog/2019-10-01/",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "canonical": [
+        "https://www.ilovemolecule.com/404.html"
+      ],
+      "robots": [],
+      "xRobotsTag": null
+    }
+  ],
+  "liveSitemapAudit": {
+    "sitemapUrls": [
+      "https://www.ilovemolecule.com/work/paper-ghost/",
+      "https://www.ilovemolecule.com/work/x-men-apocalypse/",
+      "https://www.ilovemolecule.com/work/glass-castle/",
+      "https://www.ilovemolecule.com/work/mother/",
+      "https://www.ilovemolecule.com/work/arrival/",
+      "https://www.ilovemolecule.com/work/quantico/",
+      "https://www.ilovemolecule.com/work/ca-decolle/",
+      "https://www.ilovemolecule.com/work/enflux/",
+      "https://www.ilovemolecule.com/work/shoppermx/",
+      "https://www.ilovemolecule.com/work/game-engine-graphics-content-pipeline/",
+      "https://www.ilovemolecule.com/work/motion-capture-lightsabers/",
+      "https://www.ilovemolecule.com/posts/",
+      "https://www.ilovemolecule.com/",
+      "https://www.ilovemolecule.com/users/",
+      "https://www.ilovemolecule.com/about/",
+      "https://www.ilovemolecule.com/moodboard/",
+      "https://www.ilovemolecule.com/contact/",
+      "https://www.ilovemolecule.com/experiments/",
+      "https://www.ilovemolecule.com/work/"
+    ],
+    "pages": [
+      {
+        "url": "https://www.ilovemolecule.com/work/paper-ghost/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/paper-ghost/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/paper-ghost/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Film + television · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 682
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/x-men-apocalypse/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/x-men-apocalypse/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/x-men-apocalypse/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "X-Men: Apocalypse · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 111
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/glass-castle/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/glass-castle/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/glass-castle/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "The Glass Castle · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 134
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/mother/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/mother/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/mother/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "mother! · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 125
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/arrival/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/arrival/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/arrival/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Arrival · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 100
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/quantico/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/quantico/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/quantico/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Quantico / Season 1 · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 152
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/ca-decolle/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/ca-decolle/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/ca-decolle/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Ça Décolle! · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 102
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/enflux/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/enflux/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/enflux/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Motion capture · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 171
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/shoppermx/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/shoppermx/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/shoppermx/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "ShopperMX · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 125
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/game-engine-graphics-content-pipeline/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/game-engine-graphics-content-pipeline/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/game-engine-graphics-content-pipeline/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Graphics + Content Pipeline + Performance · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 225
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/motion-capture-lightsabers/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/motion-capture-lightsabers/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/motion-capture-lightsabers/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Motion Capture + Lightsabers · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 327
+      },
+      {
+        "url": "https://www.ilovemolecule.com/posts/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/posts/",
+        "canonical": [
+          "https://www.ilovemolecule.com/posts/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Posts · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 11
+      },
+      {
+        "url": "https://www.ilovemolecule.com/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/",
+        "canonical": [
+          "https://www.ilovemolecule.com/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 541
+      },
+      {
+        "url": "https://www.ilovemolecule.com/users/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/users/",
+        "canonical": [
+          "https://www.ilovemolecule.com/users/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Users · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 40
+      },
+      {
+        "url": "https://www.ilovemolecule.com/about/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/about/",
+        "canonical": [
+          "https://www.ilovemolecule.com/about/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "{ about me } · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 675
+      },
+      {
+        "url": "https://www.ilovemolecule.com/moodboard/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/moodboard/",
+        "canonical": [
+          "https://www.ilovemolecule.com/moodboard/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "{ mood board } · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 29
+      },
+      {
+        "url": "https://www.ilovemolecule.com/contact/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/contact/",
+        "canonical": [
+          "https://www.ilovemolecule.com/contact/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Contact · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 77
+      },
+      {
+        "url": "https://www.ilovemolecule.com/experiments/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/experiments/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [
+          "0; url=/work/?tag=experimental"
+        ],
+        "title": "Experiments · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 7
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Work · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 282
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/?tag=professional",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/?tag=professional",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Work · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 282
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/?tag=experimental",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/?tag=experimental",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Work · Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 282
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/hearthstone/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/hearthstone/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/game-engine-graphics-content-pipeline/"
+        ],
+        "robots": [
+          "noindex"
+        ],
+        "xRobotsTag": null,
+        "refresh": [
+          "0; url=https://www.ilovemolecule.com/work/game-engine-graphics-content-pipeline/"
+        ],
+        "title": "https://www.ilovemolecule.com/work/game-engine-graphics-content-pipeline/",
+        "mainWordCount": 0
+      },
+      {
+        "url": "https://www.ilovemolecule.com/work/moongoat/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/work/moongoat/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/motion-capture-lightsabers/"
+        ],
+        "robots": [
+          "noindex"
+        ],
+        "xRobotsTag": null,
+        "refresh": [
+          "0; url=https://www.ilovemolecule.com/work/motion-capture-lightsabers/"
+        ],
+        "title": "https://www.ilovemolecule.com/work/motion-capture-lightsabers/",
+        "mainWordCount": 0
+      },
+      {
+        "url": "https://www.ilovemolecule.com/experiments/moongoat/",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/experiments/moongoat/",
+        "canonical": [
+          "https://www.ilovemolecule.com/work/motion-capture-lightsabers/"
+        ],
+        "robots": [
+          "noindex"
+        ],
+        "xRobotsTag": null,
+        "refresh": [
+          "0; url=https://www.ilovemolecule.com/work/motion-capture-lightsabers/"
+        ],
+        "title": "https://www.ilovemolecule.com/work/motion-capture-lightsabers/",
+        "mainWordCount": 0
+      },
+      {
+        "url": "https://www.ilovemolecule.com/index.html",
+        "status": 200,
+        "finalUrl": "https://www.ilovemolecule.com/index.html",
+        "canonical": [
+          "https://www.ilovemolecule.com/"
+        ],
+        "robots": [],
+        "xRobotsTag": null,
+        "refresh": [],
+        "title": "Russell Jahn — Software Engineer & Artist | Molecule",
+        "mainWordCount": 541
+      }
+    ]
+  },
+  "localSitemapAfterCleanup": [
+    "https://www.ilovemolecule.com/work/paper-ghost/",
+    "https://www.ilovemolecule.com/work/x-men-apocalypse/",
+    "https://www.ilovemolecule.com/work/glass-castle/",
+    "https://www.ilovemolecule.com/work/mother/",
+    "https://www.ilovemolecule.com/work/arrival/",
+    "https://www.ilovemolecule.com/work/quantico/",
+    "https://www.ilovemolecule.com/work/ca-decolle/",
+    "https://www.ilovemolecule.com/work/enflux/",
+    "https://www.ilovemolecule.com/work/shoppermx/",
+    "https://www.ilovemolecule.com/work/game-engine-graphics-content-pipeline/",
+    "https://www.ilovemolecule.com/work/motion-capture-lightsabers/",
+    "https://www.ilovemolecule.com/",
+    "https://www.ilovemolecule.com/about/",
+    "https://www.ilovemolecule.com/contact/",
+    "https://www.ilovemolecule.com/work/"
+  ],
+  "liveSitemapCount": 19,
+  "localSitemapCount": 15,
+  "cleanupDeployed": false,
+  "searchConsoleAccess": "URL lists and last-crawl dates were provided by Russell. Search Console account and Google-selected canonicals were not accessed."
+}

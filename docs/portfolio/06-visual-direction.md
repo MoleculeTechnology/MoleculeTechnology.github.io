@@ -86,9 +86,9 @@ Use a clear grid, generous black space, fine separators, and occasional large pr
 Project media should have enough area to communicate a space or gesture.
 Prefer square or minimally rounded corners over a wall of soft cards.
 Keep line icons simple, consistently weighted, and functional.
-Use the [rotating WebGL specialization pyramid](13-webgl-specialization-pyramid.md) as the geometric signature, with screen-space HTML labels anchored to its projected vertices.
+Use the [rotating WebGL specialization tetrahedron](13-webgl-specialization-pyramid.md) as the geometric signature, with screen-space HTML labels anchored to its projected vertices.
 Keep an SVG version for static uses and fallback.
-The pyramid supplements the established Molecule mark.
+The tetrahedron supplements the established Molecule mark.
 
 The current header image embeds its magenta wordmark and cyan character in the pixels.
 Plan a new export from source art or separate live type and character assets so the header follows the chosen palette.
@@ -101,7 +101,7 @@ The portfolio should not recolor film stills or employer artwork to simulate Mol
 ## Motion
 
 Light and motion footage is the main animation.
-The specialization pyramid can rotate, while its labels remain upright in screen space.
+The specialization tetrahedron can rotate, while its labels remain upright in screen space.
 Use deliberate rotation controls, with slow idle rotation as an optional treatment and a stationary reduced-motion view.
 Avoid scroll hijacking, flashing decoration, animated cursors, and mandatory WebGL introductions.
 Provide pause controls for persistent motion, following the [WCAG guidance on moving content](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html), and captions/transcripts for meaningful video/audio content.

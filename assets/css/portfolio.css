@@ -84,6 +84,13 @@ body.molecule-site { margin: 0; background: var(--canvas); color: var(--ghost); 
 .pyramid-controls button:hover { color: var(--mint); }
 .pyramid-controls [data-reset] { border-left: 1px solid var(--rule); margin-left: 4px; padding-left: 14px; }
 .pyramid-instructions { color: var(--muted); text-align: right; font-size: 11px; letter-spacing: .03em; padding-top: 8px; }
+.pyramid-touch-instructions { display: none; }
+@media (max-width: 760px), (hover: none) and (pointer: coarse) {
+  .pyramid-keyboard-instructions { display: none; }
+}
+@media (hover: none) and (pointer: coarse) {
+  .pyramid-touch-instructions { display: inline; }
+}
 .experience-strip { --experience-text-size: 14px; border-block: 1px solid var(--rule); display: grid; grid-template-columns: .8fr 1.8fr 1fr 1fr; gap: 24px; padding-block: 28px; align-items: start; }
 .experience-strip > .eyebrow { color: var(--muted); font-size: 11px; white-space: nowrap; }
 .experience-company { min-width: 0; }

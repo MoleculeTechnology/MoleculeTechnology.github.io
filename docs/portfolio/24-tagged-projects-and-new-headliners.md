@@ -76,7 +76,7 @@ Earlier URLs remain usable:
 - Work filter checks passed for 6/5/1 projects, deep links, unknown-value fallback, keyboard activation, reload, and browser Back restoration. No warning/error console messages were captured in the tested filter tab.
 - The preview script was restarted after website updates and left running at `http://127.0.0.1:1313/`.
 
-The PR includes the earlier local portfolio iteration, curated galleries, editorial changes, pyramid anti-aliasing, blog removal, contact refinement, and saved planning notes, as well as this pass. Deployment repair remains deferred.
+The PR includes the earlier local portfolio iteration, curated galleries, editorial changes, tetrahedron anti-aliasing, blog removal, contact refinement, and saved planning notes, as well as this pass. Deployment repair remains deferred.
 
 [PR #4](https://github.com/MoleculeTechnology/MoleculeTechnology.github.io/pull/4) was opened from `feature/portfolio-rework-v1` into `main` after the website commit `9348b11`. The subsequent [About and carousel concepts](25-about-and-project-carousel-concepts.md) are planning material, not additional website behavior.
 

@@ -41,13 +41,13 @@ The baseline is a frozen production build of `bfc54e8`, captured before website 
 4. Still-image variants now include 768px and 1152px. This gives high-density phones closer-fitting sources between the existing sizes while staying above the required display resolution. No variant exceeds its original's width. Framing and quality settings are unchanged.
 5. Regular and Bold Roboto Condensed use losslessly compressed WOFF2, reducing their combined files from **339,200 to 129,472 bytes**, a **61.8%** reduction. Every glyph outline, character map entry, and horizontal advance matches the original TTF. Both faces are preloaded because both appear above the fold. Original fonts and licenses remain in place, with TTF fallback.
 6. About's Packery layout now initializes through deferred JavaScript using reserved image dimensions. It no longer needs blocking jQuery or inline load handlers. The YouTube frame is lazy. Actual videos keep native controls, inline playback, and `preload="none"`, with a lazy-loading hint for supported browsers.
-7. Contact remains present in the mobile header. The narrowest headers wrap to two rows. Header links and pyramid controls have touch areas at least 44 × 44px. The pyramid caption stays on one line and the controls can wrap below it. Its antialiasing and rendered text labels are unchanged.
+7. Contact remains present in the mobile header. The narrowest headers wrap to two rows. Header links and tetrahedron controls have touch areas at least 44 × 44px. The tetrahedron caption stays on one line and the controls can wrap below it. Its antialiasing and rendered text labels are unchanged.
 8. Russell supplied **info@ilovemolecule.com**. Contact now links to `mailto:info@ilovemolecule.com`, with the address visible for copying. No inquiry was sent, and opening a mail client does not prove mailbox delivery.
 
 ## Fidelity and mobile checks
 
 - Twelve core pages checked at widths 320, 360, 390, 430, 667, 768, and 1280. The 667px check uses a 375px landscape height. All **84 cases** have one main heading, visible Work/About/Contact navigation, no horizontal overflow, and no media extending outside the viewport.
-- Main navigation targets meet 44 × 44px in every case. Pyramid controls meet that minimum. Work's Experimental filter shows the correct single project.
+- Main navigation targets meet 44 × 44px in every case. Tetrahedron controls meet that minimum. Work's Experimental filter shows the correct single project.
 - Carousel click selection and Home/End keyboard selection still work, with a stable image frame. A manually selected bokken animation uses its original animated WebP immediately.
 - About retains every original gallery selection, order, and project-copy passage. All 54 displayed image sizes matched the before version within one pixel at 1280px, 390px, and 320px. Its 390px document height is unchanged. Minor desktop rounding and the narrow header's extra height are intentional limits of pixel comparisons.
 - Original GIF delivery files are checked byte-for-byte. The Quantico GIF and bokken WebP were observed loading when approached, with their full original source URLs active. The actual Patch video remains unloaded before playback.
@@ -91,7 +91,7 @@ Saved native Lighthouse reports are available in the concepts preview:
 
 ## Further work and publication
 
-- Check the real iPhone/Android experience, including scrolling over the pyramid, carousel taps, native video controls, text scaling, and the email link. The local layout audit is complete, but these hardware checks remain open.
+- Check the real iPhone/Android experience, including scrolling over the tetrahedron, carousel taps, native video controls, text scaling, and the email link. The local layout audit is complete, but these hardware checks remain open.
 - The remaining legacy GIFs are still large when viewed. Evaluate lossless animated WebP derivatives one at a time, comparing every frame, timing, and looping behavior. Keep originals. Deferring a file avoids unnecessary initial downloads but does not make that file smaller when requested.
 - Trim unused theme CSS only with visual regression checks across About and project pages. Lighthouse reports about 21 KiB of unused compressed CSS on some routes. Avoid removing prose/gallery styles just to improve a score.
 - Verify the deployed host's text compression, caching, content types, HTTPS, and asset paths after the separately deferred deployment repair. Keep repeat visits efficient without substituting long local cache headers to improve the benchmark.
@@ -99,6 +99,6 @@ Saved native Lighthouse reports are available in the concepts preview:
 
 Official references: [Lighthouse CLI and reporting](https://github.com/GoogleChrome/lighthouse#using-the-node-cli), [performance score variability](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring), [image lazy loading](https://web.dev/articles/browser-level-image-lazy-loading), and [video lazy loading and preload behavior](https://web.dev/articles/lazy-loading-video).
 
-![Mobile homepage with Contact visible and larger pyramid controls](assets/2026-10-25-mobile-home-performance.jpg)
+![Mobile homepage with Contact visible and larger tetrahedron controls](assets/2026-10-25-mobile-home-performance.jpg)
 
 ![Email contact on mobile](assets/2026-10-25-contact-email-mobile.jpg)

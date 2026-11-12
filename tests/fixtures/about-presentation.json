@@ -3,7 +3,7 @@
   "note": "Original About copy and gallery selections preserved. Presentation reviewed after responsive image delivery, intrinsic dimensions, lazy loading, still previews for deferred original loops, removal of inline gallery scripts, and shared normal-weight brace markup.",
   "mainSha256": "42ff910848e781a2300b519ef8255dc1beba992c40c2d2676b62d6454b506553",
   "stylesheets": [
-    "/css/molecule.min.9ec12be6076a9487cf4500d1eb25c41398c6f95a6e684a416dbeaf5f53de96c0.css"
+    "/css/molecule.min.5dc30f17bdf9807d4e1b82f3e7d5921cfc46edaad5433f378c4f34e94ccd4487.css"
   ],
   "originalMainSha256": "390165dc6b6d0756ad0a4bd89901aa93463ce373a7bb6c728f0bfc85f35ea502",
   "originalCopySha256": "aa54635ab3baa0f7a5aa7f3b1e6fbb352162026160d3d64d502324808ec3cadd",

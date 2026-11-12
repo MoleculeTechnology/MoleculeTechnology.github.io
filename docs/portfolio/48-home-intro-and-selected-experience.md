@@ -32,9 +32,9 @@ The separate At Blizzard paragraph is removed from the hero.
 
 ## Selected work link order
 
-Russell identified the Selected work link appearing above the pyramid on mobile, then clarified that its position was wrong on all platforms. The link now follows the complete introduction and visualization, before Selected Experience.
+Russell identified the Selected work link appearing above the tetrahedron on mobile, then clarified that its position was wrong on all platforms. The link now follows the complete introduction and visualization, before Selected Experience.
 
-The link is a single element after the pyramid in the document. It spans both desktop grid columns and keeps the same position in the single-column phone layout. Visual, reading, and keyboard order therefore follow the introduction, pyramid controls, then Selected work, with no duplicate links or JavaScript rearrangement.
+The link is a single element after the tetrahedron in the document. It spans both desktop grid columns and keeps the same position in the single-column phone layout. Visual, reading, and keyboard order therefore follow the introduction, tetrahedron controls, then Selected work, with no duplicate links or JavaScript rearrangement.
 
 ## Selected Experience
 
@@ -106,7 +106,7 @@ The Hugo build and all eighteen existing tests pass. A build check confirms the 
 
 Desktop and phone browser checks confirm the mint brand name, readable role rows, and no horizontal overflow. The narrowest role-row check uses a measured 291px CSS viewport. The subsequent plus-sign copy revision was checked at 1164px and 355px. At desktop width, each intro paragraph fits on a single line with identical type size and line height. On the phone, the joined phrase wraps naturally, with no forced breaks or horizontal overflow. The preview script was restarted after each website batch and left running at `http://127.0.0.1:1313/`. No commits, pushes, or PR updates were made.
 
-The Selected work order correction was checked at 1164px, 355px, and 291px. Its top edge follows the bottom of the complete pyramid section, including controls and instructions, at all three widths. Selected Experience follows the link. Only one link is rendered. Tabbing from the pyramid's Reset button moves focus to Selected work on desktop and mobile. The Hugo build and all eighteen existing tests pass after the correction.
+The Selected work order correction was checked at 1164px, 355px, and 291px. Its top edge follows the bottom of the complete tetrahedron section, including controls and instructions, at all three widths. Selected Experience follows the link. Only one link is rendered. Tabbing from the tetrahedron's Reset button moves focus to Selected work on desktop and mobile. The Hugo build and all eighteen existing tests pass after the correction.
 
 ![Current desktop hero with Selected work below the complete visualization](assets/2026-10-26-selected-work-order-desktop.png)
 

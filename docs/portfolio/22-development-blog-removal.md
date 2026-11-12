@@ -17,7 +17,11 @@ Russell requested removal of the development blog entirely. The portfolio no lon
 - Updated the information architecture, roadmap, and current planning recommendations to remove the journal from the public site.
 - Replaced the evidence note's link to a deleted post with a Git-history reference. The removed source is recoverable from commit `8995b3e`. No separate public archive or redirect was added.
 
-The existing Work, About, and Contact pages remain. The curated About images, shared project galleries, project descriptions, and WebGL pyramid are unchanged by this removal.
+The existing Work, About, and Contact pages remain. The curated About images, shared project galleries, project descriptions, and WebGL tetrahedron are unchanged by this removal.
+
+## Search Console follow-up
+
+The November 11, 2026 public check confirms the two reported old blog URLs already return actual 404 responses. Their source files are absent and the current feed contains no blog links. The leftover empty `content/posts/_index.md` has also been removed locally so it cannot publish an empty Posts section or advertise it through the sitemap. See [the indexing audit](58-search-console-indexing.md) for all eight reported URLs, the prepared sitemap cleanup, and verification.
 
 ## Preview output
 
