@@ -175,7 +175,7 @@ Do not infer audience reactions or unreported relationships between devices from
 | An idea. A space. A conversation. | Contact |
 | Start with the possibility | A short, direct contact introduction |
 
-These are proposed wording changes. Preserve the WebGL pyramid and the requested color and typography direction.
+These are proposed wording changes. Preserve the WebGL tetrahedron and the requested color and typography direction.
 Use a display title when it is the actual artwork's title or conveys something specific about it.
 
 ## Recover the original picture selection

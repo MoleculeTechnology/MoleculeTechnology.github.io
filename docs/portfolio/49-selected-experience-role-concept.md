@@ -90,7 +90,7 @@ Serve `docs/portfolio/concepts` on the existing concept server at port 1314. The
 
 ## Prototype verification
 
-Current and Proposed select their respective snapshots, with the correct pressed state. The phone width control renders a 390px iframe. Browser checks at measured CSS widths of 355px and 291px show no horizontal overflow, consistent 14px role and capability text, and all four role lines. The desktop example uses a 1271px iframe. Fonts and the working pyramid load from copied dependencies, while project images retain the current preview's delivery.
+Current and Proposed select their respective snapshots, with the correct pressed state. The phone width control renders a 390px iframe. Browser checks at measured CSS widths of 355px and 291px show no horizontal overflow, consistent 14px role and capability text, and all four role lines. The desktop example uses a 1271px iframe. Fonts and the working tetrahedron load from copied dependencies, while project images retain the current preview's delivery.
 
 The preview script was restarted and left running. The initial example did not change the live website.
 

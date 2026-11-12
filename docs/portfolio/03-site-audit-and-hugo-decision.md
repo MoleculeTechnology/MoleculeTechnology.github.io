@@ -22,14 +22,14 @@ Small interactive demonstrations can be added as JavaScript within individual pa
 
 There is no need to switch to another premade Hugo theme for this direction.
 Blowfish remains a useful foundation for existing About-page shortcodes and content features. Its stock blog/profile/card presentation does not provide the distinctive art portfolio being planned, and the development blog has since been removed.
-Build the homepage, work index, and project presentation specifically for Molecule, including the typography, spacing, media treatment, and WebGL pyramid.
+Build the homepage, work index, and project presentation specifically for Molecule, including the typography, spacing, media treatment, and WebGL tetrahedron.
 
 Blowfish documents both a [custom homepage](https://blowfish.page/docs/homepage-layout/) and [project-level overrides for layouts, styles, and fonts](https://blowfish.page/docs/advanced-customisation/).
 The local checkout already has project-owned home partials and custom CSS.
 Keep new work in those project-owned locations rather than modifying the stored theme files.
 Its existing custom-home partial contains several alternate layouts and a script, so replace that composition deliberately instead of assuming it is a clean portfolio starting point.
 
-The rotating WebGL pyramid is a self-contained page component and does not require a different theme.
+The rotating WebGL tetrahedron is a self-contained page component and does not require a different theme.
 Load its graphics code where the component appears, while keeping the normal content presentation useful without it.
 
 The inspected theme's `package.json` identifies version `2.38.3`, alongside the old Hugo pin described below.

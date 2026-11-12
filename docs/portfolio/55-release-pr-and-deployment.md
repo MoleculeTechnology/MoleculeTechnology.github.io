@@ -56,7 +56,7 @@ The [summary](performance/release-current/summary.json), [all run measurements](
 - [ ] Confirm the PR build succeeds on GitHub's Linux runner.
 - [ ] Review and merge PR #4 into main when ready.
 - [ ] Confirm the main build, artifact upload, and Pages deployment all succeed.
-- [ ] Check the public Home, Work filters, About galleries, individual projects, pyramid, looping selections, and Contact at the custom domain.
+- [ ] Check the public Home, Work filters, About galleries, individual projects, tetrahedron, looping selections, and Contact at the custom domain.
 - [ ] Check a real iPhone Safari and Android Chrome, including touch interaction and text scaling.
 - [ ] Repeat the performance measurement against the published host.
 

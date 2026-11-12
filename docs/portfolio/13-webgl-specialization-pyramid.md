@@ -1,20 +1,20 @@
 ---
-title: WebGL specialization pyramid
+title: WebGL specialization tetrahedron
 date: 2026-10-24
 status: implemented-first-pass
 tags: [portfolio, design, webgl, typography]
 ---
 
-# WebGL specialization pyramid
+# WebGL specialization tetrahedron
 
 ## Confirmed direction
 
-Render the specialization pyramid in WebGL and allow it to rotate.
+Render the specialization tetrahedron in WebGL and allow it to rotate.
 Anchor a screen-space text label to each projected vertex.
 The text moves with its point while remaining upright, crisp, and readable.
 This decision comes from Russell's follow-up on 2026-10-24.
 
-Use the four-vertex triangular pyramid, or tetrahedron, suggested by the attached reference.
+Use a tetrahedron with four vertices, six edges, and four triangular faces, as in the supplied reference.
 Use thin mint and ghost-white edges against black, with subtle vertex markers.
 The object connects specializations. Its dimensions do not encode proficiency scores.
 Keep the established Molecule branding separate from the diagram.
@@ -40,7 +40,7 @@ Resolve overlapping labels with consistent placement and restrained movement, wi
 ## Rotation and interaction
 
 Pointer dragging and touch gestures should allow deliberate inspection of the object.
-Keep page scrolling usable on phones and limit gesture handling to the pyramid area.
+Keep page scrolling usable on phones and limit gesture handling to the tetrahedron area.
 Provide a keyboard-operable way to rotate and restore the initial view.
 
 A slow idle rotation is a proposed presentation option, not a requirement Russell has specified.
@@ -80,7 +80,7 @@ Verify browser zoom, device pixel ratio changes, and narrow layouts rather than 
 Keep this as a self-contained visual component within the Hugo portfolio.
 The component has a reserved layout area and does not delay the name, introduction, project links, or contact path.
 Keep the specialization text available in the document without WebGL.
-Use a static vector pyramid as the fallback when WebGL is unavailable or its context is lost.
+Use a static vector tetrahedron as the fallback when WebGL is unavailable or its context is lost.
 With reduced motion, show a stationary view and allow deliberate controls without starting idle rotation.
 
 Render on demand while stationary.
@@ -90,7 +90,7 @@ Release graphics resources and listeners when the component is removed.
 
 ## Implementation acceptance checks
 
-- Four vertices and six edges form a rotatable triangular pyramid.
+- Four vertices, six edges, and four triangular faces define the rotatable tetrahedron.
 - Each label follows the correct projected point for a complete rotation.
 - Text stays screen-aligned with the intended font, weight, and CSS size.
 - Close or crossing projections remain understandable through offsets and leader lines.
@@ -121,3 +121,13 @@ At DPR 2, the revised shader produced 6,575 partial-coverage pixels, with covera
 Both densities reported no WebGL errors and no RGB values exceeding alpha in the readback.
 Projected HTML point anchors matched across DPR 1 and 2, and the four labels remained HTML list elements using Roboto Condensed.
 The fixture and generated preview files are ignored local QA artifacts, not website content or committed source.
+
+## Responsive interaction instructions
+
+On November 11, 2026, Russell requested that mobile instructions read only “Drag to rotate.” Desktop retains “Drag to rotate · Arrow keys to turn · Space to pause.” The keyboard suffix is wrapped in a span and hidden at the existing 760px mobile breakpoint, and on devices whose primary pointer is coarse and cannot hover. This also covers touch tablets at wider sizes. The same instruction element remains connected to the canvas with `aria-describedby`.
+
+Russell then approved adding tap to pause and resume. Touch devices now show “Drag to rotate · Tap to pause” while rotating and “Drag to rotate · Tap to resume” while paused. The shared playback update keeps the hint synchronized with the Pause/Play button, keyboard controls, drag rotation, reset, and reduced-motion preference. The touch suffix appears only for a coarse primary pointer without hover. Narrow mouse-driven layouts retain just “Drag to rotate,” and desktop keeps its keyboard instructions.
+
+A primary touch or pen contact qualifies as a tap when it ends within 350ms and stays within 8 CSS pixels of its start. Movement beyond that distance permanently disqualifies that contact, even if it returns to the start. Horizontal dragging still rotates the tetrahedron and pauses automatic rotation. Vertical movement preserves normal page scrolling. Long presses, secondary buttons, multiple fingers, pointer cancellation, lost capture, and WebGL context loss do not toggle playback. A release from another pointer cannot finish the primary gesture.
+
+Thirteen Node interaction checks exercise the actual renderer's event handlers with in-memory event targets and a stub graphics context. They verify pause/resume animation scheduling, dynamic hints, drag and scroll distinctions, cancellation, multiple pointers, small touch jitter, pen input, mouse and keyboard controls, reduced motion, and fallback behavior. These code-level checks use no desktop or browser automation. They do not measure physical-device rendering. The existing ten contact-form checks and the new interaction checks run together in the GitHub workflow.

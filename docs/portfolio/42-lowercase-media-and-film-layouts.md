@@ -6,7 +6,7 @@ tags: [portfolio, typography, media, concepts]
 
 # Lowercase labels, selected media, and film layouts
 
-Russell selected lowercase for all visible brace labels. Home, Work, Contact, the legacy Experiments redirect, and the pyramid caption now use lowercase. About, the pyramid vertices, and Mood board already used it. The shared `brace-label` class prevents uppercase heading and eyebrow styles from changing this choice.
+Russell selected lowercase for all visible brace labels. Home, Work, Contact, the legacy Experiments redirect, and the tetrahedron caption now use lowercase. About, the tetrahedron vertices, and Mood board already used it. The shared `brace-label` class prevents uppercase heading and eyebrow styles from changing this choice.
 
 Home's individual project headings are smaller. Standalone project titles reach 30px, and film titles reach 28px, while the Film + Television collection heading reaches 48px. The sizes have separate shared CSS variables, retain ghost white, and shrink on phones. Semantic heading levels remain h2 for the homepage section, h3 for the collection, and h4 for its films.
 

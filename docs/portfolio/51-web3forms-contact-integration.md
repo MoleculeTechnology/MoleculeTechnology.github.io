@@ -11,7 +11,9 @@ Russell selected Web3Forms and supplied a public Access Key for the form deliver
 
 ## Implementation
 
-The form retains the reviewed design: optional Name, required Email and Message, a mint Send message button, and the existing numbered prompts. Name and Email share a desktop row and stack on phones. Inputs use 18px text and mint focus styling. The email address remains visible below the form, with a Copy email address button for visitors without an email app.
+The form retains the reviewed design: required Name, Email, and Message, a mint Send message button, and the existing numbered prompts. Name and Email share a desktop row and stack on phones. Inputs use 18px text and mint focus styling. The email address remains visible below the form, with a Copy email address button for visitors without an email app.
+
+On November 11, 2026, Russell requested that Name become required. The label now reads Name and the input has the native `required` attribute. The existing form-validity check prevents submission when required fields are empty. The contact-page check requires all three fields, and the submission-handler fixture supplies a name.
 
 The public form key lives in `content/contact/_index.md` as `web3formsAccessKey`. Web3Forms [explicitly describes this key as public](https://web3forms.com/). It identifies the receiving form and is intended for client-side HTML. It is distinct from an account password or private API credential. The template fails the build if the key is missing or malformed.
 

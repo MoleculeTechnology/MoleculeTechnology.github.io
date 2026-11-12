@@ -52,7 +52,7 @@ For every proposed version:
 - State how Molecule relates to Russell in ordinary language.
 - Keep Roboto Condensed and the existing black, mint, and ghost-white palette.
 - Keep the Blizzard role visible and retain the selected project work.
-- Keep the WebGL pyramid and its rendered text labels.
+- Keep the WebGL tetrahedron and its rendered text labels.
 - Avoid invented studio scale, new job titles, availability claims, and abstract promotional language.
 
 ## Pitch A: Keep the professional headline
@@ -71,7 +71,7 @@ Independent projects under the name Molecule.
 
 Russell Jahn uses ghost white, Roboto Condensed Black 900, at 28–36px according to screen width. The existing professional headline stays large and mint. The brand sentence uses readable body type, with Molecule emphasized through weight.
 
-The existing description of software, hardware, film-set visuals, motion capture, and real-time graphics follows. Avoid repeating the same description in the new brand sentence. Check the added height on phones so the pyramid and work remain easy to reach.
+The existing description of software, hardware, film-set visuals, motion capture, and real-time graphics follows. Avoid repeating the same description in the new brand sentence. Check the added height on phones so the tetrahedron and work remain easy to reach.
 
 This approach makes the name legible while keeping the work and profession prominent. It makes the smallest change to the current visual hierarchy.
 
@@ -128,7 +128,7 @@ Russell's subsequent [homepage refinement](48-home-intro-and-selected-experience
 
 The shared heading variables now include the name size. The name retains its larger type on phones, replacing an old mobile override that reduced it to 11px. A very narrow browser check also exposed the existing professional headline's 62px minimum overflowing its column. Below 340px, the display size now scales from 52px to 62px through the shared variable.
 
-Browser checks at measured CSS viewport widths of 1164px, 355px, and 291px confirm the selected text and bold Molecule name, a ghost-white personal name at weight 900, the mint professional headline, and no horizontal overflow. The WebGL pyramid continues to render. The desktop screenshot and wider phone screenshot precede the narrow-only correction, which does not change their layouts.
+Browser checks at measured CSS viewport widths of 1164px, 355px, and 291px confirm the selected text and bold Molecule name, a ghost-white personal name at weight 900, the mint professional headline, and no horizontal overflow. The WebGL tetrahedron continues to render. The desktop screenshot and wider phone screenshot precede the narrow-only correction, which does not change their layouts.
 
 The pinned Hugo build and all eighteen existing tests pass. About's main presentation and copy hashes are unchanged. Its stylesheet fingerprint was updated to match the shared CSS edit. The preview script was restarted after each website batch and left running at `http://127.0.0.1:1313/`. No commits, pushes, or PR updates were made.
 

@@ -23,7 +23,7 @@ Deployment of PR #1 failed. Russell chose to [defer its repair](15-deferred-depl
 
 - A custom Molecule homepage, navigation, footer, work index, and project presentation, retaining Blowfish for existing article/gallery support.
 - Black, mint, and ghost white with actual Roboto Condensed Regular and Bold faces.
-- A WebGL triangular pyramid, with all four specialization labels projected into an HTML overlay.
+- A WebGL tetrahedron, with all four specialization labels projected into an HTML overlay.
 - Slow ambient rotation, pause/play, pointer rotation, keyboard rotation, and reset.
 - Label offsets and leader lines, responsive sizing, reduced-motion handling, and static vector fallback.
 - Draft project pages for Moongoat, Paper Ghost, Enflux, and Blizzard/Hearthstone.
@@ -71,7 +71,7 @@ Verification for this pass:
 - The tested contact tab had no warning/error console entries. No form inquiry was submitted.
 - Generated preview output and tools remain untracked and ignored.
 
-To review locally, start with the homepage, rotate/pause/reset the pyramid, open the project pages, and follow the contact link.
+To review locally, start with the homepage, rotate/pause/reset the tetrahedron, open the project pages, and follow the contact link.
 On Contact, try "Write a message" and inspect the page at a narrow browser width.
 The preview refreshes as source files change.
 Deployment repair remains deferred under Russell's decision.
@@ -83,10 +83,10 @@ Deployment repair remains deferred under Russell's decision.
 - JavaScript syntax check passed.
 - Built local links and asset references resolved across the homepage, Work index, four project pages, About, Notes, and Contact.
 - New portfolio pages have one primary heading, and planning notes are absent from public output.
-- The browser rendered the pyramid with WebGL and showed no warning/error console entries during the tested pyramid interaction.
+- The browser rendered the tetrahedron with WebGL and showed no warning/error console entries during the tested tetrahedron interaction.
 - Pause/play state, reset, rotation buttons, and keyboard rotation were checked.
 - Projected point markers and their corresponding leader-line anchors matched after keyboard rotation.
-- Phone-width checks at 390 and 320 CSS pixels showed no horizontal page overflow, and the pyramid labels stayed within their component.
+- Phone-width checks at 390 and 320 CSS pixels showed no horizontal page overflow, and the tetrahedron labels stayed within their component.
 - The project index and Paper Ghost case-study route were inspected in the browser.
 - The existing HubSpot form loaded with its fields. No test inquiry was submitted.
 
@@ -96,7 +96,7 @@ The latest [Professional Work / Experiments pass](23-professional-work-experimen
 
 The [copy and media revision](19-applied-copy-and-media-revision.md) now uses the original About page's language and stronger still images, with the actual Moongoat demos described. Review this applied wording and the image credits with Russell.
 The subsequent [editorial voice revision](20-work-focused-editorial-voice.md) makes homepage and project descriptions less personal and adds named contribution fields while preserving the About page's personal voice.
-Choose final specialization wording and refine the pyramid's interaction and label placement across more orientations and devices.
+Choose final specialization wording and refine the tetrahedron's interaction and label placement across more orientations and devices.
 Exercise physical touch input, actual browser zoom, reduced-motion settings, and WebGL context-loss recovery.
 Select and prepare stronger interaction clips, and continue refining the legacy About presentation. Original Paper Ghost and Enflux galleries are now restored on the project pages. The development blog has been removed at Russell's request. See [Development blog removal](22-development-blog-removal.md).
 Settle the current role chronology, event date, public current-game wording, and updated CV.

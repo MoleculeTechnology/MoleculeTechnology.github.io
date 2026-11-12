@@ -12,7 +12,7 @@ Use Molecule as the name of the creative practice, with Russell's name and perso
 Keep `ilovemolecule.com`.
 
 These notes contain the brief, research, copy decisions, visual direction, and implementation record.
-The website rework is being tested locally on `feature/portfolio-rework-v1`. The latest [release PR preparation](55-release-pr-and-deployment.md) includes the deployment repair and fresh validation.
+The first portfolio iteration is merged into main through [PR #4](https://github.com/MoleculeTechnology/MoleculeTechnology.github.io/pull/4). The follow-up includes [Node.js 24 action runtimes](57-github-actions-node24.md), [sitemap cleanup](58-search-console-indexing.md), the required contact name, and the tetrahedron's mobile instructions and tap controls. [Release preparation](55-release-pr-and-deployment.md) records the first iteration's deployment repair and validation.
 
 ## Start here
 
@@ -43,7 +43,7 @@ The [mobile and performance pass](40-mobile-performance-and-release-checks.md) a
 10. [Questions and decisions](10-questions-and-decisions.md) — what is settled and what needs Russell's input.
 11. [Historical CV review](11-historical-cv-review.md) — original typography, additional installation experience, and chronology to update.
 12. [Archive review](12-archive-review.md) — Moongoat event evidence, exact source paths, and a shortlist from the VADER archives.
-13. [WebGL specialization pyramid](13-webgl-specialization-pyramid.md) — rotation, projected screen-space labels, typography, and implementation checks.
+13. [WebGL specialization tetrahedron](13-webgl-specialization-pyramid.md) — rotation, projected screen-space labels, typography, and implementation checks.
 14. [Local implementation](14-local-implementation.md) — testing branch, preview command, completed checks, and deferred GitHub workflow.
 15. [Deferred deployment repair](15-deferred-deployment.md) — failed workflow, later release checks, and completed preview cleanup.
 16. [Artist and studio references](16-artist-and-studio-references.md) — Rhizomatiks and ten other practices, official project sources, and useful writing structures.
@@ -86,6 +86,9 @@ The [mobile and performance pass](40-mobile-performance-and-release-checks.md) a
 53. [Glass Castle quality and loop delivery](53-glass-castle-quality-and-loop-delivery.md) — requested image order, original-resolution audit, smaller pixel-identical looping WebPs, source preservation, and verification.
 54. [X-Men image quality review](54-xmen-image-quality-review.md) — source-focus limits, verified full-size desktop and mobile delivery, and clearer archive photographs for comparison before changing the selected lead.
 55. [Release PR and deployment preparation](55-release-pr-and-deployment.md) — current release scope, deployment workflow repair, local checks, fresh Lighthouse measurements, and the remaining publication checks.
+56. [Rebuild loops from source footage](56-rebuild-loops-from-source-footage.md) — follow-up to recover higher-quality imagery from videos, match the current GIF edits and timing, and deliver reviewed animated WebPs.
+57. [GitHub Actions Node.js 24](57-github-actions-node24.md) — updated action runtimes, the nested Pages uploader, verified release compatibility, and the remaining remote warning check.
+58. [Search Console indexing](58-search-console-indexing.md) — verified canonical alternatives, domain redirects, RSS and removed blog URLs, plus the prepared sitemap cleanup.
 
 Use the [case study template](templates/case-study.md) when developing a project.
 The [media inventory](assets/media-inventory.json) lists the local About-page media without duplicating it.
@@ -99,7 +102,7 @@ The [media inventory](assets/media-inventory.json) lists the local About-page me
 - Keep Hugo and GitHub Pages. Build a custom portfolio presentation in this repository.
 - Use a nearly black canvas, ghost white type, and a proposed mint accent of `#84F9EB`, already present in the repository's palette.
 - Use Roboto Condensed as the primary family, with deliberate weight, width, line breaks, and spacing.
-- Render the specialization pyramid in WebGL, with upright screen-space labels following its rotating vertices.
+- Render the specialization tetrahedron in WebGL, with upright screen-space labels following its rotating vertices.
 - Make contact and project sharing easy. Keep the public site focused on Work, About, and Contact.
 
 ## Review limits

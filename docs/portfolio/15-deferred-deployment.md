@@ -30,7 +30,7 @@ The successful merge therefore did not result in a successful deployment from th
 - [x] Build the intended first version in production mode and inspect generated routes, asset URLs, and the custom domain configuration.
 - [x] Confirm the diff excludes generated preview output and locally cached tools.
 - [ ] Run the repaired workflow and verify both the build and deployment jobs succeed.
-- [ ] Check the published homepage, project pages, pyramid, media, and contact path at `https://www.ilovemolecule.com/`.
+- [ ] Check the published homepage, project pages, tetrahedron, media, and contact path at `https://www.ilovemolecule.com/`.
 
 ## Separate generated-preview commit
 

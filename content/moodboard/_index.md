@@ -1,6 +1,8 @@
 ---
 title: "{ mood board }"
 description: "See what's possible with Blowfish."
+_build:
+  list: never
 
 cascade:
   showEdit: false

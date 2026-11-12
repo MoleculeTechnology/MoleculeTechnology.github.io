@@ -45,7 +45,7 @@ Keep the portrait and a shorter introduction, followed by three compact rows con
 | Tools for artists | Projection playback controls, virtual cameras, animation recording/export | Glass Castle, mother!, Enflux |
 | Physical systems | Camera-based tracking, IMU orientation, lights, and embedded firmware | Motion Capture + Lightsabers |
 
-These should read as evidence, with one example per row, rather than a large skill badge collection. A small vector line treatment could echo the pyramid without adding another moving object.
+These should read as evidence, with one example per row, rather than a large skill badge collection. A small vector line treatment could echo the tetrahedron without adding another moving object.
 
 **Strength:** Connects the experience to prospective installation work. **Tradeoff:** Too many examples could turn the section into a second Work index.
 
@@ -116,7 +116,7 @@ Use **A as the common pattern**. C is an alternative where its labels add real m
 
 - Keep titles, project tags, descriptions, and the case-study link outside the changing image area. Changing photographs should not change the page height or shift neighboring projects.
 - Choose each project's frame and image treatment deliberately. Use containment for software interfaces or portrait documentation when cropping would remove useful details.
-- No autoplay, rotating thumbnail animations, timed progress indicators, or automatic GIF playback across multiple cards. The pyramid already provides movement near the top.
+- No autoplay, rotating thumbnail animations, timed progress indicators, or automatic GIF playback across multiple cards. The tetrahedron already provides movement near the top.
 - Keep controls visible on touch devices and operable by keyboard. Preserve focus on the control used, and announce the new image/caption after a manual change. These choices follow the [W3C WAI carousel guidance](https://www.w3.org/WAI/tutorials/carousels/), which also notes that carousel content can be difficult to discover.
 - Load only the initial still and lightweight selected thumbnails initially. Defer other images and video until needed. Do not load a 10–32 MB GIF just because its project card enters view.
 - Prefer short video plus a still poster for future motion examples after reviewing the actual source clip. Honor reduced-motion preferences.

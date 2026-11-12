@@ -7,6 +7,7 @@
   const leaders = root.querySelector("[data-leaders]");
   const controls = root.querySelector("[data-controls]");
   const playButton = root.querySelector("[data-play]");
+  const tapInstructions = root.querySelector("[data-tap-instructions]");
   const motion = matchMedia("(prefers-reduced-motion: reduce)");
   const vertices = [
     { key: "programming", position: [0, 1.3, 0], fallback: [320 / 600, 85 / 460] },
@@ -123,6 +124,7 @@
   function updatePlayButton() {
     playButton.textContent = isPlaying ? "Pause" : "Play";
     playButton.setAttribute("aria-label", isPlaying ? "Pause rotation" : "Start rotation");
+    tapInstructions.textContent = isPlaying ? "Tap to pause" : "Tap to resume";
   }
   function schedule() {
     if (!frame && isVisible && !document.hidden) frame = requestAnimationFrame(tick);
@@ -143,7 +145,7 @@
     gl.compileShader(shader);
     if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
       gl.deleteShader(shader);
-      throw new Error("Pyramid shader compilation failed.");
+      throw new Error("Tetrahedron shader compilation failed.");
     }
     return shader;
   }
@@ -205,7 +207,7 @@
       gl.linkProgram(program);
       gl.deleteShader(vertexShader);
       gl.deleteShader(fragmentShader);
-      if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw new Error("Pyramid linking failed.");
+      if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw new Error("Tetrahedron linking failed.");
       const geometry = [];
       const corners = [[0, -1], [1, -1], [1, 1], [0, -1], [1, 1], [0, 1]];
       [[0, 1], [0, 2], [1, 2], [0, 3], [1, 3], [2, 3]].forEach(([start, end], index) => {
@@ -245,7 +247,8 @@
   }
   function rotate(amount) { isPlaying = false; yaw += amount; updatePlayButton(); schedule(); }
   function reset() { yaw = -0.48; pitch = 0.13; isPlaying = false; updatePlayButton(); schedule(); }
-  playButton.addEventListener("click", () => { isPlaying = !isPlaying; updatePlayButton(); schedule(); });
+  function togglePlayback() { isPlaying = !isPlaying; updatePlayButton(); schedule(); }
+  playButton.addEventListener("click", togglePlayback);
   root.querySelectorAll("[data-rotate]").forEach(button => button.addEventListener("click", () => rotate(Number(button.dataset.rotate) * 0.22)));
   root.querySelector("[data-reset]").addEventListener("click", reset);
   canvas.addEventListener("keydown", event => {
@@ -257,13 +260,18 @@
     if (event.key === "Home") reset();
   });
   viewport.addEventListener("pointerdown", event => {
-    if (!isReady || (event.pointerType === "mouse" && event.button !== 0)) return;
-    drag = { id: event.pointerId, x: event.clientX, y: event.clientY, yaw, pitch, started: event.pointerType === "mouse" };
+    if (!isReady || event.button !== 0) return;
+    if (drag) { drag.tapEligible = false; return; }
+    if (event.isPrimary === false) return;
+    drag = { id: event.pointerId, x: event.clientX, y: event.clientY, yaw, pitch,
+      started: event.pointerType === "mouse", time: event.timeStamp,
+      tapEligible: event.pointerType === "touch" || event.pointerType === "pen" };
     viewport.setPointerCapture(event.pointerId);
   });
   viewport.addEventListener("pointermove", event => {
     if (!drag || drag.id !== event.pointerId) return;
     const dx = event.clientX - drag.x, dy = event.clientY - drag.y;
+    if (Math.hypot(dx, dy) > 8) drag.tapEligible = false;
     if (!drag.started && Math.abs(dx) > 8 && Math.abs(dx) > Math.abs(dy)) drag.started = true;
     if (!drag.started) return;
     isPlaying = false;
@@ -272,9 +280,22 @@
     updatePlayButton();
     schedule();
   });
-  ["pointerup", "pointercancel", "lostpointercapture"].forEach(name => viewport.addEventListener(name, () => { drag = null; schedule(); }));
+  viewport.addEventListener("pointerup", event => {
+    if (!drag || drag.id !== event.pointerId) return;
+    const elapsed = event.timeStamp - drag.time;
+    const tapped = drag.tapEligible && !drag.started && elapsed >= 0 && elapsed <= 350
+      && Math.hypot(event.clientX - drag.x, event.clientY - drag.y) <= 8;
+    drag = null;
+    if (tapped) togglePlayback();
+    else schedule();
+  });
+  ["pointercancel", "lostpointercapture"].forEach(name => viewport.addEventListener(name, event => {
+    if (!drag || drag.id !== event.pointerId) return;
+    drag = null;
+    schedule();
+  }));
   canvas.addEventListener("webglcontextlost", event => {
-    event.preventDefault(); stop(); isReady = false; root.dataset.renderer = "static"; controls.hidden = true;
+    event.preventDefault(); stop(); drag = null; isReady = false; root.dataset.renderer = "static"; controls.hidden = true;
     root.querySelector("[data-instructions]").hidden = true; draw();
   });
   canvas.addEventListener("webglcontextrestored", initialize);

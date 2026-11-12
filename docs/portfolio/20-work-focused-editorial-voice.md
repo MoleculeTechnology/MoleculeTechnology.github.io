@@ -131,7 +131,7 @@ Russell asked to apply this recommendation. The changes are saved locally on `fe
 - Attribution: every project header names Russell Jahn above the specific contribution. Paper Ghost has a separate collaborator field crediting Zed Axiz Productions for hardware + set operators. The Hearthstone image caption credits the game artwork to the Hearthstone team.
 - About: retain the personal introduction, motivation, original work descriptions, and galleries. No changes to the About page in this pass.
 
-The original project images, typography, and WebGL pyramid are retained. The only layout change adds named contribution and collaborator fields, using the existing responsive project-facts grid.
+The original project images, typography, and WebGL tetrahedron are retained. The only layout change adds named contribution and collaborator fields, using the existing responsive project-facts grid.
 
 Verification:
 

@@ -67,7 +67,7 @@ This change is confined to Home's carousel stylesheet. Other project images reta
 
 At a measured desktop width of 1309px, the 498px-wide Glass Castle loop now fills a 1167px-wide preview, retaining its proportions. At a phone width of 355px, every carousel image box matches its 297 × 186px stage. The portrait Hearthstone animation fills the available height with space at the sides. The fresh phone load has no horizontal overflow. The Hugo build and all nineteen checks pass. The preview was restarted and left running. No commit was made.
 
-A separate responsive follow-up was observed during the desktop-to-phone viewport switch: offscreen pyramid labels briefly retained positions outside the new width. A fresh load at phone width resolved it. Check that behavior during a real resize before deciding whether to change the pyramid's resize handling.
+A separate responsive follow-up was observed during the desktop-to-phone viewport switch: offscreen tetrahedron labels briefly retained positions outside the new width. A fresh load at phone width resolved it. Check that behavior during a real resize before deciding whether to change the tetrahedron's resize handling.
 
 ![A smaller loop expanded within the desktop preview](assets/2026-10-27-carousel-contain-desktop.png)
 
